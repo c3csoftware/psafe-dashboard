@@ -1,0 +1,26 @@
+{
+  "name": "dashboard-psafe",
+  "version": "1.0.0",
+  "description": "Dashboard de Monetização PSafe",
+  "main": "main/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main/server.js"
+  },
+  "keywords": [
+    "dashboard",
+    "heroku",
+    "node"
+  ],
+  "author": "PSafe Team",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "express": "^4.19.2",
+    "pg": "^8.16.3",
+    "simple-statistics": "^7.8.3"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}

@@ -1,0 +1,184 @@
+<html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon da PSafe -->
+    <link rel="icon" type="image/png" href="https://www.psafe.com/wp-content/uploads/2018/12/cropped-psafe_thumbnail-2-32x32.png" sizes="32x32">
+    <title>PSafe - Dashboard de Monetização</title>
+    <!-- Inclui a biblioteca Chart.js (para gráficos de pizza) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="https://www.psafe.com/blog/wp-content/themes/twentyfourteen-psafe/img/psafe_logo_h_blue.svg" alt="Logo PSafe" class="logo">
+        <div>
+            <select id="app-context-selector" class="config-button cta-button" style="margin-right: 10px;">
+                <option value="main">Main App</option>
+                <option value="dupe">Dupe App</option>
+            </select>
+            <a href="/config_eventos.html" class="config-button cta-button" style="margin-right: 10px;">Configurar Eventos</a>
+            <a href="/config.html" class="config-button cta-button">Configurar Jornadas</a>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="main-title">Dashboard de Análise de Jornadas</h1>
+
+        <!-- Filtros -->
+        <section class="card filters-container">
+            <h2 class="section-title">Filtros de Período</h2>
+            <div class="filter-controls">
+                <div>
+                    <label for="start-date">Data Início:</label>
+                    <input type="date" id="start-date" name="start-date">
+                </div>
+                <div>
+                    <label for="end-date">Data Fim:</label>
+                    <input type="date" id="end-date" name="end-date">
+                </div>
+                <button id="filter-button" class="cta-button">Filtrar</button>
+            </div>
+            <div id="loading-message" class="message" style="display: none;">
+                Carregando dados...
+            </div>
+            <div id="error-message" class="message error" style="display: none;">
+                Erro ao carregar dados.
+            </div>
+        </section>
+
+        <!-- O conteúdo das jornadas será inserido dinamicamente aqui -->
+        <div id="dashboard-container">
+        <section class="card">
+            <h2 class="section-title">Jornada: Monetização</h2>
+            
+            <div class="big-numbers-grid">
+                <div class="big-number-card">
+                    <span class="big-number-title">Eventos Totais</span>
+                    <span class="big-number-value">156.724</span>
+                </div>
+                <div class="big-number-card">
+                    <span class="big-number-title">Usuários</span>
+                    <span class="big-number-value">110.742</span>
+                </div>
+                <div class="big-number-card">
+                    <span class="big-number-title">Eventos / Usuário</span>
+                    <span class="big-number-value">1,42</span>
+                </div>
+            </div>
+
+            <div class="funnel-container" id="funnel-jornada_monetizacao"><div class="funnel-step" style="width: 95%;">
+            <span class="funnel-label">1. Assinatura tela aberta</span>
+            <div class="funnel-values">
+                <span class="funnel-value">147.545</span>
+                <span class="funnel-users">(110.742 usuários)</span>
+                
+            </div>
+        </div><div class="funnel-step" style="width: 80%;">
+            <span class="funnel-label">2. Assinatura iniciada</span>
+            <div class="funnel-values">
+                <span class="funnel-value">8.887</span>
+                <span class="funnel-users">(5.422 usuários)</span>
+                <span class="funnel-percentage">6.0%</span>
+            </div>
+        </div><div class="funnel-step" style="width: 65%;">
+            <span class="funnel-label">3. Assinatura concluída</span>
+            <div class="funnel-values">
+                <span class="funnel-value">292</span>
+                <span class="funnel-users">(245 usuários)</span>
+                <span class="funnel-percentage">3.3%</span>
+            </div>
+        </div></div>
+        </section>
+        <div class="pizza-grid-container">
+            <section class="card">
+                <h2 class="section-title">Top 5 SKUs (Assinatura concluída)</h2>
+                <div class="chart-container"><p style="text-align: center; padding: 20px;">Nenhum dado encontrado.</p></div>
+            </section>
+            <section class="card">
+                <h2 class="section-title">Top 5 Telas (Assinatura concluída)</h2>
+                <div class="chart-container"><p style="text-align: center; padding: 20px;">Nenhum dado encontrado.</p></div>
+            </section>
+            <section class="card">
+                <h2 class="section-title">Top 5 Eventos Correlacionados (Assinatura concluída)</h2>
+                <div class="chart-container">
+                    <canvas id="correlacoes-chart-jornada_monetizacao" width="616" height="800" style="display: block; box-sizing: border-box; height: 400px; width: 308px;"></canvas>
+                </div>
+            </section>
+        </div>
+    
+        <section class="card">
+            <h2 class="section-title">Jornada: Aquisição</h2>
+            
+            <div class="big-numbers-grid">
+                <div class="big-number-card">
+                    <span class="big-number-title">Eventos Totais</span>
+                    <span class="big-number-value">1.085.988</span>
+                </div>
+                <div class="big-number-card">
+                    <span class="big-number-title">Usuários</span>
+                    <span class="big-number-value">45.391</span>
+                </div>
+                <div class="big-number-card">
+                    <span class="big-number-title">Eventos / Usuário</span>
+                    <span class="big-number-value">23,93</span>
+                </div>
+            </div>
+
+            <div class="funnel-container" id="funnel-jornada_aquisicao"><div class="funnel-step" style="width: 95%;">
+            <span class="funnel-label">1. Aplicativo instalado</span>
+            <div class="funnel-values">
+                <span class="funnel-value">46.644</span>
+                <span class="funnel-users">(45.391 usuários)</span>
+                
+            </div>
+        </div><div class="funnel-step" style="width: 80%;">
+            <span class="funnel-label">2. Primeira abertura</span>
+            <div class="funnel-values">
+                <span class="funnel-value">1.039.344</span>
+                <span class="funnel-users">(1.032.112 usuários)</span>
+                <span class="funnel-percentage">2228.2%</span>
+            </div>
+        </div></div>
+        </section>
+        <div class="pizza-grid-container">
+            <section class="card">
+                <h2 class="section-title">Top 5 SKUs (Primeira abertura)</h2>
+                <div class="chart-container"><p style="text-align: center; padding: 20px;">Nenhum dado encontrado.</p></div>
+            </section>
+            <section class="card">
+                <h2 class="section-title">Top 5 Telas (Primeira abertura)</h2>
+                <div class="chart-container"><p style="text-align: center; padding: 20px;">Nenhum dado encontrado.</p></div>
+            </section>
+            <section class="card">
+                <h2 class="section-title">Top 5 Eventos Correlacionados (Primeira abertura)</h2>
+                <div class="chart-container">
+                    <canvas id="correlacoes-chart-jornada_aquisicao" width="616" height="800" style="display: block; box-sizing: border-box; height: 400px; width: 308px;"></canvas>
+                </div>
+            </section>
+        </div>
+    </div>
+
+        <section class="card">
+            <h2 class="section-title">Eventos por Contagem</h2>
+            <div class="table-container fixed-height-table">
+                <table id="top-events-table" class="sortable-table">
+                    <thead>
+                        <tr>
+                            <th data-sort="nome">Nome do Evento</th>
+                            <th data-sort="rotulo">Rótulo</th>
+                            <th data-sort="contagem">Quantidade</th>
+                            <th data-sort="usuarios">Usuários Únicos</th>
+                        </tr>
+                    </thead>
+                    <tbody id="top-events-table-body">
+                        <!-- As linhas de dados serão inseridas dinamicamente aqui -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+<scribe-shadow id="crxjs-ext" data-crx="okfkdaglfjjjfefdcppliegebpoegaii" style="position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; z-index: 2147483647; overflow: visible; visibility: visible;"></scribe-shadow><div id="c4g-content-root" class="c4g-widget"></div></body></html>

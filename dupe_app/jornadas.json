@@ -1,0 +1,46 @@
+[
+  {
+    "id": "jornada_monetizacao",
+    "nome": "Jornada: Monetização",
+    "eventos": [
+      {
+        "nome": "event_14000",
+        "rotulo": "Assinatura tela aberta"
+      },
+      {
+        "nome": "event_14001",
+        "rotulo": "Assinatura iniciada"
+      },
+      {
+        "nome": "event_14003",
+        "rotulo": "Assinatura concluída"
+      }
+    ],
+    "showFunil": true,
+    "showSkus": true,
+    "showTelas": true,
+    "showCorrelacoes": true,
+    "showEventPeriodicFunnel": false,
+    "showUserPeriodicFunnel": false
+  },
+  {
+    "id": "jornada_aquisicao",
+    "nome": "Jornada: Aquisição",
+    "eventos": [
+      {
+        "nome": "first_open",
+        "rotulo": "Primeira abertura"
+      },
+      {
+        "nome": "event_8000",
+        "rotulo": "Aplicativo instalado"
+      }
+    ],
+    "showFunil": true,
+    "showSkus": false,
+    "showTelas": false,
+    "showCorrelacoes": true,
+    "showEventPeriodicFunnel": true,
+    "showUserPeriodicFunnel": true
+  }
+]

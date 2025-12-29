@@ -1,0 +1,13 @@
+Arquivo para o Git ignorar pastas e arquivos
+
+A pasta node_modules é gerada pelo 'npm install' e não deve ir para o repositório
+
+node_modules
+
+Arquivos de log
+
+*.log
+
+Arquivos de ambiente (se você usar)
+
+.env

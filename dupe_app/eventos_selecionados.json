@@ -1,0 +1,118 @@
+[
+  {
+    "valor": "event_8000",
+    "rotulo": "Aplicativo instalado"
+  },
+  {
+    "valor": "first_open",
+    "rotulo": "Primeira abertura"
+  },
+  {
+    "valor": "event_14000",
+    "rotulo": "Assinatura tela aberta"
+  },
+  {
+    "valor": "event_14001",
+    "rotulo": "Assinatura iniciada"
+  },
+  {
+    "valor": "event_14003",
+    "rotulo": "Assinatura concluída"
+  },
+  {
+    "valor": "event_10100",
+    "rotulo": "Install Monitor"
+  },
+  {
+    "valor": "event_1600",
+    "rotulo": "Quick Clean Up"
+  },
+  {
+    "valor": "event_9900",
+    "rotulo": "Antiphishing"
+  },
+  {
+    "valor": "event_2100",
+    "rotulo": "Quick Av Scan"
+  },
+  {
+    "valor": "event_2300",
+    "rotulo": "Full Av Scan"
+  },
+  {
+    "valor": "event_1750",
+    "rotulo": "Storege Clean Up"
+  },
+  {
+    "valor": "event_1650",
+    "rotulo": "Duplicate Photos"
+  },
+  {
+    "valor": "event_31009",
+    "rotulo": "Daily Phone Checkup"
+  },
+  {
+    "valor": "event_29000",
+    "rotulo": "Download Cleaner"
+  },
+  {
+    "valor": "event_1700",
+    "rotulo": "Manage Apps"
+  },
+  {
+    "valor": "event_10210",
+    "rotulo": "Clean Whatsapp Image"
+  },
+  {
+    "valor": "event_37000",
+    "rotulo": "Duplicate Videos"
+  },
+  {
+    "valor": "event_2600",
+    "rotulo": "Wifi Check"
+  },
+  {
+    "valor": "event_26003",
+    "rotulo": "Privicy Protection"
+  },
+  {
+    "valor": "event_30000",
+    "rotulo": "Gallery Assistant"
+  },
+  {
+    "valor": "event_10850",
+    "rotulo": "Security Manager"
+  },
+  {
+    "valor": "event_39100",
+    "rotulo": "URL Checker"
+  },
+  {
+    "valor": "event_39000",
+    "rotulo": "Whatsapp Cloning"
+  },
+  {
+    "valor": "event_10800",
+    "rotulo": "Clean Facebook"
+  },
+  {
+    "valor": "event_10208",
+    "rotulo": "Clean Whatsapp Audio"
+  },
+  {
+    "valor": "event_4418",
+    "rotulo": "Settings Mendals Screen"
+  },
+  {
+    "valor": "event_10209",
+    "rotulo": "Clean Whatsapp Video"
+  },
+  {
+    "valor": "event_3600",
+    "rotulo": "Hidden Gallery"
+  },
+  {
+    "rotulo": "Flashlight",
+    "valor": "event_10000"
+  }
+]

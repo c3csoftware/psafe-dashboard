@@ -13,18 +13,7 @@ const { exec } = require('child_process');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Roda o script de filtro na inicialização
-exec(`node ${getDataPath('main', 'filtrador.js')} main`, (error, stdout, stderr) => {
-    if (error) {
-        console.error(`Erro ao filtrar eventos na inicialização: ${error}`);
-        return;
-    }
-    if (stderr) {
-        console.error(`Stderr ao filtrar eventos na inicialização: ${stderr}`);
-        return;
-    }
-    console.log(`Filtro de eventos inicial concluído: ${stdout}`);
-});
+
 
 // Serve static files
 app.use(express.static(path.join(__dirname)));
@@ -63,7 +52,7 @@ async function processarJornadas(context, startDate, endDate) {
     console.log(`Processing data for context: ${context}`);
     console.log(`Date Range: ${startDate.toISOString()} to ${endDate.toISOString()}`);
     const jornadas = JSON.parse(fs.readFileSync(getDataPath(context, 'jornadas.json'), 'utf8'));
-    const eventosSelecionados = JSON.parse(fs.readFileSync(getDataPath(context, 'eventos_selecionados.json'), 'utf8'));
+    const { rows: eventosSelecionados } = await db.query('SELECT valor, rotulo FROM evento');
     const eventMap = new Map(eventosSelecionados.map(e => [e.valor, e.rotulo]));
 
     const historicoFiltradoPath = getDataPath(context, 'historico_eventos_filtrado.csv');
@@ -342,46 +331,56 @@ app.post('/api/jornadas', (req, res) => {
     }
 });
 
+
+
+
+
 app.get('/config_eventos.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'config_eventos.html'));
 });
 
-app.get('/api/eventos_selecionados', (req, res) => {
+app.get('/api/eventos_selecionados', async (req, res) => {
     try {
-        const context = req.query.context;
-        const eventos = fs.readFileSync(getDataPath(context, 'eventos_selecionados.json'), 'utf8');
-        res.json(JSON.parse(eventos));
+        const { rows } = await db.query('SELECT valor, rotulo FROM evento ORDER BY rotulo');
+        res.json(rows);
     } catch (e) {
-        console.error("Error reading eventos_selecionados.json:", e.message);
+        console.error("Error fetching eventos from db:", e.message);
         res.status(500).json({ error: e.message });
     }
 });
 
-app.post('/api/eventos_selecionados', (req, res) => {
+app.post('/api/eventos_selecionados', async (req, res) => {
+    const { rotulo, valor, valorOriginal } = req.body;
+
+    if (!rotulo || !valor) {
+        return res.status(400).json({ message: 'Rótulo and Valor are required.' });
+    }
+
     try {
-        const context = req.query.context;
-        const novosEventos = req.body;
-        fs.writeFileSync(getDataPath(context, 'eventos_selecionados.json'), JSON.stringify(novosEventos, null, 2));
-        res.json({ message: 'Eventos salvos com sucesso!' });
+        if (valorOriginal) { // UPDATE
+            await db.query('UPDATE evento SET rotulo = $1, valor = $2 WHERE valor = $3', [rotulo, valor, valorOriginal]);
+        } else { // INSERT
+            await db.query('INSERT INTO evento (valor, rotulo) VALUES ($1, $2)', [valor, rotulo]);
+        }
+        res.json({ message: 'Evento salvo com sucesso!' });
     } catch (e) {
-        console.error("Error writing to eventos_selecionados.json:", e.message);
-        res.status(500).json({ error: e.message });
+        console.error("Error saving evento to db:", e);
+        if (e.code === '23505') { // unique_violation
+            return res.status(409).json({ message: `O valor '${valor}' já existe.` });
+        }
+        res.status(500).json({ message: e.message });
     }
 });
 
-app.post('/api/filtrar_eventos', (req, res) => {
-    const context = req.query.context;
-    exec(`node ${getDataPath(context, 'filtrador.js')} ${context}`, (error, stdout, stderr) => {
-        if (error) {
-            console.error(`exec error: ${error}`);
-            return res.status(500).json({ message: `Erro ao filtrar eventos: ${error}` });
-        }
-        if (stderr) {
-            console.error(`stderr: ${stderr}`);
-            return res.status(500).json({ message: `Erro ao filtrar eventos: ${stderr}` });
-        }
-        res.json({ message: 'Filtro aplicado com sucesso!' });
-    });
+app.delete('/api/eventos_selecionados/:valor', async (req, res) => {
+    const { valor } = req.params;
+    try {
+        await db.query('DELETE FROM evento WHERE valor = $1', [valor]);
+        res.json({ message: 'Evento excluído com sucesso!' });
+    } catch (e) {
+        console.error("Error deleting event from db:", e);
+        res.status(500).json({ message: e.message });
+    }
 });
 
 app.get('/api/top-events', async (req, res) => {
@@ -401,7 +400,7 @@ app.get('/api/top-events', async (req, res) => {
             return res.status(400).json({ error: "Invalid date format. Use YYYY-MM-DD." });
         }
 
-        const eventosSelecionados = JSON.parse(fs.readFileSync(getDataPath(context, 'eventos_selecionados.json'), 'utf8'));
+        const { rows: eventosSelecionados } = await db.query('SELECT valor, rotulo FROM evento');
         const eventMap = new Map(eventosSelecionados.map(e => [e.valor, e.rotulo]));
 
         const historicoFiltradoPath = getDataPath(context, 'historico_eventos_filtrado.csv');

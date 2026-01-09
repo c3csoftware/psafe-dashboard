@@ -26,7 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- FUNÇÕES DE API ---
     async function fetchEventos() {
         try {
-            const response = await fetch(`/api/eventos_selecionados`);
+            const currentContext = localStorage.getItem('appContext') || 'main';
+            const response = await fetch(`/api/eventos_selecionados?context=${currentContext}`);
             if (!response.ok) {
                 throw new Error('Erro ao carregar eventos.');
             }
@@ -41,6 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function saveEvent(eventData) {
         try {
+            const currentContext = localStorage.getItem('appContext') || 'main';
+            eventData.context = currentContext;
             const response = await fetch('/api/eventos_selecionados', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -61,7 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function deleteEvent(valor) {
         try {
-            const response = await fetch(`/api/eventos_selecionados/${valor}`, {
+            const currentContext = localStorage.getItem('appContext') || 'main';
+            const response = await fetch(`/api/eventos_selecionados/${valor}?context=${currentContext}`, {
                 method: 'DELETE'
             });
             if (!response.ok) {

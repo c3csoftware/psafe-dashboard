@@ -1,37 +1,40 @@
-DROP TABLE IF EXISTS jornada_eventos CASCADE;
-DROP TABLE IF EXISTS jornada CASCADE;
+DROP TABLE IF EXISTS jornada_eventos;
+DROP TABLE IF EXISTS jornadas;
 
-CREATE TABLE jornada (
+CREATE TABLE jornadas (
     id TEXT PRIMARY KEY,
     nome TEXT NOT NULL,
-    show_funil BOOLEAN,
-    show_skus BOOLEAN,
-    show_telas BOOLEAN,
-    show_correlacoes BOOLEAN,
-    show_event_periodic_funnel BOOLEAN,
-    show_user_periodic_funnel BOOLEAN
+    show_funil BOOLEAN DEFAULT TRUE,
+    show_skus BOOLEAN DEFAULT FALSE,
+    show_telas BOOLEAN DEFAULT FALSE,
+    show_correlacoes BOOLEAN DEFAULT TRUE,
+    show_event_periodic_funnel BOOLEAN DEFAULT FALSE,
+    show_user_periodic_funnel BOOLEAN DEFAULT FALSE
 );
 
 CREATE TABLE jornada_eventos (
-    jornada_id TEXT REFERENCES jornada(id),
-    evento_valor TEXT REFERENCES evento(valor),
-    ordem INTEGER,
-    PRIMARY KEY (jornada_id, evento_valor)
+    jornada_id TEXT REFERENCES jornadas(id) ON DELETE CASCADE,
+    evento_valor TEXT NOT NULL,
+    rotulo TEXT NOT NULL,
+    ordem INTEGER NOT NULL,
+    PRIMARY KEY (jornada_id, ordem)
 );
 
--- Inserir dados na tabela 'jornadas'
-INSERT INTO jornada (id, nome, show_funil, show_skus, show_telas, show_correlacoes, show_event_periodic_funnel, show_user_periodic_funnel) VALUES
-('jornada_monetizacao', 'Jornada: Monetização', true, true, true, true, false, false),
-('jornada_aquisicao', 'Jornada: Aquisição', true, false, false, true, true, true);
+-- Inserindo dados do arquivo jornadas.json
 
--- Inserir dados na tabela 'jornada_eventos'
--- Jornada: Monetização
-INSERT INTO jornada_eventos (jornada_id, evento_valor, ordem) VALUES
-('jornada_monetizacao', 'event_14000', 0),
-('jornada_monetizacao', 'event_14001', 1),
-('jornada_monetizacao', 'event_14003', 2);
+-- Jornada Monetização
+INSERT INTO jornadas (id, nome, show_funil, show_skus, show_telas, show_correlacoes, show_event_periodic_funnel, show_user_periodic_funnel)
+VALUES ('jornada_monetizacao', 'Jornada: Monetização', true, true, true, true, false, false);
 
--- Jornada: Aquisição
-INSERT INTO jornada_eventos (jornada_id, evento_valor, ordem) VALUES
-('jornada_aquisicao', 'first_open', 0),
-('jornada_aquisicao', 'event_8000', 1);
+INSERT INTO jornada_eventos (jornada_id, evento_valor, rotulo, ordem) VALUES
+('jornada_monetizacao', 'event_14000', 'Assinatura tela aberta', 1),
+('jornada_monetizacao', 'event_14001', 'Assinatura iniciada', 2),
+('jornada_monetizacao', 'event_14003', 'Assinatura concluída', 3);
+
+-- Jornada Aquisição
+INSERT INTO jornadas (id, nome, show_funil, show_skus, show_telas, show_correlacoes, show_event_periodic_funnel, show_user_periodic_funnel)
+VALUES ('jornada_aquisicao', 'Jornada: Aquisição', true, false, false, true, true, true);
+
+INSERT INTO jornada_eventos (jornada_id, evento_valor, rotulo, ordem) VALUES
+('jornada_aquisicao', 'first_open', 'Primeira abertura', 1),
+('jornada_aquisicao', 'event_8000', 'Aplicativo instalado', 2);

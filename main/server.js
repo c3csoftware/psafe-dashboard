@@ -1,3 +1,10 @@
+function getTableName(context, baseName) {
+    if (context === 'dupe') {
+        return `dupe_${baseName}`;
+    }
+    return baseName;
+}
+
 // Function to determine the correct data path based on context
 function getDataPath(context, filename) {
     if (context === 'dupe') {
@@ -48,9 +55,12 @@ const ss = require('simple-statistics');
 
 
 // Helper to get journeys from DB
-async function getJornadasFromDB() {
-    const jornadasQuery = await db.query('SELECT * FROM jornadas');
-    const eventosQuery = await db.query('SELECT * FROM jornada_eventos ORDER BY jornada_id, ordem');
+async function getJornadasFromDB(context) {
+    const jornadasTable = getTableName(context, 'jornadas');
+    const eventosTable = getTableName(context, 'jornada_eventos');
+
+    const jornadasQuery = await db.query(`SELECT * FROM ${jornadasTable}`);
+    const eventosQuery = await db.query(`SELECT * FROM ${eventosTable} ORDER BY jornada_id, ordem`);
     
     const jornadasMap = new Map();
     
@@ -84,9 +94,10 @@ async function getJornadasFromDB() {
 async function processarJornadas(context, startDate, endDate) {
     console.log(`Processing data for context: ${context}`);
     console.log(`Date Range: ${startDate.toISOString()} to ${endDate.toISOString()}`);
-    // const jornadas = JSON.parse(fs.readFileSync(getDataPath(context, 'jornadas.json'), 'utf8'));
-    const jornadas = await getJornadasFromDB(); // Fetch from DB instead of file
-    const { rows: eventosSelecionados } = await db.query('SELECT valor, rotulo FROM evento');
+    
+    const jornadas = await getJornadasFromDB(context); // Fetch from DB instead of file
+    const eventoTable = getTableName(context, 'evento');
+    const { rows: eventosSelecionados } = await db.query(`SELECT valor, rotulo FROM ${eventoTable}`);
     const eventMap = new Map(eventosSelecionados.map(e => [e.valor, e.rotulo]));
 
     const historicoFiltradoPath = getDataPath(context, 'historico_eventos_filtrado.csv');
@@ -345,9 +356,7 @@ app.get('/config.html', (req, res) => {
 app.get('/api/jornadas', async (req, res) => {
     try {
         const context = req.query.context;
-        // const jornadas = fs.readFileSync(getDataPath(context, 'jornadas.json'), 'utf8');
-        // res.json(JSON.parse(jornadas));
-        const jornadas = await getJornadasFromDB();
+        const jornadas = await getJornadasFromDB(context);
         res.json(jornadas);
     } catch (e) {
         console.error("Error fetching jornadas from DB:", e.message);
@@ -361,6 +370,9 @@ app.post('/api/jornadas', async (req, res) => {
         const context = req.query.context;
         const novasJornadas = req.body;
         
+        const jornadasTable = getTableName(context, 'jornadas');
+        const jornadaEventosTable = getTableName(context, 'jornada_eventos');
+
         await client.query('BEGIN');
 
         // 1. Sync Journeys: Delete those not in the payload
@@ -369,17 +381,17 @@ app.post('/api/jornadas', async (req, res) => {
         if (payloadIds.length > 0) {
             // Create placeholders $1, $2, ... for the NOT IN clause
             const placeholders = payloadIds.map((_, i) => `$${i + 1}`).join(',');
-            await client.query(`DELETE FROM jornadas WHERE id NOT IN (${placeholders})`, payloadIds);
+            await client.query(`DELETE FROM ${jornadasTable} WHERE id NOT IN (${placeholders})`, payloadIds);
         } else {
             // If payload is empty, user deleted all journeys
-             await client.query('DELETE FROM jornadas');
+             await client.query(`DELETE FROM ${jornadasTable}`);
         }
 
         // 2. Upsert Journeys and Replace Events
         for (const jornada of novasJornadas) {
             // Upsert Journey
             await client.query(
-                `INSERT INTO jornadas (id, nome, show_funil, show_skus, show_telas, show_correlacoes, show_event_periodic_funnel, show_user_periodic_funnel)
+                `INSERT INTO ${jornadasTable} (id, nome, show_funil, show_skus, show_telas, show_correlacoes, show_event_periodic_funnel, show_user_periodic_funnel)
                  VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
                  ON CONFLICT (id) DO UPDATE SET
                     nome = EXCLUDED.nome,
@@ -403,13 +415,13 @@ app.post('/api/jornadas', async (req, res) => {
 
             // Replace Events for this Journey
             // We wipe events only for this specific journey ID to ensure the new list is exact
-            await client.query('DELETE FROM jornada_eventos WHERE jornada_id = $1', [jornada.id]);
+            await client.query(`DELETE FROM ${jornadaEventosTable} WHERE jornada_id = $1`, [jornada.id]);
 
             if (jornada.eventos && jornada.eventos.length > 0) {
                 let ordem = 1;
                 for (const evento of jornada.eventos) {
                     await client.query(
-                        `INSERT INTO jornada_eventos (jornada_id, evento_valor, rotulo, ordem)
+                        `INSERT INTO ${jornadaEventosTable} (jornada_id, evento_valor, rotulo, ordem)
                          VALUES ($1, $2, $3, $4)`,
                         [jornada.id, evento.nome, evento.rotulo, ordem++]
                     );
@@ -438,7 +450,9 @@ app.get('/config_eventos.html', (req, res) => {
 
 app.get('/api/eventos_selecionados', async (req, res) => {
     try {
-        const { rows } = await db.query('SELECT valor, rotulo FROM evento ORDER BY rotulo');
+        const context = req.query.context;
+        const eventoTable = getTableName(context, 'evento');
+        const { rows } = await db.query(`SELECT valor, rotulo FROM ${eventoTable} ORDER BY rotulo`);
         res.json(rows);
     } catch (e) {
         console.error("Error fetching eventos from db:", e.message);
@@ -447,7 +461,8 @@ app.get('/api/eventos_selecionados', async (req, res) => {
 });
 
 app.post('/api/eventos_selecionados', async (req, res) => {
-    const { rotulo, valor, valorOriginal } = req.body;
+    const { rotulo, valor, valorOriginal, context } = req.body;
+    const eventoTable = getTableName(context, 'evento');
 
     if (!rotulo || !valor) {
         return res.status(400).json({ message: 'Rótulo and Valor are required.' });
@@ -455,9 +470,9 @@ app.post('/api/eventos_selecionados', async (req, res) => {
 
     try {
         if (valorOriginal) { // UPDATE
-            await db.query('UPDATE evento SET rotulo = $1, valor = $2 WHERE valor = $3', [rotulo, valor, valorOriginal]);
+            await db.query(`UPDATE ${eventoTable} SET rotulo = $1, valor = $2 WHERE valor = $3`, [rotulo, valor, valorOriginal]);
         } else { // INSERT
-            await db.query('INSERT INTO evento (valor, rotulo) VALUES ($1, $2)', [valor, rotulo]);
+            await db.query(`INSERT INTO ${eventoTable} (valor, rotulo) VALUES ($1, $2)`, [valor, rotulo]);
         }
         res.json({ message: 'Evento salvo com sucesso!' });
     } catch (e) {
@@ -471,8 +486,10 @@ app.post('/api/eventos_selecionados', async (req, res) => {
 
 app.delete('/api/eventos_selecionados/:valor', async (req, res) => {
     const { valor } = req.params;
+    const { context } = req.query;
+    const eventoTable = getTableName(context, 'evento');
     try {
-        await db.query('DELETE FROM evento WHERE valor = $1', [valor]);
+        await db.query(`DELETE FROM ${eventoTable} WHERE valor = $1`, [valor]);
         res.json({ message: 'Evento excluído com sucesso!' });
     } catch (e) {
         console.error("Error deleting event from db:", e);
@@ -485,6 +502,7 @@ app.get('/api/top-events', async (req, res) => {
         const startDateStr = req.query.start;
         const endDateStr = req.query.end;
         const context = req.query.context;
+        const eventoTable = getTableName(context, 'evento');
 
         if (!startDateStr || !endDateStr) {
             return res.status(400).json({ error: "Please provide start and end dates." });
@@ -497,7 +515,7 @@ app.get('/api/top-events', async (req, res) => {
             return res.status(400).json({ error: "Invalid date format. Use YYYY-MM-DD." });
         }
 
-        const { rows: eventosSelecionados } = await db.query('SELECT valor, rotulo FROM evento');
+        const { rows: eventosSelecionados } = await db.query(`SELECT valor, rotulo FROM ${eventoTable}`);
         const eventMap = new Map(eventosSelecionados.map(e => [e.valor, e.rotulo]));
 
         const historicoFiltradoPath = getDataPath(context, 'historico_eventos_filtrado.csv');

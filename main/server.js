@@ -13,18 +13,7 @@ const { exec } = require('child_process');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Roda o script de filtro na inicialização
-exec(`node ${getDataPath('main', 'filtrador.js')} main`, (error, stdout, stderr) => {
-    if (error) {
-        console.error(`Erro ao filtrar eventos na inicialização: ${error}`);
-        return;
-    }
-    if (stderr) {
-        console.error(`Stderr ao filtrar eventos na inicialização: ${stderr}`);
-        return;
-    }
-    console.log(`Filtro de eventos inicial concluído: ${stdout}`);
-});
+
 
 // Serve static files
 app.use(express.static(path.join(__dirname)));
@@ -58,12 +47,46 @@ const ss = require('simple-statistics');
 
 
 
+// Helper to get journeys from DB
+async function getJornadasFromDB() {
+    const jornadasQuery = await db.query('SELECT * FROM jornadas');
+    const eventosQuery = await db.query('SELECT * FROM jornada_eventos ORDER BY jornada_id, ordem');
+    
+    const jornadasMap = new Map();
+    
+    jornadasQuery.rows.forEach(j => {
+        jornadasMap.set(j.id, {
+            id: j.id,
+            nome: j.nome,
+            eventos: [],
+            showFunil: j.show_funil,
+            showSkus: j.show_skus,
+            showTelas: j.show_telas,
+            showCorrelacoes: j.show_correlacoes,
+            showEventPeriodicFunnel: j.show_event_periodic_funnel,
+            showUserPeriodicFunnel: j.show_user_periodic_funnel
+        });
+    });
+    
+    eventosQuery.rows.forEach(e => {
+        if (jornadasMap.has(e.jornada_id)) {
+            jornadasMap.get(e.jornada_id).eventos.push({
+                nome: e.evento_valor,
+                rotulo: e.rotulo
+            });
+        }
+    });
+    
+    return Array.from(jornadasMap.values());
+}
+
 // Main function to process data for all journeys
 async function processarJornadas(context, startDate, endDate) {
     console.log(`Processing data for context: ${context}`);
     console.log(`Date Range: ${startDate.toISOString()} to ${endDate.toISOString()}`);
-    const jornadas = JSON.parse(fs.readFileSync(getDataPath(context, 'jornadas.json'), 'utf8'));
-    const eventosSelecionados = JSON.parse(fs.readFileSync(getDataPath(context, 'eventos_selecionados.json'), 'utf8'));
+    // const jornadas = JSON.parse(fs.readFileSync(getDataPath(context, 'jornadas.json'), 'utf8'));
+    const jornadas = await getJornadasFromDB(); // Fetch from DB instead of file
+    const { rows: eventosSelecionados } = await db.query('SELECT valor, rotulo FROM evento');
     const eventMap = new Map(eventosSelecionados.map(e => [e.valor, e.rotulo]));
 
     const historicoFiltradoPath = getDataPath(context, 'historico_eventos_filtrado.csv');
@@ -319,69 +342,142 @@ app.get('/config.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'config.html'));
 });
 
-app.get('/api/jornadas', (req, res) => {
+app.get('/api/jornadas', async (req, res) => {
     try {
         const context = req.query.context;
-        const jornadas = fs.readFileSync(getDataPath(context, 'jornadas.json'), 'utf8');
-        res.json(JSON.parse(jornadas));
+        // const jornadas = fs.readFileSync(getDataPath(context, 'jornadas.json'), 'utf8');
+        // res.json(JSON.parse(jornadas));
+        const jornadas = await getJornadasFromDB();
+        res.json(jornadas);
     } catch (e) {
-        console.error("Error reading jornadas.json:", e.message);
+        console.error("Error fetching jornadas from DB:", e.message);
         res.status(500).json({ error: e.message });
     }
 });
 
-app.post('/api/jornadas', (req, res) => {
+app.post('/api/jornadas', async (req, res) => {
+    const client = await pool.connect();
     try {
         const context = req.query.context;
         const novasJornadas = req.body;
-        fs.writeFileSync(getDataPath(context, 'jornadas.json'), JSON.stringify(novasJornadas, null, 2));
-        res.json({ message: 'Jornadas salvas com sucesso!' });
+        
+        await client.query('BEGIN');
+
+        // 1. Sync Journeys: Delete those not in the payload
+        const payloadIds = novasJornadas.map(j => j.id);
+        
+        if (payloadIds.length > 0) {
+            // Create placeholders $1, $2, ... for the NOT IN clause
+            const placeholders = payloadIds.map((_, i) => `$${i + 1}`).join(',');
+            await client.query(`DELETE FROM jornadas WHERE id NOT IN (${placeholders})`, payloadIds);
+        } else {
+            // If payload is empty, user deleted all journeys
+             await client.query('DELETE FROM jornadas');
+        }
+
+        // 2. Upsert Journeys and Replace Events
+        for (const jornada of novasJornadas) {
+            // Upsert Journey
+            await client.query(
+                `INSERT INTO jornadas (id, nome, show_funil, show_skus, show_telas, show_correlacoes, show_event_periodic_funnel, show_user_periodic_funnel)
+                 VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+                 ON CONFLICT (id) DO UPDATE SET
+                    nome = EXCLUDED.nome,
+                    show_funil = EXCLUDED.show_funil,
+                    show_skus = EXCLUDED.show_skus,
+                    show_telas = EXCLUDED.show_telas,
+                    show_correlacoes = EXCLUDED.show_correlacoes,
+                    show_event_periodic_funnel = EXCLUDED.show_event_periodic_funnel,
+                    show_user_periodic_funnel = EXCLUDED.show_user_periodic_funnel`,
+                [
+                    jornada.id,
+                    jornada.nome,
+                    jornada.showFunil,
+                    jornada.showSkus,
+                    jornada.showTelas,
+                    jornada.showCorrelacoes,
+                    jornada.showEventPeriodicFunnel,
+                    jornada.showUserPeriodicFunnel
+                ]
+            );
+
+            // Replace Events for this Journey
+            // We wipe events only for this specific journey ID to ensure the new list is exact
+            await client.query('DELETE FROM jornada_eventos WHERE jornada_id = $1', [jornada.id]);
+
+            if (jornada.eventos && jornada.eventos.length > 0) {
+                let ordem = 1;
+                for (const evento of jornada.eventos) {
+                    await client.query(
+                        `INSERT INTO jornada_eventos (jornada_id, evento_valor, rotulo, ordem)
+                         VALUES ($1, $2, $3, $4)`,
+                        [jornada.id, evento.nome, evento.rotulo, ordem++]
+                    );
+                }
+            }
+        }
+
+        await client.query('COMMIT');
+        res.json({ message: 'Jornadas salvas com sucesso no banco de dados!' });
     } catch (e) {
-        console.error("Error writing to jornadas.json:", e.message);
+        await client.query('ROLLBACK');
+        console.error("Error saving jornadas to DB:", e.message);
         res.status(500).json({ error: e.message });
+    } finally {
+        client.release();
     }
 });
+
+
+
+
 
 app.get('/config_eventos.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'config_eventos.html'));
 });
 
-app.get('/api/eventos_selecionados', (req, res) => {
+app.get('/api/eventos_selecionados', async (req, res) => {
     try {
-        const context = req.query.context;
-        const eventos = fs.readFileSync(getDataPath(context, 'eventos_selecionados.json'), 'utf8');
-        res.json(JSON.parse(eventos));
+        const { rows } = await db.query('SELECT valor, rotulo FROM evento ORDER BY rotulo');
+        res.json(rows);
     } catch (e) {
-        console.error("Error reading eventos_selecionados.json:", e.message);
+        console.error("Error fetching eventos from db:", e.message);
         res.status(500).json({ error: e.message });
     }
 });
 
-app.post('/api/eventos_selecionados', (req, res) => {
+app.post('/api/eventos_selecionados', async (req, res) => {
+    const { rotulo, valor, valorOriginal } = req.body;
+
+    if (!rotulo || !valor) {
+        return res.status(400).json({ message: 'Rótulo and Valor are required.' });
+    }
+
     try {
-        const context = req.query.context;
-        const novosEventos = req.body;
-        fs.writeFileSync(getDataPath(context, 'eventos_selecionados.json'), JSON.stringify(novosEventos, null, 2));
-        res.json({ message: 'Eventos salvos com sucesso!' });
+        if (valorOriginal) { // UPDATE
+            await db.query('UPDATE evento SET rotulo = $1, valor = $2 WHERE valor = $3', [rotulo, valor, valorOriginal]);
+        } else { // INSERT
+            await db.query('INSERT INTO evento (valor, rotulo) VALUES ($1, $2)', [valor, rotulo]);
+        }
+        res.json({ message: 'Evento salvo com sucesso!' });
     } catch (e) {
-        console.error("Error writing to eventos_selecionados.json:", e.message);
-        res.status(500).json({ error: e.message });
+        console.error("Error saving evento to db:", e);
+        if (e.code === '23505') { // unique_violation
+            return res.status(409).json({ message: `O valor '${valor}' já existe.` });
+        }
+        res.status(500).json({ message: e.message });
     }
 });
 
-app.post('/api/filtrar_eventos', (req, res) => {
-    const context = req.query.context;
-    exec(`node ${getDataPath(context, 'filtrador.js')} ${context}`, (error, stdout, stderr) => {
-        if (error) {
-            console.error(`exec error: ${error}`);
-            return res.status(500).json({ message: `Erro ao filtrar eventos: ${error}` });
-        }
-        if (stderr) {
-            console.error(`stderr: ${stderr}`);
-            return res.status(500).json({ message: `Erro ao filtrar eventos: ${stderr}` });
-        }
-        res.json({ message: 'Filtro aplicado com sucesso!' });
-    });
+app.delete('/api/eventos_selecionados/:valor', async (req, res) => {
+    const { valor } = req.params;
+    try {
+        await db.query('DELETE FROM evento WHERE valor = $1', [valor]);
+        res.json({ message: 'Evento excluído com sucesso!' });
+    } catch (e) {
+        console.error("Error deleting event from db:", e);
+        res.status(500).json({ message: e.message });
+    }
 });
 
 app.get('/api/top-events', async (req, res) => {
@@ -401,7 +497,7 @@ app.get('/api/top-events', async (req, res) => {
             return res.status(400).json({ error: "Invalid date format. Use YYYY-MM-DD." });
         }
 
-        const eventosSelecionados = JSON.parse(fs.readFileSync(getDataPath(context, 'eventos_selecionados.json'), 'utf8'));
+        const { rows: eventosSelecionados } = await db.query('SELECT valor, rotulo FROM evento');
         const eventMap = new Map(eventosSelecionados.map(e => [e.valor, e.rotulo]));
 
         const historicoFiltradoPath = getDataPath(context, 'historico_eventos_filtrado.csv');
@@ -448,6 +544,7 @@ app.get('/api/top-events', async (req, res) => {
 });
 
 const db = require('./db');
+const { pool } = db;
 app.get('/db-test', async (req, res) => {
     try {
         const result = await db.query('SELECT 1 + 1 AS solution;');

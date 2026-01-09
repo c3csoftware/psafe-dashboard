@@ -24,44 +24,55 @@ document.addEventListener('DOMContentLoaded', () => {
     const messageArea = document.getElementById('message-area');
 
     // --- FUNÇÕES DE API ---
-    function fetchEventos() {
-        fetch('/api/eventos_selecionados')
-            .then(response => response.json())
-            .then(data => {
-                eventos = data;
-                renderEventos();
-            })
-            .catch(error => console.error('Erro ao carregar eventos:', error));
+    async function fetchEventos() {
+        try {
+            const response = await fetch(`/api/eventos_selecionados`);
+            if (!response.ok) {
+                throw new Error('Erro ao carregar eventos.');
+            }
+            eventos = await response.json();
+            renderEventos();
+        } catch (error) {
+            console.error('Erro ao carregar eventos:', error);
+            messageArea.textContent = 'Erro ao carregar eventos.';
+            messageArea.className = 'text-red-600';
+        }
     }
 
-    function saveEventos() {
-        fetch('/api/eventos_selecionados', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(eventos, null, 2)
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log(data.message);
-        })
-        .catch(error => console.error('Erro ao salvar eventos:', error));
-    }
-
-    function filtrarEventos() {
-        messageArea.textContent = 'Filtrando...';
-        messageArea.className = 'text-blue-600';
-
-        fetch('/api/filtrar_eventos', { method: 'POST' })
-            .then(response => response.json())
-            .then(data => {
-                messageArea.textContent = data.message;
-                messageArea.className = 'text-green-600';
-            })
-            .catch(error => {
-                messageArea.textContent = 'Erro ao filtrar eventos.';
-                messageArea.className = 'text-red-600';
-                console.error('Erro ao filtrar eventos:', error)
+    async function saveEvent(eventData) {
+        try {
+            const response = await fetch('/api/eventos_selecionados', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(eventData)
             });
+
+            if (!response.ok) {
+                const error = await response.json();
+                throw new Error(error.message);
+            }
+            await fetchEventos();
+        } catch (error) {
+            console.error('Erro ao salvar evento:', error);
+            messageArea.textContent = `Erro ao salvar evento: ${error.message}`;
+            messageArea.className = 'text-red-600';
+        }
+    }
+
+    async function deleteEvent(valor) {
+        try {
+            const response = await fetch(`/api/eventos_selecionados/${valor}`, {
+                method: 'DELETE'
+            });
+            if (!response.ok) {
+                throw new Error('Erro ao excluir evento.');
+            }
+            await fetchEventos();
+        } catch (error) {
+            console.error('Erro ao excluir evento:', error);
+            messageArea.textContent = 'Erro ao excluir evento.';
+            messageArea.className = 'text-red-600';
+        }
     }
 
     // --- FUNÇÕES DE RENDERIZAÇÃO ---
@@ -73,10 +84,10 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        eventos.forEach((evento, index) => {
+        eventos.forEach((evento) => {
             const eventoCard = document.createElement('div');
             eventoCard.className = 'bg-white shadow-lg rounded-lg p-6 mb-6 transition-all hover:shadow-xl';
-            eventoCard.dataset.index = index;
+            eventoCard.dataset.valor = evento.valor; // Usar 'valor' como identificador único
 
             eventoCard.innerHTML = `
                 <div class="flex justify-between items-start">
@@ -159,16 +170,12 @@ document.addEventListener('DOMContentLoaded', () => {
             
             if (!rotulo || !valor) return;
 
+            const eventData = { rotulo, valor };
             if (isEdit) {
-                const index = eventos.indexOf(evento);
-                if (index > -1) {
-                    eventos[index] = { rotulo, valor };
-                }
-            } else {
-                eventos.push({ rotulo, valor });
+                eventData.valorOriginal = evento.valor;
             }
-            renderEventos();
-            saveEventos();
+            
+            saveEvent(eventData);
         };
 
         openModal(title, fieldsHtml, submitCallback);
@@ -178,12 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const message = `Tem certeza de que deseja excluir o evento "${evento.rotulo}"?`;
         
         const confirmCallback = () => {
-            const index = eventos.indexOf(evento);
-            if (index > -1) {
-                eventos.splice(index, 1);
-                renderEventos();
-                saveEventos();
-            }
+            deleteEvent(evento.valor);
         };
 
         openDeleteModal(message, confirmCallback);
@@ -191,12 +193,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- EVENT LISTENERS GLOBAIS ---
     const filterBtn = document.getElementById('filter-btn');
+    if(filterBtn) {
+        filterBtn.style.display = 'none'; // Esconder o botão de filtro
+    }
 
     addEventBtn.addEventListener('click', () => {
         showEventModal(null);
     });
-
-    filterBtn.addEventListener('click', filtrarEventos);
 
     modalCancelBtn.addEventListener('click', closeModal);
     deleteModalCancelBtn.addEventListener('click', closeDeleteModal);
@@ -210,11 +213,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     eventosList.addEventListener('click', (e) => {
         const target = e.target;
-        const eventCard = target.closest('[data-index]');
+        const eventCard = target.closest('[data-valor]');
         if (!eventCard) return;
         
-        const index = parseInt(eventCard.dataset.index, 10);
-        const evento = eventos[index];
+        const valor = eventCard.dataset.valor;
+        const evento = eventos.find(ev => ev.valor === valor);
+        if (!evento) return;
 
         if (target.closest('.edit-event-btn')) {
             showEventModal(evento);

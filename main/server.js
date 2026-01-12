@@ -6,6 +6,7 @@ function getTableName(context, baseName) {
 }
 
 // Function to determine the correct data path based on context
+require('dotenv').config();
 function getDataPath(context, filename) {
     if (context === 'dupe') {
         return path.join(__dirname, '..', 'dupe_app', filename);

@@ -7,8 +7,124 @@
     <!-- Inclui a biblioteca Chart.js (para gráficos de pizza) -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="style.css">
+    <style>
+        #auth-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .auth-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+        .auth-card img { width: 180px; margin-bottom: 2rem; }
+        .auth-card h2 { color: #003B5C; margin-bottom: 1.5rem; font-size: 1.4rem; font-weight: 600; }
+        .auth-card input {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 1.2rem;
+            border: 2px solid #eee;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+            outline: none;
+        }
+        .auth-card input:focus { border-color: #009CDE; }
+        .auth-card button {
+            width: 100%;
+            padding: 14px;
+            background: #009CDE;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.1s;
+        }
+        .auth-card button:hover { background: #0081b8; }
+        .auth-card button:active { transform: scale(0.98); }
+        #auth-error { color: #e74c3c; font-size: 0.95rem; margin-top: 1rem; display: none; font-weight: 500; }
+        
+        /* Esconde o conteúdo real até autenticar */
+        body:not(.authenticated) > header,
+        body:not(.authenticated) > main {
+            display: none !important;
+        }
+        body.authenticated #auth-overlay {
+            display: none;
+        }
+    </style>
 </head>
 <body>
+    <div id="auth-overlay">
+        <div class="auth-card">
+            <img src="https://www.psafe.com/blog/wp-content/themes/twentyfourteen-psafe/img/psafe_logo_h_blue.svg" alt="Logo PSafe">
+            <h2>Acesso ao Dashboard</h2>
+            <input type="password" id="auth-password" placeholder="Senha de acesso" autofocus>
+            <button id="auth-submit">Entrar</button>
+            <p id="auth-error">Senha incorreta. Tente novamente.</p>
+        </div>
+    </div>
+    <script>
+        (function() {
+            function initAuth() {
+                const passwordInput = document.getElementById('auth-password');
+                const submitButton = document.getElementById('auth-submit');
+                const errorMsg = document.getElementById('auth-error');
+
+                // Verifica se já está autenticado
+                if (sessionStorage.getItem('psafe_auth') === 'true') {
+                    document.body.classList.add('authenticated');
+                    return;
+                }
+
+                if (!passwordInput || !submitButton) return;
+
+                function checkPassword() {
+                    if (passwordInput.value === 'psafe') {
+                        sessionStorage.setItem('psafe_auth', 'true');
+                        document.body.classList.add('authenticated');
+                        // Opcional: focar no seletor de contexto após entrar
+                        const selector = document.getElementById('app-context-selector');
+                        if (selector) selector.focus();
+                    } else {
+                        errorMsg.style.display = 'block';
+                        passwordInput.value = '';
+                        passwordInput.focus();
+                        // Pequena animação de erro
+                        passwordInput.style.borderColor = '#e74c3c';
+                        setTimeout(() => passwordInput.style.borderColor = '#eee', 500);
+                    }
+                }
+
+                submitButton.addEventListener('click', checkPassword);
+                passwordInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') checkPassword();
+                });
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initAuth);
+            } else {
+                initAuth();
+            }
+        })();
+    </script>
 
     <header>
         <img src="https://www.psafe.com/blog/wp-content/themes/twentyfourteen-psafe/img/psafe_logo_h_blue.svg" alt="Logo PSafe" class="logo">

@@ -5,7 +5,7 @@ const { SEU_COOKIE, SEU_TOKEN_XSRF } = require('./config_headers.js');
 // --- Configurações ---
 const DATA_INICIO = process.argv[3] || '2024-10-01';
 const DATA_FIM = '2025-12-21';
-const URL_API = 'https://analytics.google.com/analytics/app/data/v2/venus?reportId=dashboard_card_35q584nmIw&dataset=p151460007&fpn=287695367178&hl=pt_BR&gamonitor=firebase&state=app.reports.reports.dashboard';
+const URL_API = 'https://analytics.google.com/analytics/app/data/v2/venus?accessmode=read&reportId=explorer_card_explorerCard&dataset=p151460007&fpn=287695367178&authuser=3&hl=pt_BR&gamonitor=firebase&state=app.reports.reports.explorer';
 // --------------------
 
 // Pega o nome do evento da linha de comando

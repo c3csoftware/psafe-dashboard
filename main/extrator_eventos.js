@@ -4,9 +4,9 @@ const { SEU_COOKIE, SEU_TOKEN_XSRF } = require('./config_headers.js');
 
 // --- Configurações ---
 const DATA_INICIO = '2024-10-01';
-const DATA_FIM = '2025-12-21';
+const DATA_FIM = '2026-01-13';
 const NOME_ARQUIVO_SAIDA = 'historico_eventos.csv';
-const URL_API = 'https://analytics.google.com/analytics/app/data/v2/venus?reportId=explorer_card_explorerCard&dataset=p151460007&fpn=287695367178&hl=pt_BR&gamonitor=firebase&state=app.reports.reports.explorer';
+const URL_API = 'https://analytics.google.com/analytics/app/data/v2/venus?accessmode=read&reportId=explorer_card_explorerCard&dataset=p151460007&fpn=287695367178&authuser=3&hl=pt_BR&gamonitor=firebase&state=app.reports.reports.explorer';
 const TAMANHO_PAGINA = 250; // O payload que você enviou usa um limite de 250
 // --------------------
 
@@ -59,7 +59,23 @@ function extrairDados(responseData, data) {
 
     linhas.forEach(linha => {
       // [ { "value": "event_17015" } ]
-      const nomeEvento = linha.dimensionCompoundValues[0].value;
+      let nomeEvento = linha.dimensionCompoundValues[0].value;
+
+      switch (nomeEvento) {
+        case 'event_14000':
+          nomeEvento = 'subscription_screen_open';
+          break;
+        case 'event_14001':
+          nomeEvento = 'subscription_subscribe_click';
+          break;
+          case 'event_14002':
+          nomeEvento = 'subscription_cancel_click';
+          break;
+        case 'event_14003':
+          nomeEvento = 'subscription_purchase_complete';
+          break;
+        
+      }
       
       // [ { "value": 10020459 }, { "value": 70088 }, ... ]
       const contagemEventos = linha.metricCompoundValues[0].value;

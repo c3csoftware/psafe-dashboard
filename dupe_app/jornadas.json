@@ -10,6 +10,10 @@
       {
         "nome": "event_14001",
         "rotulo": "Assinatura iniciada"
+      },
+      {
+        "nome": "event_14003",
+        "rotulo": "Assinatura concluída"
       }
     ],
     "showFunil": true,

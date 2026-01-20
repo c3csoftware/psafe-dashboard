@@ -1,11 +1,15 @@
 [
   {
-    "valor": "event_10000",
-    "rotulo": "Flashlight"
+    "valor": "event_9900",
+    "rotulo": "Antiphishing"
   },
   {
-    "valor": "subscription_screen_open",
-    "rotulo": "Assinatura Tela Aberta"
+    "valor": "event_10350",
+    "rotulo": "Anúncio Requisitado"
+  },
+  {
+    "valor": "event_8000",
+    "rotulo": "Aplicativo instalado"
   },
   {
     "valor": "subscription_purchase_complete",
@@ -16,52 +20,20 @@
     "rotulo": "Assinatura Iniciada"
   },
   {
-    "valor": "event_10350",
-    "rotulo": "Anúncio Requisitado"
+    "valor": "subscription_screen_open",
+    "rotulo": "Assinatura Tela Aberta"
   },
   {
-    "valor": "event_8001",
-    "rotulo": "Termos Aceitos"
+    "valor": "event_10800",
+    "rotulo": "Clean Facebook"
   },
   {
-    "valor": "event_6801",
-    "rotulo": "Notificação Clicada"
+    "valor": "event_10208",
+    "rotulo": "Clean Whatsapp Audio"
   },
   {
-    "valor": "event_8000",
-    "rotulo": "Aplicativo instalado"
-  },
-  {
-    "valor": "first_open",
-    "rotulo": "Primeira abertura"
-  },
-  {
-    "valor": "event_10100",
-    "rotulo": "Install Monitor"
-  },
-  {
-    "valor": "event_1600",
-    "rotulo": "Quick Clean Up"
-  },
-  {
-    "valor": "event_9900",
-    "rotulo": "Antiphishing"
-  },
-  {
-    "valor": "event_2100",
-    "rotulo": "Quick Av Scan"
-  },
-  {
-    "valor": "event_2300",
-    "rotulo": "Full Av Scan"
-  },
-  {
-    "valor": "event_1750",
-    "rotulo": "Storege Clean Up"
-  },
-  {
-    "valor": "event_1650",
-    "rotulo": "Duplicate Photos"
+    "valor": "event_10210",
+    "rotulo": "Clean Whatsapp Image"
   },
   {
     "valor": "event_31009",
@@ -72,32 +44,168 @@
     "rotulo": "Download Cleaner"
   },
   {
-    "valor": "event_1700",
-    "rotulo": "Manage Apps"
-  },
-  {
-    "valor": "event_10210",
-    "rotulo": "Clean Whatsapp Image"
+    "valor": "event_1650",
+    "rotulo": "Duplicate Photos"
   },
   {
     "valor": "event_37000",
     "rotulo": "Duplicate Videos"
   },
   {
-    "valor": "event_2600",
-    "rotulo": "Wifi Check"
+    "valor": "event_10100",
+    "rotulo": "event_10100"
   },
   {
-    "valor": "event_26003",
-    "rotulo": "Privicy Protection"
+    "valor": "event_10210",
+    "rotulo": "event_10210"
+  },
+  {
+    "valor": "event_1600",
+    "rotulo": "event_1600"
+  },
+  {
+    "valor": "event_1650",
+    "rotulo": "event_1650"
+  },
+  {
+    "valor": "event_1700",
+    "rotulo": "event_1700"
+  },
+  {
+    "valor": "event_1750",
+    "rotulo": "event_1750"
+  },
+  {
+    "valor": "event_2100",
+    "rotulo": "event_2100"
+  },
+  {
+    "valor": "event_2300",
+    "rotulo": "event_2300"
+  },
+  {
+    "valor": "event_29000",
+    "rotulo": "event_29000"
+  },
+  {
+    "valor": "event_31009",
+    "rotulo": "event_31009"
+  },
+  {
+    "valor": "event_37000",
+    "rotulo": "event_37000"
+  },
+  {
+    "valor": "event_9900",
+    "rotulo": "event_9900"
+  },
+  {
+    "valor": "event_10000",
+    "rotulo": "Flashlight"
+  },
+  {
+    "valor": "event_2300",
+    "rotulo": "Full Av Scan"
   },
   {
     "valor": "event_30000",
     "rotulo": "Gallery Assistant"
   },
   {
+    "valor": "event_10100",
+    "rotulo": "Install Monitor"
+  },
+  {
+    "valor": "event_1700",
+    "rotulo": "Manage Apps"
+  },
+  {
+    "valor": "event_6801",
+    "rotulo": "Notificação Clicada"
+  },
+  {
+    "valor": "open_wifi_alert__click_on_upgrade",
+    "rotulo": "open_wifi_alert__click_on_upgrade"
+  },
+  {
+    "valor": "open_wifi_alert_paywall__click_confirm_upgrade",
+    "rotulo": "open_wifi_alert_paywall__click_confirm_upgrade"
+  },
+  {
+    "valor": "open_wifi_alert_paywall__screen_viewed",
+    "rotulo": "open_wifi_alert_paywall__screen_viewed"
+  },
+  {
+    "valor": "open_wifi_alert_settings__click_grant_permission",
+    "rotulo": "open_wifi_alert_settings__click_grant_permission"
+  },
+  {
+    "valor": "open_wifi_alert_settings__screen_viewed",
+    "rotulo": "open_wifi_alert_settings__screen_viewed"
+  },
+  {
+    "valor": "pix_analyzer_alert_click",
+    "rotulo": "pix_analyzer_alert_click"
+  },
+  {
+    "valor": "pix_analyzer_alert_open",
+    "rotulo": "pix_analyzer_alert_open"
+  },
+  {
+    "valor": "pix_analyzer_onboarding_activate_click",
+    "rotulo": "pix_analyzer_onboarding_activate_click"
+  },
+  {
+    "valor": "pix_analyzer_onboarding_start",
+    "rotulo": "pix_analyzer_onboarding_start"
+  },
+  {
+    "valor": "first_open",
+    "rotulo": "Primeira abertura"
+  },
+  {
+    "valor": "event_26003",
+    "rotulo": "Privicy Protection"
+  },
+  {
+    "valor": "event_2100",
+    "rotulo": "Quick Av Scan"
+  },
+  {
+    "valor": "event_1600",
+    "rotulo": "Quick Clean Up"
+  },
+  {
     "valor": "event_10850",
     "rotulo": "Security Manager"
+  },
+  {
+    "valor": "settings__change_security_alert_in_open_wifi_from_settings",
+    "rotulo": "settings__change_security_alert_in_open_wifi_from_settings"
+  },
+  {
+    "valor": "event_1750",
+    "rotulo": "Storege Clean Up"
+  },
+  {
+    "valor": "subscription_cancel_click",
+    "rotulo": "subscription_cancel_click"
+  },
+  {
+    "valor": "subscription_purchase_abandoned",
+    "rotulo": "subscription_purchase_abandoned"
+  },
+  {
+    "valor": "subscription_screen_open",
+    "rotulo": "subscription_screen_open"
+  },
+  {
+    "valor": "subscription_subscribe_click",
+    "rotulo": "subscription_subscribe_click"
+  },
+  {
+    "valor": "event_8001",
+    "rotulo": "Termos Aceitos"
   },
   {
     "valor": "event_39100",
@@ -108,11 +216,7 @@
     "rotulo": "Whatsapp Cloning"
   },
   {
-    "valor": "event_10800",
-    "rotulo": "Clean Facebook"
-  },
-  {
-    "valor": "event_10208",
-    "rotulo": "Clean Whatsapp Audio"
+    "valor": "event_2600",
+    "rotulo": "Wifi Check"
   }
 ]

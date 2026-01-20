@@ -519,10 +519,8 @@ app.get('/api/top-events', async (req, res) => {
         const { rows: eventosSelecionados } = await db.query(`SELECT valor, rotulo FROM ${eventoTable}`);
         const eventMap = new Map(eventosSelecionados.map(e => [e.valor, e.rotulo]));
 
-        const historicoFiltradoPath = getDataPath(context, 'historico_eventos_filtrado.csv');
-        const historicoPath = fs.existsSync(historicoFiltradoPath) 
-            ? historicoFiltradoPath 
-            : getDataPath(context, 'historico_eventos.csv');
+        // Always use the full history for Top Events to ensure all events are discoverable
+        const historicoPath = getDataPath(context, 'historico_eventos.csv');
 
         const eventosData = readCSV(historicoPath);
         const eventAggregates = {};

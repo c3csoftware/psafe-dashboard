@@ -8,15 +8,19 @@
     "rotulo": "Primeira abertura"
   },
   {
-    "valor": "event_14000",
+    "valor": "subscription_screen_open",
     "rotulo": "Assinatura tela aberta"
   },
   {
-    "valor": "event_14001",
+    "valor": "subscription_subscribe_click",
     "rotulo": "Assinatura iniciada"
   },
   {
-    "valor": "event_14003",
+    "valor": "subscription_cancel_click",
+    "rotulo": "Clicou Botão Cancelar Assinatura"
+  },
+  {
+    "valor": "subscription_purchase_complete",
     "rotulo": "Assinatura concluída"
   },
   {

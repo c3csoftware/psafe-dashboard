@@ -1,27 +1,39 @@
 [
   {
+    "valor": "event_10000",
+    "rotulo": "Flashlight"
+  },
+  {
+    "valor": "subscription_screen_open",
+    "rotulo": "Assinatura Tela Aberta"
+  },
+  {
+    "valor": "subscription_purchase_complete",
+    "rotulo": "Assinatura Concluída"
+  },
+  {
+    "valor": "subscription_subscribe_click",
+    "rotulo": "Assinatura Iniciada"
+  },
+  {
+    "valor": "event_10350",
+    "rotulo": "Anúncio Requisitado"
+  },
+  {
+    "valor": "event_8001",
+    "rotulo": "Termos Aceitos"
+  },
+  {
+    "valor": "event_6801",
+    "rotulo": "Notificação Clicada"
+  },
+  {
     "valor": "event_8000",
     "rotulo": "Aplicativo instalado"
   },
   {
     "valor": "first_open",
     "rotulo": "Primeira abertura"
-  },
-  {
-    "valor": "subscription_screen_open",
-    "rotulo": "Assinatura tela aberta"
-  },
-  {
-    "valor": "subscription_subscribe_click",
-    "rotulo": "Assinatura iniciada"
-  },
-  {
-    "valor": "subscription_cancel_click",
-    "rotulo": "Clicou Botão Cancelar Assinatura"
-  },
-  {
-    "valor": "subscription_purchase_complete",
-    "rotulo": "Assinatura concluída"
   },
   {
     "valor": "event_10100",
@@ -76,10 +88,6 @@
     "rotulo": "Wifi Check"
   },
   {
-    "valor": "event_10000",
-    "rotulo": "Flashlight"
-  },
-  {
     "valor": "event_26003",
     "rotulo": "Privicy Protection"
   },
@@ -106,17 +114,5 @@
   {
     "valor": "event_10208",
     "rotulo": "Clean Whatsapp Audio"
-  },
-  {
-    "valor": "event_4418",
-    "rotulo": "Settings Mendals Screen"
-  },
-  {
-    "valor": "event_10209",
-    "rotulo": "Clean Whatsapp Video"
-  },
-  {
-    "valor": "event_3600",
-    "rotulo": "Hidden Gallery"
   }
 ]

@@ -61,21 +61,21 @@ function extrairDados(responseData, data) {
       // [ { "value": "event_17015" } ]
       let nomeEvento = linha.dimensionCompoundValues[0].value;
 
-      switch (nomeEvento) {
-        case 'event_14000':
-          nomeEvento = 'subscription_screen_open';
-          break;
-        case 'event_14001':
-          nomeEvento = 'subscription_subscribe_click';
-          break;
-          case 'event_14002':
-          nomeEvento = 'subscription_cancel_click';
-          break;
-        case 'event_14003':
-          nomeEvento = 'subscription_purchase_complete';
-          break;
+      // switch (nomeEvento) {
+      //   case 'event_14000':
+      //     nomeEvento = 'subscription_screen_open';
+      //     break;
+      //   case 'event_14001':
+      //     nomeEvento = 'subscription_subscribe_click';
+      //     break;
+      //     case 'event_14002':
+      //     nomeEvento = 'subscription_cancel_click';
+      //     break;
+      //   case 'event_14003':
+      //     nomeEvento = 'subscription_purchase_complete';
+      //     break;
         
-      }
+      // }
       
       // [ { "value": 10020459 }, { "value": 70088 }, ... ]
       const contagemEventos = linha.metricCompoundValues[0].value;

@@ -36,15 +36,15 @@
     "rotulo": "Anúncio Requisitado "
   },
   {
-    "valor": "event_14003",
+    "valor": "subscription_purchase_complete",
     "rotulo": "Assinatura Concluída"
   },
   {
-    "valor": "event_14001",
+    "valor": "subscription_subscribe_click",
     "rotulo": "Assinatura Iniciada"
   },
   {
-    "valor": "event_14000",
+    "valor": "subscription_screen_open",
     "rotulo": "Assinatura Tela Aberta "
   },
   {
@@ -64,7 +64,7 @@
     "rotulo": "Clean Whatsapp Video"
   },
   {
-    "valor": "event_14002",
+    "valor": "subscription_cancel_click",
     "rotulo": "Clicou botão cancelar assinatura (app)"
   },
   {
@@ -206,6 +206,10 @@
   {
     "valor": "subscription_purchase_abandoned",
     "rotulo": "subscription_purchase_abandoned"
+  },
+  {
+    "valor": "subscription_purchase_complete",
+    "rotulo": "subscription_purchase_complete"
   },
   {
     "valor": "subscription_screen_open",

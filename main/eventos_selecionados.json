@@ -4,24 +4,48 @@
     "rotulo": "Antiphishing"
   },
   {
+    "valor": "_REWARDED_VIDEO_WATCHED",
+    "rotulo": "Anúncio assistido completo"
+  },
+  {
+    "valor": "event_10351",
+    "rotulo": "Anúncio Carregado"
+  },
+  {
+    "valor": "event_10354",
+    "rotulo": "Anúncio Clicado "
+  },
+  {
+    "valor": "event_10352",
+    "rotulo": "Anúncio Falha Carregar "
+  },
+  {
+    "valor": "event_10353",
+    "rotulo": "Anúncio Impresso"
+  },
+  {
+    "valor": "event_10364",
+    "rotulo": "Anúncio Inernal Ads Clicado"
+  },
+  {
+    "valor": "event_10363",
+    "rotulo": "Anúncio Internal Ads Impresso"
+  },
+  {
     "valor": "event_10350",
-    "rotulo": "Anúncio Requisitado"
+    "rotulo": "Anúncio Requisitado "
   },
   {
-    "valor": "event_8000",
-    "rotulo": "Aplicativo instalado"
-  },
-  {
-    "valor": "subscription_purchase_complete",
+    "valor": "event_14003",
     "rotulo": "Assinatura Concluída"
   },
   {
-    "valor": "subscription_subscribe_click",
+    "valor": "event_14001",
     "rotulo": "Assinatura Iniciada"
   },
   {
-    "valor": "subscription_screen_open",
-    "rotulo": "Assinatura Tela Aberta"
+    "valor": "event_14000",
+    "rotulo": "Assinatura Tela Aberta "
   },
   {
     "valor": "event_10800",
@@ -36,8 +60,28 @@
     "rotulo": "Clean Whatsapp Image"
   },
   {
+    "valor": "event_10209",
+    "rotulo": "Clean Whatsapp Video"
+  },
+  {
+    "valor": "event_14002",
+    "rotulo": "Clicou botão cancelar assinatura (app)"
+  },
+  {
     "valor": "event_31009",
     "rotulo": "Daily Phone Checkup"
+  },
+  {
+    "valor": "event_10505",
+    "rotulo": "DFNDR Assistant Alert"
+  },
+  {
+    "valor": "event_10511",
+    "rotulo": "DFNDR Assistant Bubble"
+  },
+  {
+    "valor": "event_10512",
+    "rotulo": "DFNDR Assistant Floating "
   },
   {
     "valor": "event_29000",
@@ -52,54 +96,6 @@
     "rotulo": "Duplicate Videos"
   },
   {
-    "valor": "event_10100",
-    "rotulo": "event_10100"
-  },
-  {
-    "valor": "event_10210",
-    "rotulo": "event_10210"
-  },
-  {
-    "valor": "event_1600",
-    "rotulo": "event_1600"
-  },
-  {
-    "valor": "event_1650",
-    "rotulo": "event_1650"
-  },
-  {
-    "valor": "event_1700",
-    "rotulo": "event_1700"
-  },
-  {
-    "valor": "event_1750",
-    "rotulo": "event_1750"
-  },
-  {
-    "valor": "event_2100",
-    "rotulo": "event_2100"
-  },
-  {
-    "valor": "event_2300",
-    "rotulo": "event_2300"
-  },
-  {
-    "valor": "event_29000",
-    "rotulo": "event_29000"
-  },
-  {
-    "valor": "event_31009",
-    "rotulo": "event_31009"
-  },
-  {
-    "valor": "event_37000",
-    "rotulo": "event_37000"
-  },
-  {
-    "valor": "event_9900",
-    "rotulo": "event_9900"
-  },
-  {
     "valor": "event_10000",
     "rotulo": "Flashlight"
   },
@@ -109,7 +105,11 @@
   },
   {
     "valor": "event_30000",
-    "rotulo": "Gallery Assistant"
+    "rotulo": "Gallery Assistant "
+  },
+  {
+    "valor": "event_3600",
+    "rotulo": "Hidden Gallery"
   },
   {
     "valor": "event_10100",
@@ -121,7 +121,11 @@
   },
   {
     "valor": "event_6801",
-    "rotulo": "Notificação Clicada"
+    "rotulo": "Notificação Clicada "
+  },
+  {
+    "valor": "event_6800",
+    "rotulo": "Notificação Impressa"
   },
   {
     "valor": "open_wifi_alert__click_on_upgrade",
@@ -160,12 +164,12 @@
     "rotulo": "pix_analyzer_onboarding_start"
   },
   {
-    "valor": "first_open",
-    "rotulo": "Primeira abertura"
+    "valor": "event_8000",
+    "rotulo": "Primeira Abertura"
   },
   {
     "valor": "event_26003",
-    "rotulo": "Privicy Protection"
+    "rotulo": "Privacy Protection"
   },
   {
     "valor": "event_2100",
@@ -180,8 +184,16 @@
     "rotulo": "Security Manager"
   },
   {
+    "valor": "event_1000",
+    "rotulo": "Sessão Iniciada"
+  },
+  {
     "valor": "settings__change_security_alert_in_open_wifi_from_settings",
     "rotulo": "settings__change_security_alert_in_open_wifi_from_settings"
+  },
+  {
+    "valor": "event_4418",
+    "rotulo": "Settings Mendals Screen"
   },
   {
     "valor": "event_1750",
@@ -209,11 +221,11 @@
   },
   {
     "valor": "event_39100",
-    "rotulo": "URL Checker"
+    "rotulo": "URL Checker "
   },
   {
     "valor": "event_39000",
-    "rotulo": "Whatsapp Cloning"
+    "rotulo": "Whatsapp Cloning "
   },
   {
     "valor": "event_2600",

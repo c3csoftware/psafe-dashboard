@@ -2,6 +2,17 @@
 let chartInstances = {};
 let currentContext = localStorage.getItem('appContext') || 'main'; // 'main' or 'dupe'
 
+// LISTA DE EVENTOS HARDCODED - Edite aqui para adicionar ou remover eventos da tabela "Eventos Selecionados"
+const HARDCODED_EVENT_LIST = [
+    'event_10350', 
+    'event_10351', 
+    'event_10352', 
+    'event_10353', 
+    'event_10363', 
+    'event_10354', 
+    'event_10364'
+];
+
 document.addEventListener('DOMContentLoaded', () => {
     const endDateInput = document.getElementById('end-date');
     const startDateInput = document.getElementById('start-date');
@@ -84,6 +95,7 @@ async function fetchData() {
         if (!topEventsResponse.ok) throw new Error(`Erro na requisição dos top events: ${topEventsResponse.statusText}`);
         const topEventsData = await topEventsResponse.json();
         renderTopEventsTable(topEventsData);
+        renderSelectedEventsTable(topEventsData);
 
 
     } catch (error) {
@@ -464,4 +476,81 @@ function renderPeriodicFunnelChart(data, canvasId, yAxisTitle) {
             }
         }
     });
+}
+
+function renderSelectedEventsTable(allEvents) {
+    const table = document.getElementById('selected-events-table');
+    if (!table) return;
+    const tableBody = table.querySelector('tbody');
+    if (!tableBody) return;
+
+    // Filter events based on the hardcoded list
+    const selectedEvents = allEvents.filter(event => 
+        HARDCODED_EVENT_LIST.includes(event.nome)
+    );
+
+    let sortState = { key: 'contagem', order: 'desc' };
+
+    function populateTable(sortedEvents) {
+        tableBody.innerHTML = '';
+
+        if (!sortedEvents || sortedEvents.length === 0) {
+            const tr = document.createElement('tr');
+            const td = document.createElement('td');
+            td.colSpan = 4;
+            td.textContent = 'Nenhum evento da lista selecionada foi encontrado para o período.';
+            td.style.textAlign = 'center';
+            tr.appendChild(td);
+            tableBody.appendChild(tr);
+            return;
+        }
+
+        sortedEvents.forEach(event => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td>${event.nome}</td>
+                <td>${event.rotulo}</td>
+                <td>${event.contagem.toLocaleString('pt-BR')}</td>
+                <td>${event.usuarios.toLocaleString('pt-BR')}</td>
+            `;
+            tableBody.appendChild(tr);
+        });
+    }
+
+    function sortData() {
+        const sortedEvents = [...selectedEvents].sort((a, b) => {
+            const valA = a[sortState.key];
+            const valB = b[sortState.key];
+            
+            let comparison = 0;
+            if (typeof valA === 'string') {
+                comparison = valA.localeCompare(valB);
+            } else {
+                if (valA > valB) comparison = 1;
+                else if (valA < valB) comparison = -1;
+            }
+            return sortState.order === 'asc' ? comparison : -comparison;
+        });
+        populateTable(sortedEvents);
+    }
+
+    table.querySelectorAll('thead th').forEach(header => {
+        header.addEventListener('click', () => {
+            const sortKey = header.dataset.sort;
+            if (sortState.key === sortKey) {
+                sortState.order = sortState.order === 'asc' ? 'desc' : 'asc';
+            } else {
+                sortState.key = sortKey;
+                sortState.order = 'desc'; 
+            }
+
+            table.querySelectorAll('thead th').forEach(th => th.classList.remove('sort-asc', 'sort-desc'));
+            header.classList.add(sortState.order === 'asc' ? 'sort-asc' : 'sort-desc');
+
+            sortData();
+        });
+    });
+    
+    sortData();
+    table.querySelector(`thead th[data-sort="${sortState.key}"]`).classList.add(`sort-${sortState.order}`);
 }

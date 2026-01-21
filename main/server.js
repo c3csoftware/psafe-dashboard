@@ -96,21 +96,23 @@ async function processarJornadas(context, startDate, endDate) {
     console.log(`Processing data for context: ${context}`);
     console.log(`Date Range: ${startDate.toISOString()} to ${endDate.toISOString()}`);
     
-    const jornadas = await getJornadasFromDB(context); // Fetch from DB instead of file
+    const jornadas = await getJornadasFromDB(context);
     const eventoTable = getTableName(context, 'evento');
     const { rows: eventosSelecionados } = await db.query(`SELECT valor, rotulo FROM ${eventoTable}`);
     const eventMap = new Map(eventosSelecionados.map(e => [e.valor, e.rotulo]));
+    const eventosPermitidos = new Set(eventosSelecionados.map(e => e.valor));
 
     const historicoFiltradoPath = getDataPath(context, 'historico_eventos_filtrado.csv');
     const historicoPath = fs.existsSync(historicoFiltradoPath) 
         ? historicoFiltradoPath 
         : getDataPath(context, 'historico_eventos.csv');
 
-    const eventosData = readCSV(historicoPath);
+    // Read and immediately filter the CSV data
+    const eventosData = readCSV(historicoPath).filter(linha => linha.length > 1 && eventosPermitidos.has(linha[1]));
 
     if (eventosData.length > 0 && eventosData[0].length > 0) {
         const firstDateInCSV = parseDateAsUTC(eventosData[0][0]);
-        console.log(`First date in CSV: ${firstDateInCSV.toISOString()}`);
+        console.log(`First date in filtered CSV: ${firstDateInCSV.toISOString()}`);
     }
 
     const eventosPorData = {};
@@ -498,6 +500,49 @@ app.delete('/api/eventos_selecionados/:valor', async (req, res) => {
     }
 });
 
+app.post('/api/sync-events', async (req, res) => {
+    const { context } = req.body;
+    const eventoTable = getTableName(context, 'evento');
+    const client = await pool.connect();
+
+    try {
+        // Read unique event names from the CSV
+        const historicoPath = getDataPath(context, 'historico_eventos.csv');
+        const eventosData = readCSV(historicoPath);
+        const uniqueEventos = [...new Set(eventosData.map(line => line[1]).filter(Boolean))];
+
+        await client.query('BEGIN');
+
+        // Create a temporary table to hold the new event values
+        await client.query(`CREATE TEMP TABLE temp_eventos (valor TEXT NOT NULL)`);
+
+        // Insert unique events from CSV into the temporary table
+        for (const evento of uniqueEventos) {
+            await client.query('INSERT INTO temp_eventos (valor) VALUES ($1)', [evento]);
+        }
+
+        // Insert only new events from the temp table into the main event table
+        // We use the `rotulo` as the `valor` for simplicity, as requested
+        await client.query(`
+            INSERT INTO ${eventoTable} (valor, rotulo)
+            SELECT t.valor, t.valor
+            FROM temp_eventos t
+            LEFT JOIN ${eventoTable} e ON t.valor = e.valor
+            WHERE e.valor IS NULL
+        `);
+
+        await client.query('COMMIT');
+        res.json({ message: 'Sincronização de eventos concluída com sucesso!' });
+    } catch (e) {
+        await client.query('ROLLBACK');
+        console.error("Error syncing events:", e);
+        res.status(500).json({ message: e.message });
+    } finally {
+        client.release();
+    }
+});
+
+
 app.get('/api/top-events', async (req, res) => {
     try {
         const startDateStr = req.query.start;
@@ -522,7 +567,7 @@ app.get('/api/top-events', async (req, res) => {
         // Always use the full history for Top Events to ensure all events are discoverable
         const historicoPath = getDataPath(context, 'historico_eventos.csv');
 
-        const eventosData = readCSV(historicoPath);
+        const eventosData = readCSV(historicoPath).filter(linha => linha.length > 1 && eventMap.has(linha[1]));
         const eventAggregates = {};
 
         for (const linha of eventosData) {

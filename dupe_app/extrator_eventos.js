@@ -3,8 +3,8 @@ const fs = require('fs');
 const { SEU_COOKIE, SEU_TOKEN_XSRF } = require('./config_headers.js');
 
 // --- Configurações ---
-const DATA_INICIO = '2025-11-01';
-const DATA_FIM = '2025-12-21';
+const DATA_INICIO = '2026-01-19';
+const DATA_FIM = '2026-01-25';
 const NOME_ARQUIVO_SAIDA = 'historico_eventos.csv';
 const URL_API = 'https://analytics.google.com/analytics/app/data/v2/venus?reportId=explorer_card_explorerCard&dataset=p151460007&fpn=287695367178&hl=pt_BR&gamonitor=firebase&state=app.reports.reports.explorer';
 const TAMANHO_PAGINA = 250; // O payload que você enviou usa um limite de 250

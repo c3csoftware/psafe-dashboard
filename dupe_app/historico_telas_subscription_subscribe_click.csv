@@ -1,8 +1,1536 @@
 Data,Tela,ContagemDeEventos,TotalDeUsuarios
-"2025-12-22","(not set)",3,1
-"2025-12-23","(not set)",8,1
-"2025-12-26","(not set)",13,1
-"2026-01-02","(not set)",6,1
-"2026-01-06","(not set)",24,1
-"2026-01-07","(not set)",6,1
-"2026-01-09","(not set)",4,1
+"2024-10-01","(not set)",2073,1256
+"2024-10-01","trial_white_animation_all_features",14,11
+"2024-10-01","adsfree_toggle_switch",3,3
+"2024-10-01","plans_offer_annual_highlighted",2,2
+"2024-10-01","trial",1,1
+"2024-10-01","trial_churner",1,1
+"2024-10-02","(not set)",2067,1242
+"2024-10-02","trial_white_animation_all_features",14,9
+"2024-10-02","adsfree_toggle_switch",7,6
+"2024-10-02","plans_offer_annual_highlighted",4,1
+"2024-10-02","adsfree",1,1
+"2024-10-02","pro_promotion_urgent",1,1
+"2024-10-03","(not set)",1958,1242
+"2024-10-03","trial_white_animation_all_features",8,7
+"2024-10-03","adsfree_toggle_switch",3,2
+"2024-10-04","(not set)",2007,1271
+"2024-10-04","trial_white_animation_all_features",17,15
+"2024-10-04","adsfree_toggle_switch",13,6
+"2024-10-04","trial",2,2
+"2024-10-04","pro_promotion_urgent",1,1
+"2024-10-05","(not set)",1864,1193
+"2024-10-05","trial_white_animation_all_features",14,11
+"2024-10-05","adsfree_toggle_switch",2,2
+"2024-10-05","adsfree",1,1
+"2024-10-06","(not set)",1891,1164
+"2024-10-06","trial_white_animation_all_features",15,11
+"2024-10-06","adsfree_toggle_switch",5,4
+"2024-10-06","adsfree_promotion_lto",1,1
+"2024-10-06","plans_offer_annual_highlighted",1,1
+"2024-10-06","pro_promotion_lto",1,1
+"2024-10-07","(not set)",1890,1188
+"2024-10-07","trial_white_animation_all_features",25,17
+"2024-10-07","adsfree",1,1
+"2024-10-08","(not set)",1959,1237
+"2024-10-08","trial_white_animation_all_features",16,13
+"2024-10-08","adsfree_toggle_switch",1,1
+"2024-10-08","plans_offer_annual_highlighted",1,1
+"2024-10-09","(not set)",2087,1246
+"2024-10-09","trial_white_animation_all_features",7,6
+"2024-10-09","adsfree_toggle_switch",5,5
+"2024-10-09","adsfree_promotion_lto",1,1
+"2024-10-09","pro_promotion_urgent",1,1
+"2024-10-10","(not set)",1950,1212
+"2024-10-10","trial_white_animation_all_features",20,11
+"2024-10-10","adsfree_toggle_switch",3,3
+"2024-10-10","plans_offer_annual_highlighted",2,1
+"2024-10-10","trial",1,1
+"2024-10-11","(not set)",1980,1192
+"2024-10-11","trial_white_animation_all_features",13,9
+"2024-10-12","(not set)",1863,1186
+"2024-10-12","trial_white_animation_all_features",17,15
+"2024-10-12","adsfree_toggle_switch",2,2
+"2024-10-12","subscription_churn_alert",1,1
+"2024-10-12","trial",1,1
+"2024-10-13","(not set)",1890,1216
+"2024-10-13","trial_white_animation_all_features",10,8
+"2024-10-13","adsfree_toggle_switch",3,2
+"2024-10-13","trial",1,1
+"2024-10-14","(not set)",1984,1199
+"2024-10-14","trial_white_animation_all_features",10,7
+"2024-10-14","adsfree_toggle_switch",1,1
+"2024-10-14","plans_offer_annual_highlighted",1,1
+"2024-10-14","pro_promotion_urgent",1,1
+"2024-10-15","(not set)",2068,1256
+"2024-10-15","trial_white_animation_all_features",14,12
+"2024-10-15","adsfree_toggle_switch",2,1
+"2024-10-16","(not set)",1997,1255
+"2024-10-16","trial_white_animation_all_features",29,18
+"2024-10-16","bottom_timer_red",5,1
+"2024-10-16","adsfree_toggle_switch",2,2
+"2024-10-16","plans_offer_annual_highlighted",2,2
+"2024-10-16","pro_promotion_urgent",1,1
+"2024-10-17","(not set)",1915,1235
+"2024-10-17","trial_white_animation_all_features",27,19
+"2024-10-17","adsfree_toggle_switch",2,2
+"2024-10-17","plans_offer_annual_highlighted",2,2
+"2024-10-18","(not set)",1814,1171
+"2024-10-18","trial_white_animation_all_features",17,13
+"2024-10-18","adsfree_toggle_switch",3,3
+"2024-10-18","plans_offer_annual_highlighted",3,1
+"2024-10-18","trial",1,1
+"2024-10-19","(not set)",2032,1191
+"2024-10-19","trial_white_animation_all_features",7,6
+"2024-10-19","adsfree_toggle_switch",4,2
+"2024-10-19","plans_offer_annual_highlighted",2,2
+"2024-10-20","(not set)",1942,1212
+"2024-10-20","trial_white_animation_all_features",17,17
+"2024-10-20","pro_promotion_urgent",2,2
+"2024-10-20","adsfree_toggle_switch",1,1
+"2024-10-20","plans_offer_annual_highlighted",1,1
+"2024-10-21","(not set)",1939,1221
+"2024-10-21","trial_white_animation_all_features",19,13
+"2024-10-21","plans_offer_annual_highlighted",4,3
+"2024-10-21","adsfree_toggle_switch",3,2
+"2024-10-22","(not set)",1994,1227
+"2024-10-22","trial_white_animation_all_features",10,9
+"2024-10-22","adsfree_toggle_switch",1,1
+"2024-10-23","(not set)",1961,1168
+"2024-10-23","trial_white_animation_all_features",13,11
+"2024-10-23","adsfree_toggle_switch",5,3
+"2024-10-23","plans_offer_annual_highlighted",1,1
+"2024-10-24","(not set)",1960,1234
+"2024-10-24","trial_white_animation_all_features",18,12
+"2024-10-24","plans_offer_annual_highlighted",4,4
+"2024-10-24","trial",2,1
+"2024-10-24","trial_ultra",2,1
+"2024-10-24","adsfree_toggle_switch",1,1
+"2024-10-24","breachreport_monitoring_ultra",1,1
+"2024-10-24","pro_promotion_urgent",1,1
+"2024-10-25","(not set)",1768,1110
+"2024-10-25","trial_white_animation_all_features",18,10
+"2024-10-25","adsfree_toggle_switch",2,2
+"2024-10-25","plans_offer_annual_highlighted",2,2
+"2024-10-25","adsfree_promotion_lto",1,1
+"2024-10-26","(not set)",1768,1114
+"2024-10-26","trial_white_animation_all_features",17,13
+"2024-10-26","adsfree_toggle_switch",1,1
+"2024-10-27","(not set)",1904,1172
+"2024-10-27","trial_white_animation_all_features",21,16
+"2024-10-27","adsfree_toggle_switch",13,6
+"2024-10-27","adsfree",1,1
+"2024-10-27","plans_offer_annual_highlighted",1,1
+"2024-10-28","(not set)",2046,1260
+"2024-10-28","trial_white_animation_all_features",21,18
+"2024-10-28","adsfree_toggle_switch",9,5
+"2024-10-28","trial",2,2
+"2024-10-28","plans_offer_annual_highlighted",1,1
+"2024-10-29","(not set)",1945,1210
+"2024-10-29","trial_white_animation_all_features",18,13
+"2024-10-29","adsfree_toggle_switch",2,2
+"2024-10-29","plans_offer_annual_highlighted",2,1
+"2024-10-30","(not set)",1985,1242
+"2024-10-30","trial_white_animation_all_features",61,43
+"2024-10-30","adsfree_toggle_switch",6,5
+"2024-10-30","trial_churner",1,1
+"2024-10-31","(not set)",2213,1244
+"2024-10-31","trial_white_animation_all_features",8,6
+"2024-10-31","adsfree_toggle_switch",6,5
+"2024-10-31","adsfree",1,1
+"2024-10-31","subscription_churn_alert",1,1
+"2024-11-01","(not set)",2188,1369
+"2024-11-01","trial_white_animation_all_features",15,12
+"2024-11-01","adsfree_toggle_switch",2,2
+"2024-11-01","plans_offer_annual_highlighted",1,1
+"2024-11-01","pro_promotion_urgent",1,1
+"2024-11-02","(not set)",2520,1518
+"2024-11-02","trial_white_animation_all_features",19,16
+"2024-11-02","adsfree_toggle_switch",6,4
+"2024-11-02","plans_offer_annual_highlighted",1,1
+"2024-11-02","trial",1,1
+"2024-11-03","(not set)",2311,1416
+"2024-11-03","trial_white_animation_all_features",22,19
+"2024-11-03","adsfree_toggle_switch",3,2
+"2024-11-03","plans_offer_annual_highlighted",3,2
+"2024-11-03","adsfree_promotion_lto",1,1
+"2024-11-04","(not set)",2260,1369
+"2024-11-04","trial_white_animation_all_features",8,5
+"2024-11-04","adsfree_toggle_switch",2,2
+"2024-11-04","plans_offer_annual_highlighted",1,1
+"2024-11-05","(not set)",2203,1359
+"2024-11-05","trial_white_animation_all_features",23,18
+"2024-11-05","adsfree_toggle_switch",4,3
+"2024-11-05","trial",2,1
+"2024-11-05","plans_manage",1,1
+"2024-11-05","pro_promotion_urgent",1,1
+"2024-11-06","(not set)",2385,1396
+"2024-11-06","trial_white_animation_all_features",18,11
+"2024-11-06","plans_offer_annual_highlighted",3,3
+"2024-11-06","adsfree",1,1
+"2024-11-06","bottom_timer_black_friday",1,1
+"2024-11-06","pro_promotion_urgent",1,1
+"2024-11-07","(not set)",2031,1273
+"2024-11-07","trial_white_animation_all_features",18,16
+"2024-11-07","adsfree_toggle_switch",8,3
+"2024-11-07","bottom_timer_black_friday",1,1
+"2024-11-07","plans_offer_annual_highlighted",1,1
+"2024-11-08","(not set)",2331,1324
+"2024-11-08","trial_white_animation_all_features",20,15
+"2024-11-08","adsfree_toggle_switch",1,1
+"2024-11-08","plans_offer_annual_highlighted",1,1
+"2024-11-08","pro_promotion_urgent",1,1
+"2024-11-09","(not set)",2492,1358
+"2024-11-09","trial_white_animation_all_features",27,19
+"2024-11-09","adsfree_promotion_lto",2,1
+"2024-11-09","plans_offer_annual_highlighted",2,1
+"2024-11-09","pro_promotion_urgent",1,1
+"2024-11-09","trial",1,1
+"2024-11-10","(not set)",2218,1317
+"2024-11-10","trial_white_animation_all_features",20,16
+"2024-11-10","adsfree_toggle_switch",3,3
+"2024-11-10","plans_offer_annual_highlighted",2,2
+"2024-11-10","pro_promotion_urgent",1,1
+"2024-11-10","subscription_churn_alert",1,1
+"2024-11-11","(not set)",2252,1329
+"2024-11-11","trial_white_animation_all_features",14,12
+"2024-11-11","plans_offer_annual_highlighted",4,2
+"2024-11-11","adsfree_toggle_switch",2,2
+"2024-11-12","(not set)",2406,1404
+"2024-11-12","trial_white_animation_all_features",17,12
+"2024-11-12","trial",3,1
+"2024-11-12","breachreport_monitoring_ultra",1,1
+"2024-11-12","plans_offer_annual_highlighted",1,1
+"2024-11-13","(not set)",2435,1504
+"2024-11-13","trial_white_animation_all_features",25,22
+"2024-11-13","adsfree_toggle_switch",10,6
+"2024-11-13","adsfree",1,1
+"2024-11-14","(not set)",2250,1351
+"2024-11-14","trial_white_animation_all_features",24,17
+"2024-11-14","adsfree_toggle_switch",3,2
+"2024-11-14","bottom_timer_black_friday",1,1
+"2024-11-14","breachreport_monitoring_ultra",1,1
+"2024-11-14","plans_offer_annual_highlighted",1,1
+"2024-11-15","(not set)",2359,1434
+"2024-11-15","trial_white_animation_all_features",19,16
+"2024-11-15","adsfree_toggle_switch",1,1
+"2024-11-15","pro_promotion_urgent",1,1
+"2024-11-16","(not set)",2534,1462
+"2024-11-16","trial_white_animation_all_features",23,17
+"2024-11-16","pro_promotion_urgent",3,2
+"2024-11-17","(not set)",2223,1423
+"2024-11-17","trial_white_animation_all_features",23,18
+"2024-11-17","plans_offer_annual_highlighted",1,1
+"2024-11-18","(not set)",2278,1460
+"2024-11-18","trial_white_animation_all_features",24,18
+"2024-11-18","plans_offer_annual_highlighted",2,2
+"2024-11-18","adsfree_promotion_lto",1,1
+"2024-11-18","pro_promotion_urgent",1,1
+"2024-11-19","(not set)",2128,1358
+"2024-11-19","trial_white_animation_all_features",23,14
+"2024-11-19","pro_promotion_urgent",1,1
+"2024-11-19","trial",1,1
+"2024-11-20","(not set)",2494,1579
+"2024-11-20","trial_white_animation_all_features",25,20
+"2024-11-20","adsfree_toggle_switch",1,1
+"2024-11-21","(not set)",2296,1452
+"2024-11-21","trial_white_animation_all_features",19,13
+"2024-11-21","adsfree_toggle_switch",2,1
+"2024-11-21","bottom_timer_black_friday",1,1
+"2024-11-21","plans_offer_annual_highlighted",1,1
+"2024-11-22","(not set)",2328,1451
+"2024-11-22","trial_white_animation_all_features",9,9
+"2024-11-22","adsfree_toggle_switch",2,2
+"2024-11-22","plans_offer_annual_highlighted",1,1
+"2024-11-22","pro_promotion_urgent",1,1
+"2024-11-23","(not set)",2401,1441
+"2024-11-23","trial_white_animation_all_features",16,15
+"2024-11-23","pro_promotion_urgent",1,1
+"2024-11-24","(not set)",2255,1405
+"2024-11-24","trial_white_animation_all_features",18,15
+"2024-11-24","adsfree_toggle_switch",4,3
+"2024-11-24","adsfree",1,1
+"2024-11-24","pro_promotion_urgent",1,1
+"2024-11-25","(not set)",2339,1418
+"2024-11-25","trial_white_animation_all_features",27,22
+"2024-11-25","adsfree_toggle_switch",5,2
+"2024-11-25","trial",2,2
+"2024-11-25","bottom_timer_red",1,1
+"2024-11-26","(not set)",2191,1321
+"2024-11-26","trial_white_animation_all_features",86,55
+"2024-11-26","adsfree_toggle_switch",11,7
+"2024-11-26","plans_manage",1,1
+"2024-11-27","(not set)",2521,1470
+"2024-11-27","trial_white_animation_all_features",24,18
+"2024-11-27","adsfree_toggle_switch",4,2
+"2024-11-27","plans_offer_annual_highlighted",2,2
+"2024-11-27","pro_promotion_urgent",1,1
+"2024-11-28","(not set)",2415,1472
+"2024-11-28","trial_white_animation_all_features",21,15
+"2024-11-28","adsfree_toggle_switch",4,3
+"2024-11-28","plans_offer_annual_highlighted",2,1
+"2024-11-28","adsfree_promotion_lto",1,1
+"2024-11-29","(not set)",2464,1454
+"2024-11-29","trial_white_animation_all_features",17,13
+"2024-11-29","adsfree_toggle_switch",1,1
+"2024-11-30","(not set)",2510,1494
+"2024-11-30","trial_white_animation_all_features",26,20
+"2024-11-30","adsfree_toggle_switch",3,3
+"2024-12-01","(not set)",2524,1516
+"2024-12-01","trial_white_animation_all_features",13,10
+"2024-12-01","plans_manage",3,2
+"2024-12-01","plans_offer_annual_highlighted",3,1
+"2024-12-01","pro_promotion_urgent",1,1
+"2024-12-02","(not set)",2483,1548
+"2024-12-02","trial_white_animation_all_features",19,16
+"2024-12-02","adsfree_toggle_switch",3,3
+"2024-12-02","plans_offer_annual_highlighted",1,1
+"2024-12-03","(not set)",2528,1541
+"2024-12-03","trial_white_animation_all_features",15,12
+"2024-12-03","adsfree_toggle_switch",2,2
+"2024-12-03","plans_offer_annual_highlighted",1,1
+"2024-12-03","pro_promotion_urgent",1,1
+"2024-12-04","(not set)",2655,1613
+"2024-12-04","trial_white_animation_all_features",28,20
+"2024-12-04","adsfree_toggle_switch",3,3
+"2024-12-04","bottom_timer_red",1,1
+"2024-12-04","pro_promotion_urgent",1,1
+"2024-12-05","(not set)",2378,1473
+"2024-12-05","trial_white_animation_all_features",25,19
+"2024-12-05","trial",13,1
+"2024-12-05","plans_offer_annual_highlighted",8,2
+"2024-12-05","adsfree_toggle_switch",2,2
+"2024-12-05","breachreport_monitoring_ultra",2,1
+"2024-12-05","pro_promotion_urgent",1,1
+"2024-12-06","(not set)",2454,1455
+"2024-12-06","trial_white_animation_all_features",19,17
+"2024-12-06","adsfree",1,1
+"2024-12-06","adsfree_toggle_switch",1,1
+"2024-12-06","plans_offer_annual_highlighted",1,1
+"2024-12-06","trial_churner",1,1
+"2024-12-07","(not set)",2549,1546
+"2024-12-07","trial_white_animation_all_features",27,20
+"2024-12-07","plans_offer_annual_highlighted",5,4
+"2024-12-07","adsfree_toggle_switch",3,3
+"2024-12-08","(not set)",2294,1367
+"2024-12-08","trial_white_animation_all_features",28,18
+"2024-12-08","adsfree_toggle_switch",6,4
+"2024-12-09","(not set)",2221,1376
+"2024-12-09","trial_white_animation_all_features",22,15
+"2024-12-09","adsfree_toggle_switch",2,2
+"2024-12-09","pro_promotion_urgent",1,1
+"2024-12-10","(not set)",2257,1384
+"2024-12-10","trial_white_animation_all_features",31,25
+"2024-12-10","plans_offer_annual_highlighted",5,5
+"2024-12-10","adsfree_toggle_switch",1,1
+"2024-12-10","trial",1,1
+"2024-12-11","(not set)",2483,1508
+"2024-12-11","trial_white_animation_all_features",21,21
+"2024-12-11","adsfree_toggle_switch",3,3
+"2024-12-11","adsfree_promotion_lto",1,1
+"2024-12-12","(not set)",2257,1416
+"2024-12-12","trial_white_animation_all_features",18,13
+"2024-12-12","breachreport_monitoring_ultra",1,1
+"2024-12-13","(not set)",2342,1365
+"2024-12-13","trial_white_animation_all_features",17,13
+"2024-12-13","adsfree_toggle_switch",4,3
+"2024-12-13","breachreport_monitoring_ultra",1,1
+"2024-12-13","plans_offer_annual_highlighted",1,1
+"2024-12-14","(not set)",2304,1339
+"2024-12-14","trial_white_animation_all_features",11,10
+"2024-12-14","plans_offer_annual_highlighted",2,2
+"2024-12-14","pro_promotion_urgent",2,2
+"2024-12-14","trial_churner",1,1
+"2024-12-15","(not set)",2241,1402
+"2024-12-15","trial_white_animation_all_features",25,21
+"2024-12-15","adsfree_toggle_switch",5,4
+"2024-12-15","pro_promotion_urgent",1,1
+"2024-12-16","(not set)",2148,1382
+"2024-12-16","trial_white_animation_all_features",23,17
+"2024-12-16","adsfree_toggle_switch",8,3
+"2024-12-16","pro_promotion_urgent",1,1
+"2024-12-17","(not set)",2325,1470
+"2024-12-17","trial_white_animation_all_features",16,12
+"2024-12-17","adsfree_toggle_switch",4,3
+"2024-12-18","(not set)",2531,1493
+"2024-12-18","trial_white_animation_all_features",20,18
+"2024-12-18","adsfree_promotion_lto",1,1
+"2024-12-18","adsfree_toggle_switch",1,1
+"2024-12-18","plans_offer_annual_highlighted",1,1
+"2024-12-19","(not set)",2373,1419
+"2024-12-19","trial_white_animation_all_features",30,16
+"2024-12-19","adsfree_toggle_switch",3,3
+"2024-12-19","plans_offer_annual_highlighted",3,2
+"2024-12-20","(not set)",2230,1358
+"2024-12-20","trial_white_animation_all_features",17,13
+"2024-12-20","plans_offer_annual_highlighted",5,4
+"2024-12-20","adsfree_toggle_switch",3,3
+"2024-12-20","adsfree",1,1
+"2024-12-21","(not set)",2156,1337
+"2024-12-21","trial_white_animation_all_features",14,11
+"2024-12-21","adsfree_toggle_switch",5,3
+"2024-12-21","plans_offer_annual_highlighted",1,1
+"2024-12-21","pro_promotion_urgent",1,1
+"2024-12-22","(not set)",2103,1352
+"2024-12-22","trial_white_animation_all_features",12,10
+"2024-12-22","adsfree_toggle_switch",4,4
+"2024-12-23","(not set)",2366,1359
+"2024-12-23","trial_white_animation_all_features",14,12
+"2024-12-23","adsfree_toggle_switch",2,2
+"2024-12-23","plans_offer_annual_highlighted",1,1
+"2024-12-23","trial",1,1
+"2024-12-24","(not set)",2095,1327
+"2024-12-24","trial_white_animation_all_features",26,23
+"2024-12-24","plans_offer_annual_highlighted",3,3
+"2024-12-24","breachreport_monitoring_ultra",1,1
+"2024-12-24","trial",1,1
+"2024-12-25","(not set)",2102,1338
+"2024-12-25","trial_white_animation_all_features",35,21
+"2024-12-25","adsfree_toggle_switch",7,4
+"2024-12-25","plans_offer_annual_highlighted",2,2
+"2024-12-25","adsfree_promotion_lto",1,1
+"2024-12-25","trial",1,1
+"2024-12-26","(not set)",2556,1590
+"2024-12-26","trial_white_animation_all_features",32,24
+"2024-12-26","adsfree_toggle_switch",5,5
+"2024-12-26","adsfree",1,1
+"2024-12-26","plans_offer_annual_highlighted",1,1
+"2024-12-27","(not set)",2647,1630
+"2024-12-27","trial_white_animation_all_features",30,26
+"2024-12-27","adsfree_toggle_switch",1,1
+"2024-12-27","plans_offer_annual_highlighted",1,1
+"2024-12-28","(not set)",2773,1611
+"2024-12-28","trial_white_animation_all_features",25,16
+"2024-12-28","adsfree_toggle_switch",3,3
+"2024-12-29","(not set)",2531,1584
+"2024-12-29","trial_white_animation_all_features",27,18
+"2024-12-29","adsfree_toggle_switch",2,2
+"2024-12-29","plans_offer_annual_highlighted",1,1
+"2024-12-29","pro_promotion_urgent",1,1
+"2024-12-30","(not set)",2534,1535
+"2024-12-30","trial_white_animation_all_features",20,19
+"2024-12-30","adsfree_toggle_switch",1,1
+"2024-12-30","pro_promotion_lto",1,1
+"2024-12-31","(not set)",2280,1377
+"2024-12-31","trial_white_animation_all_features",17,12
+"2024-12-31","adsfree_toggle_switch",1,1
+"2024-12-31","plans_offer_annual_highlighted",1,1
+"2025-01-01","(not set)",2205,1390
+"2025-01-01","trial_white_animation_all_features",16,13
+"2025-01-01","plans_offer_annual_highlighted",2,1
+"2025-01-01","adsfree_toggle_switch",1,1
+"2025-01-02","(not set)",2693,1696
+"2025-01-02","trial_white_animation_all_features",28,25
+"2025-01-02","plans_offer_annual_highlighted",8,5
+"2025-01-02","adsfree_toggle_switch",6,3
+"2025-01-02","pro_promotion_urgent",2,2
+"2025-01-02","adsfree_promotion_lto",1,1
+"2025-01-02","breachreport_monitoring_ultra",1,1
+"2025-01-03","(not set)",2665,1692
+"2025-01-03","trial_white_animation_all_features",31,22
+"2025-01-03","plans_offer_annual_highlighted",2,2
+"2025-01-03","adsfree",1,1
+"2025-01-03","pro_promotion_urgent",1,1
+"2025-01-04","(not set)",2721,1673
+"2025-01-04","trial_white_animation_all_features",24,19
+"2025-01-04","adsfree",1,1
+"2025-01-04","adsfree_toggle_switch",1,1
+"2025-01-05","(not set)",2974,1698
+"2025-01-05","trial_white_animation_all_features",29,20
+"2025-01-05","adsfree_toggle_switch",3,3
+"2025-01-05","adsfree",1,1
+"2025-01-05","plans_offer_annual_highlighted",1,1
+"2025-01-05","pro_promotion_urgent",1,1
+"2025-01-06","(not set)",2740,1675
+"2025-01-06","trial_white_animation_all_features",16,15
+"2025-01-06","adsfree_toggle_switch",7,5
+"2025-01-06","trial",2,1
+"2025-01-06","plans_offer_annual_highlighted",1,1
+"2025-01-06","pro_promotion_urgent",1,1
+"2025-01-07","(not set)",2810,1616
+"2025-01-07","trial_white_animation_all_features",35,21
+"2025-01-07","adsfree_promotion_lto",1,1
+"2025-01-07","adsfree_toggle_switch",1,1
+"2025-01-07","plans_offer_annual_highlighted",1,1
+"2025-01-07","pro_promotion_urgent",1,1
+"2025-01-08","(not set)",2524,1553
+"2025-01-08","trial_white_animation_all_features",18,15
+"2025-01-08","adsfree_toggle_switch",7,6
+"2025-01-08","bottom_timer_red",2,1
+"2025-01-08","plans_offer_annual_highlighted",2,1
+"2025-01-08","pro_promotion_urgent",1,1
+"2025-01-09","(not set)",2459,1492
+"2025-01-09","trial_white_animation_all_features",28,19
+"2025-01-09","adsfree_toggle_switch",2,2
+"2025-01-09","plans_offer_annual_highlighted",1,1
+"2025-01-09","pro_promotion_urgent",1,1
+"2025-01-10","(not set)",2304,1422
+"2025-01-10","trial_white_animation_all_features",20,16
+"2025-01-11","(not set)",2498,1502
+"2025-01-11","trial_white_animation_all_features",19,17
+"2025-01-11","plans_offer_annual_highlighted",1,1
+"2025-01-11","pro_promotion_urgent",1,1
+"2025-01-12","(not set)",2618,1539
+"2025-01-12","trial_white_animation_all_features",34,22
+"2025-01-12","plans_offer_annual_highlighted",4,3
+"2025-01-12","trial",4,1
+"2025-01-12","adsfree_toggle_switch",3,2
+"2025-01-12","pro_promotion_urgent",1,1
+"2025-01-13","(not set)",2436,1532
+"2025-01-13","trial_white_animation_all_features",22,15
+"2025-01-13","adsfree_toggle_switch",9,5
+"2025-01-13","adsfree",2,2
+"2025-01-13","plans_offer_annual_highlighted",1,1
+"2025-01-14","(not set)",2444,1595
+"2025-01-14","trial_white_animation_all_features",24,21
+"2025-01-14","adsfree_toggle_switch",4,4
+"2025-01-14","adsfree",2,2
+"2025-01-14","but_wait",1,1
+"2025-01-14","trial",1,1
+"2025-01-15","(not set)",2420,1452
+"2025-01-15","trial_white_animation_all_features",22,15
+"2025-01-15","pro_promotion_urgent",2,1
+"2025-01-15","adsfree_toggle_switch",1,1
+"2025-01-16","(not set)",2465,1514
+"2025-01-16","trial_white_animation_all_features",18,13
+"2025-01-16","but_wait",5,1
+"2025-01-16","adsfree_toggle_switch",4,2
+"2025-01-17","(not set)",2452,1497
+"2025-01-17","trial_white_animation_all_features",28,22
+"2025-01-17","adsfree_toggle_switch",2,2
+"2025-01-17","trial_churner",1,1
+"2025-01-18","(not set)",2374,1468
+"2025-01-18","trial_white_animation_all_features",20,15
+"2025-01-18","plans_offer_annual_highlighted",1,1
+"2025-01-19","(not set)",2427,1482
+"2025-01-19","trial_white_animation_all_features",18,16
+"2025-01-19","adsfree_toggle_switch",6,5
+"2025-01-19","bottom_timer_red",1,1
+"2025-01-19","pro_promotion_urgent",1,1
+"2025-01-20","(not set)",2542,1557
+"2025-01-20","trial_white_animation_all_features",19,13
+"2025-01-20","adsfree_toggle_switch",7,4
+"2025-01-20","trial_churner",1,1
+"2025-01-21","(not set)",2967,1703
+"2025-01-21","trial_white_animation_all_features",22,19
+"2025-01-21","adsfree_toggle_switch",9,5
+"2025-01-21","plans_offer_annual_highlighted",3,3
+"2025-01-21","adsfree",1,1
+"2025-01-21","subscription_churn_alert",1,1
+"2025-01-22","(not set)",2703,1598
+"2025-01-22","trial_white_animation_all_features",26,18
+"2025-01-22","adsfree_toggle_switch",2,2
+"2025-01-22","breachreport_monitoring_ultra",1,1
+"2025-01-23","(not set)",2443,1495
+"2025-01-23","trial_white_animation_all_features",26,16
+"2025-01-23","adsfree_toggle_switch",1,1
+"2025-01-23","pro_promotion_urgent",1,1
+"2025-01-23","trial",1,1
+"2025-01-24","(not set)",2575,1532
+"2025-01-24","trial_white_animation_all_features",20,17
+"2025-01-24","adsfree_toggle_switch",3,3
+"2025-01-25","(not set)",2663,1611
+"2025-01-25","trial_white_animation_all_features",16,13
+"2025-01-25","adsfree_toggle_switch",4,3
+"2025-01-25","plans_offer_annual_highlighted",1,1
+"2025-01-25","pro_promotion_urgent",1,1
+"2025-01-26","(not set)",2525,1577
+"2025-01-26","trial_white_animation_all_features",33,25
+"2025-01-26","adsfree_toggle_switch",6,5
+"2025-01-26","breachreport_monitoring_ultra",1,1
+"2025-01-27","(not set)",2791,1688
+"2025-01-27","trial_white_animation_all_features",29,21
+"2025-01-27","adsfree_toggle_switch",7,2
+"2025-01-27","plans_offer_annual_highlighted",2,2
+"2025-01-27","trial_churner",1,1
+"2025-01-28","(not set)",2602,1652
+"2025-01-28","trial_white_animation_all_features",26,18
+"2025-01-28","adsfree_toggle_switch",5,2
+"2025-01-28","plans_offer_annual_highlighted",2,2
+"2025-01-28","adsfree_promotion_lto",1,1
+"2025-01-29","(not set)",2542,1556
+"2025-01-29","trial_white_animation_all_features",30,25
+"2025-01-29","adsfree_toggle_switch",1,1
+"2025-01-30","(not set)",2751,1644
+"2025-01-30","trial_white_animation_all_features",28,24
+"2025-01-30","adsfree_toggle_switch",6,5
+"2025-01-30","plans_offer_annual_highlighted",2,1
+"2025-01-30","pro_promotion_urgent",1,1
+"2025-01-30","trial",1,1
+"2025-01-31","(not set)",2556,1513
+"2025-01-31","trial_white_animation_all_features",14,12
+"2025-01-31","adsfree_toggle_switch",2,2
+"2025-01-31","plans_offer_annual_highlighted",1,1
+"2025-02-01","(not set)",2432,1507
+"2025-02-01","trial_white_animation_all_features",21,16
+"2025-02-01","plans_offer_annual_highlighted",4,3
+"2025-02-01","adsfree_toggle_switch",3,2
+"2025-02-02","(not set)",2620,1502
+"2025-02-02","trial_white_animation_all_features",25,20
+"2025-02-02","adsfree_toggle_switch",4,4
+"2025-02-02","plans_offer_annual_highlighted",4,3
+"2025-02-03","(not set)",2386,1468
+"2025-02-03","trial_white_animation_all_features",15,8
+"2025-02-03","adsfree_toggle_switch",2,2
+"2025-02-03","plans_offer_annual_highlighted",2,1
+"2025-02-04","(not set)",2328,1378
+"2025-02-04","trial_white_animation_all_features",28,21
+"2025-02-04","adsfree_toggle_switch",1,1
+"2025-02-04","plans_offer_annual_highlighted",1,1
+"2025-02-04","trial",1,1
+"2025-02-05","(not set)",2017,1276
+"2025-02-05","trial_white_animation_all_features",84,56
+"2025-02-05","plans_offer_annual_highlighted",8,1
+"2025-02-05","adsfree_toggle_switch",7,7
+"2025-02-05","adsfree",1,1
+"2025-02-05","pro_promotion_urgent",1,1
+"2025-02-06","(not set)",2229,1361
+"2025-02-06","trial_white_animation_all_features",21,16
+"2025-02-06","adsfree_toggle_switch",1,1
+"2025-02-06","plans_offer_annual_highlighted",1,1
+"2025-02-07","(not set)",2181,1369
+"2025-02-07","trial_white_animation_all_features",17,15
+"2025-02-07","adsfree_toggle_switch",3,2
+"2025-02-07","plans_offer_annual_highlighted",2,2
+"2025-02-07","adsfree_promotion_lto",1,1
+"2025-02-07","trial",1,1
+"2025-02-08","(not set)",2243,1360
+"2025-02-08","trial_white_animation_all_features",17,16
+"2025-02-08","adsfree_toggle_switch",3,3
+"2025-02-08","adsfree",1,1
+"2025-02-09","(not set)",2289,1441
+"2025-02-09","trial_white_animation_all_features",16,14
+"2025-02-09","adsfree_toggle_switch",3,2
+"2025-02-09","plans_offer_annual_highlighted",1,1
+"2025-02-09","trial_churner",1,1
+"2025-02-10","(not set)",2226,1316
+"2025-02-10","trial_white_animation_all_features",21,18
+"2025-02-10","plans_offer_annual_highlighted",9,4
+"2025-02-10","adsfree_toggle_switch",6,5
+"2025-02-10","adsfree",1,1
+"2025-02-11","(not set)",2038,1309
+"2025-02-11","trial_white_animation_all_features",18,16
+"2025-02-11","adsfree_toggle_switch",4,3
+"2025-02-11","plans_offer_annual_highlighted",4,2
+"2025-02-11","adsfree",1,1
+"2025-02-12","(not set)",2102,1233
+"2025-02-12","trial_white_animation_all_features",17,14
+"2025-02-12","adsfree_toggle_switch",1,1
+"2025-02-13","(not set)",1985,1181
+"2025-02-13","trial_white_animation_all_features",13,10
+"2025-02-13","trial_churner",7,1
+"2025-02-13","plans_offer_annual_highlighted",2,2
+"2025-02-13","adsfree",1,1
+"2025-02-14","(not set)",1887,1114
+"2025-02-14","trial_white_animation_all_features",14,9
+"2025-02-14","adsfree_toggle_switch",1,1
+"2025-02-15","(not set)",1925,1165
+"2025-02-15","trial_white_animation_all_features",33,29
+"2025-02-15","adsfree_toggle_switch",4,3
+"2025-02-15","plans_offer_annual_highlighted",1,1
+"2025-02-16","(not set)",1968,1246
+"2025-02-16","trial_white_animation_all_features",25,22
+"2025-02-16","adsfree_toggle_switch",3,2
+"2025-02-16","plans_offer_annual_highlighted",1,1
+"2025-02-17","(not set)",1821,1112
+"2025-02-17","trial_white_animation_all_features",20,17
+"2025-02-17","adsfree_toggle_switch",11,7
+"2025-02-18","(not set)",1803,1131
+"2025-02-18","trial_white_animation_all_features",9,6
+"2025-02-18","adsfree_toggle_switch",3,1
+"2025-02-18","plans_offer_annual_highlighted",1,1
+"2025-02-19","(not set)",1828,1156
+"2025-02-19","trial_white_animation_all_features",17,15
+"2025-02-19","adsfree_toggle_switch",2,2
+"2025-02-19","plans_offer_annual_highlighted",1,1
+"2025-02-20","(not set)",1827,1154
+"2025-02-20","trial_white_animation_all_features",14,11
+"2025-02-20","adsfree_toggle_switch",2,2
+"2025-02-20","pro_promotion_urgent",1,1
+"2025-02-21","(not set)",1774,1103
+"2025-02-21","trial_white_animation_all_features",17,15
+"2025-02-21","adsfree_toggle_switch",1,1
+"2025-02-21","plans_offer_annual_highlighted",1,1
+"2025-02-22","(not set)",1646,1059
+"2025-02-22","trial_white_animation_all_features",15,12
+"2025-02-22","adsfree_toggle_switch",4,2
+"2025-02-23","(not set)",1805,1145
+"2025-02-23","trial_white_animation_all_features",18,11
+"2025-02-23","adsfree_toggle_switch",3,1
+"2025-02-23","breachreport_monitoring_ultra",2,1
+"2025-02-24","(not set)",1835,1084
+"2025-02-24","trial_white_animation_all_features",36,25
+"2025-02-24","plans_offer_annual_highlighted",2,2
+"2025-02-24","adsfree_toggle_switch",1,1
+"2025-02-25","(not set)",1894,1181
+"2025-02-25","trial_white_animation_all_features",16,13
+"2025-02-25","adsfree_toggle_switch",2,2
+"2025-02-26","(not set)",2057,1246
+"2025-02-26","trial_white_animation_all_features",18,13
+"2025-02-26","trial",1,1
+"2025-02-27","(not set)",1971,1208
+"2025-02-27","trial_white_animation_all_features",24,17
+"2025-02-27","adsfree_toggle_switch",8,4
+"2025-02-27","adsfree",1,1
+"2025-02-28","(not set)",1907,1173
+"2025-02-28","trial_white_animation_all_features",25,21
+"2025-02-28","adsfree_toggle_switch",1,1
+"2025-02-28","plans_offer_annual_highlighted",1,1
+"2025-03-01","(not set)",1971,1218
+"2025-03-01","trial_white_animation_all_features",20,13
+"2025-03-01","adsfree_toggle_switch",4,4
+"2025-03-02","(not set)",1959,1248
+"2025-03-02","trial_white_animation_all_features",10,9
+"2025-03-02","trial_churner",2,2
+"2025-03-02","adsfree_toggle_switch",1,1
+"2025-03-02","trial",1,1
+"2025-03-03","(not set)",2064,1288
+"2025-03-03","trial_white_animation_all_features",22,17
+"2025-03-03","adsfree_toggle_switch",8,3
+"2025-03-03","breachreport_monitoring_ultra",2,2
+"2025-03-03","trial",1,1
+"2025-03-04","(not set)",2240,1360
+"2025-03-04","trial_white_animation_all_features",27,19
+"2025-03-04","adsfree_toggle_switch",10,4
+"2025-03-04","adsfree",1,1
+"2025-03-04","plans_offer_annual_highlighted",1,1
+"2025-03-05","(not set)",2262,1396
+"2025-03-05","trial_white_animation_all_features",24,12
+"2025-03-05","plans_offer_annual_highlighted",6,2
+"2025-03-05","adsfree_toggle_switch",2,2
+"2025-03-05","pro_promotion_urgent",1,1
+"2025-03-06","(not set)",2213,1325
+"2025-03-06","trial_white_animation_all_features",28,22
+"2025-03-06","adsfree_toggle_switch",3,3
+"2025-03-06","pro_promotion_urgent",1,1
+"2025-03-07","(not set)",1622,966
+"2025-03-07","trial_white_animation_all_features",10,9
+"2025-03-08","(not set)",900,572
+"2025-03-08","adsfree_toggle_switch",6,5
+"2025-03-08","adsfree",1,1
+"2025-03-08","plans_manage",1,1
+"2025-03-08","pro_promotion_urgent",1,1
+"2025-03-08","trial_white_animation_all_features",1,1
+"2025-03-09","(not set)",1006,624
+"2025-03-09","trial_white_animation_all_features",8,3
+"2025-03-09","adsfree",1,1
+"2025-03-09","plans_offer_annual_highlighted",1,1
+"2025-03-10","(not set)",944,569
+"2025-03-10","plans_offer_annual_highlighted",6,1
+"2025-03-10","adsfree_toggle_switch",2,2
+"2025-03-10","adsfree",1,1
+"2025-03-10","trial_white_animation_all_features",1,1
+"2025-03-11","(not set)",863,525
+"2025-03-11","adsfree_toggle_switch",2,2
+"2025-03-11","plans_offer_annual_highlighted",1,1
+"2025-03-11","trial_churner",1,1
+"2025-03-12","(not set)",850,548
+"2025-03-12","adsfree_toggle_switch",8,4
+"2025-03-12","trial_white_animation_all_features",4,2
+"2025-03-12","adsfree",1,1
+"2025-03-13","(not set)",923,571
+"2025-03-13","adsfree_toggle_switch",1,1
+"2025-03-14","(not set)",791,514
+"2025-03-14","plans_offer_annual_highlighted",2,2
+"2025-03-14","trial_white_animation_all_features",2,2
+"2025-03-15","(not set)",885,548
+"2025-03-15","trial_white_animation_all_features",2,2
+"2025-03-16","(not set)",865,562
+"2025-03-16","adsfree_toggle_switch",3,2
+"2025-03-16","pro_promotion_urgent",2,2
+"2025-03-16","trial_white_animation_all_features",2,2
+"2025-03-17","(not set)",1025,566
+"2025-03-17","adsfree_toggle_switch",4,2
+"2025-03-17","trial_white_animation_all_features",3,2
+"2025-03-17","bottom_timer_red",1,1
+"2025-03-17","breachreport_monitoring_ultra",1,1
+"2025-03-17","trial",1,1
+"2025-03-18","(not set)",1071,655
+"2025-03-18","plans_offer_annual_highlighted",3,2
+"2025-03-18","pro_promotion_urgent",2,2
+"2025-03-18","adsfree_toggle_switch",1,1
+"2025-03-19","(not set)",1028,607
+"2025-03-19","adsfree_toggle_switch",3,2
+"2025-03-19","trial_white_animation_all_features",1,1
+"2025-03-20","(not set)",831,537
+"2025-03-20","adsfree_toggle_switch",1,1
+"2025-03-20","trial_white_animation_all_features",1,1
+"2025-03-21","(not set)",818,564
+"2025-03-21","trial_white_animation_all_features",3,2
+"2025-03-21","adsfree_toggle_switch",1,1
+"2025-03-22","(not set)",836,542
+"2025-03-22","plans_offer_annual_highlighted",3,2
+"2025-03-22","trial_white_animation_all_features",2,1
+"2025-03-22","adsfree_toggle_switch",1,1
+"2025-03-23","(not set)",816,552
+"2025-03-23","adsfree_toggle_switch",9,5
+"2025-03-23","adsfree",1,1
+"2025-03-23","trial_churner",1,1
+"2025-03-23","trial_white_animation_all_features",1,1
+"2025-03-24","(not set)",909,542
+"2025-03-24","plans_offer_annual_highlighted",1,1
+"2025-03-24","pro_promotion_lto",1,1
+"2025-03-24","trial_white_animation_all_features",1,1
+"2025-03-25","(not set)",907,555
+"2025-03-26","(not set)",815,514
+"2025-03-26","trial",2,1
+"2025-03-26","plans_offer_annual_highlighted",1,1
+"2025-03-27","(not set)",865,535
+"2025-03-27","adsfree_toggle_switch",1,1
+"2025-03-27","plans_offer_annual_highlighted",1,1
+"2025-03-27","pro_promotion_urgent",1,1
+"2025-03-27","trial_white_animation_all_features",1,1
+"2025-03-28","(not set)",753,525
+"2025-03-28","adsfree",2,2
+"2025-03-28","plans_offer_annual_highlighted",2,2
+"2025-03-28","adsfree_promotion_lto",1,1
+"2025-03-28","trial_white_animation_all_features",1,1
+"2025-03-29","(not set)",881,557
+"2025-03-30","(not set)",731,514
+"2025-03-30","plans_manage",2,1
+"2025-03-30","pro_promotion_urgent",1,1
+"2025-03-30","trial_white_animation_all_features",1,1
+"2025-03-31","(not set)",978,563
+"2025-03-31","adsfree",1,1
+"2025-03-31","adsfree_toggle_switch",1,1
+"2025-03-31","pro_promotion_urgent",1,1
+"2025-04-01","(not set)",798,530
+"2025-04-01","adsfree_toggle_switch",3,2
+"2025-04-01","trial_white_animation_all_features",2,2
+"2025-04-02","(not set)",951,552
+"2025-04-02","adsfree_toggle_switch",2,2
+"2025-04-02","trial_white_animation_all_features",1,1
+"2025-04-03","(not set)",898,525
+"2025-04-03","trial",2,1
+"2025-04-03","adsfree",1,1
+"2025-04-03","adsfree_toggle_switch",1,1
+"2025-04-03","pro_promotion_urgent",1,1
+"2025-04-03","trial_white_animation_all_features",1,1
+"2025-04-04","(not set)",846,530
+"2025-04-04","plans_offer_annual_highlighted",3,1
+"2025-04-04","adsfree",1,1
+"2025-04-04","adsfree_toggle_switch",1,1
+"2025-04-05","(not set)",818,487
+"2025-04-05","adsfree_toggle_switch",1,1
+"2025-04-05","bottom_timer_red",1,1
+"2025-04-05","trial",1,1
+"2025-04-06","(not set)",706,502
+"2025-04-06","adsfree_toggle_switch",3,2
+"2025-04-06","pro_promotion_urgent",1,1
+"2025-04-07","(not set)",802,484
+"2025-04-07","adsfree_toggle_switch",4,3
+"2025-04-07","plans_offer_annual_highlighted",1,1
+"2025-04-07","trial_churner",1,1
+"2025-04-07","trial_white_animation_all_features",1,1
+"2025-04-08","(not set)",833,502
+"2025-04-08","trial_white_animation_all_features",10,1
+"2025-04-08","adsfree_toggle_switch",3,2
+"2025-04-08","plans_offer_annual_highlighted",3,1
+"2025-04-09","(not set)",848,502
+"2025-04-09","adsfree_toggle_switch",2,2
+"2025-04-09","but_wait",1,1
+"2025-04-10","(not set)",800,492
+"2025-04-10","adsfree_toggle_switch",4,2
+"2025-04-10","trial_white_animation_all_features",4,2
+"2025-04-10","trial_churner",3,1
+"2025-04-11","(not set)",896,516
+"2025-04-11","adsfree_toggle_switch",2,2
+"2025-04-11","plans_offer_annual_highlighted",2,2
+"2025-04-12","(not set)",952,617
+"2025-04-12","adsfree_toggle_switch",4,3
+"2025-04-12","trial_white_animation_all_features",3,3
+"2025-04-12","plans_offer_annual_highlighted",1,1
+"2025-04-13","(not set)",1074,645
+"2025-04-13","trial_white_animation_all_features",2,1
+"2025-04-13","plans_offer_annual_highlighted",1,1
+"2025-04-14","(not set)",796,526
+"2025-04-14","bottom_timer_black_friday",1,1
+"2025-04-15","(not set)",864,530
+"2025-04-15","adsfree_toggle_switch",5,3
+"2025-04-15","adsfree",1,1
+"2025-04-15","trial_white_animation_all_features",1,1
+"2025-04-16","(not set)",970,560
+"2025-04-16","trial_white_animation_all_features",7,2
+"2025-04-16","plans_offer_annual_highlighted",6,5
+"2025-04-16","adsfree_toggle_switch",1,1
+"2025-04-17","(not set)",884,559
+"2025-04-17","adsfree_toggle_switch",8,5
+"2025-04-17","plans_offer_annual_highlighted",2,1
+"2025-04-17","adsfree",1,1
+"2025-04-18","(not set)",840,528
+"2025-04-18","bottom_timer_red",2,1
+"2025-04-18","adsfree_toggle_switch",1,1
+"2025-04-18","trial_white_animation_all_features",1,1
+"2025-04-19","(not set)",859,577
+"2025-04-19","adsfree_toggle_switch",1,1
+"2025-04-20","(not set)",745,510
+"2025-04-20","trial_white_animation_all_features",2,1
+"2025-04-21","(not set)",912,590
+"2025-04-21","adsfree_toggle_switch",2,2
+"2025-04-21","plans_offer_annual_highlighted",2,1
+"2025-04-21","adsfree",1,1
+"2025-04-21","pro_promotion_urgent",1,1
+"2025-04-21","trial_white_animation_all_features",1,1
+"2025-04-22","(not set)",820,517
+"2025-04-23","(not set)",742,494
+"2025-04-23","adsfree_toggle_switch",6,3
+"2025-04-23","adsfree",1,1
+"2025-04-23","trial_white_animation_all_features",1,1
+"2025-04-24","(not set)",924,560
+"2025-04-24","adsfree_toggle_switch",4,2
+"2025-04-24","plans_offer_annual_highlighted",3,2
+"2025-04-24","trial_white_animation_all_features",2,2
+"2025-04-24","adsfree",1,1
+"2025-04-25","(not set)",870,514
+"2025-04-25","trial",1,1
+"2025-04-25","trial_white_animation_all_features",1,1
+"2025-04-26","(not set)",848,526
+"2025-04-26","adsfree_toggle_switch",2,1
+"2025-04-27","(not set)",890,526
+"2025-04-27","adsfree_toggle_switch",3,3
+"2025-04-27","subscription_churn_alert",1,1
+"2025-04-27","trial_white_animation_all_features",1,1
+"2025-04-28","(not set)",805,502
+"2025-04-28","plans_offer_annual_highlighted",3,2
+"2025-04-28","adsfree_toggle_switch",2,1
+"2025-04-29","(not set)",847,511
+"2025-04-29","adsfree_toggle_switch",3,2
+"2025-04-29","plans_offer_annual_highlighted",1,1
+"2025-04-30","(not set)",844,503
+"2025-04-30","adsfree_toggle_switch",4,2
+"2025-04-30","adsfree",1,1
+"2025-05-01","(not set)",864,535
+"2025-05-01","plans_offer_annual_highlighted",3,1
+"2025-05-01","adsfree_toggle_switch",2,1
+"2025-05-02","(not set)",778,510
+"2025-05-02","adsfree_toggle_switch",3,2
+"2025-05-02","adsfree",1,1
+"2025-05-02","trial",1,1
+"2025-05-02","trial_white_animation_all_features",1,1
+"2025-05-03","(not set)",985,513
+"2025-05-03","trial_white_animation_all_features",1,1
+"2025-05-04","(not set)",852,520
+"2025-05-04","adsfree",2,2
+"2025-05-04","adsfree_toggle_switch",1,1
+"2025-05-05","(not set)",781,474
+"2025-05-05","adsfree_toggle_switch",3,2
+"2025-05-06","(not set)",870,549
+"2025-05-06","trial_white_animation_all_features",3,3
+"2025-05-06","adsfree_toggle_switch",2,2
+"2025-05-07","(not set)",901,545
+"2025-05-07","trial_white_animation_all_features",1,1
+"2025-05-08","(not set)",741,488
+"2025-05-08","adsfree_toggle_switch",2,1
+"2025-05-09","(not set)",737,519
+"2025-05-09","adsfree_toggle_switch",2,1
+"2025-05-09","plans_offer_annual_highlighted",1,1
+"2025-05-10","(not set)",884,554
+"2025-05-10","trial_white_animation_all_features",4,2
+"2025-05-10","plans_offer_annual_highlighted",1,1
+"2025-05-10","pro_promotion_lto",1,1
+"2025-05-11","(not set)",899,504
+"2025-05-11","plans_offer_annual_highlighted",1,1
+"2025-05-11","trial_white_animation_all_features",1,1
+"2025-05-12","(not set)",815,526
+"2025-05-12","adsfree_toggle_switch",5,2
+"2025-05-12","plans_offer_annual_highlighted",2,2
+"2025-05-13","(not set)",761,511
+"2025-05-13","trial_white_animation_all_features",8,3
+"2025-05-13","adsfree_toggle_switch",7,5
+"2025-05-13","plans_offer_annual_highlighted",7,4
+"2025-05-13","adsfree",1,1
+"2025-05-13","breachreport_monitoring_ultra",1,1
+"2025-05-14","(not set)",815,530
+"2025-05-15","(not set)",873,546
+"2025-05-16","(not set)",809,538
+"2025-05-16","adsfree_toggle_switch",3,2
+"2025-05-16","trial_white_animation_all_features",2,2
+"2025-05-17","(not set)",942,567
+"2025-05-17","trial_white_animation_all_features",3,1
+"2025-05-17","plans_offer_annual_highlighted",1,1
+"2025-05-18","(not set)",1025,596
+"2025-05-18","adsfree_toggle_switch",3,2
+"2025-05-19","(not set)",955,572
+"2025-05-19","trial_white_animation_all_features",3,1
+"2025-05-19","plans_offer_annual_highlighted",2,1
+"2025-05-19","adsfree",1,1
+"2025-05-20","(not set)",958,576
+"2025-05-20","trial_white_animation_all_features",5,2
+"2025-05-20","plans_offer_annual_highlighted",2,1
+"2025-05-20","adsfree",1,1
+"2025-05-20","adsfree_toggle_switch",1,1
+"2025-05-20","breachreport_monitoring_ultra",1,1
+"2025-05-21","(not set)",976,579
+"2025-05-21","plans_offer_annual_highlighted",6,3
+"2025-05-21","adsfree_toggle_switch",5,3
+"2025-05-21","trial_white_animation_all_features",5,4
+"2025-05-21","adsfree",1,1
+"2025-05-22","(not set)",934,587
+"2025-05-22","plans_offer_annual_highlighted",6,2
+"2025-05-22","adsfree_toggle_switch",2,2
+"2025-05-23","(not set)",902,601
+"2025-05-23","adsfree_toggle_switch",2,1
+"2025-05-23","trial_white_animation_all_features",1,1
+"2025-05-24","(not set)",1001,629
+"2025-05-24","adsfree_toggle_switch",1,1
+"2025-05-24","plans_offer_annual_highlighted",1,1
+"2025-05-25","(not set)",1089,608
+"2025-05-25","trial_white_animation_all_features",3,2
+"2025-05-25","adsfree_toggle_switch",1,1
+"2025-05-25","breachreport_monitoring_ultra",1,1
+"2025-05-25","plans_offer_annual_highlighted",1,1
+"2025-05-25","trial_churner",1,1
+"2025-05-26","(not set)",1038,625
+"2025-05-26","plans_offer_annual_highlighted",4,1
+"2025-05-26","adsfree_toggle_switch",3,2
+"2025-05-26","trial_white_animation_all_features",2,1
+"2025-05-26","breachreport_monitoring_ultra",1,1
+"2025-05-26","but_wait",1,1
+"2025-05-27","(not set)",1005,621
+"2025-05-27","adsfree_toggle_switch",5,5
+"2025-05-27","trial_white_animation_all_features",4,3
+"2025-05-27","adsfree",1,1
+"2025-05-27","plans_offer_annual_highlighted",1,1
+"2025-05-28","(not set)",1036,625
+"2025-05-28","trial_white_animation_all_features",10,5
+"2025-05-28","adsfree_toggle_switch",3,2
+"2025-05-29","(not set)",990,605
+"2025-05-29","trial_white_animation_all_features",2,1
+"2025-05-29","adsfree",1,1
+"2025-05-29","plans_offer_annual_highlighted",1,1
+"2025-05-30","(not set)",952,581
+"2025-05-30","trial_white_animation_all_features",7,3
+"2025-05-30","adsfree_toggle_switch",1,1
+"2025-05-31","(not set)",939,597
+"2025-05-31","adsfree",2,1
+"2025-05-31","plans_offer_annual_highlighted",2,1
+"2025-05-31","adsfree_toggle_switch",1,1
+"2025-05-31","trial_white_animation_all_features",1,1
+"2025-06-01","(not set)",873,576
+"2025-06-01","adsfree_toggle_switch",3,2
+"2025-06-01","trial_white_animation_all_features",2,2
+"2025-06-01","plans_offer_annual_highlighted",1,1
+"2025-06-02","(not set)",960,599
+"2025-06-02","adsfree_toggle_switch",1,1
+"2025-06-02","plans_offer_annual_highlighted",1,1
+"2025-06-02","trial_white_animation_all_features",1,1
+"2025-06-03","(not set)",904,535
+"2025-06-03","trial_white_animation_all_features",4,3
+"2025-06-03","adsfree",1,1
+"2025-06-03","adsfree_toggle_switch",1,1
+"2025-06-04","(not set)",859,524
+"2025-06-04","trial_white_animation_all_features",2,2
+"2025-06-04","adsfree_toggle_switch",1,1
+"2025-06-04","plans_offer_annual_highlighted",1,1
+"2025-06-05","(not set)",962,593
+"2025-06-05","adsfree",2,1
+"2025-06-05","adsfree_toggle_switch",2,1
+"2025-06-05","trial_white_animation_all_features",2,2
+"2025-06-05","plans_offer_annual_highlighted",1,1
+"2025-06-06","(not set)",768,486
+"2025-06-06","adsfree_toggle_switch",3,3
+"2025-06-06","bottom_timer_red",2,1
+"2025-06-06","plans_offer_annual_highlighted",1,1
+"2025-06-07","(not set)",837,510
+"2025-06-07","trial_white_animation_all_features",9,2
+"2025-06-07","adsfree_toggle_switch",4,3
+"2025-06-07","plans_offer_annual_highlighted",4,1
+"2025-06-08","(not set)",803,519
+"2025-06-08","adsfree_toggle_switch",4,4
+"2025-06-08","plans_offer_annual_highlighted",1,1
+"2025-06-09","(not set)",765,462
+"2025-06-09","adsfree_toggle_switch",3,3
+"2025-06-09","plans_offer_annual_highlighted",1,1
+"2025-06-09","trial_white_animation_all_features",1,1
+"2025-06-10","(not set)",764,485
+"2025-06-10","adsfree_toggle_switch",2,2
+"2025-06-10","bottom_timer_red",1,1
+"2025-06-10","plans_offer_annual_highlighted",1,1
+"2025-06-11","(not set)",764,471
+"2025-06-11","trial_white_animation_all_features",1,1
+"2025-06-12","(not set)",625,425
+"2025-06-12","plans_offer_annual_highlighted",8,3
+"2025-06-12","trial_white_animation_all_features",1,1
+"2025-06-13","(not set)",693,417
+"2025-06-13","bottom_timer_red",1,1
+"2025-06-13","trial_white_animation_all_features",1,1
+"2025-06-14","(not set)",704,426
+"2025-06-15","(not set)",786,495
+"2025-06-15","adsfree_toggle_switch",4,1
+"2025-06-16","(not set)",721,452
+"2025-06-16","adsfree",1,1
+"2025-06-16","adsfree_toggle_switch",1,1
+"2025-06-17","(not set)",699,472
+"2025-06-17","adsfree_toggle_switch",5,4
+"2025-06-17","trial_white_animation_all_features",2,1
+"2025-06-17","adsfree_promotion_lto",1,1
+"2025-06-18","(not set)",740,475
+"2025-06-18","trial_white_animation_all_features",2,1
+"2025-06-18","adsfree_toggle_switch",1,1
+"2025-06-19","(not set)",792,497
+"2025-06-19","adsfree_toggle_switch",2,2
+"2025-06-19","but_wait",1,1
+"2025-06-19","trial_white_animation_all_features",1,1
+"2025-06-20","(not set)",721,456
+"2025-06-20","adsfree_toggle_switch",2,1
+"2025-06-21","(not set)",740,476
+"2025-06-21","adsfree_toggle_switch",2,1
+"2025-06-22","(not set)",689,429
+"2025-06-22","adsfree_toggle_switch",1,1
+"2025-06-23","(not set)",704,468
+"2025-06-23","adsfree_toggle_switch",7,4
+"2025-06-23","trial_white_animation_all_features",1,1
+"2025-06-24","(not set)",728,462
+"2025-06-24","adsfree_toggle_switch",13,8
+"2025-06-25","(not set)",653,415
+"2025-06-25","adsfree_toggle_switch",6,5
+"2025-06-25","trial_white_animation_all_features",2,1
+"2025-06-25","plans_offer_annual_highlighted",1,1
+"2025-06-25","trial_churner",1,1
+"2025-06-26","(not set)",788,499
+"2025-06-26","trial_white_animation_all_features",1,1
+"2025-06-27","(not set)",704,443
+"2025-06-27","adsfree_toggle_switch",2,2
+"2025-06-27","plans_offer_annual_highlighted",1,1
+"2025-06-28","(not set)",767,504
+"2025-06-28","adsfree",1,1
+"2025-06-28","trial_white_animation_all_features",1,1
+"2025-06-29","(not set)",669,452
+"2025-06-29","trial_white_animation_all_features",3,2
+"2025-06-29","adsfree",1,1
+"2025-06-30","(not set)",714,473
+"2025-06-30","plans_offer_annual_highlighted",4,2
+"2025-06-30","trial_white_animation_all_features",1,1
+"2025-07-01","(not set)",724,479
+"2025-07-01","trial_white_animation_all_features",4,4
+"2025-07-01","adsfree_toggle_switch",1,1
+"2025-07-01","plans_offer_annual_highlighted",1,1
+"2025-07-02","(not set)",630,421
+"2025-07-02","adsfree_toggle_switch",5,3
+"2025-07-02","trial_white_animation_all_features",4,2
+"2025-07-02","plans_offer_annual_highlighted",2,2
+"2025-07-02","adsfree",1,1
+"2025-07-03","(not set)",677,419
+"2025-07-03","adsfree_toggle_switch",3,3
+"2025-07-03","trial_white_animation_all_features",2,2
+"2025-07-03","plans_offer_annual_highlighted",1,1
+"2025-07-04","(not set)",703,425
+"2025-07-04","trial_white_animation_all_features",2,2
+"2025-07-04","adsfree_toggle_switch",1,1
+"2025-07-05","(not set)",654,425
+"2025-07-05","trial_white_animation_all_features",1,1
+"2025-07-06","(not set)",628,389
+"2025-07-06","trial_white_animation_all_features",3,2
+"2025-07-06","adsfree_toggle_switch",2,2
+"2025-07-06","plans_offer_annual_highlighted",1,1
+"2025-07-07","(not set)",621,429
+"2025-07-07","adsfree_toggle_switch",3,1
+"2025-07-07","trial_white_animation_all_features",1,1
+"2025-07-08","(not set)",655,432
+"2025-07-08","trial_white_animation_all_features",1,1
+"2025-07-09","(not set)",720,435
+"2025-07-09","trial_white_animation_all_features",3,3
+"2025-07-09","plans_offer_annual_highlighted",1,1
+"2025-07-10","(not set)",679,401
+"2025-07-10","trial_white_animation_all_features",5,2
+"2025-07-10","adsfree_toggle_switch",1,1
+"2025-07-10","plans_offer_annual_highlighted",1,1
+"2025-07-11","(not set)",639,412
+"2025-07-11","adsfree",2,1
+"2025-07-11","adsfree_toggle_switch",1,1
+"2025-07-11","trial_white_animation_all_features",1,1
+"2025-07-12","(not set)",574,389
+"2025-07-12","adsfree_toggle_switch",1,1
+"2025-07-12","trial_white_animation_all_features",1,1
+"2025-07-13","(not set)",952,398
+"2025-07-13","plans_offer_annual_highlighted",4,1
+"2025-07-13","trial_white_animation_all_features",3,3
+"2025-07-13","adsfree_toggle_switch",1,1
+"2025-07-14","(not set)",698,446
+"2025-07-14","adsfree",1,1
+"2025-07-14","adsfree_toggle_switch",1,1
+"2025-07-14","trial_white_animation_all_features",1,1
+"2025-07-15","(not set)",595,408
+"2025-07-16","(not set)",605,412
+"2025-07-16","adsfree_toggle_switch",1,1
+"2025-07-17","(not set)",715,444
+"2025-07-17","trial",2,1
+"2025-07-17","trial_white_animation_all_features",2,1
+"2025-07-17","adsfree_toggle_switch",1,1
+"2025-07-17","plans_offer_annual_highlighted",1,1
+"2025-07-18","(not set)",643,402
+"2025-07-18","pro_promotion_urgent",5,1
+"2025-07-18","adsfree_toggle_switch",2,2
+"2025-07-18","trial_white_animation_all_features",2,2
+"2025-07-19","(not set)",645,399
+"2025-07-19","adsfree_toggle_switch",5,2
+"2025-07-19","pro_promotion_lto",1,1
+"2025-07-19","trial_white_animation_all_features",1,1
+"2025-07-20","(not set)",680,416
+"2025-07-20","adsfree_toggle_switch",1,1
+"2025-07-21","(not set)",679,425
+"2025-07-21","pro_promotion_urgent",2,1
+"2025-07-21","adsfree_toggle_switch",1,1
+"2025-07-21","plans_offer_annual_highlighted",1,1
+"2025-07-22","(not set)",656,426
+"2025-07-22","trial_white_animation_all_features",3,2
+"2025-07-22","adsfree_toggle_switch",2,2
+"2025-07-22","plans_offer_annual_highlighted",1,1
+"2025-07-23","(not set)",813,427
+"2025-07-23","trial_white_animation_all_features",3,3
+"2025-07-23","adsfree_toggle_switch",1,1
+"2025-07-23","plans_offer_annual_highlighted",1,1
+"2025-07-24","(not set)",638,427
+"2025-07-24","adsfree",2,2
+"2025-07-24","plans_offer_annual_highlighted",2,1
+"2025-07-24","adsfree_toggle_switch",1,1
+"2025-07-24","trial_white_animation_all_features",1,1
+"2025-07-25","(not set)",602,403
+"2025-07-25","adsfree",1,1
+"2025-07-25","adsfree_toggle_switch",1,1
+"2025-07-26","(not set)",581,413
+"2025-07-26","adsfree_toggle_switch",4,2
+"2025-07-27","(not set)",574,391
+"2025-07-27","bottom_timer_red",6,1
+"2025-07-27","adsfree_toggle_switch",1,1
+"2025-07-28","(not set)",721,454
+"2025-07-28","trial_white_animation_all_features",6,3
+"2025-07-28","plans_offer_annual_highlighted",5,1
+"2025-07-28","adsfree_toggle_switch",2,2
+"2025-07-29","(not set)",561,348
+"2025-07-29","adsfree",1,1
+"2025-07-30","(not set)",550,383
+"2025-07-31","(not set)",554,391
+"2025-07-31","adsfree_toggle_switch",9,2
+"2025-07-31","trial_white_animation_all_features",2,2
+"2025-07-31","plans_offer_annual_highlighted",1,1
+"2025-08-01","(not set)",653,416
+"2025-08-01","adsfree_toggle_switch",4,3
+"2025-08-01","plans_offer_annual_highlighted",4,2
+"2025-08-02","(not set)",582,381
+"2025-08-02","adsfree_toggle_switch",4,1
+"2025-08-02","trial_white_animation_all_features",2,2
+"2025-08-03","(not set)",581,394
+"2025-08-03","trial_white_animation_all_features",2,2
+"2025-08-04","(not set)",622,403
+"2025-08-04","adsfree_toggle_switch",3,2
+"2025-08-04","plans_offer_annual_highlighted",1,1
+"2025-08-05","(not set)",514,352
+"2025-08-05","adsfree_toggle_switch",2,1
+"2025-08-06","(not set)",582,362
+"2025-08-06","adsfree_toggle_switch",2,1
+"2025-08-07","(not set)",578,391
+"2025-08-07","adsfree",1,1
+"2025-08-08","(not set)",625,378
+"2025-08-08","trial_white_animation_all_features",1,1
+"2025-08-09","(not set)",537,349
+"2025-08-10","(not set)",475,304
+"2025-08-10","trial",5,1
+"2025-08-10","plans_offer_annual_highlighted",1,1
+"2025-08-10","trial_white_animation_all_features",1,1
+"2025-08-11","(not set)",550,355
+"2025-08-11","adsfree_toggle_switch",2,2
+"2025-08-11","plans_offer_annual_highlighted",1,1
+"2025-08-11","trial_white_animation_all_features",1,1
+"2025-08-12","(not set)",637,396
+"2025-08-13","(not set)",566,390
+"2025-08-13","adsfree_toggle_switch",3,3
+"2025-08-13","trial_white_animation_all_features",2,2
+"2025-08-14","(not set)",540,374
+"2025-08-14","adsfree_toggle_switch",1,1
+"2025-08-15","(not set)",548,366
+"2025-08-15","trial_white_animation_all_features",1,1
+"2025-08-16","(not set)",532,334
+"2025-08-16","adsfree_toggle_switch",2,2
+"2025-08-16","plans_offer_annual_highlighted",2,1
+"2025-08-16","trial_white_animation_all_features",2,2
+"2025-08-17","(not set)",570,380
+"2025-08-18","(not set)",488,319
+"2025-08-18","adsfree_toggle_switch",2,2
+"2025-08-19","(not set)",507,339
+"2025-08-20","(not set)",562,367
+"2025-08-20","trial_white_animation_all_features",3,3
+"2025-08-21","(not set)",487,317
+"2025-08-21","plans_offer_annual_highlighted",2,1
+"2025-08-21","trial_white_animation_all_features",1,1
+"2025-08-22","(not set)",609,376
+"2025-08-22","adsfree_toggle_switch",3,2
+"2025-08-22","trial_white_animation_all_features",1,1
+"2025-08-23","(not set)",682,378
+"2025-08-23","adsfree_toggle_switch",5,2
+"2025-08-23","trial_white_animation_all_features",1,1
+"2025-08-24","(not set)",537,338
+"2025-08-24","subscription_churn_alert",1,1
+"2025-08-25","(not set)",530,319
+"2025-08-25","plans_offer_annual_highlighted",3,1
+"2025-08-25","trial_white_animation_all_features",1,1
+"2025-08-26","(not set)",821,440
+"2025-08-26","plans_offer_annual_highlighted",1,1
+"2025-08-27","(not set)",670,440
+"2025-08-27","trial_white_animation_all_features",1,1
+"2025-08-28","(not set)",1061,661
+"2025-08-28","adsfree_toggle_switch",3,2
+"2025-08-28","adsfree",1,1
+"2025-08-28","plans_offer_annual_highlighted",1,1
+"2025-08-28","trial_white_animation_all_features",1,1
+"2025-08-29","(not set)",754,507
+"2025-08-29","plans_offer_annual_highlighted",4,1
+"2025-08-29","trial_white_animation_all_features",2,2
+"2025-08-29","adsfree_toggle_switch",1,1
+"2025-08-30","(not set)",595,405
+"2025-08-30","adsfree_toggle_switch",36,1
+"2025-08-30","trial_white_animation_all_features",1,1
+"2025-08-31","(not set)",629,406
+"2025-08-31","adsfree_toggle_switch",8,2
+"2025-09-01","(not set)",601,391
+"2025-09-01","adsfree_toggle_switch",1,1
+"2025-09-01","trial_white_animation_all_features",1,1
+"2025-09-02","(not set)",603,422
+"2025-09-02","trial_white_animation_all_features",2,1
+"2025-09-02","adsfree_toggle_switch",1,1
+"2025-09-02","plans_offer_annual_highlighted",1,1
+"2025-09-03","(not set)",642,400
+"2025-09-03","trial_white_animation_all_features",2,2
+"2025-09-03","adsfree_toggle_switch",1,1
+"2025-09-04","(not set)",568,383
+"2025-09-04","adsfree",1,1
+"2025-09-04","trial_white_animation_all_features",1,1
+"2025-09-05","(not set)",615,375
+"2025-09-05","adsfree_toggle_switch",3,3
+"2025-09-06","(not set)",622,415
+"2025-09-07","(not set)",602,375
+"2025-09-07","adsfree_toggle_switch",2,1
+"2025-09-07","adsfree",1,1
+"2025-09-08","(not set)",601,412
+"2025-09-08","trial_white_animation_all_features",2,1
+"2025-09-09","(not set)",565,378
+"2025-09-09","adsfree_toggle_switch",1,1
+"2025-09-10","(not set)",619,377
+"2025-09-10","adsfree_toggle_switch",2,1
+"2025-09-10","trial_white_animation_all_features",1,1
+"2025-09-11","(not set)",555,357
+"2025-09-11","adsfree_toggle_switch",3,2
+"2025-09-12","(not set)",627,373
+"2025-09-13","(not set)",620,399
+"2025-09-13","plans_offer_annual_highlighted",3,1
+"2025-09-13","trial_white_animation_all_features",3,1
+"2025-09-14","(not set)",537,362
+"2025-09-15","(not set)",585,384
+"2025-09-15","pro_promotion_urgent",3,1
+"2025-09-15","trial",1,1
+"2025-09-16","(not set)",638,436
+"2025-09-16","adsfree_toggle_switch",1,1
+"2025-09-17","(not set)",544,359
+"2025-09-17","bottom_timer_red",1,1
+"2025-09-18","(not set)",554,351
+"2025-09-18","adsfree_toggle_switch",3,1
+"2025-09-18","adsfree",1,1
+"2025-09-19","(not set)",660,396
+"2025-09-19","adsfree_toggle_switch",6,3
+"2025-09-20","(not set)",603,376
+"2025-09-20","adsfree_toggle_switch",2,2
+"2025-09-20","trial_white_animation_all_features",1,1
+"2025-09-21","(not set)",621,411
+"2025-09-21","adsfree_toggle_switch",1,1
+"2025-09-22","(not set)",616,394
+"2025-09-22","trial_white_animation_all_features",2,1
+"2025-09-22","adsfree_toggle_switch",1,1
+"2025-09-23","(not set)",584,384
+"2025-09-23","adsfree_toggle_switch",1,1
+"2025-09-23","plans_offer_annual_highlighted",1,1
+"2025-09-23","trial_white_animation_all_features",1,1
+"2025-09-24","(not set)",566,372
+"2025-09-24","trial_white_animation_all_features",4,2
+"2025-09-24","plans_offer_annual_highlighted",1,1
+"2025-09-25","(not set)",627,406
+"2025-09-25","adsfree_toggle_switch",2,2
+"2025-09-26","(not set)",600,371
+"2025-09-27","(not set)",502,323
+"2025-09-27","adsfree",1,1
+"2025-09-27","adsfree_toggle_switch",1,1
+"2025-09-27","plans_offer_annual_highlighted",1,1
+"2025-09-27","trial_white_animation_all_features",1,1
+"2025-09-28","(not set)",524,339
+"2025-09-28","adsfree_toggle_switch",2,2
+"2025-09-28","trial_white_animation_all_features",1,1
+"2025-09-29","(not set)",543,341
+"2025-09-29","plans_offer_annual_highlighted",1,1
+"2025-09-29","trial_white_animation_all_features",1,1
+"2025-09-30","(not set)",568,379
+"2025-09-30","trial_white_animation_all_features",2,2
+"2025-09-30","adsfree",1,1
+"2025-09-30","plans_offer_annual_highlighted",1,1
+"2025-10-01","(not set)",521,336
+"2025-10-01","trial_white_animation_all_features",1,1
+"2025-10-02","(not set)",581,353
+"2025-10-02","plans_offer_annual_highlighted",4,2
+"2025-10-02","adsfree_toggle_switch",2,1
+"2025-10-03","(not set)",662,313
+"2025-10-03","adsfree_toggle_switch",4,2
+"2025-10-03","trial_white_animation_all_features",1,1
+"2025-10-04","(not set)",546,283
+"2025-10-04","adsfree_toggle_switch",1,1
+"2025-10-05","(not set)",440,303
+"2025-10-06","(not set)",444,269
+"2025-10-06","adsfree_toggle_switch",1,1
+"2025-10-06","plans_offer_annual_highlighted",1,1
+"2025-10-07","(not set)",491,301
+"2025-10-07","adsfree_toggle_switch",4,1
+"2025-10-07","plans_offer_annual_highlighted",2,1
+"2025-10-07","trial_white_animation_all_features",2,1
+"2025-10-08","(not set)",527,276
+"2025-10-08","adsfree_toggle_switch",1,1
+"2025-10-09","(not set)",514,256
+"2025-10-09","trial_white_animation_all_features",3,1
+"2025-10-10","(not set)",431,253
+"2025-10-10","adsfree",1,1
+"2025-10-10","trial_white_animation_all_features",1,1
+"2025-10-11","(not set)",474,245
+"2025-10-11","adsfree_toggle_switch",1,1
+"2025-10-11","plans_offer_annual_highlighted",1,1
+"2025-10-12","(not set)",411,250
+"2025-10-12","adsfree_toggle_switch",5,2
+"2025-10-13","(not set)",504,276
+"2025-10-14","(not set)",452,303
+"2025-10-14","adsfree_toggle_switch",2,2
+"2025-10-14","trial_white_animation_all_features",1,1
+"2025-10-15","(not set)",548,330
+"2025-10-16","(not set)",425,281
+"2025-10-17","(not set)",356,234
+"2025-10-17","adsfree_toggle_switch",5,2
+"2025-10-17","plans_offer_annual_highlighted",2,1
+"2025-10-18","(not set)",442,267
+"2025-10-19","(not set)",415,258
+"2025-10-19","adsfree_toggle_switch",2,1
+"2025-10-20","(not set)",472,272
+"2025-10-20","adsfree",1,1
+"2025-10-21","(not set)",556,269
+"2025-10-21","plans_offer_annual_highlighted",2,1
+"2025-10-21","trial_white_animation_all_features",2,2
+"2025-10-22","(not set)",397,247
+"2025-10-22","trial_white_animation_all_features",1,1
+"2025-10-23","(not set)",437,299
+"2025-10-24","(not set)",444,264
+"2025-10-24","adsfree_toggle_switch",4,1
+"2025-10-25","(not set)",408,242
+"2025-10-25","trial_white_animation_all_features",6,2
+"2025-10-25","adsfree_toggle_switch",1,1
+"2025-10-26","(not set)",433,262
+"2025-10-26","trial_white_animation_all_features",1,1
+"2025-10-27","(not set)",506,278
+"2025-10-27","adsfree_toggle_switch",2,1
+"2025-10-28","(not set)",379,261
+"2025-10-28","adsfree_toggle_switch",6,5
+"2025-10-28","plans_offer_annual_highlighted",4,3
+"2025-10-28","adsfree",1,1
+"2025-10-28","breachreport_monitoring_ultra",1,1
+"2025-10-28","trial_white_animation_all_features",1,1
+"2025-10-29","(not set)",405,275
+"2025-10-29","adsfree_toggle_switch",1,1
+"2025-10-29","plans_offer_annual_highlighted",1,1
+"2025-10-30","(not set)",411,276
+"2025-10-30","plans_offer_annual_highlighted",2,1
+"2025-10-31","(not set)",427,253
+"2025-10-31","plans_offer_annual_highlighted",4,2
+"2025-10-31","adsfree_toggle_switch",1,1
+"2025-11-01","(not set)",459,297
+"2025-11-02","(not set)",444,262
+"2025-11-02","trial_white_animation_all_features",5,1
+"2025-11-02","adsfree_toggle_switch",1,1
+"2025-11-03","(not set)",429,300
+"2025-11-03","plans_offer_annual_highlighted",1,1
+"2025-11-04","(not set)",574,329
+"2025-11-05","(not set)",495,297
+"2025-11-05","trial_white_animation_all_features",5,2
+"2025-11-05","plans_offer_annual_highlighted",2,2
+"2025-11-06","(not set)",568,312
+"2025-11-06","trial_white_animation_all_features",1,1
+"2025-11-07","(not set)",476,290
+"2025-11-08","(not set)",551,305
+"2025-11-09","(not set)",409,252
+"2025-11-10","(not set)",465,284
+"2025-11-11","(not set)",511,301
+"2025-11-11","bottom_timer_red",22,1
+"2025-11-12","(not set)",442,292
+"2025-11-13","(not set)",478,303
+"2025-11-13","adsfree_toggle_switch",1,1
+"2025-11-14","(not set)",406,252
+"2025-11-15","(not set)",483,258
+"2025-11-16","(not set)",412,257
+"2025-11-17","(not set)",457,304
+"2025-11-18","(not set)",533,306
+"2025-11-19","(not set)",530,285
+"2025-11-20","(not set)",388,250
+"2025-11-20","subscription_churn_alert",4,1
+"2025-11-20","breachreport_monitoring_ultra",1,1
+"2025-11-21","(not set)",422,276
+"2025-11-22","(not set)",357,242
+"2025-11-23","(not set)",443,284
+"2025-11-24","(not set)",453,259
+"2025-11-25","(not set)",468,290
+"2025-11-26","(not set)",458,255
+"2025-11-26","adsfree_toggle_switch",1,1
+"2025-11-27","(not set)",472,285
+"2025-11-28","(not set)",450,285
+"2025-11-29","(not set)",371,245
+"2025-11-30","(not set)",464,288
+"2025-12-01","(not set)",442,299
+"2025-12-02","(not set)",706,312
+"2025-12-03","(not set)",622,282
+"2025-12-04","(not set)",502,323
+"2025-12-04","adsfree_toggle_switch",1,1
+"2025-12-05","(not set)",554,315
+"2025-12-06","(not set)",525,299
+"2025-12-07","(not set)",402,270
+"2025-12-08","(not set)",414,273
+"2025-12-09","(not set)",429,272
+"2025-12-10","(not set)",557,296
+"2025-12-11","(not set)",430,261
+"2025-12-11","pro_promotion_urgent",1,1
+"2025-12-12","(not set)",434,285
+"2025-12-13","(not set)",418,269
+"2025-12-14","(not set)",403,262
+"2025-12-15","(not set)",2319,266
+"2025-12-15","trial_white_animation_all_features",1,1
+"2025-12-16","(not set)",474,296
+"2025-12-17","(not set)",443,292
+"2025-12-17","adsfree_toggle_switch",2,1
+"2025-12-18","(not set)",550,300
+"2025-12-18","adsfree_toggle_switch",1,1
+"2025-12-19","(not set)",459,303
+"2025-12-20","(not set)",464,288
+"2025-12-21","(not set)",515,307
+"2025-12-22","(not set)",532,300
+"2025-12-23","(not set)",409,266
+"2025-12-24","(not set)",360,248
+"2025-12-25","(not set)",712,300
+"2025-12-26","(not set)",683,394
+"2025-12-27","(not set)",732,415
+"2025-12-27","plans_offer_annual_highlighted",1,1
+"2025-12-28","(not set)",626,358
+"2025-12-29","(not set)",545,367
+"2025-12-30","(not set)",556,364
+"2025-12-31","(not set)",521,327
+"2026-01-01","(not set)",503,307
+"2026-01-01","adsfree_toggle_switch",1,1
+"2026-01-02","(not set)",583,360
+"2026-01-03","(not set)",536,334
+"2026-01-04","(not set)",596,381
+"2026-01-04","trial_white_animation_all_features",3,1
+"2026-01-04","adsfree_toggle_switch",2,1
+"2026-01-05","(not set)",599,372
+"2026-01-06","(not set)",516,327
+"2026-01-07","(not set)",604,356
+"2026-01-08","(not set)",627,377
+"2026-01-09","(not set)",632,392
+"2026-01-10","(not set)",670,423
+"2026-01-11","(not set)",621,387
+"2026-01-12","(not set)",608,374
+"2026-01-13","(not set)",704,446
+"2026-01-14","(not set)",602,405
+"2026-01-15","(not set)",620,404
+"2026-01-16","(not set)",512,324
+"2026-01-16","plans_manage",2,1
+"2026-01-17","(not set)",548,338
+"2026-01-18","(not set)",538,326
+"2026-01-19","(not set)",2,1

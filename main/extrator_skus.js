@@ -3,8 +3,8 @@ const fs = require('fs');
 const { SEU_COOKIE, SEU_TOKEN_XSRF } = require('./config_headers.js');
 
 // --- Configurações ---
-const DATA_INICIO = process.argv[3] || '2024-10-01';
-const DATA_FIM = '2026-01-18';
+const DATA_INICIO = process.argv[3] || '2026-01-19';
+const DATA_FIM = '2026-01-25';
 const URL_API = 'https://analytics.google.com/analytics/app/data/v2/venus?accessmode=read&reportId=dashboard_card_17&dataset=p151460007&fpn=287695367178&authuser=3&hl=pt_BR&gamonitor=firebase&state=app.reports.reports.dashboard';
 // --------------------
 

@@ -6,7 +6,7 @@ const { SEU_COOKIE, SEU_TOKEN_XSRF } = require('./config_headers.js');
 const DATA_INICIO = '2026-01-19';
 const DATA_FIM = '2026-01-25';
 const NOME_ARQUIVO_SAIDA = 'historico_eventos.csv';
-const URL_API = 'https://analytics.google.com/analytics/app/data/v2/venus?accessmode=read&reportId=dashboard_card_17&dataset=p151460007&fpn=287695367178&authuser=2&hl=pt_BR&gamonitor=firebase&state=app.reports.reports.dashboard';
+const URL_API = 'https://analytics.google.com/analytics/app/data/v2/venus?accessmode=read&dataset=p151460007&fpn=287695367178&authuser=5&hl=pt_BR&gamonitor=firebase&state=app.reports.reports.dashboard';
 const TAMANHO_PAGINA = 250; // O payload que você enviou usa um limite de 250
 // --------------------
 
@@ -31,7 +31,7 @@ function criarPayloadEventos(data, offset = 0) {
       // Request 2
       { "dimensions": [{ "name": "nth_day", "isSecondary": false }], "dimensionFilters": [], "metrics": [{ "name": "event_count", "isInvisible": false, "isSecondary": false }], "metricFilters": [], "cardName": "explorer_top-events", "cardId": "explorerCard", "requestGrandTotal": false, "dateRanges": [{ "startDate": data, "endDate": data }], "rowAxis": { "fieldNames": ["nth_day"], "sorts": [{ "fieldName": "nth_day", "sortType": 1, "isDesc": false, "pivotSortInfos": [] }, { "fieldName": "event_count", "sortType": 1, "isDesc": false, "pivotSortInfos": [] }], "limit": 5000, "offset": 0, "metaAggTypes": [] } },
       // Request 3 (A principal que vamos paginar)
-      { "dimensions": [{ "name": "event_name", "isSecondary": false }, { "name": "filter_partition", "isSecondary": true }], "dimensionFilters": [{ "filters": [{ "fieldName": "event_name", "expression": "(not set)|unknown|(other)|", "expressionList": ["(not set)", "unknown", "(other)", ""], "evaluation": 7, "complement": true, "isCaseSensitive": true }] }], "metrics": [{ "name": "event_count", "isInvisible": false, "isSecondary": false }, { "name": "total_users", "isInvisible": false, "isSecondary": false }, { "name": "eventCountPerUser", "isInvisible": false, "isSecondary": false, "expression": "event_count/active_users" }, { "name": "combinedRevenue", "isInvisible": false, "isSecondary": false, "expression": "total_ad_revenue + revenue - refund_value" }], "metricFilters": [], "cardName": "explorer_top-events", "cardId": "explorerCard", "requestGrandTotal": true, "dateRanges": [{ "startDate": data, "endDate": data }], "rowAxis": { "fieldNames": ["event_name"], "sorts": [{ "fieldName": "event_count", "sortType": 3, "isDesc": true, "pivotSortInfos": [{ "dimensionName": "date_range", "dimensionValue": "date_range_0" }] }, { "fieldName": "event_name", "sortType": 1, "isDesc": false, "pivotSortInfos": [] }, { "fieldName": "total_users", "sortType": 1, "isDesc": false, "pivotSortInfos": [] }, { "fieldName": "eventCountPerUser", "sortType": 1, "isDesc": false, "pivotSortInfos": [] }, { "fieldName": "combinedRevenue", "sortType": 1, "isDesc": false, "pivotSortInfos": [] }], 
+      { "dimensions": [{ "name": "event_name", "isSecondary": false }, { "name": "country", "isSecondary": true }, { "name": "filter_partition", "isSecondary": true }], "dimensionFilters": [{ "filters": [{ "fieldName": "event_name", "expression": "(not set)|unknown|(other)|", "expressionList": ["(not set)", "unknown", "(other)", ""], "evaluation": 7, "complement": true, "isCaseSensitive": true }] }], "metrics": [{ "name": "event_count", "isInvisible": false, "isSecondary": false }, { "name": "total_users", "isInvisible": false, "isSecondary": false }, { "name": "eventCountPerUser", "isInvisible": false, "isSecondary": false, "expression": "event_count/active_users" }, { "name": "combinedRevenue", "isInvisible": false, "isSecondary": false, "expression": "total_ad_revenue + revenue - refund_value" }], "metricFilters": [], "cardName": "explorer_top-events", "cardId": "explorerCard", "requestGrandTotal": true, "dateRanges": [{ "startDate": data, "endDate": data }], "rowAxis": { "fieldNames": ["event_name", "country"], "sorts": [{ "fieldName": "event_count", "sortType": 3, "isDesc": true, "pivotSortInfos": [{ "dimensionName": "date_range", "dimensionValue": "date_range_0" }] }, { "fieldName": "event_name", "sortType": 1, "isDesc": false, "pivotSortInfos": [] }, { "fieldName": "total_users", "sortType": 1, "isDesc": false, "pivotSortInfos": [] }, { "fieldName": "eventCountPerUser", "sortType": 1, "isDesc": false, "pivotSortInfos": [] }, { "fieldName": "combinedRevenue", "sortType": 1, "isDesc": false, "pivotSortInfos": [] }], 
         "limit": TAMANHO_PAGINA, // Usamos o tamanho da página aqui
         "offset": offset, // O offset que será incrementado
         "metaAggTypes": [] 
@@ -58,8 +58,12 @@ function extrairDados(responseData, data) {
     const linhas = respostaEventos.responseRows;
 
     linhas.forEach(linha => {
-      // [ { "value": "event_17015" } ]
+      // [ { "value": "event_17015" }, { "value": "Brazil" } ]
       let nomeEvento = linha.dimensionCompoundValues[0].value;
+      let pais = linha.dimensionCompoundValues[1].value;
+      if (pais === "") {
+        pais = "(not set)";
+      }
 
       switch (nomeEvento) {
         case 'event_14000':
@@ -83,7 +87,7 @@ function extrairDados(responseData, data) {
       const eventosPorUsuario = linha.metricCompoundValues[2].value;
       const receitaCombinada = linha.metricCompoundValues[3].value;
 
-      linhasCSV.push(`"${data}","${nomeEvento}",${contagemEventos},${totalUsuarios},${eventosPorUsuario},${receitaCombinada}`);
+      linhasCSV.push(`"${data}","${nomeEvento}","${pais}",${contagemEventos},${totalUsuarios},${eventosPorUsuario},${receitaCombinada}`);
     });
 
     const totalLinhas = respostaEventos.overallRowCount || 0;
@@ -103,7 +107,7 @@ const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 async function buscarHistorico() {
   console.log('Iniciando extração de EVENTOS...');
   const stream = fs.createWriteStream(NOME_ARQUIVO_SAIDA);
-  stream.write("Data,NomeDoEvento,ContagemDeEventos,TotalDeUsuarios,EventosPorUsuario,ReceitaCombinada\n");
+  stream.write("Data,NomeDoEvento,Pais,ContagemDeEventos,TotalDeUsuarios,EventosPorUsuario,ReceitaCombinada\n");
 
   let dataAtual = new Date(DATA_INICIO + 'T12:00:00Z'); // Usar T12:00:00Z para evitar problemas de fuso
   const dataFim = new Date(DATA_FIM + 'T12:00:00Z');

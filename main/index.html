@@ -143,7 +143,7 @@
 
         <!-- Filtros -->
         <section class="card filters-container">
-            <h2 class="section-title">Filtros de Período</h2>
+            <h2 class="section-title">Filtros</h2>
             <div class="filter-controls">
                 <div>
                     <label for="start-date">Data Início:</label>
@@ -152,6 +152,12 @@
                 <div>
                     <label for="end-date">Data Fim:</label>
                     <input type="date" id="end-date" name="end-date">
+                </div>
+                <div>
+                    <label for="country-filter">País:</label>
+                    <select id="country-filter">
+                        <option value="all">Todos os Países</option>
+                    </select>
                 </div>
                 <button id="filter-button" class="cta-button">Filtrar</button>
             </div>

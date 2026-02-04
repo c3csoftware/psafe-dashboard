@@ -1,10 +1,31 @@
-Data,SKU,ContagemDeEventos,TotalDeUsuarios
-"2026-01-19","(not set)",2440,2386
-"2026-01-20","(not set)",2430,2367
-"2026-01-21","(not set)",2502,2434
-"2026-01-22","(not set)",2751,2661
-"2026-01-23","(not set)",2575,2498
-"2026-01-23","(not set)",1,1
-"2026-01-24","(not set)",2580,2519
-"2026-01-25","(not set)",2407,2326
-"2026-01-25","(not set)",9,9
+Data,Pais,SKU,ContagemDeEventos,TotalDeUsuarios
+"2026-01-19","Brazil","(not set)",2339,2297
+"2026-01-19","United States","(not set)",170,170
+"2026-01-19","India","(not set)",43,43
+"2026-01-19","Syria","(not set)",43,43
+"2026-01-20","Brazil","(not set)",2623,2193
+"2026-01-20","United States","(not set)",215,215
+"2026-01-20","Bolivia","(not set)",43,43
+"2026-01-20","Pakistan","(not set)",43,43
+"2026-01-21","Brazil","(not set)",2409,2323
+"2026-01-21","United States","(not set)",258,258
+"2026-01-21","Colombia","(not set)",43,43
+"2026-01-22","Brazil","(not set)",2883,2416
+"2026-01-22","United States","(not set)",212,170
+"2026-01-22","China","(not set)",85,85
+"2026-01-22","(not set)","(not set)",42,42
+"2026-01-22","India","(not set)",42,42
+"2026-01-22","South Africa","(not set)",42,42
+"2026-01-23","Brazil","(not set)",2830,2492
+"2026-01-23","United States","(not set)",84,84
+"2026-01-23","Morocco","(not set)",42,42
+"2026-01-23","Puerto Rico","(not set)",42,42
+"2026-01-23","Togo","(not set)",42,42
+"2026-01-24","Brazil","(not set)",2828,2703
+"2026-01-24","Iran","(not set)",125,83
+"2026-01-24","India","(not set)",42,42
+"2026-01-24","Mexico","(not set)",42,42
+"2026-01-24","United States","(not set)",42,42
+"2026-01-25","Brazil","(not set)",1812,1771
+"2026-01-25","United States","(not set)",165,165
+"2026-01-25","Iran","(not set)",41,41

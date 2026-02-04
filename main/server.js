@@ -35,11 +35,11 @@ function parseDateAsUTC(dateString) {
 // Function to read and parse a CSV file
 function readCSV(filePath) {
     try {
+        if (!fs.existsSync(filePath)) return [];
         const data = fs.readFileSync(filePath, 'utf8');
-        // Match columns also when they are inside quotes
-        return data.split('\n').slice(1).map(line => {
-            const matches = line.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g);
-            return matches ? matches.map(field => field.replace(/"/g, '')) : [];
+        return data.split('\n').filter(line => line.trim() !== '').map(line => {
+            const matches = line.match(/(".*?"|[^",]+|(?<=,)(?=,)|(?<=,)$|^$)/g);
+            return matches ? matches.map(field => field.replace(/^"|"$/g, '').trim()) : [];
         });
     } catch (e) {
         console.error(`Error reading ${filePath}:`, e.message);
@@ -47,13 +47,7 @@ function readCSV(filePath) {
     }
 }
 
-
-
-
 const ss = require('simple-statistics');
-
-
-
 
 // Helper to get journeys from DB
 async function getJornadasFromDB(context) {
@@ -91,10 +85,14 @@ async function getJornadasFromDB(context) {
     return Array.from(jornadasMap.values());
 }
 
+// Helper to get column index by name
+function getColumnIndex(header, columnName) {
+    return header.findIndex(col => col.toLowerCase() === columnName.toLowerCase());
+}
+
 // Main function to process data for all journeys
-async function processarJornadas(context, startDate, endDate) {
-    console.log(`Processing data for context: ${context}`);
-    console.log(`Date Range: ${startDate.toISOString()} to ${endDate.toISOString()}`);
+async function processarJornadas(context, startDate, endDate, countryFilter = 'all') {
+    console.log(`Processing data for context: ${context}, Country: ${countryFilter}`);
     
     const jornadas = await getJornadasFromDB(context);
     const eventoTable = getTableName(context, 'evento');
@@ -103,42 +101,54 @@ async function processarJornadas(context, startDate, endDate) {
     const eventosPermitidos = new Set(eventosSelecionados.map(e => e.valor));
 
     const historicoFiltradoPath = getDataPath(context, 'historico_eventos_filtrado.csv');
-    const historicoPath = fs.existsSync(historicoFiltradoPath) 
-        ? historicoFiltradoPath 
-        : getDataPath(context, 'historico_eventos.csv');
+    // If we have a country filter, we MUST use the full historico_eventos.csv because the filtered one might not have the Pais column
+    const historicoPath = (countryFilter !== 'all' || !fs.existsSync(historicoFiltradoPath))
+        ? getDataPath(context, 'historico_eventos.csv')
+        : historicoFiltradoPath;
 
-    // Read and immediately filter the CSV data
-    const eventosData = readCSV(historicoPath).filter(linha => linha.length > 1 && eventosPermitidos.has(linha[1]));
+    const csvData = readCSV(historicoPath);
+    if (csvData.length < 1) return { jornadas: [] };
 
-    if (eventosData.length > 0 && eventosData[0].length > 0) {
-        const firstDateInCSV = parseDateAsUTC(eventosData[0][0]);
-        console.log(`First date in filtered CSV: ${firstDateInCSV.toISOString()}`);
-    }
+    const header = csvData[0];
+    const dataIdx = getColumnIndex(header, 'Data');
+    const nomeIdx = getColumnIndex(header, 'NomeDoEvento');
+    const paisIdx = getColumnIndex(header, 'Pais');
+    const contagemIdx = getColumnIndex(header, 'ContagemDeEventos');
+    const usuariosIdx = getColumnIndex(header, 'TotalDeUsuarios');
+
+    // Filter by allowed events and date range first
+    const eventosData = csvData.slice(1).filter(linha => {
+        if (linha.length < 2) return false;
+        if (!eventosPermitidos.has(linha[nomeIdx])) return false;
+        
+        const dataCSV = parseDateAsUTC(linha[dataIdx]);
+        if (dataCSV < startDate || dataCSV > endDate) return false;
+
+        // Country filter
+        if (countryFilter !== 'all' && paisIdx !== -1) {
+            return linha[paisIdx] === countryFilter;
+        }
+        return true;
+    });
 
     const eventosPorData = {};
     const allDates = new Set();
+    
     for (const linha of eventosData) {
-        if (linha.length < 4) continue;
-        const data = linha[0];
-        const nomeEvento = linha[1];
-        const contagem = parseInt(linha[2], 10);
+        const data = linha[dataIdx];
+        const nomeEvento = linha[nomeIdx];
+        const contagem = parseInt(linha[contagemIdx], 10);
 
         if (!data || !nomeEvento || isNaN(contagem)) continue;
 
-        const dataCSV = parseDateAsUTC(data);
-        if (dataCSV >= startDate && dataCSV <= endDate) {
-            if (!eventosPorData[data]) {
-                eventosPorData[data] = {};
-            }
-            if (!eventosPorData[data][nomeEvento]) {
-                eventosPorData[data][nomeEvento] = 0;
-            }
-            eventosPorData[data][nomeEvento] += contagem;
-            allDates.add(data);
-        }
+        if (!eventosPorData[data]) eventosPorData[data] = {};
+        if (!eventosPorData[data][nomeEvento]) eventosPorData[data][nomeEvento] = 0;
+        
+        eventosPorData[data][nomeEvento] += contagem;
+        allDates.add(data);
     }
-    const sortedDates = Array.from(allDates).sort();
     
+    const sortedDates = Array.from(allDates).sort();
     const eventosSelecionadosNomes = eventosSelecionados.map(e => e.valor);
 
     const resultadosJornadas = jornadas.map(jornada => {
@@ -151,72 +161,93 @@ async function processarJornadas(context, startDate, endDate) {
             funil[e.rotulo] = { contagem: 0, usuarios: 0 };
         });
 
-        // Process events
+        // Process funnel data from already filtered eventosData
         for (const linha of eventosData) {
-            if (linha.length < 4) continue;
-            const data = linha[0];
-            const nomeEvento = linha[1];
-            const contagem = parseInt(linha[2], 10);
-            const usuarios = parseInt(linha[3], 10);
-
-            if (!data || !nomeEvento || isNaN(contagem) || isNaN(usuarios)) continue;
-
-            const dataCSV = parseDateAsUTC(data);
-            if (dataCSV >= startDate && dataCSV <= endDate) {
-                if (eventosJornadaNomes.includes(nomeEvento)) {
-                    const rotulo = jornada.eventos.find(e => e.nome === nomeEvento).rotulo;
-                    funil[rotulo].contagem += contagem;
-                    funil[rotulo].usuarios += usuarios;
-                    totalEventos += contagem;
-                }
+            const nomeEvento = linha[nomeIdx];
+            if (eventosJornadaNomes.includes(nomeEvento)) {
+                const contagem = parseInt(linha[contagemIdx], 10);
+                const usuarios = parseInt(linha[usuariosIdx], 10);
+                const rotulo = jornada.eventos.find(e => e.nome === nomeEvento).rotulo;
+                
+                funil[rotulo].contagem += contagem;
+                funil[rotulo].usuarios += usuarios;
+                totalEventos += contagem;
             }
         }
 
+        const firstStepRotulo = jornada.eventos[0].rotulo;
         const bigNumbers = {
             totalEventos: totalEventos,
-            totalUsuarios: funil[jornada.eventos[0].rotulo].usuarios, // Users from the first step
-            eventosPorUsuario: funil[jornada.eventos[0].rotulo].usuarios > 0 ? (totalEventos / funil[jornada.eventos[0].rotulo].usuarios).toFixed(2) : 0
+            totalUsuarios: funil[firstStepRotulo].usuarios,
+            eventosPorUsuario: funil[firstStepRotulo].usuarios > 0 ? (totalEventos / funil[firstStepRotulo].usuarios).toFixed(2) : 0
         };
 
         // Process SKUs for the last event
         let skus = {};
         if (jornada.showSkus) {
             const skusData = readCSV(getDataPath(context, `historico_skus_${ultimoEventoNome}.csv`));
-            for (const linha of skusData) {
-                if (linha.length < 3) continue;
-                const data = linha[0];
-                const sku = linha[1] || '(not set)';
-                const contagem = parseInt(linha[2], 10);
+            if (skusData.length > 0) {
+                const sHeader = skusData[0];
+                const sDataIdx = getColumnIndex(sHeader, 'Data');
+                const sSkuIdx = getColumnIndex(sHeader, 'SKU');
+                const sPaisIdx = getColumnIndex(sHeader, 'Pais'); // Nova coluna
+                const sContagemIdx = getColumnIndex(sHeader, 'ContagemDeEventos');
+                
+                for (const linha of skusData.slice(1)) {
+                    if (linha.length < 3) continue;
+                    
+                    // Filtro de Data
+                    const dataCSV = parseDateAsUTC(linha[sDataIdx]);
+                    if (dataCSV < startDate || dataCSV > endDate) continue;
 
-                if (!data || isNaN(contagem)) continue;
-                const dataCSV = parseDateAsUTC(data);
-                if (dataCSV >= startDate && dataCSV <= endDate) {
-                    skus[sku] = (skus[sku] || 0) + contagem;
+                    // Filtro de País (se a coluna existir no CSV)
+                    if (countryFilter !== 'all' && sPaisIdx !== -1) {
+                        if (linha[sPaisIdx] !== countryFilter) continue;
+                    }
+
+                    const sku = linha[sSkuIdx] || '(not set)';
+                    const contagem = parseInt(linha[sContagemIdx], 10);
+                    if (!isNaN(contagem)) {
+                        skus[sku] = (skus[sku] || 0) + contagem;
+                    }
                 }
             }
         }
 
-        // Process Telas for the last event
         let telas = {};
         if (jornada.showTelas) {
             const telasData = readCSV(getDataPath(context, `historico_telas_${ultimoEventoNome}.csv`));
-            for (const linha of telasData) {
-                if (linha.length < 4) continue;
-                const data = linha[0];
-                const tela = linha[1] || '(not set)';
-                const contagem = parseInt(linha[2], 10);
+            if (telasData.length > 0) {
+                const tHeader = telasData[0];
+                const tDataIdx = getColumnIndex(tHeader, 'Data');
+                const tTelaIdx = getColumnIndex(tHeader, 'Tela');
+                const tPaisIdx = getColumnIndex(tHeader, 'Pais'); // Nova coluna
+                const tContagemIdx = getColumnIndex(tHeader, 'ContagemDeEventos');
 
-                if (!data || isNaN(contagem)) continue;
-                const dataCSV = parseDateAsUTC(data);
-                if (dataCSV >= startDate && dataCSV <= endDate) {
-                    telas[tela] = (telas[tela] || 0) + contagem;
+                for (const linha of telasData.slice(1)) {
+                    if (linha.length < 3) continue;
+                    
+                    // Filtro de Data
+                    const dataCSV = parseDateAsUTC(linha[tDataIdx]);
+                    if (dataCSV < startDate || dataCSV > endDate) continue;
+
+                    // Filtro de País (se a coluna existir no CSV)
+                    if (countryFilter !== 'all' && tPaisIdx !== -1) {
+                        if (linha[tPaisIdx] !== countryFilter) continue;
+                    }
+
+                    const tela = linha[tTelaIdx] || '(not set)';
+                    const contagem = parseInt(linha[tContagemIdx], 10);
+                    if (!isNaN(contagem)) {
+                        telas[tela] = (telas[tela] || 0) + contagem;
+                    }
                 }
             }
         }
         
         const correlacoesTabela = calcularCorrelacoes(eventosJornadaNomes, eventosSelecionadosNomes, eventosPorData, sortedDates, eventMap);
-        const eventFunilPeriodico = calcularFunilPeriodico(jornada.eventos, eventosData, startDate, endDate, 'contagem');
-        const userFunilPeriodico = calcularFunilPeriodico(jornada.eventos, eventosData, startDate, endDate, 'usuarios');
+        const eventFunilPeriodico = calcularFunilPeriodico(jornada.eventos, eventosData, 'contagem', dataIdx, nomeIdx, contagemIdx);
+        const userFunilPeriodico = calcularFunilPeriodico(jornada.eventos, eventosData, 'usuarios', dataIdx, nomeIdx, usuariosIdx);
 
         const result = {
             id: jornada.id,
@@ -227,21 +258,11 @@ async function processarJornadas(context, startDate, endDate) {
             correlacoesTabela: correlacoesTabela
         };
 
-        if (jornada.showFunil) {
-            result.funil = funil;
-        }
-        if (jornada.showSkus) {
-            result.pizzas.skus = getTop5(skus);
-        }
-        if (jornada.showTelas) {
-            result.pizzas.telas = getTop5(telas);
-        }
-        if (jornada.showEventPeriodicFunnel) {
-            result.eventFunilPeriodico = eventFunilPeriodico;
-        }
-        if (jornada.showUserPeriodicFunnel) {
-            result.userFunilPeriodico = userFunilPeriodico;
-        }
+        if (jornada.showFunil) result.funil = funil;
+        if (jornada.showSkus) result.pizzas.skus = getTop5(skus);
+        if (jornada.showTelas) result.pizzas.telas = getTop5(telas);
+        if (jornada.showEventPeriodicFunnel) result.eventFunilPeriodico = eventFunilPeriodico;
+        if (jornada.showUserPeriodicFunnel) result.userFunilPeriodico = userFunilPeriodico;
 
         return result;
     });
@@ -249,34 +270,29 @@ async function processarJornadas(context, startDate, endDate) {
     return { jornadas: resultadosJornadas };
 }
 
-function calcularFunilPeriodico(eventosJornada, eventosData, startDate, endDate, metric) {
+function calcularFunilPeriodico(eventosJornada, eventosData, metric, dataIdx, nomeIdx, valIdx) {
     const funilPeriodico = {};
     const eventosJornadaNomes = new Set(eventosJornada.map(e => e.nome));
     const rotuloPorNome = new Map(eventosJornada.map(e => [e.nome, e.rotulo]));
-    const metricIndex = metric === 'contagem' ? 2 : 3;
 
     for (const linha of eventosData) {
-        if (linha.length < 4) continue;
-        const data = linha[0];
-        const nomeEvento = linha[1];
-        const valor = parseInt(linha[metricIndex], 10);
+        const nomeEvento = linha[nomeIdx];
+        if (!eventosJornadaNomes.has(nomeEvento)) continue;
 
-        if (!data || !nomeEvento || isNaN(valor) || !eventosJornadaNomes.has(nomeEvento)) continue;
+        const data = linha[dataIdx];
+        const valor = parseInt(linha[valIdx], 10);
+        if (!data || isNaN(valor)) continue;
 
-        const dataCSV = parseDateAsUTC(data);
-        if (dataCSV >= startDate && dataCSV <= endDate) {
-            const mesAno = data.substring(0, 7); // "YYYY-MM"
-            const rotulo = rotuloPorNome.get(nomeEvento);
+        const mesAno = data.substring(0, 7); // "YYYY-MM"
+        const rotulo = rotuloPorNome.get(nomeEvento);
 
-            if (!funilPeriodico[mesAno]) {
-                funilPeriodico[mesAno] = {};
-                // Initialize all funnel steps for this month to ensure they exist
-                for (const evento of eventosJornada) {
-                    funilPeriodico[mesAno][evento.rotulo] = 0;
-                }
+        if (!funilPeriodico[mesAno]) {
+            funilPeriodico[mesAno] = {};
+            for (const evento of eventosJornada) {
+                funilPeriodico[mesAno][evento.rotulo] = 0;
             }
-            funilPeriodico[mesAno][rotulo] += valor;
         }
+        funilPeriodico[mesAno][rotulo] += valor;
     }
     return funilPeriodico;
 }
@@ -308,8 +324,7 @@ function calcularCorrelacoes(eventosJornadaNomes, eventosSelecionadosNomes, even
         }
     }
 
-    return correlations
-        .sort((a, b) => b.count - a.count)
+    return correlations.sort((a, b) => b.count - a.count);
 }
 
 function getTop5(data) {
@@ -322,25 +337,44 @@ function getTop5(data) {
 // API endpoint for the frontend
 app.get('/data', async (req, res) => {
     try {
-        const startDateStr = req.query.start;
-        const endDateStr = req.query.end;
-        const context = req.query.context; // Extract context from query parameter
+        const { start, end, context, pais } = req.query;
 
-        if (!startDateStr || !endDateStr) {
+        if (!start || !end) {
             return res.status(400).json({ error: "Please provide start and end dates." });
         }
 
-        const startDate = parseDateAsUTC(startDateStr);
-        const endDate = parseDateAsUTC(endDateStr);
+        const startDate = parseDateAsUTC(start);
+        const endDate = parseDateAsUTC(end);
 
         if (isNaN(startDate.getTime()) || isNaN(endDate.getTime())) {
             return res.status(400).json({ error: "Invalid date format. Use YYYY-MM-DD." });
         }
 
-        const dados = await processarJornadas(context, startDate, endDate);
+        const dados = await processarJornadas(context, startDate, endDate, pais || 'all');
         res.json(dados);
     } catch (e) {
         console.error("Error in /data endpoint:", e.message);
+        res.status(500).json({ error: e.message });
+    }
+});
+
+app.get('/api/paises', async (req, res) => {
+    try {
+        const { context } = req.query;
+        const historicoPath = getDataPath(context, 'historico_eventos.csv');
+        const csvData = readCSV(historicoPath);
+        
+        if (csvData.length < 1) return res.json([]);
+
+        const header = csvData[0];
+        const paisIdx = getColumnIndex(header, 'Pais');
+
+        if (paisIdx === -1) return res.json([]);
+
+        const paises = [...new Set(csvData.slice(1).map(linha => linha[paisIdx]).filter(Boolean))].sort();
+        res.json(paises);
+    } catch (e) {
+        console.error("Error fetching countries:", e.message);
         res.status(500).json({ error: e.message });
     }
 });
@@ -545,17 +579,15 @@ app.post('/api/sync-events', async (req, res) => {
 
 app.get('/api/top-events', async (req, res) => {
     try {
-        const startDateStr = req.query.start;
-        const endDateStr = req.query.end;
-        const context = req.query.context;
+        const { start, end, context, pais: countryFilter } = req.query;
         const eventoTable = getTableName(context, 'evento');
 
-        if (!startDateStr || !endDateStr) {
+        if (!start || !end) {
             return res.status(400).json({ error: "Please provide start and end dates." });
         }
 
-        const startDate = parseDateAsUTC(startDateStr);
-        const endDate = parseDateAsUTC(endDateStr);
+        const startDate = parseDateAsUTC(start);
+        const endDate = parseDateAsUTC(end);
 
         if (isNaN(startDate.getTime()) || isNaN(endDate.getTime())) {
             return res.status(400).json({ error: "Invalid date format. Use YYYY-MM-DD." });
@@ -564,34 +596,48 @@ app.get('/api/top-events', async (req, res) => {
         const { rows: eventosSelecionados } = await db.query(`SELECT valor, rotulo FROM ${eventoTable}`);
         const eventMap = new Map(eventosSelecionados.map(e => [e.valor, e.rotulo]));
 
-        // Always use the full history for Top Events to ensure all events are discoverable
         const historicoPath = getDataPath(context, 'historico_eventos.csv');
+        const csvData = readCSV(historicoPath);
+        
+        if (csvData.length < 2) return res.json([]);
 
-        const eventosData = readCSV(historicoPath).filter(linha => linha.length > 1 && eventMap.has(linha[1]));
+        const header = csvData[0];
+        const dataIdx = getColumnIndex(header, 'Data');
+        const nomeIdx = getColumnIndex(header, 'NomeDoEvento');
+        const paisIdx = getColumnIndex(header, 'Pais');
+        const contagemIdx = getColumnIndex(header, 'ContagemDeEventos');
+        const usuariosIdx = getColumnIndex(header, 'TotalDeUsuarios');
+
         const eventAggregates = {};
 
-        for (const linha of eventosData) {
-            if (linha.length < 4) continue;
-            const data = linha[0];
-            const nomeEvento = linha[1];
-            const contagem = parseInt(linha[2], 10);
-            const usuarios = parseInt(linha[3], 10);
+        for (const linha of csvData.slice(1)) {
+            const nomeEvento = linha[nomeIdx];
+            if (!eventMap.has(nomeEvento)) continue;
 
-            if (!data || !nomeEvento || isNaN(contagem) || isNaN(usuarios)) continue;
-
+            const data = linha[dataIdx];
             const dataCSV = parseDateAsUTC(data);
-            if (dataCSV >= startDate && dataCSV <= endDate) {
-                if (!eventAggregates[nomeEvento]) {
-                    eventAggregates[nomeEvento] = {
-                        nome: nomeEvento,
-                        rotulo: eventMap.get(nomeEvento) || nomeEvento,
-                        contagem: 0,
-                        usuarios: 0
-                    };
-                }
-                eventAggregates[nomeEvento].contagem += contagem;
-                eventAggregates[nomeEvento].usuarios += usuarios;
+            if (dataCSV < startDate || dataCSV > endDate) continue;
+
+            // Country Filter
+            if (countryFilter && countryFilter !== 'all' && paisIdx !== -1) {
+                if (linha[paisIdx] !== countryFilter) continue;
             }
+
+            const contagem = parseInt(linha[contagemIdx], 10);
+            const usuarios = parseInt(linha[usuariosIdx], 10);
+
+            if (isNaN(contagem) || isNaN(usuarios)) continue;
+
+            if (!eventAggregates[nomeEvento]) {
+                eventAggregates[nomeEvento] = {
+                    nome: nomeEvento,
+                    rotulo: eventMap.get(nomeEvento) || nomeEvento,
+                    contagem: 0,
+                    usuarios: 0
+                };
+            }
+            eventAggregates[nomeEvento].contagem += contagem;
+            eventAggregates[nomeEvento].usuarios += usuarios;
         }
         
         const topEvents = Object.values(eventAggregates)

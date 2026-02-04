@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const endDateInput = document.getElementById('end-date');
     const startDateInput = document.getElementById('start-date');
     const appContextSelector = document.getElementById('app-context-selector');
+    const countryFilter = document.getElementById('country-filter');
 
     // Set initial context selector value
     if (appContextSelector) {
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         appContextSelector.addEventListener('change', (event) => {
             currentContext = event.target.value;
             localStorage.setItem('appContext', currentContext);
+            loadCountries(); // Reload countries when context changes
             fetchData();
         });
     }
@@ -34,8 +36,38 @@ document.addEventListener('DOMContentLoaded', () => {
     startDateInput.value = formataDataParaInput(dataInicioPadrao);
 
     document.getElementById('filter-button').addEventListener('click', fetchData);
+    
+    loadCountries();
     fetchData();
 });
+
+async function loadCountries() {
+    const countryFilter = document.getElementById('country-filter');
+    if (!countryFilter) return;
+
+    try {
+        const response = await fetch(`/api/paises?context=${currentContext}`);
+        if (!response.ok) throw new Error('Falha ao carregar países');
+        const countries = await response.json();
+
+        // Preserva o valor selecionado se ainda existir na nova lista
+        const previousValue = countryFilter.value;
+        
+        countryFilter.innerHTML = '<option value="all">Todos os Países</option>';
+        countries.forEach(country => {
+            const option = document.createElement('option');
+            option.value = country;
+            option.textContent = country;
+            countryFilter.appendChild(option);
+        });
+
+        if (countries.includes(previousValue)) {
+            countryFilter.value = previousValue;
+        }
+    } catch (error) {
+        console.error('Erro ao carregar lista de países:', error);
+    }
+}
 
 function formataDataParaInput(date) {
     const ano = date.getFullYear();
@@ -47,6 +79,7 @@ function formataDataParaInput(date) {
 async function fetchData() {
     const startDate = document.getElementById('start-date').value;
     const endDate = document.getElementById('end-date').value;
+    const country = document.getElementById('country-filter')?.value || 'all';
     
     const loadingMsg = document.getElementById('loading-message');
     const errorMsg = document.getElementById('error-message');
@@ -59,7 +92,7 @@ async function fetchData() {
     dashboardContainer.innerHTML = ''; // Limpa o dashboard antigo
 
     try {
-        const response = await fetch(`/data?start=${startDate}&end=${endDate}&context=${currentContext}`);
+        const response = await fetch(`/data?start=${startDate}&end=${endDate}&context=${currentContext}&pais=${country}`);
         if (!response.ok) throw new Error(`Erro na requisição: ${response.statusText}`);
         
         const data = await response.json();
@@ -91,7 +124,7 @@ async function fetchData() {
         });
 
         // Fetch and render top events table
-        const topEventsResponse = await fetch(`/api/top-events?start=${startDate}&end=${endDate}&context=${currentContext}`);
+        const topEventsResponse = await fetch(`/api/top-events?start=${startDate}&end=${endDate}&context=${currentContext}&pais=${country}`);
         if (!topEventsResponse.ok) throw new Error(`Erro na requisição dos top events: ${topEventsResponse.statusText}`);
         const topEventsData = await topEventsResponse.json();
         renderTopEventsTable(topEventsData);

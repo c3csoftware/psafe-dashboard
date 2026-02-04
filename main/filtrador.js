@@ -16,9 +16,9 @@ function getFiltradorDataPath(filename) {
 function readCSV(filePath) {
     try {
         const data = fs.readFileSync(filePath, 'utf8');
-        return data.split('\n').map(line => {
-            const matches = line.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g);
-            return matches ? matches.map(field => field.replace(/"/g, '')) : [];
+        return data.split('\n').filter(line => line.trim() !== '').map(line => {
+            const matches = line.match(/(".*?"|[^",]+|(?<=,)(?=,)|(?<=,)$|^$)/g);
+            return matches ? matches.map(field => field.replace(/^"|"$/g, '').trim()) : [];
         });
     } catch (e) {
         console.error(`Error reading ${filePath}:`, e.message);

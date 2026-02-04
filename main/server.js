@@ -101,10 +101,9 @@ async function processarJornadas(context, startDate, endDate, countryFilter = 'a
     const eventosPermitidos = new Set(eventosSelecionados.map(e => e.valor));
 
     const historicoFiltradoPath = getDataPath(context, 'historico_eventos_filtrado.csv');
-    // If we have a country filter, we MUST use the full historico_eventos.csv because the filtered one might not have the Pais column
-    const historicoPath = (countryFilter !== 'all' || !fs.existsSync(historicoFiltradoPath))
-        ? getDataPath(context, 'historico_eventos.csv')
-        : historicoFiltradoPath;
+    const historicoPath = fs.existsSync(historicoFiltradoPath)
+        ? historicoFiltradoPath
+        : getDataPath(context, 'historico_eventos.csv');
 
     const csvData = readCSV(historicoPath);
     if (csvData.length < 1) return { jornadas: [] };

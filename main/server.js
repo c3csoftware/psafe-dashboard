@@ -14,6 +14,13 @@ function getDataPath(context, filename) {
     return path.join(__dirname, filename);
 }
 
+function getPreferredHistoricoPath(context) {
+    const historicoFiltradoPath = getDataPath(context, 'historico_eventos_filtrado.csv');
+    return fs.existsSync(historicoFiltradoPath)
+        ? historicoFiltradoPath
+        : getDataPath(context, 'historico_eventos.csv');
+}
+
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
@@ -100,10 +107,7 @@ async function processarJornadas(context, startDate, endDate, countryFilter = 'a
     const eventMap = new Map(eventosSelecionados.map(e => [e.valor, e.rotulo]));
     const eventosPermitidos = new Set(eventosSelecionados.map(e => e.valor));
 
-    const historicoFiltradoPath = getDataPath(context, 'historico_eventos_filtrado.csv');
-    const historicoPath = fs.existsSync(historicoFiltradoPath)
-        ? historicoFiltradoPath
-        : getDataPath(context, 'historico_eventos.csv');
+    const historicoPath = getPreferredHistoricoPath(context);
 
     const csvData = readCSV(historicoPath);
     if (csvData.length < 1) return { jornadas: [] };
@@ -360,7 +364,7 @@ app.get('/data', async (req, res) => {
 app.get('/api/paises', async (req, res) => {
     try {
         const { context } = req.query;
-        const historicoPath = getDataPath(context, 'historico_eventos.csv');
+        const historicoPath = getPreferredHistoricoPath(context);
         const csvData = readCSV(historicoPath);
         
         if (csvData.length < 1) return res.json([]);
@@ -595,7 +599,7 @@ app.get('/api/top-events', async (req, res) => {
         const { rows: eventosSelecionados } = await db.query(`SELECT valor, rotulo FROM ${eventoTable}`);
         const eventMap = new Map(eventosSelecionados.map(e => [e.valor, e.rotulo]));
 
-        const historicoPath = getDataPath(context, 'historico_eventos.csv');
+        const historicoPath = getPreferredHistoricoPath(context);
         const csvData = readCSV(historicoPath);
         
         if (csvData.length < 2) return res.json([]);

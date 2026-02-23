@@ -1,26 +1,3 @@
-Data,Tela,ContagemDeEventos,TotalDeUsuarios
-"2026-01-19","(not set)",8151,6072
-"2026-01-19","bottom_timer_red",3,3
-"2026-01-19","but_wait",1,1
-"2026-01-19","plans_offer_annual_highlighted",1,1
-"2026-01-19","pro_promotion_urgent",1,1
-"2026-01-20","(not set)",8127,6113
-"2026-01-20","pro_promotion_lto",1,1
-"2026-01-21","(not set)",8028,6095
-"2026-01-21","adsfree",1,1
-"2026-01-21","plans_offer_annual_highlighted",1,1
-"2026-01-22","(not set)",7806,5909
-"2026-01-22","adsfree_toggle_switch",2,2
-"2026-01-22","plans_offer_annual_highlighted",2,2
-"2026-01-22","adsfree",1,1
-"2026-01-22","adsfree_promotion_lto",1,1
-"2026-01-22","but_wait",1,1
-"2026-01-23","(not set)",7822,5905
-"2026-01-23","(not set)",2,2
-"2026-01-23","plans_offer_annual_highlighted",2,2
-"2026-01-24","(not set)",8404,6502
-"2026-01-24","(not set)",8,6
-"2026-01-24","adsfree",1,1
-"2026-01-25","(not set)",8649,6559
-"2026-01-25","(not set)",69,52
-"2026-01-25","pro_promotion_lto",1,1
+version https://git-lfs.github.com/spec/v1
+oid sha256:bee6fecea98c93f77911efdbddd4973be3550d486ccb44d323b843302b335217
+size 973

@@ -1,11 +1,3 @@
-Data,SKU,ContagemDeEventos,TotalDeUsuarios
-"2026-01-19","(not set)",112925,62781
-"2026-01-20","(not set)",114112,63102
-"2026-01-21","(not set)",113554,62220
-"2026-01-22","(not set)",114979,62894
-"2026-01-23","(not set)",113583,62064
-"2026-01-23","(not set)",58,34
-"2026-01-24","(not set)",108396,60692
-"2026-01-24","(not set)",123,82
-"2026-01-25","(not set)",103062,58246
-"2026-01-25","(not set)",857,583
+version https://git-lfs.github.com/spec/v1
+oid sha256:43759f21b9d95ae9037041045dc357daeac42dd158f41d1b81f5929968ef6613
+size 416

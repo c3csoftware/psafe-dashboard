@@ -3,9 +3,9 @@ const fs = require('fs');
 const { SEU_COOKIE, SEU_TOKEN_XSRF } = require('./config_headers.js');
 
 // --- Configurações ---
-const DATA_INICIO = process.argv[3] || '2026-01-19';
-const DATA_FIM = '2026-01-25';
-const URL_API = 'https://analytics.google.com/analytics/app/data/v2/venus?reportId=dashboard_card_35q584nmIw&dataset=p151460007&fpn=287695367178&hl=pt_BR&gamonitor=firebase&state=app.reports.reports.dashboard';
+const DATA_INICIO = process.argv[3] || '2024-10-01';
+const DATA_FIM = '2026-02-12';
+const URL_API = 'https://analytics.google.com/analytics/app/data/v2/venus?accessmode=read&dataset=p151460007&fpn=287695367178&authuser=5&hl=pt_BR&gamonitor=firebase&state=app.reports.reports.dashboard';
 // --------------------
 
 // Pega o nome do evento da linha de comando
@@ -35,7 +35,11 @@ function criarPayloadTelas(data, nomeEvento) {
     "entity": { "propertyId": "151460007", "identityBlendingStrategy": 2 },
     "requests": [
       {
-        "dimensions": [{ "name": "custom_dimensions_group2_slot_15", "isSecondary": false }, { "name": "event_name", "isSecondary": true }],
+        "dimensions": [
+          { "name": "country", "isSecondary": false },
+          { "name": "custom_dimensions_group2_slot_15", "isSecondary": true }, 
+          { "name": "event_name", "isSecondary": true }
+        ],
         "dimensionFilters": [{ "filters": [{ "fieldName": "event_name", "expression": nomeEvento, "expressionList": [nomeEvento], "evaluation": 1, "complement": false, "isCaseSensitive": true }] }],
         "metrics": [{ "name": "event_count", "isInvisible": false, "isSecondary": false }, { "name": "total_users", "isInvisible": false, "isSecondary": false }],
         "metricFilters": [],
@@ -43,7 +47,7 @@ function criarPayloadTelas(data, nomeEvento) {
         "cardId": "35q584nmIw",
         "requestGrandTotal": true,
         "dateRanges": [{ "startDate": data, "endDate": data }], // Data dinâmica
-        "rowAxis": { "fieldNames": ["custom_dimensions_group2_slot_15"], "sorts": [{ "fieldName": "event_count", "sortType": 1, "isDesc": true, "pivotSortInfos": [] }, { "fieldName": "custom_dimensions_group2_slot_15", "sortType": 1, "isDesc": false, "pivotSortInfos": [] }, { "fieldName": "total_users", "sortType": 1, "isDesc": false, "pivotSortInfos": [] }], "limit": 200, "offset": 0, "metaAggTypes": [] },
+        "rowAxis": { "fieldNames": ["country", "custom_dimensions_group2_slot_15"], "sorts": [{ "fieldName": "event_count", "sortType": 1, "isDesc": true, "pivotSortInfos": [] }], "limit": 500, "offset": 0, "metaAggTypes": [] },
         "hasCustomParams": true
       }
     ],
@@ -65,23 +69,20 @@ function extrairDados(responseData, data) {
     const linhas = resposta.responseRows;
 
     linhas.forEach(linha => {
-      // O valor [ { "value": "" } ] ou [ { "value": "adsfree" } ]
-      let tela = linha.dimensionCompoundValues[0].value;
-      if (tela === "") {
-        tela = "(not set)"; // Define um valor padrão para tela vazia
-      }
+      // Pais agora é o índice 0, Tela é o índice 1
+      let pais = linha.dimensionCompoundValues[0].value || "(not set)";
+      let tela = linha.dimensionCompoundValues[1].value || "(not set)";
       
       const contagemEventos = linha.metricCompoundValues[0].value;
       const totalUsuarios = linha.metricCompoundValues[1].value;
 
-      linhasCSV.push(`"${data}","${tela}",${contagemEventos},${totalUsuarios}`);
+      linhasCSV.push(`"${data}","${pais}","${tela}",${contagemEventos},${totalUsuarios}`);
     });
     
     return linhasCSV;
 
   } catch (e) {
     console.error(`Erro ao processar JSON para data ${data}: ${e.message}`);
-    console.error('Resposta recebida:', responseData.substring(0, 500) + '...');
     return [];
   }
 }
@@ -91,9 +92,9 @@ const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 // Função principal
 async function buscarHistorico(nomeEvento) {
-  console.log(`Iniciando extração de TELAS para o evento: ${nomeEvento}...`);
+  console.log(`Iniciando extração de TELAS por País para o evento: ${nomeEvento}...`);
   const stream = fs.createWriteStream(NOME_ARQUIVO_SAIDA);
-  stream.write("Data,Tela,ContagemDeEventos,TotalDeUsuarios\n");
+  stream.write("Data,Pais,Tela,ContagemDeEventos,TotalDeUsuarios\n");
 
   let dataAtual = new Date(DATA_INICIO + 'T12:00:00Z');
   const dataFim = new Date(DATA_FIM + 'T12:00:00Z');

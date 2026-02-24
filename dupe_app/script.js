@@ -1,8 +1,5 @@
-// Instâncias dos gráficos, agora armazenadas em um objeto para suportar múltiplas jornadas
 let chartInstances = {};
-let currentContext = localStorage.getItem('appContext') || 'main'; // 'main' or 'dupe'
-
-// LISTA DE EVENTOS HARDCODED - Edite aqui para adicionar ou remover eventos da tabela "Eventos Selecionados"
+let currentContext = localStorage.getItem('appContext') || 'main'; 
 const HARDCODED_EVENT_LIST = [
     'event_10350', 
     'event_10351', 
@@ -12,13 +9,10 @@ const HARDCODED_EVENT_LIST = [
     'event_10354', 
     'event_10364'
 ];
-
 document.addEventListener('DOMContentLoaded', () => {
     const endDateInput = document.getElementById('end-date');
     const startDateInput = document.getElementById('start-date');
     const appContextSelector = document.getElementById('app-context-selector');
-
-    // Set initial context selector value
     if (appContextSelector) {
         appContextSelector.value = currentContext;
         appContextSelector.addEventListener('change', (event) => {
@@ -27,49 +21,37 @@ document.addEventListener('DOMContentLoaded', () => {
             fetchData();
         });
     }
-    
     const hoje = new Date('2025-11-30T00:00:00');
     endDateInput.value = formataDataParaInput(hoje);
     const dataInicioPadrao = new Date('2025-11-01T00:00:00');
     startDateInput.value = formataDataParaInput(dataInicioPadrao);
-
     document.getElementById('filter-button').addEventListener('click', fetchData);
     fetchData();
 });
-
 function formataDataParaInput(date) {
     const ano = date.getFullYear();
     const mes = String(date.getMonth() + 1).padStart(2, '0');
     const dia = String(date.getDate()).padStart(2, '0');
     return `${ano}-${mes}-${dia}`;
 }
-
 async function fetchData() {
     const startDate = document.getElementById('start-date').value;
     const endDate = document.getElementById('end-date').value;
-    
     const loadingMsg = document.getElementById('loading-message');
     const errorMsg = document.getElementById('error-message');
     const filterButton = document.getElementById('filter-button');
     const dashboardContainer = document.getElementById('dashboard-container');
-
     loadingMsg.style.display = 'block';
     errorMsg.style.display = 'none';
     filterButton.disabled = true;
-    dashboardContainer.innerHTML = ''; // Limpa o dashboard antigo
-
+    dashboardContainer.innerHTML = ''; 
     try {
         const response = await fetch(`/data?start=${startDate}&end=${endDate}&context=${currentContext}`);
         if (!response.ok) throw new Error(`Erro na requisição: ${response.statusText}`);
-        
         const data = await response.json();
-
-        // Itera sobre cada jornada recebida e a renderiza
         data.jornadas.forEach(jornada => {
             const journeyHtml = createJourneyTemplate(jornada);
             dashboardContainer.insertAdjacentHTML('beforeend', journeyHtml);
-            
-            // Renderiza os componentes da jornada, se existirem
             if (jornada.funil) {
                 renderFunnel(jornada.funil, `funnel-${jornada.id}`);
             }
@@ -89,15 +71,11 @@ async function fetchData() {
                 renderCorrelationTable(jornada.correlacoesTabela, `correlation-table-${jornada.id}`);
             }
         });
-
-        // Fetch and render top events table
         const topEventsResponse = await fetch(`/api/top-events?start=${startDate}&end=${endDate}&context=${currentContext}`);
         if (!topEventsResponse.ok) throw new Error(`Erro na requisição dos top events: ${topEventsResponse.statusText}`);
         const topEventsData = await topEventsResponse.json();
         renderTopEventsTable(topEventsData);
         renderSelectedEventsTable(topEventsData);
-
-
     } catch (error) {
         console.error('Falha ao buscar ou renderizar dados:', error);
         errorMsg.textContent = `Erro: ${error.message}. Verifique o console.`;
@@ -107,18 +85,14 @@ async function fetchData() {
         filterButton.disabled = false;
     }
 }
-
 function renderTopEventsTable(events) {
     const table = document.getElementById('top-events-table');
     if (!table) return;
     const tableBody = table.querySelector('tbody');
     if (!tableBody) return;
-
-    let sortState = { key: 'contagem', order: 'desc' }; // Estado de ordenação inicial
-
+    let sortState = { key: 'contagem', order: 'desc' }; 
     function populateTable(sortedEvents) {
         tableBody.innerHTML = '';
-
         if (!sortedEvents || sortedEvents.length === 0) {
             const tr = document.createElement('tr');
             const td = document.createElement('td');
@@ -129,7 +103,6 @@ function renderTopEventsTable(events) {
             tableBody.appendChild(tr);
             return;
         }
-
         sortedEvents.forEach(event => {
             const tr = document.createElement('tr');
             tr.innerHTML = `
@@ -141,12 +114,10 @@ function renderTopEventsTable(events) {
             tableBody.appendChild(tr);
         });
     }
-
     function sortData() {
         const sortedEvents = [...events].sort((a, b) => {
             const valA = a[sortState.key];
             const valB = b[sortState.key];
-            
             let comparison = 0;
             if (typeof valA === 'string') {
                 comparison = valA.localeCompare(valB);
@@ -158,7 +129,6 @@ function renderTopEventsTable(events) {
         });
         populateTable(sortedEvents);
     }
-
     table.querySelectorAll('thead th').forEach(header => {
         header.addEventListener('click', () => {
             const sortKey = header.dataset.sort;
@@ -166,29 +136,22 @@ function renderTopEventsTable(events) {
                 sortState.order = sortState.order === 'asc' ? 'desc' : 'asc';
             } else {
                 sortState.key = sortKey;
-                sortState.order = 'desc'; // Padrão para descendente
+                sortState.order = 'desc'; 
             }
-
             table.querySelectorAll('thead th').forEach(th => th.classList.remove('sort-asc', 'sort-desc'));
             header.classList.add(sortState.order === 'asc' ? 'sort-asc' : 'sort-desc');
-
             sortData();
         });
     });
-    
-    // Ordenação inicial
     sortData();
     table.querySelector(`thead th[data-sort="${sortState.key}"]`).classList.add(`sort-${sortState.order}`);
 }
-
 function createJourneyTemplate(jornada) {
     const { id, nome, bigNumbers, eventos, correlacoesTabela } = jornada;
     const ultimoEventoRotulo = eventos.length > 0 ? eventos[eventos.length - 1].rotulo : 'Último Evento';
-
     const funnelHtml = jornada.funil 
         ? `<div class="funnel-container" id="funnel-${id}"></div>`
         : '';
-
     const eventFunilPeriodicoHtml = jornada.eventFunilPeriodico
         ? `<section class="card">
                 <h2 class="section-title">Funil Periódico (Eventos)</h2>
@@ -197,7 +160,6 @@ function createJourneyTemplate(jornada) {
                 </div>
            </section>`
         : '';
-
     const userFunilPeriodicoHtml = jornada.userFunilPeriodico
         ? `<section class="card">
                 <h2 class="section-title">Funil Periódico (Usuários)</h2>
@@ -206,7 +168,6 @@ function createJourneyTemplate(jornada) {
                 </div>
            </section>`
         : '';
-
     const skusHtml = (jornada.pizzas && jornada.pizzas.skus)
         ? `<section class="card">
                 <h2 class="section-title">Top 5 SKUs (${ultimoEventoRotulo})</h2>
@@ -216,7 +177,6 @@ function createJourneyTemplate(jornada) {
                 <div class="not-set-info" id="skus-chart-${id}-not-set" style="display: none;"></div>
            </section>`
         : '';
-
     const telasHtml = (jornada.pizzas && jornada.pizzas.telas)
         ? `<section class="card">
                 <h2 class="section-title">Top 5 Telas (${ultimoEventoRotulo})</h2>
@@ -226,7 +186,6 @@ function createJourneyTemplate(jornada) {
                 <div class="not-set-info" id="telas-chart-${id}-not-set" style="display: none;"></div>
            </section>`
         : '';
-
     const correlationTableHtml = (correlacoesTabela && correlacoesTabela.length > 0)
         ? `<section class="card">
             <h2 class="section-title">Correlação de "${nome}" com Outros Eventos (Pearson)</h2>
@@ -245,11 +204,9 @@ function createJourneyTemplate(jornada) {
             </div>
         </section>`
         : '';
-
     return `
         <section class="card">
             <h2 class="section-title">${nome}</h2>
-            
             <div class="big-numbers-grid">
                 <div class="big-number-card">
                     <span class="big-number-title">Eventos Totais</span>
@@ -275,33 +232,26 @@ function createJourneyTemplate(jornada) {
         ${correlationTableHtml}
     `;
 }
-
 function renderFunnel(funilData, containerId) {
     const container = document.getElementById(containerId);
     if (!container) return;
     container.innerHTML = '';
-
     const labels = Object.keys(funilData);
     if (labels.length === 0) {
         container.innerHTML = '<p>Nenhum dado para o funil.</p>';
         return;
     }
-
-    const initialWidth = 95; // Largura inicial em porcentagem
-    const widthDecrement = 15; // Decremento para cada passo
-
+    const initialWidth = 95; 
+    const widthDecrement = 15; 
     labels.forEach((label, index) => {
         const { contagem, usuarios } = funilData[label];
-        
         const stepWidth = initialWidth - (index * widthDecrement);
-
         let conversaoPercentual = '';
         if (index > 0) {
             const contagemAnterior = funilData[labels[index - 1]].contagem;
             const taxa = contagemAnterior > 0 ? (contagem / contagemAnterior) * 100 : 0;
             conversaoPercentual = `<span class="funnel-percentage">${taxa.toFixed(1)}%</span>`;
         }
-
         const stepEl = document.createElement('div');
         stepEl.className = 'funnel-step';
         stepEl.style.width = `${Math.max(stepWidth, 20)}%`;
@@ -316,22 +266,17 @@ function renderFunnel(funilData, containerId) {
         container.appendChild(stepEl);
     });
 }
-
 function renderPieChart(data, canvasId, chartLabel) {
     const canvas = document.getElementById(canvasId);
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
-
     if (chartInstances[canvasId]) chartInstances[canvasId].destroy();
-    
     const labels = Object.keys(data);
     const counts = Object.values(data);
-
     if (labels.length === 0) {
         canvas.parentElement.innerHTML = '<p style="text-align: center; padding: 20px;">Nenhum dado encontrado.</p>';
     } else {
         const backgroundColors = ['#440bbd', '#000000', '#5cb85c', '#5bc0de', '#f0ad4e'];
-
         chartInstances[canvasId] = new Chart(ctx, {
             type: 'pie',
             data: {
@@ -345,21 +290,15 @@ function renderPieChart(data, canvasId, chartLabel) {
             }
         });
     }
-
-
 }
-
 function renderCorrelationTable(data, tableId) {
     const table = document.getElementById(tableId);
     if (!table) return;
     const tableBody = table.querySelector('tbody');
     if (!tableBody) return;
-
-    let sortState = { key: 'count', order: 'desc' }; // Estado de ordenação inicial
-
+    let sortState = { key: 'count', order: 'desc' }; 
     function populateTable(sortedData) {
         tableBody.innerHTML = '';
-
         if (!sortedData || sortedData.length === 0) {
             const tr = document.createElement('tr');
             const td = document.createElement('td');
@@ -370,7 +309,6 @@ function renderCorrelationTable(data, tableId) {
             tableBody.appendChild(tr);
             return;
         }
-
         sortedData.forEach(item => {
             const tr = document.createElement('tr');
             tr.innerHTML = `
@@ -380,12 +318,10 @@ function renderCorrelationTable(data, tableId) {
             tableBody.appendChild(tr);
         });
     }
-
     function sortData() {
         const sortedData = [...data].sort((a, b) => {
             const valA = a[sortState.key];
             const valB = b[sortState.key];
-
             let comparison = 0;
             if (valA > valB) {
                 comparison = 1;
@@ -396,7 +332,6 @@ function renderCorrelationTable(data, tableId) {
         });
         populateTable(sortedData);
     }
-    
     table.querySelectorAll('thead th').forEach(header => {
         header.addEventListener('click', () => {
             const sortKey = header.dataset.sort;
@@ -404,40 +339,28 @@ function renderCorrelationTable(data, tableId) {
                 sortState.order = sortState.order === 'asc' ? 'desc' : 'asc';
             } else {
                 sortState.key = sortKey;
-                sortState.order = 'desc'; // Padrão para descendente em nova coluna
+                sortState.order = 'desc'; 
             }
-            
-            // Remove as classes de ordenação de outros cabeçalhos
             table.querySelectorAll('thead th').forEach(th => th.classList.remove('sort-asc', 'sort-desc'));
-            // Adiciona a classe de ordenação ao cabeçalho atual
             header.classList.add(sortState.order === 'asc' ? 'sort-asc' : 'sort-desc');
-
             sortData();
         });
     });
-
-    // Ordenação inicial
     sortData();
-    // Marca o header inicial
     table.querySelector(`thead th[data-sort="${sortState.key}"]`).classList.add(`sort-${sortState.order}`);
 }
-
 function renderPeriodicFunnelChart(data, canvasId, yAxisTitle) {
     const canvas = document.getElementById(canvasId);
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
-
     if (chartInstances[canvasId]) chartInstances[canvasId].destroy();
-
     const months = Object.keys(data).sort();
     if (months.length === 0) {
         canvas.parentElement.innerHTML = '<p style="text-align: center; padding: 20px;">Nenhum dado encontrado para o funil periódico.</p>';
         return;
     }
-
     const eventLabels = Object.keys(data[months[0]]);
     const backgroundColors = ['#440bbd', '#000000', '#5cb85c', '#5bc0de', '#f0ad4e', '#d9534f'];
-
     const datasets = eventLabels.map((label, index) => {
         return {
             label: label,
@@ -445,7 +368,6 @@ function renderPeriodicFunnelChart(data, canvasId, yAxisTitle) {
             backgroundColor: backgroundColors[index % backgroundColors.length],
         };
     });
-
     chartInstances[canvasId] = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -477,23 +399,17 @@ function renderPeriodicFunnelChart(data, canvasId, yAxisTitle) {
         }
     });
 }
-
 function renderSelectedEventsTable(allEvents) {
     const table = document.getElementById('selected-events-table');
     if (!table) return;
     const tableBody = table.querySelector('tbody');
     if (!tableBody) return;
-
-    // Filter events based on the hardcoded list
     const selectedEvents = allEvents.filter(event => 
         HARDCODED_EVENT_LIST.includes(event.nome)
     );
-
     let sortState = { key: 'contagem', order: 'desc' };
-
     function populateTable(sortedEvents) {
         tableBody.innerHTML = '';
-
         if (!sortedEvents || sortedEvents.length === 0) {
             const tr = document.createElement('tr');
             const td = document.createElement('td');
@@ -504,7 +420,6 @@ function renderSelectedEventsTable(allEvents) {
             tableBody.appendChild(tr);
             return;
         }
-
         sortedEvents.forEach(event => {
             const tr = document.createElement('tr');
             tr.innerHTML = `
@@ -516,12 +431,10 @@ function renderSelectedEventsTable(allEvents) {
             tableBody.appendChild(tr);
         });
     }
-
     function sortData() {
         const sortedEvents = [...selectedEvents].sort((a, b) => {
             const valA = a[sortState.key];
             const valB = b[sortState.key];
-            
             let comparison = 0;
             if (typeof valA === 'string') {
                 comparison = valA.localeCompare(valB);
@@ -533,7 +446,6 @@ function renderSelectedEventsTable(allEvents) {
         });
         populateTable(sortedEvents);
     }
-
     table.querySelectorAll('thead th').forEach(header => {
         header.addEventListener('click', () => {
             const sortKey = header.dataset.sort;
@@ -543,14 +455,11 @@ function renderSelectedEventsTable(allEvents) {
                 sortState.key = sortKey;
                 sortState.order = 'desc'; 
             }
-
             table.querySelectorAll('thead th').forEach(th => th.classList.remove('sort-asc', 'sort-desc'));
             header.classList.add(sortState.order === 'asc' ? 'sort-asc' : 'sort-desc');
-
             sortData();
         });
     });
-    
     sortData();
     table.querySelector(`thead th[data-sort="${sortState.key}"]`).classList.add(`sort-${sortState.order}`);
 }

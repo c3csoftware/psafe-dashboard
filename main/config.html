@@ -4,23 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciador de Jornadas</title>
-    <!-- Carrega o Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Carrega a biblioteca de ícones Heroicons -->
     <script type="module" src="https://cdn.jsdelivr.net/npm/heroicons @2.1.1/24/outline/index.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="config.css">
     <style>
-        /* Fonte padrão */
         body {
             font-family: 'Inter', sans-serif;
         }
-        /* Classes para esconder/mostrar modais */
         .hidden {
             display: none;
         }
-        /* Pequena animação para o modal */
         .modal-enter {
             animation: fadeIn 0.2s ease-out;
         }
@@ -28,7 +23,6 @@
             from { opacity: 0; transform: scale(0.95); }
             to { opacity: 1; transform: scale(1); }
         }
-        /* Custom Psafe Colors */
         .bg-blue-600 { background-color: #440bbd !important; }
         .hover\:bg-blue-700:hover { background-color: #3a09a1 !important; }
         .text-blue-700 { color: #440bbd !important; }
@@ -38,10 +32,8 @@
 </head>
 <body class="bg-gray-100 text-gray-900">
 
-    <!-- Container Principal -->
     <div class="container mx-auto max-w-4xl p-4 md:p-8">
         
-        <!-- Cabeçalho -->
         <header class="flex justify-between items-center mb-8">
             <h1 class="text-3xl font-bold text-gray-800">Gerenciador de Jornadas</h1>
             <div>
@@ -51,7 +43,6 @@
             </div>
         </header>
 
-        <!-- Lista de Jornadas (será preenchida pelo JS) -->
         <main>
             <div class="flex justify-end mb-6">
                 <button id="add-journey-btn" class="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition-colors">
@@ -62,20 +53,16 @@
                 </button>
             </div>
             <div id="jornadas-list" class="space-y-6">
-                <!-- Os cards das jornadas serão inseridos aqui -->
             </div>
         </main>
     </div>
 
-    <!-- Modal Principal (para Criar/Editar Jornada e Evento) -->
     <div id="modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
         <div id="modal-content" class="bg-white p-6 rounded-lg shadow-xl w-full max-w-md modal-enter">
             <h2 id="modal-title" class="text-2xl font-semibold mb-4"></h2>
             <form id="modal-form">
-                <!-- Campos do formulário serão inseridos aqui pelo JS -->
                 <div id="modal-fields"></div>
                 
-                <!-- Botões do formulário -->
                 <div class="flex justify-end gap-3 mt-6">
                     <button type="button" id="modal-cancel-btn" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300">
                         Cancelar
@@ -88,7 +75,6 @@
         </div>
     </div>
 
-    <!-- Modal de Confirmação de Exclusão -->
     <div id="delete-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
         <div class="bg-white p-6 rounded-lg shadow-xl w-full max-w-sm modal-enter">
             <h2 class="text-xl font-semibold mb-4">Confirmar Exclusão</h2>

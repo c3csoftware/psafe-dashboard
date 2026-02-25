@@ -5,6 +5,8 @@ function getTableName(context, baseName) {
     return baseName;
 }
 require('dotenv').config();
+const db = require('./db');
+const { pool } = db;
 function getDataPath(context, filename) {
     return path.join(__dirname, '..', 'extrações', filename);
 }
@@ -26,41 +28,27 @@ function parseDateAsUTC(dateString) {
     const [year, month, day] = dateString.split('-').map(Number);
     return new Date(Date.UTC(year, month - 1, day));
 }
-function readCSV(filePath) {
-    return new Promise((resolve, reject) => {
-        if (!fs.existsSync(filePath)) {
-            return resolve([]);
-        }
-        const results = [];
-        const stream = fs.createReadStream(filePath, { encoding: 'utf8' });
-        const rl = readline.createInterface({
-            input: stream,
-            crlfDelay: Infinity
-        });
-
-        rl.on('line', (line) => {
-            if (line.trim() !== '') {
-                const matches = line.match(/(".*?"|[^",]+|(?<=,)(?=,)|(?<=,)$|^$)/g);
-                if (matches) {
-                    results.push(matches.map(field => field.replace(/^"|"$/g, '').trim()));
-                }
-            }
-        });
-
-        rl.on('close', () => {
-            resolve(results);
-        });
-
-        rl.on('error', (err) => {
-            console.error(`Error reading ${filePath}:`, err.message);
-            reject(err);
-        });
-
-        stream.on('error', (err) => {
-            console.error(`Error reading ${filePath}:`, err.message);
-            reject(err);
-        });
+function processCSVStream(filePath, onLine, onEnd, onError) {
+    if (!fs.existsSync(filePath)) {
+        onEnd();
+        return;
+    }
+    const stream = fs.createReadStream(filePath, { encoding: 'utf8' });
+    const rl = readline.createInterface({
+        input: stream,
+        crlfDelay: Infinity
     });
+    rl.on('line', (line) => {
+        if (line.trim() !== '') {
+            const matches = line.match(/(".*?"|[^",]+|(?<=,)(?=,)|(?<=,)$|^$)/g);
+            if (matches) {
+                onLine(matches.map(field => field.replace(/^"|"$/g, '').trim()));
+            }
+        }
+    });
+    rl.on('close', onEnd);
+    rl.on('error', onError);
+    stream.on('error', onError);
 }
 const ss = require('simple-statistics');
 async function getJornadasFromDB(context) {
@@ -96,137 +84,165 @@ function getColumnIndex(header, columnName) {
     return header.findIndex(col => col.toLowerCase() === columnName.toLowerCase());
 }
 async function processarJornadas(context, startDate, endDate, countryFilter = 'all') {
-    console.log(`Processing data for context: ${context}, Country: ${countryFilter}`);
-    const jornadas = await getJornadasFromDB(context);
-    const eventoTable = getTableName(context, 'evento');
-    const { rows: eventosSelecionados } = await db.query(`SELECT valor, rotulo FROM ${eventoTable}`);
-    const eventMap = new Map(eventosSelecionados.map(e => [e.valor, e.rotulo]));
-    const eventosPermitidos = new Set(eventosSelecionados.map(e => e.valor));
-    const historicoPath = getPreferredHistoricoPath(context);
-    const csvData = await readCSV(historicoPath);
-    if (csvData.length < 1) return { jornadas: [] };
-    const header = csvData[0];
-    const dataIdx = getColumnIndex(header, 'Data');
-    const nomeIdx = getColumnIndex(header, 'NomeDoEvento');
-    const paisIdx = getColumnIndex(header, 'Pais');
-    const contagemIdx = getColumnIndex(header, 'ContagemDeEventos');
-    const usuariosIdx = getColumnIndex(header, 'TotalDeUsuarios');
-    const eventosData = csvData.slice(1).filter(linha => {
-        if (linha.length < 2) return false;
-        if (!eventosPermitidos.has(linha[nomeIdx])) return false;
-        const dataCSV = parseDateAsUTC(linha[dataIdx]);
-        if (dataCSV < startDate || dataCSV > endDate) return false;
-        if (countryFilter !== 'all' && paisIdx !== -1) {
-            return linha[paisIdx] === countryFilter;
-        }
-        return true;
+    return new Promise(async (resolve, reject) => {
+        console.log(`Processing data for context: ${context}, Country: ${countryFilter}`);
+        const jornadas = await getJornadasFromDB(context);
+        const eventoTable = getTableName(context, 'evento');
+        const { rows: eventosSelecionados } = await db.query(`SELECT valor, rotulo FROM ${eventoTable}`);
+        const eventMap = new Map(eventosSelecionados.map(e => [e.valor, e.rotulo]));
+        const eventosPermitidos = new Set(eventosSelecionados.map(e => e.valor));
+        const historicoPath = getPreferredHistoricoPath(context);
+        const eventosData = [];
+        let header;
+        let dataIdx, nomeIdx, paisIdx, contagemIdx, usuariosIdx;
+        processCSVStream(historicoPath,
+            (linha) => {
+                if (!header) {
+                    header = linha;
+                    dataIdx = getColumnIndex(header, 'Data');
+                    nomeIdx = getColumnIndex(header, 'NomeDoEvento');
+                    paisIdx = getColumnIndex(header, 'Pais');
+                    contagemIdx = getColumnIndex(header, 'ContagemDeEventos');
+                    usuariosIdx = getColumnIndex(header, 'TotalDeUsuarios');
+                    return;
+                }
+                if (linha.length < 2) return;
+                if (!eventosPermitidos.has(linha[nomeIdx])) return;
+                const dataCSV = parseDateAsUTC(linha[dataIdx]);
+                if (dataCSV < startDate || dataCSV > endDate) return;
+                if (countryFilter !== 'all' && paisIdx !== -1 && linha[paisIdx] === countryFilter) {
+                    eventosData.push(linha);
+                } else if (countryFilter === 'all') {
+                    eventosData.push(linha);
+                }
+            },
+            async () => {
+                const eventosPorData = {};
+                const allDates = new Set();
+                for (const linha of eventosData) {
+                    const data = linha[dataIdx];
+                    const nomeEvento = linha[nomeIdx];
+                    const contagem = parseInt(linha[contagemIdx], 10);
+                    if (!data || !nomeEvento || isNaN(contagem)) continue;
+                    if (!eventosPorData[data]) eventosPorData[data] = {};
+                    if (!eventosPorData[data][nomeEvento]) eventosPorData[data][nomeEvento] = 0;
+                    eventosPorData[data][nomeEvento] += contagem;
+                    allDates.add(data);
+                }
+                const sortedDates = Array.from(allDates).sort();
+                const eventosSelecionadosNomes = eventosSelecionados.map(e => e.valor);
+                const resultadosJornadas = await Promise.all(jornadas.map(async jornada => {
+                    const eventosJornadaNomes = jornada.eventos.map(e => e.nome);
+                    const ultimoEventoNome = eventosJornadaNomes[eventosJornadaNomes.length - 1];
+                    let totalEventos = 0;
+                    const funil = {};
+                    jornada.eventos.forEach(e => {
+                        funil[e.rotulo] = { contagem: 0, usuarios: 0 };
+                    });
+                    for (const linha of eventosData) {
+                        const nomeEvento = linha[nomeIdx];
+                        if (eventosJornadaNomes.includes(nomeEvento)) {
+                            const contagem = parseInt(linha[contagemIdx], 10);
+                            const usuarios = parseInt(linha[usuariosIdx], 10);
+                            const rotulo = jornada.eventos.find(e => e.nome === nomeEvento).rotulo;
+                            funil[rotulo].contagem += contagem;
+                            funil[rotulo].usuarios += usuarios;
+                            totalEventos += contagem;
+                        }
+                    }
+                    const firstStepRotulo = jornada.eventos[0].rotulo;
+                    const bigNumbers = {
+                        totalEventos: totalEventos,
+                        totalUsuarios: funil[firstStepRotulo] ? funil[firstStepRotulo].usuarios : 0,
+                        eventosPorUsuario: funil[firstStepRotulo] && funil[firstStepRotulo].usuarios > 0 ? (totalEventos / funil[firstStepRotulo].usuarios).toFixed(2) : 0
+                    };
+                    let skus = {};
+                    if (jornada.showSkus) {
+                        await new Promise((resolve, reject) => {
+                            let sHeader = null;
+                            let sDataIdx, sSkuIdx, sPaisIdx, sContagemIdx;
+                            processCSVStream(getDataPath(context, `historico_skus_${ultimoEventoNome}.csv`),
+                                (linha) => {
+                                    if (!sHeader) {
+                                        sHeader = linha;
+                                        sDataIdx = getColumnIndex(sHeader, 'Data');
+                                        sSkuIdx = getColumnIndex(sHeader, 'SKU');
+                                        sPaisIdx = getColumnIndex(sHeader, 'Pais'); 
+                                        sContagemIdx = getColumnIndex(sHeader, 'ContagemDeEventos');
+                                        return;
+                                    }
+                                    if (linha.length < 3) return;
+                                    const dataCSV = parseDateAsUTC(linha[sDataIdx]);
+                                    if (dataCSV < startDate || dataCSV > endDate) return;
+                                    if (countryFilter !== 'all' && sPaisIdx !== -1) {
+                                        if (linha[sPaisIdx] !== countryFilter) return;
+                                    }
+                                    const sku = linha[sSkuIdx] || '(not set)';
+                                    const contagem = parseInt(linha[sContagemIdx], 10);
+                                    if (!isNaN(contagem)) {
+                                        skus[sku] = (skus[sku] || 0) + contagem;
+                                    }
+                                },
+                                resolve,
+                                reject
+                            );
+                        });
+                    }
+                    let telas = {};
+                    if (jornada.showTelas) {
+                        await new Promise((resolve, reject) => {
+                            let tHeader = null;
+                            let tDataIdx, tTelaIdx, tPaisIdx, tContagemIdx;
+                            processCSVStream(getDataPath(context, `historico_telas_${ultimoEventoNome}.csv`),
+                                (linha) => {
+                                    if (!tHeader) {
+                                        tHeader = linha;
+                                        tDataIdx = getColumnIndex(tHeader, 'Data');
+                                        tTelaIdx = getColumnIndex(tHeader, 'Tela');
+                                        tPaisIdx = getColumnIndex(tHeader, 'Pais'); 
+                                        tContagemIdx = getColumnIndex(tHeader, 'ContagemDeEventos');
+                                        return;
+                                    }
+                                    if (linha.length < 3) return;
+                                    const dataCSV = parseDateAsUTC(linha[tDataIdx]);
+                                    if (dataCSV < startDate || dataCSV > endDate) return;
+                                    if (countryFilter !== 'all' && tPaisIdx !== -1) {
+                                        if (linha[tPaisIdx] !== countryFilter) return;
+                                    }
+                                    const tela = linha[tTelaIdx] || '(not set)';
+                                    const contagem = parseInt(linha[tContagemIdx], 10);
+                                    if (!isNaN(contagem)) {
+                                        telas[tela] = (telas[tela] || 0) + contagem;
+                                    }
+                                },
+                                resolve,
+                                reject
+                            );
+                        });
+                    }
+                    const correlacoesTabela = calcularCorrelacoes(eventosJornadaNomes, eventosSelecionadosNomes, eventosPorData, sortedDates, eventMap);
+                    const eventFunilPeriodico = calcularFunilPeriodico(jornada.eventos, eventosData, 'contagem', dataIdx, nomeIdx, contagemIdx);
+                    const userFunilPeriodico = calcularFunilPeriodico(jornada.eventos, eventosData, 'usuarios', dataIdx, nomeIdx, usuariosIdx);
+                    const result = {
+                        id: jornada.id,
+                        nome: jornada.nome,
+                        bigNumbers,
+                        eventos: jornada.eventos,
+                        pizzas: {},
+                        correlacoesTabela: correlacoesTabela
+                    };
+                    if (jornada.showFunil) result.funil = funil;
+                    if (jornada.showSkus) result.pizzas.skus = getTop5(skus);
+                    if (jornada.showTelas) result.pizzas.telas = getTop5(telas);
+                    if (jornada.showEventPeriodicFunnel) result.eventFunilPeriodico = eventFunilPeriodico;
+                    if (jornada.showUserPeriodicFunnel) result.userFunilPeriodico = userFunilPeriodico;
+                    return result;
+                }));
+                resolve({ jornadas: resultadosJornadas });
+            },
+            (err) => reject(err)
+        );
     });
-    const eventosPorData = {};
-    const allDates = new Set();
-    for (const linha of eventosData) {
-        const data = linha[dataIdx];
-        const nomeEvento = linha[nomeIdx];
-        const contagem = parseInt(linha[contagemIdx], 10);
-        if (!data || !nomeEvento || isNaN(contagem)) continue;
-        if (!eventosPorData[data]) eventosPorData[data] = {};
-        if (!eventosPorData[data][nomeEvento]) eventosPorData[data][nomeEvento] = 0;
-        eventosPorData[data][nomeEvento] += contagem;
-        allDates.add(data);
-    }
-    const sortedDates = Array.from(allDates).sort();
-    const eventosSelecionadosNomes = eventosSelecionados.map(e => e.valor);
-    const resultadosJornadas = await Promise.all(jornadas.map(async jornada => {
-        const eventosJornadaNomes = jornada.eventos.map(e => e.nome);
-        const ultimoEventoNome = eventosJornadaNomes[eventosJornadaNomes.length - 1];
-        let totalEventos = 0;
-        const funil = {};
-        jornada.eventos.forEach(e => {
-            funil[e.rotulo] = { contagem: 0, usuarios: 0 };
-        });
-        for (const linha of eventosData) {
-            const nomeEvento = linha[nomeIdx];
-            if (eventosJornadaNomes.includes(nomeEvento)) {
-                const contagem = parseInt(linha[contagemIdx], 10);
-                const usuarios = parseInt(linha[usuariosIdx], 10);
-                const rotulo = jornada.eventos.find(e => e.nome === nomeEvento).rotulo;
-                funil[rotulo].contagem += contagem;
-                funil[rotulo].usuarios += usuarios;
-                totalEventos += contagem;
-            }
-        }
-        const firstStepRotulo = jornada.eventos[0].rotulo;
-        const bigNumbers = {
-            totalEventos: totalEventos,
-            totalUsuarios: funil[firstStepRotulo].usuarios,
-            eventosPorUsuario: funil[firstStepRotulo].usuarios > 0 ? (totalEventos / funil[firstStepRotulo].usuarios).toFixed(2) : 0
-        };
-        let skus = {};
-        if (jornada.showSkus) {
-            const skusData = await readCSV(getDataPath(context, `historico_skus_${ultimoEventoNome}.csv`));
-            if (skusData.length > 0) {
-                const sHeader = skusData[0];
-                const sDataIdx = getColumnIndex(sHeader, 'Data');
-                const sSkuIdx = getColumnIndex(sHeader, 'SKU');
-                const sPaisIdx = getColumnIndex(sHeader, 'Pais'); 
-                const sContagemIdx = getColumnIndex(sHeader, 'ContagemDeEventos');
-                for (const linha of skusData.slice(1)) {
-                    if (linha.length < 3) continue;
-                    const dataCSV = parseDateAsUTC(linha[sDataIdx]);
-                    if (dataCSV < startDate || dataCSV > endDate) continue;
-                    if (countryFilter !== 'all' && sPaisIdx !== -1) {
-                        if (linha[sPaisIdx] !== countryFilter) continue;
-                    }
-                    const sku = linha[sSkuIdx] || '(not set)';
-                    const contagem = parseInt(linha[sContagemIdx], 10);
-                    if (!isNaN(contagem)) {
-                        skus[sku] = (skus[sku] || 0) + contagem;
-                    }
-                }
-            }
-        }
-        let telas = {};
-        if (jornada.showTelas) {
-            const telasData = await readCSV(getDataPath(context, `historico_telas_${ultimoEventoNome}.csv`));
-            if (telasData.length > 0) {
-                const tHeader = telasData[0];
-                const tDataIdx = getColumnIndex(tHeader, 'Data');
-                const tTelaIdx = getColumnIndex(tHeader, 'Tela');
-                const tPaisIdx = getColumnIndex(tHeader, 'Pais'); 
-                const tContagemIdx = getColumnIndex(tHeader, 'ContagemDeEventos');
-                for (const linha of telasData.slice(1)) {
-                    if (linha.length < 3) continue;
-                    const dataCSV = parseDateAsUTC(linha[tDataIdx]);
-                    if (dataCSV < startDate || dataCSV > endDate) continue;
-                    if (countryFilter !== 'all' && tPaisIdx !== -1) {
-                        if (linha[tPaisIdx] !== countryFilter) continue;
-                    }
-                    const tela = linha[tTelaIdx] || '(not set)';
-                    const contagem = parseInt(linha[tContagemIdx], 10);
-                    if (!isNaN(contagem)) {
-                        telas[tela] = (telas[tela] || 0) + contagem;
-                    }
-                }
-            }
-        }
-        const correlacoesTabela = calcularCorrelacoes(eventosJornadaNomes, eventosSelecionadosNomes, eventosPorData, sortedDates, eventMap);
-        const eventFunilPeriodico = calcularFunilPeriodico(jornada.eventos, eventosData, 'contagem', dataIdx, nomeIdx, contagemIdx);
-        const userFunilPeriodico = calcularFunilPeriodico(jornada.eventos, eventosData, 'usuarios', dataIdx, nomeIdx, usuariosIdx);
-        const result = {
-            id: jornada.id,
-            nome: jornada.nome,
-            bigNumbers,
-            eventos: jornada.eventos,
-            pizzas: {},
-            correlacoesTabela: correlacoesTabela
-        };
-        if (jornada.showFunil) result.funil = funil;
-        if (jornada.showSkus) result.pizzas.skus = getTop5(skus);
-        if (jornada.showTelas) result.pizzas.telas = getTop5(telas);
-        if (jornada.showEventPeriodicFunnel) result.eventFunilPeriodico = eventFunilPeriodico;
-        if (jornada.showUserPeriodicFunnel) result.userFunilPeriodico = userFunilPeriodico;
-        return result;
-    }));
-    return { jornadas: resultadosJornadas };
 }
 function calcularFunilPeriodico(eventosJornada, eventosData, metric, dataIdx, nomeIdx, valIdx) {
     const funilPeriodico = {};
@@ -299,17 +315,32 @@ app.get('/data', async (req, res) => {
         res.status(500).json({ error: e.message });
     }
 });
-app.get('/api/paises', async (req, res) => {
+app.get('/api/paises', (req, res) => {
     try {
         const { context } = req.query;
         const historicoPath = getPreferredHistoricoPath(context);
-        const csvData = await readCSV(historicoPath);
-        if (csvData.length < 1) return res.json([]);
-        const header = csvData[0];
-        const paisIdx = getColumnIndex(header, 'Pais');
-        if (paisIdx === -1) return res.json([]);
-        const paises = [...new Set(csvData.slice(1).map(linha => linha[paisIdx]).filter(Boolean))].sort();
-        res.json(paises);
+        const paises = new Set();
+        let header = true;
+        let paisIdx = -1;
+        processCSVStream(historicoPath,
+            (linha) => {
+                if (header) {
+                    paisIdx = getColumnIndex(linha, 'Pais');
+                    header = false;
+                    return;
+                }
+                if (paisIdx !== -1 && linha[paisIdx]) {
+                    paises.add(linha[paisIdx]);
+                }
+            },
+            () => {
+                res.json(Array.from(paises).sort());
+            },
+            (err) => {
+                console.error("Error fetching countries:", err.message);
+                res.status(500).json({ error: err.message });
+            }
+        );
     } catch (e) {
         console.error("Error fetching countries:", e.message);
         res.status(500).json({ error: e.message });
@@ -445,28 +476,45 @@ app.post('/api/sync-events', async (req, res) => {
     const client = await pool.connect();
     try {
         const historicoPath = getDataPath(context, 'historico_eventos.csv');
-        const eventosData = await readCSV(historicoPath);
-        const uniqueEventos = [...new Set(eventosData.map(line => line[1]).filter(Boolean))];
-        await client.query('BEGIN');
-        await client.query(`CREATE TEMP TABLE temp_eventos (valor TEXT NOT NULL)`);
-        for (const evento of uniqueEventos) {
-            await client.query('INSERT INTO temp_eventos (valor) VALUES ($1)', [evento]);
-        }
-        await client.query(`
-            INSERT INTO ${eventoTable} (valor, rotulo)
-            SELECT t.valor, t.valor
-            FROM temp_eventos t
-            LEFT JOIN ${eventoTable} e ON t.valor = e.valor
-            WHERE e.valor IS NULL
-        `);
-        await client.query('COMMIT');
-        res.json({ message: 'Sincronização de eventos concluída com sucesso!' });
+        const uniqueEventos = new Set();
+        let header = true;
+        processCSVStream(historicoPath,
+            (line) => {
+                if (header) {
+                    header = false;
+                    return;
+                }
+                if (line[1]) {
+                    uniqueEventos.add(line[1]);
+                }
+            },
+            async () => {
+                await client.query('BEGIN');
+                await client.query(`CREATE TEMP TABLE temp_eventos (valor TEXT NOT NULL)`);
+                for (const evento of uniqueEventos) {
+                    await client.query('INSERT INTO temp_eventos (valor) VALUES ($1)', [evento]);
+                }
+                await client.query(`
+                    INSERT INTO ${eventoTable} (valor, rotulo)
+                    SELECT t.valor, t.valor
+                    FROM temp_eventos t
+                    LEFT JOIN ${eventoTable} e ON t.valor = e.valor
+                    WHERE e.valor IS NULL
+                `);
+                await client.query('COMMIT');
+                res.json({ message: 'Sincronização de eventos concluída com sucesso!' });
+                client.release();
+            },
+            async (err) => {
+                await client.query('ROLLBACK');
+                console.error("Error syncing events:", err);
+                res.status(500).json({ message: err.message });
+                client.release();
+            }
+        );
     } catch (e) {
-        await client.query('ROLLBACK');
         console.error("Error syncing events:", e);
         res.status(500).json({ message: e.message });
-    } finally {
-        client.release();
     }
 });
 app.get('/api/top-events', async (req, res) => {
@@ -484,48 +532,58 @@ app.get('/api/top-events', async (req, res) => {
         const { rows: eventosSelecionados } = await db.query(`SELECT valor, rotulo FROM ${eventoTable}`);
         const eventMap = new Map(eventosSelecionados.map(e => [e.valor, e.rotulo]));
         const historicoPath = getPreferredHistoricoPath(context);
-        const csvData = await readCSV(historicoPath);
-        if (csvData.length < 2) return res.json([]);
-        const header = csvData[0];
-        const dataIdx = getColumnIndex(header, 'Data');
-        const nomeIdx = getColumnIndex(header, 'NomeDoEvento');
-        const paisIdx = getColumnIndex(header, 'Pais');
-        const contagemIdx = getColumnIndex(header, 'ContagemDeEventos');
-        const usuariosIdx = getColumnIndex(header, 'TotalDeUsuarios');
         const eventAggregates = {};
-        for (const linha of csvData.slice(1)) {
-            const nomeEvento = linha[nomeIdx];
-            if (!eventMap.has(nomeEvento)) continue;
-            const data = linha[dataIdx];
-            const dataCSV = parseDateAsUTC(data);
-            if (dataCSV < startDate || dataCSV > endDate) continue;
-            if (countryFilter && countryFilter !== 'all' && paisIdx !== -1) {
-                if (linha[paisIdx] !== countryFilter) continue;
+        let header;
+        let dataIdx, nomeIdx, paisIdx, contagemIdx, usuariosIdx;
+        processCSVStream(historicoPath,
+            (linha) => {
+                if (!header) {
+                    header = linha;
+                    dataIdx = getColumnIndex(header, 'Data');
+                    nomeIdx = getColumnIndex(header, 'NomeDoEvento');
+                    paisIdx = getColumnIndex(header, 'Pais');
+                    contagemIdx = getColumnIndex(header, 'ContagemDeEventos');
+                    usuariosIdx = getColumnIndex(header, 'TotalDeUsuarios');
+                    return;
+                }
+                const nomeEvento = linha[nomeIdx];
+                if (!eventMap.has(nomeEvento)) return;
+                const data = linha[dataIdx];
+                const dataCSV = parseDateAsUTC(data);
+                if (dataCSV < startDate || dataCSV > endDate) return;
+                if (countryFilter && countryFilter !== 'all' && paisIdx !== -1) {
+                    if (linha[paisIdx] !== countryFilter) return;
+                }
+                const contagem = parseInt(linha[contagemIdx], 10);
+                const usuarios = parseInt(linha[usuariosIdx], 10);
+                if (isNaN(contagem) || isNaN(usuarios)) return;
+                if (!eventAggregates[nomeEvento]) {
+                    eventAggregates[nomeEvento] = {
+                        nome: nomeEvento,
+                        rotulo: eventMap.get(nomeEvento) || nomeEvento,
+                        contagem: 0,
+                        usuarios: 0
+                    };
+                }
+                eventAggregates[nomeEvento].contagem += contagem;
+                eventAggregates[nomeEvento].usuarios += usuarios;
+            },
+            () => {
+                const topEvents = Object.values(eventAggregates)
+                    .sort((a, b) => b.contagem - a.contagem);
+                res.json(topEvents);
+
+            },
+            (err) => {
+                console.error("Error in /api/top-events endpoint:", err.message);
+                res.status(500).json({ error: err.message });
             }
-            const contagem = parseInt(linha[contagemIdx], 10);
-            const usuarios = parseInt(linha[usuariosIdx], 10);
-            if (isNaN(contagem) || isNaN(usuarios)) continue;
-            if (!eventAggregates[nomeEvento]) {
-                eventAggregates[nomeEvento] = {
-                    nome: nomeEvento,
-                    rotulo: eventMap.get(nomeEvento) || nomeEvento,
-                    contagem: 0,
-                    usuarios: 0
-                };
-            }
-            eventAggregates[nomeEvento].contagem += contagem;
-            eventAggregates[nomeEvento].usuarios += usuarios;
-        }
-        const topEvents = Object.values(eventAggregates)
-            .sort((a, b) => b.contagem - a.contagem);
-        res.json(topEvents);
+        );
     } catch (e) {
         console.error("Error in /api/top-events endpoint:", e.message);
         res.status(500).json({ error: e.message });
     }
 });
-const db = require('./db');
-const { pool } = db;
 app.get('/db-test', async (req, res) => {
     try {
         const result = await db.query('SELECT 1 + 1 AS solution;');

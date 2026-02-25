@@ -18,6 +18,7 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const { exec } = require('child_process');
+const readline = require('readline');
 const app = express();
 const port = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname)));
@@ -26,17 +27,40 @@ function parseDateAsUTC(dateString) {
     return new Date(Date.UTC(year, month - 1, day));
 }
 function readCSV(filePath) {
-    try {
-        if (!fs.existsSync(filePath)) return [];
-        const data = fs.readFileSync(filePath, 'utf8');
-        return data.split('\n').filter(line => line.trim() !== '').map(line => {
-            const matches = line.match(/(".*?"|[^",]+|(?<=,)(?=,)|(?<=,)$|^$)/g);
-            return matches ? matches.map(field => field.replace(/^"|"$/g, '').trim()) : [];
+    return new Promise((resolve, reject) => {
+        if (!fs.existsSync(filePath)) {
+            return resolve([]);
+        }
+        const results = [];
+        const stream = fs.createReadStream(filePath, { encoding: 'utf8' });
+        const rl = readline.createInterface({
+            input: stream,
+            crlfDelay: Infinity
         });
-    } catch (e) {
-        console.error(`Error reading ${filePath}:`, e.message);
-        return [];
-    }
+
+        rl.on('line', (line) => {
+            if (line.trim() !== '') {
+                const matches = line.match(/(".*?"|[^",]+|(?<=,)(?=,)|(?<=,)$|^$)/g);
+                if (matches) {
+                    results.push(matches.map(field => field.replace(/^"|"$/g, '').trim()));
+                }
+            }
+        });
+
+        rl.on('close', () => {
+            resolve(results);
+        });
+
+        rl.on('error', (err) => {
+            console.error(`Error reading ${filePath}:`, err.message);
+            reject(err);
+        });
+
+        stream.on('error', (err) => {
+            console.error(`Error reading ${filePath}:`, err.message);
+            reject(err);
+        });
+    });
 }
 const ss = require('simple-statistics');
 async function getJornadasFromDB(context) {
@@ -79,7 +103,7 @@ async function processarJornadas(context, startDate, endDate, countryFilter = 'a
     const eventMap = new Map(eventosSelecionados.map(e => [e.valor, e.rotulo]));
     const eventosPermitidos = new Set(eventosSelecionados.map(e => e.valor));
     const historicoPath = getPreferredHistoricoPath(context);
-    const csvData = readCSV(historicoPath);
+    const csvData = await readCSV(historicoPath);
     if (csvData.length < 1) return { jornadas: [] };
     const header = csvData[0];
     const dataIdx = getColumnIndex(header, 'Data');
@@ -111,7 +135,7 @@ async function processarJornadas(context, startDate, endDate, countryFilter = 'a
     }
     const sortedDates = Array.from(allDates).sort();
     const eventosSelecionadosNomes = eventosSelecionados.map(e => e.valor);
-    const resultadosJornadas = jornadas.map(jornada => {
+    const resultadosJornadas = await Promise.all(jornadas.map(async jornada => {
         const eventosJornadaNomes = jornada.eventos.map(e => e.nome);
         const ultimoEventoNome = eventosJornadaNomes[eventosJornadaNomes.length - 1];
         let totalEventos = 0;
@@ -138,7 +162,7 @@ async function processarJornadas(context, startDate, endDate, countryFilter = 'a
         };
         let skus = {};
         if (jornada.showSkus) {
-            const skusData = readCSV(getDataPath(context, `historico_skus_${ultimoEventoNome}.csv`));
+            const skusData = await readCSV(getDataPath(context, `historico_skus_${ultimoEventoNome}.csv`));
             if (skusData.length > 0) {
                 const sHeader = skusData[0];
                 const sDataIdx = getColumnIndex(sHeader, 'Data');
@@ -162,7 +186,7 @@ async function processarJornadas(context, startDate, endDate, countryFilter = 'a
         }
         let telas = {};
         if (jornada.showTelas) {
-            const telasData = readCSV(getDataPath(context, `historico_telas_${ultimoEventoNome}.csv`));
+            const telasData = await readCSV(getDataPath(context, `historico_telas_${ultimoEventoNome}.csv`));
             if (telasData.length > 0) {
                 const tHeader = telasData[0];
                 const tDataIdx = getColumnIndex(tHeader, 'Data');
@@ -201,7 +225,7 @@ async function processarJornadas(context, startDate, endDate, countryFilter = 'a
         if (jornada.showEventPeriodicFunnel) result.eventFunilPeriodico = eventFunilPeriodico;
         if (jornada.showUserPeriodicFunnel) result.userFunilPeriodico = userFunilPeriodico;
         return result;
-    });
+    }));
     return { jornadas: resultadosJornadas };
 }
 function calcularFunilPeriodico(eventosJornada, eventosData, metric, dataIdx, nomeIdx, valIdx) {
@@ -279,7 +303,7 @@ app.get('/api/paises', async (req, res) => {
     try {
         const { context } = req.query;
         const historicoPath = getPreferredHistoricoPath(context);
-        const csvData = readCSV(historicoPath);
+        const csvData = await readCSV(historicoPath);
         if (csvData.length < 1) return res.json([]);
         const header = csvData[0];
         const paisIdx = getColumnIndex(header, 'Pais');
@@ -421,7 +445,7 @@ app.post('/api/sync-events', async (req, res) => {
     const client = await pool.connect();
     try {
         const historicoPath = getDataPath(context, 'historico_eventos.csv');
-        const eventosData = readCSV(historicoPath);
+        const eventosData = await readCSV(historicoPath);
         const uniqueEventos = [...new Set(eventosData.map(line => line[1]).filter(Boolean))];
         await client.query('BEGIN');
         await client.query(`CREATE TEMP TABLE temp_eventos (valor TEXT NOT NULL)`);
@@ -460,7 +484,7 @@ app.get('/api/top-events', async (req, res) => {
         const { rows: eventosSelecionados } = await db.query(`SELECT valor, rotulo FROM ${eventoTable}`);
         const eventMap = new Map(eventosSelecionados.map(e => [e.valor, e.rotulo]));
         const historicoPath = getPreferredHistoricoPath(context);
-        const csvData = readCSV(historicoPath);
+        const csvData = await readCSV(historicoPath);
         if (csvData.length < 2) return res.json([]);
         const header = csvData[0];
         const dataIdx = getColumnIndex(header, 'Data');

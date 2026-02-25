@@ -1,3 +1,2546 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6dd5a8de3b0f24a65fb457ceffbec174691b03c32f6555cfe316be35553f9769
-size 105102
+Data,Pais,Tela,ContagemDeEventos,TotalDeUsuarios
+"2024-10-01","Brazil","(not set)",223,95
+"2024-10-01","United States","(not set)",33,18
+"2024-10-01","Mexico","(not set)",2,2
+"2024-10-01","Cuba","(not set)",1,1
+"2024-10-01","Indonesia","(not set)",1,1
+"2024-10-01","Philippines","(not set)",1,1
+"2024-10-02","Brazil","(not set)",147,85
+"2024-10-02","United States","(not set)",25,20
+"2024-10-02","Mexico","(not set)",3,2
+"2024-10-02","Iran","(not set)",2,2
+"2024-10-02","Canada","(not set)",1,1
+"2024-10-02","Colombia","(not set)",1,1
+"2024-10-02","Germany","(not set)",1,1
+"2024-10-03","Brazil","(not set)",202,95
+"2024-10-03","United States","(not set)",39,12
+"2024-10-03","American Samoa","(not set)",2,1
+"2024-10-04","Brazil","(not set)",308,73
+"2024-10-04","United States","(not set)",18,16
+"2024-10-04","Germany","(not set)",1,1
+"2024-10-04","Indonesia","(not set)",1,1
+"2024-10-04","Mexico","(not set)",1,1
+"2024-10-04","Nigeria","(not set)",1,1
+"2024-10-04","Philippines","(not set)",1,1
+"2024-10-05","Brazil","(not set)",125,76
+"2024-10-05","United States","(not set)",24,17
+"2024-10-05","Egypt","(not set)",2,1
+"2024-10-05","Mexico","(not set)",2,2
+"2024-10-05","Bangladesh","(not set)",1,1
+"2024-10-05","Canada","(not set)",1,1
+"2024-10-05","Colombia","(not set)",1,1
+"2024-10-05","Nigeria","(not set)",1,1
+"2024-10-06","Brazil","(not set)",199,67
+"2024-10-06","United States","(not set)",22,14
+"2024-10-06","Andorra","(not set)",1,1
+"2024-10-06","Pakistan","(not set)",1,1
+"2024-10-06","Saudi Arabia","(not set)",1,1
+"2024-10-07","Brazil","(not set)",134,74
+"2024-10-07","United States","(not set)",19,13
+"2024-10-07","Mexico","(not set)",17,2
+"2024-10-07","Algeria","(not set)",1,1
+"2024-10-07","Portugal","(not set)",1,1
+"2024-10-07","Yemen","(not set)",1,1
+"2024-10-08","Brazil","(not set)",89,64
+"2024-10-08","United States","(not set)",15,6
+"2024-10-08","Mexico","(not set)",2,2
+"2024-10-08","Iran","(not set)",1,1
+"2024-10-08","Pakistan","(not set)",1,1
+"2024-10-08","Vietnam","(not set)",1,1
+"2024-10-09","Brazil","(not set)",134,78
+"2024-10-09","United States","(not set)",9,7
+"2024-10-09","Mexico","(not set)",2,2
+"2024-10-09","Angola","(not set)",1,1
+"2024-10-09","Argentina","(not set)",1,1
+"2024-10-09","Iran","(not set)",1,1
+"2024-10-09","Norway","(not set)",1,1
+"2024-10-10","Brazil","(not set)",142,77
+"2024-10-10","United States","(not set)",22,13
+"2024-10-10","Indonesia","(not set)",18,1
+"2024-10-11","Brazil","(not set)",135,67
+"2024-10-11","United States","(not set)",8,8
+"2024-10-11","Jamaica","(not set)",1,1
+"2024-10-11","Mexico","(not set)",1,1
+"2024-10-12","Brazil","(not set)",250,70
+"2024-10-12","United States","(not set)",19,10
+"2024-10-12","Mexico","(not set)",2,2
+"2024-10-12","Iran","(not set)",1,1
+"2024-10-12","Mozambique","(not set)",1,1
+"2024-10-13","Brazil","(not set)",170,81
+"2024-10-13","United States","(not set)",34,15
+"2024-10-13","Pakistan","(not set)",2,1
+"2024-10-13","Mexico","(not set)",1,1
+"2024-10-14","Brazil","(not set)",145,87
+"2024-10-14","United States","(not set)",11,7
+"2024-10-14","Honduras","(not set)",1,1
+"2024-10-14","Italy","(not set)",1,1
+"2024-10-14","Japan","(not set)",1,1
+"2024-10-14","Morocco","(not set)",1,1
+"2024-10-14","Myanmar (Burma)","(not set)",1,1
+"2024-10-14","Saudi Arabia","(not set)",1,1
+"2024-10-14","Yemen","(not set)",1,1
+"2024-10-15","Brazil","(not set)",119,69
+"2024-10-15","United States","(not set)",17,13
+"2024-10-15","Argentina","(not set)",2,1
+"2024-10-15","Cuba","(not set)",1,1
+"2024-10-15","Germany","(not set)",1,1
+"2024-10-15","Mexico","(not set)",1,1
+"2024-10-15","Qatar","(not set)",1,1
+"2024-10-16","Brazil","(not set)",242,70
+"2024-10-16","United States","(not set)",21,13
+"2024-10-16","Cuba","(not set)",1,1
+"2024-10-16","Indonesia","(not set)",1,1
+"2024-10-17","Brazil","(not set)",92,54
+"2024-10-17","United States","(not set)",9,8
+"2024-10-17","Mexico","(not set)",2,2
+"2024-10-17","Papua New Guinea","(not set)",2,1
+"2024-10-17","Bangladesh","(not set)",1,1
+"2024-10-18","Brazil","(not set)",87,70
+"2024-10-18","United States","(not set)",9,9
+"2024-10-18","Mexico","(not set)",2,2
+"2024-10-18","Romania","(not set)",1,1
+"2024-10-19","Brazil","(not set)",153,75
+"2024-10-19","United States","(not set)",12,10
+"2024-10-19","Afghanistan","(not set)",1,1
+"2024-10-19","Egypt","(not set)",1,1
+"2024-10-19","Zambia","(not set)",1,1
+"2024-10-20","Brazil","(not set)",141,79
+"2024-10-20","United States","(not set)",22,16
+"2024-10-20","Mexico","(not set)",4,4
+"2024-10-20","Bangladesh","(not set)",1,1
+"2024-10-20","Cuba","(not set)",1,1
+"2024-10-21","Brazil","(not set)",128,63
+"2024-10-21","United States","(not set)",14,6
+"2024-10-21","Mexico","(not set)",4,1
+"2024-10-21","Italy","(not set)",2,1
+"2024-10-21","Chile","(not set)",1,1
+"2024-10-21","Thailand","(not set)",1,1
+"2024-10-22","Brazil","(not set)",264,80
+"2024-10-22","United States","(not set)",12,10
+"2024-10-22","Canada","(not set)",1,1
+"2024-10-22","Sudan","(not set)",1,1
+"2024-10-22","Zambia","(not set)",1,1
+"2024-10-23","Brazil","(not set)",155,65
+"2024-10-23","United States","(not set)",23,18
+"2024-10-23","Morocco","(not set)",2,1
+"2024-10-23","Mexico","(not set)",1,1
+"2024-10-24","Brazil","(not set)",116,68
+"2024-10-24","United States","(not set)",33,15
+"2024-10-24","Bangladesh","(not set)",1,1
+"2024-10-24","Mexico","(not set)",1,1
+"2024-10-25","Brazil","(not set)",119,63
+"2024-10-25","United States","(not set)",14,11
+"2024-10-25","Iran","(not set)",1,1
+"2024-10-25","Mexico","(not set)",1,1
+"2024-10-26","Brazil","(not set)",114,79
+"2024-10-26","United States","(not set)",17,11
+"2024-10-26","India","(not set)",2,2
+"2024-10-26","Canada","(not set)",1,1
+"2024-10-26","Mexico","(not set)",1,1
+"2024-10-26","Peru","(not set)",1,1
+"2024-10-27","Brazil","(not set)",129,75
+"2024-10-27","United States","(not set)",12,10
+"2024-10-27","Indonesia","(not set)",1,1
+"2024-10-27","Iran","(not set)",1,1
+"2024-10-27","Mexico","(not set)",1,1
+"2024-10-28","Brazil","(not set)",146,77
+"2024-10-28","United States","(not set)",16,8
+"2024-10-28","Philippines","(not set)",3,1
+"2024-10-28","Mexico","(not set)",2,2
+"2024-10-28","United Arab Emirates","(not set)",1,1
+"2024-10-29","Brazil","(not set)",162,73
+"2024-10-29","United States","(not set)",12,9
+"2024-10-29","Ethiopia","(not set)",2,2
+"2024-10-29","India","(not set)",2,1
+"2024-10-29","Argentina","(not set)",1,1
+"2024-10-29","Egypt","(not set)",1,1
+"2024-10-29","Morocco","(not set)",1,1
+"2024-10-29","Nigeria","(not set)",1,1
+"2024-10-29","United Kingdom","(not set)",1,1
+"2024-10-29","Zambia","(not set)",1,1
+"2024-10-30","Brazil","(not set)",519,79
+"2024-10-30","United States","(not set)",22,20
+"2024-10-30","Singapore","(not set)",2,1
+"2024-10-30","Iran","(not set)",1,1
+"2024-10-30","Japan","(not set)",1,1
+"2024-10-30","Nigeria","(not set)",1,1
+"2024-10-31","Brazil","(not set)",108,58
+"2024-10-31","United States","(not set)",20,10
+"2024-10-31","Mexico","(not set)",2,1
+"2024-10-31","Philippines","(not set)",2,2
+"2024-10-31","Canada","(not set)",1,1
+"2024-10-31","Peru","(not set)",1,1
+"2024-10-31","Zambia","(not set)",1,1
+"2024-11-01","Brazil","(not set)",119,77
+"2024-11-01","United States","(not set)",14,14
+"2024-11-01","Bangladesh","(not set)",2,1
+"2024-11-01","India","(not set)",2,1
+"2024-11-01","Iran","(not set)",2,2
+"2024-11-01","Mexico","(not set)",1,1
+"2024-11-01","Nigeria","(not set)",1,1
+"2024-11-01","United Kingdom","(not set)",1,1
+"2024-11-02","Brazil","(not set)",149,76
+"2024-11-02","United States","(not set)",12,11
+"2024-11-02","Mexico","(not set)",3,3
+"2024-11-02","Mozambique","(not set)",1,1
+"2024-11-03","Brazil","(not set)",177,86
+"2024-11-03","United States","(not set)",12,7
+"2024-11-03","Angola","(not set)",2,1
+"2024-11-03","Colombia","(not set)",1,1
+"2024-11-03","Mozambique","(not set)",1,1
+"2024-11-03","Netherlands","(not set)",1,1
+"2024-11-04","Brazil","(not set)",152,81
+"2024-11-04","United States","(not set)",14,11
+"2024-11-04","Mexico","(not set)",6,4
+"2024-11-04","Mozambique","(not set)",1,1
+"2024-11-04","Pakistan","(not set)",1,1
+"2024-11-05","Brazil","(not set)",141,78
+"2024-11-05","United States","(not set)",13,7
+"2024-11-05","Mexico","(not set)",4,3
+"2024-11-05","Iran","(not set)",1,1
+"2024-11-06","Brazil","(not set)",165,66
+"2024-11-06","United States","(not set)",5,5
+"2024-11-06","Mexico","(not set)",2,1
+"2024-11-06","Australia","(not set)",1,1
+"2024-11-06","Cuba","(not set)",1,1
+"2024-11-06","Hungary","(not set)",1,1
+"2024-11-06","Mozambique","(not set)",1,1
+"2024-11-06","Romania","(not set)",1,1
+"2024-11-07","Brazil","(not set)",99,55
+"2024-11-07","United States","(not set)",18,8
+"2024-11-07","Puerto Rico","(not set)",1,1
+"2024-11-08","Brazil","(not set)",97,58
+"2024-11-08","Thailand","(not set)",8,1
+"2024-11-08","United States","(not set)",4,3
+"2024-11-08","United Kingdom","(not set)",3,1
+"2024-11-08","Bahamas","(not set)",1,1
+"2024-11-08","Mexico","(not set)",1,1
+"2024-11-09","Brazil","(not set)",92,58
+"2024-11-09","United States","(not set)",29,14
+"2024-11-09","Colombia","(not set)",1,1
+"2024-11-09","Mexico","(not set)",1,1
+"2024-11-09","Mozambique","(not set)",1,1
+"2024-11-09","United Kingdom","(not set)",1,1
+"2024-11-09","Yemen","(not set)",1,1
+"2024-11-10","Brazil","(not set)",118,76
+"2024-11-10","United States","(not set)",9,8
+"2024-11-10","Mexico","(not set)",4,2
+"2024-11-10","Italy","(not set)",2,1
+"2024-11-10","Angola","(not set)",1,1
+"2024-11-10","Philippines","(not set)",1,1
+"2024-11-11","Brazil","(not set)",154,75
+"2024-11-11","United States","(not set)",13,5
+"2024-11-11","Algeria","(not set)",2,1
+"2024-11-11","Angola","(not set)",1,1
+"2024-11-11","Guyana","(not set)",1,1
+"2024-11-11","Indonesia","(not set)",1,1
+"2024-11-11","Mexico","(not set)",1,1
+"2024-11-11","Zambia","(not set)",1,1
+"2024-11-12","Brazil","(not set)",132,76
+"2024-11-12","Iran","(not set)",13,2
+"2024-11-12","United States","(not set)",8,8
+"2024-11-12","Mexico","(not set)",3,2
+"2024-11-12","India","(not set)",1,1
+"2024-11-13","Brazil","(not set)",241,68
+"2024-11-13","United States","(not set)",5,5
+"2024-11-13","Mexico","(not set)",2,1
+"2024-11-13","Iran","(not set)",1,1
+"2024-11-13","United Kingdom","(not set)",1,1
+"2024-11-14","Brazil","(not set)",147,53
+"2024-11-14","United States","(not set)",12,11
+"2024-11-14","Bangladesh","(not set)",1,1
+"2024-11-14","Mexico","(not set)",1,1
+"2024-11-15","Brazil","(not set)",150,69
+"2024-11-15","United States","(not set)",22,15
+"2024-11-15","Indonesia","(not set)",1,1
+"2024-11-15","Mexico","(not set)",1,1
+"2024-11-15","Nigeria","(not set)",1,1
+"2024-11-16","Brazil","(not set)",110,66
+"2024-11-16","United States","(not set)",6,6
+"2024-11-16","Mexico","(not set)",3,3
+"2024-11-16","Iran","(not set)",1,1
+"2024-11-17","Brazil","(not set)",158,70
+"2024-11-17","United States","(not set)",28,10
+"2024-11-17","Qatar","(not set)",2,1
+"2024-11-17","Cuba","(not set)",1,1
+"2024-11-17","Mexico","(not set)",1,1
+"2024-11-18","Brazil","(not set)",89,44
+"2024-11-18","United States","(not set)",24,13
+"2024-11-18","Iran","(not set)",1,1
+"2024-11-18","Thailand","(not set)",1,1
+"2024-11-19","Brazil","(not set)",154,75
+"2024-11-19","United States","(not set)",26,13
+"2024-11-19","Guatemala","(not set)",2,1
+"2024-11-19","Iran","(not set)",2,2
+"2024-11-19","Mexico","(not set)",1,1
+"2024-11-19","Sri Lanka","(not set)",1,1
+"2024-11-20","Brazil","(not set)",193,62
+"2024-11-20","United States","(not set)",29,16
+"2024-11-20","Mexico","(not set)",3,2
+"2024-11-20","Bangladesh","(not set)",1,1
+"2024-11-20","Cuba","(not set)",1,1
+"2024-11-20","Hungary","(not set)",1,1
+"2024-11-20","Malawi","(not set)",1,1
+"2024-11-20","Sudan","(not set)",1,1
+"2024-11-21","Brazil","(not set)",83,54
+"2024-11-21","United States","(not set)",7,7
+"2024-11-21","Mexico","(not set)",2,2
+"2024-11-21","Guatemala","(not set)",1,1
+"2024-11-21","Kenya","(not set)",1,1
+"2024-11-22","Brazil","(not set)",83,47
+"2024-11-22","United States","(not set)",21,9
+"2024-11-22","Guatemala","(not set)",2,1
+"2024-11-22","Mexico","(not set)",1,1
+"2024-11-22","Papua New Guinea","(not set)",1,1
+"2024-11-22","United Kingdom","(not set)",1,1
+"2024-11-23","Brazil","(not set)",200,66
+"2024-11-23","United States","(not set)",12,10
+"2024-11-23","Guatemala","(not set)",3,2
+"2024-11-23","Luxembourg","(not set)",1,1
+"2024-11-23","Mexico","(not set)",1,1
+"2024-11-24","Brazil","(not set)",202,71
+"2024-11-24","United States","(not set)",26,13
+"2024-11-24","Mexico","(not set)",3,2
+"2024-11-24","Cuba","(not set)",1,1
+"2024-11-24","Pakistan","(not set)",1,1
+"2024-11-24","Portugal","(not set)",1,1
+"2024-11-24","Türkiye","(not set)",1,1
+"2024-11-25","Brazil","(not set)",103,60
+"2024-11-25","United States","(not set)",10,9
+"2024-11-25","Cuba","(not set)",1,1
+"2024-11-25","Indonesia","(not set)",1,1
+"2024-11-25","Mexico","(not set)",1,1
+"2024-11-25","Nigeria","(not set)",1,1
+"2024-11-25","Philippines","(not set)",1,1
+"2024-11-26","Brazil","(not set)",178,94
+"2024-11-26","United States","(not set)",14,8
+"2024-11-27","Brazil","(not set)",127,72
+"2024-11-27","United States","(not set)",26,12
+"2024-11-27","Egypt","(not set)",1,1
+"2024-11-27","Iran","(not set)",1,1
+"2024-11-27","Yemen","(not set)",1,1
+"2024-11-28","Brazil","(not set)",128,78
+"2024-11-28","United States","(not set)",18,11
+"2024-11-28","Cuba","(not set)",1,1
+"2024-11-28","Indonesia","(not set)",1,1
+"2024-11-28","Mozambique","(not set)",1,1
+"2024-11-29","Brazil","(not set)",110,72
+"2024-11-29","United States","(not set)",16,9
+"2024-11-29","Mexico","(not set)",4,2
+"2024-11-29","Kenya","(not set)",2,2
+"2024-11-29","Angola","(not set)",1,1
+"2024-11-29","Honduras","(not set)",1,1
+"2024-11-29","Pakistan","(not set)",1,1
+"2024-11-30","Brazil","(not set)",241,61
+"2024-11-30","United States","(not set)",26,9
+"2024-11-30","Uganda","(not set)",2,1
+"2024-11-30","Puerto Rico","(not set)",1,1
+"2024-11-30","Saudi Arabia","(not set)",1,1
+"2024-12-01","Brazil","(not set)",156,87
+"2024-12-01","United States","(not set)",29,12
+"2024-12-01","Iran","(not set)",1,1
+"2024-12-01","Pakistan","(not set)",1,1
+"2024-12-01","United Arab Emirates","(not set)",1,1
+"2024-12-02","Brazil","(not set)",204,76
+"2024-12-02","United States","(not set)",42,14
+"2024-12-02","Nigeria","(not set)",3,1
+"2024-12-02","Iran","(not set)",2,1
+"2024-12-02","Kenya","(not set)",2,1
+"2024-12-02","Uganda","(not set)",2,1
+"2024-12-02","Ghana","(not set)",1,1
+"2024-12-02","Guatemala","(not set)",1,1
+"2024-12-02","Thailand","(not set)",1,1
+"2024-12-02","Zambia","(not set)",1,1
+"2024-12-03","Brazil","(not set)",124,72
+"2024-12-03","United States","(not set)",20,11
+"2024-12-03","Liberia","(not set)",1,1
+"2024-12-03","Mexico","(not set)",1,1
+"2024-12-04","Brazil","(not set)",88,54
+"2024-12-04","United States","(not set)",6,5
+"2024-12-04","Iran","(not set)",1,1
+"2024-12-05","Brazil","(not set)",125,68
+"2024-12-05","United States","(not set)",39,14
+"2024-12-05","Mexico","(not set)",2,2
+"2024-12-05","Afghanistan","(not set)",1,1
+"2024-12-06","Brazil","(not set)",210,75
+"2024-12-06","United States","(not set)",21,13
+"2024-12-07","Brazil","(not set)",102,64
+"2024-12-07","United States","(not set)",8,7
+"2024-12-07","Colombia","(not set)",1,1
+"2024-12-07","Iran","(not set)",1,1
+"2024-12-07","Nigeria","(not set)",1,1
+"2024-12-08","Brazil","(not set)",167,64
+"2024-12-08","United States","(not set)",14,8
+"2024-12-08","Pakistan","(not set)",2,1
+"2024-12-08","Angola","(not set)",1,1
+"2024-12-08","Morocco","(not set)",1,1
+"2024-12-08","Portugal","(not set)",1,1
+"2024-12-09","Brazil","(not set)",240,59
+"2024-12-09","United States","(not set)",30,14
+"2024-12-09","Mexico","(not set)",1,1
+"2024-12-09","Nigeria","(not set)",1,1
+"2024-12-10","Brazil","(not set)",143,72
+"2024-12-10","United States","(not set)",27,11
+"2024-12-10","Cuba","(not set)",1,1
+"2024-12-10","Papua New Guinea","(not set)",1,1
+"2024-12-11","Brazil","(not set)",119,60
+"2024-12-11","United States","(not set)",6,5
+"2024-12-11","Argentina","(not set)",1,1
+"2024-12-11","Indonesia","(not set)",1,1
+"2024-12-12","Brazil","(not set)",113,56
+"2024-12-12","United States","(not set)",13,11
+"2024-12-12","Algeria","(not set)",1,1
+"2024-12-12","Angola","(not set)",1,1
+"2024-12-12","India","(not set)",1,1
+"2024-12-12","Romania","(not set)",1,1
+"2024-12-13","Brazil","(not set)",89,57
+"2024-12-13","United States","(not set)",4,4
+"2024-12-13","Mexico","(not set)",2,2
+"2024-12-13","Pakistan","(not set)",2,1
+"2024-12-13","Angola","(not set)",1,1
+"2024-12-13","Argentina","(not set)",1,1
+"2024-12-14","Brazil","(not set)",103,62
+"2024-12-14","United States","(not set)",12,10
+"2024-12-14","Argentina","(not set)",2,2
+"2024-12-14","Bolivia","(not set)",2,1
+"2024-12-15","Brazil","(not set)",185,63
+"2024-12-15","United States","(not set)",6,5
+"2024-12-15","Mexico","(not set)",3,1
+"2024-12-15","Belgium","(not set)",1,1
+"2024-12-15","Guatemala","(not set)",1,1
+"2024-12-15","Zimbabwe","(not set)",1,1
+"2024-12-16","Brazil","(not set)",118,67
+"2024-12-16","United States","(not set)",11,11
+"2024-12-16","Algeria","(not set)",1,1
+"2024-12-16","Iran","(not set)",1,1
+"2024-12-17","Brazil","(not set)",95,62
+"2024-12-17","United States","(not set)",19,9
+"2024-12-17","France","(not set)",9,1
+"2024-12-17","Germany","(not set)",1,1
+"2024-12-17","Nigeria","(not set)",1,1
+"2024-12-18","Brazil","(not set)",143,76
+"2024-12-18","United States","(not set)",15,15
+"2024-12-18","Jamaica","(not set)",1,1
+"2024-12-18","Mexico","(not set)",1,1
+"2024-12-18","Pakistan","(not set)",1,1
+"2024-12-19","Brazil","(not set)",136,83
+"2024-12-19","United States","(not set)",7,6
+"2024-12-19","Angola","(not set)",1,1
+"2024-12-19","Argentina","(not set)",1,1
+"2024-12-19","Mexico","(not set)",1,1
+"2024-12-20","Brazil","(not set)",111,67
+"2024-12-20","United States","(not set)",8,8
+"2024-12-20","Mexico","(not set)",2,1
+"2024-12-20","Hungary","(not set)",1,1
+"2024-12-20","Zimbabwe","(not set)",1,1
+"2024-12-21","Brazil","(not set)",182,78
+"2024-12-21","United States","(not set)",15,12
+"2024-12-21","Cuba","(not set)",1,1
+"2024-12-21","Guatemala","(not set)",1,1
+"2024-12-21","Iran","(not set)",1,1
+"2024-12-21","Mexico","(not set)",1,1
+"2024-12-21","Nigeria","(not set)",1,1
+"2024-12-21","Serbia","(not set)",1,1
+"2024-12-22","Brazil","(not set)",158,76
+"2024-12-22","United States","(not set)",15,10
+"2024-12-22","India","(not set)",6,1
+"2024-12-22","Ghana","(not set)",4,1
+"2024-12-22","Germany","(not set)",1,1
+"2024-12-22","Guatemala","(not set)",1,1
+"2024-12-22","Mexico","(not set)",1,1
+"2024-12-23","Brazil","(not set)",152,72
+"2024-12-23","United States","(not set)",9,9
+"2024-12-23","Argentina","(not set)",2,1
+"2024-12-23","Iran","(not set)",1,1
+"2024-12-23","Yemen","(not set)",1,1
+"2024-12-24","Brazil","(not set)",141,67
+"2024-12-24","United States","(not set)",16,14
+"2024-12-24","Dominican Republic","(not set)",2,1
+"2024-12-24","Kenya","(not set)",1,1
+"2024-12-24","Mexico","(not set)",1,1
+"2024-12-24","United Kingdom","(not set)",1,1
+"2024-12-25","Brazil","(not set)",239,67
+"2024-12-25","United States","(not set)",8,8
+"2024-12-25","Iran","(not set)",2,1
+"2024-12-25","Argentina","(not set)",1,1
+"2024-12-25","Nigeria","(not set)",1,1
+"2024-12-25","Russia","(not set)",1,1
+"2024-12-26","Brazil","(not set)",98,73
+"2024-12-26","United States","(not set)",12,7
+"2024-12-26","Mexico","(not set)",2,1
+"2024-12-26","Thailand","(not set)",2,1
+"2024-12-26","El Salvador","(not set)",1,1
+"2024-12-26","United Arab Emirates","(not set)",1,1
+"2024-12-26","Zimbabwe","(not set)",1,1
+"2024-12-27","Brazil","(not set)",163,79
+"2024-12-27","United States","(not set)",21,10
+"2024-12-27","Iran","(not set)",1,1
+"2024-12-27","Mexico","(not set)",1,1
+"2024-12-27","Saudi Arabia","(not set)",1,1
+"2024-12-28","Brazil","(not set)",135,79
+"2024-12-28","United States","(not set)",11,6
+"2024-12-28","Iran","(not set)",3,2
+"2024-12-28","Mexico","(not set)",2,2
+"2024-12-28","Argentina","(not set)",1,1
+"2024-12-28","Peru","(not set)",1,1
+"2024-12-29","Brazil","(not set)",139,90
+"2024-12-29","United States","(not set)",11,10
+"2024-12-29","Mexico","(not set)",2,2
+"2024-12-30","Brazil","(not set)",104,69
+"2024-12-30","United States","(not set)",21,10
+"2024-12-30","Bangladesh","(not set)",1,1
+"2024-12-30","Bolivia","(not set)",1,1
+"2024-12-30","Mexico","(not set)",1,1
+"2024-12-30","Morocco","(not set)",1,1
+"2024-12-31","Brazil","(not set)",216,72
+"2024-12-31","Portugal","(not set)",39,1
+"2024-12-31","United States","(not set)",17,10
+"2024-12-31","India","(not set)",1,1
+"2025-01-01","Brazil","(not set)",121,78
+"2025-01-01","United States","(not set)",52,13
+"2025-01-01","Algeria","(not set)",1,1
+"2025-01-01","Canada","(not set)",1,1
+"2025-01-01","France","(not set)",1,1
+"2025-01-01","Germany","(not set)",1,1
+"2025-01-01","Jamaica","(not set)",1,1
+"2025-01-01","Mexico","(not set)",1,1
+"2025-01-02","Brazil","(not set)",167,91
+"2025-01-02","United States","(not set)",34,14
+"2025-01-02","Honduras","(not set)",1,1
+"2025-01-02","Iran","(not set)",1,1
+"2025-01-02","Malaysia","(not set)",1,1
+"2025-01-02","South Africa","(not set)",1,1
+"2025-01-02","United Kingdom","(not set)",1,1
+"2025-01-03","Brazil","(not set)",83,64
+"2025-01-03","United States","(not set)",12,9
+"2025-01-03","Bolivia","(not set)",7,1
+"2025-01-03","Mexico","(not set)",2,1
+"2025-01-03","Bangladesh","(not set)",1,1
+"2025-01-03","Jamaica","(not set)",1,1
+"2025-01-04","Brazil","(not set)",196,83
+"2025-01-04","United States","(not set)",8,8
+"2025-01-04","Australia","(not set)",1,1
+"2025-01-04","Egypt","(not set)",1,1
+"2025-01-04","Indonesia","(not set)",1,1
+"2025-01-04","Portugal","(not set)",1,1
+"2025-01-04","United Kingdom","(not set)",1,1
+"2025-01-05","Brazil","(not set)",113,85
+"2025-01-05","United States","(not set)",12,6
+"2025-01-05","Philippines","(not set)",3,1
+"2025-01-05","Ethiopia","(not set)",1,1
+"2025-01-05","Kuwait","(not set)",1,1
+"2025-01-05","Mexico","(not set)",1,1
+"2025-01-05","Spain","(not set)",1,1
+"2025-01-06","Brazil","(not set)",105,78
+"2025-01-06","United States","(not set)",12,9
+"2025-01-06","Mexico","(not set)",3,3
+"2025-01-06","Canada","(not set)",2,1
+"2025-01-06","United Arab Emirates","(not set)",2,1
+"2025-01-06","Cameroon","(not set)",1,1
+"2025-01-07","Brazil","(not set)",120,86
+"2025-01-07","United States","(not set)",6,4
+"2025-01-07","Ethiopia","(not set)",1,1
+"2025-01-07","Liberia","(not set)",1,1
+"2025-01-08","Brazil","(not set)",180,72
+"2025-01-08","United States","(not set)",13,9
+"2025-01-08","Mexico","(not set)",3,3
+"2025-01-08","Bangladesh","(not set)",2,1
+"2025-01-08","Iran","(not set)",1,1
+"2025-01-09","Brazil","(not set)",136,71
+"2025-01-09","United States","(not set)",13,9
+"2025-01-09","Bolivia","(not set)",1,1
+"2025-01-10","Brazil","(not set)",84,56
+"2025-01-10","United States","(not set)",10,9
+"2025-01-10","Canada","(not set)",1,1
+"2025-01-10","India","(not set)",1,1
+"2025-01-10","Mexico","(not set)",1,1
+"2025-01-11","Brazil","(not set)",109,71
+"2025-01-11","United States","(not set)",37,13
+"2025-01-11","Mexico","(not set)",1,1
+"2025-01-11","Nigeria","(not set)",1,1
+"2025-01-12","Brazil","(not set)",140,96
+"2025-01-12","United States","(not set)",17,9
+"2025-01-12","Iran","(not set)",1,1
+"2025-01-12","Mexico","(not set)",1,1
+"2025-01-12","Yemen","(not set)",1,1
+"2025-01-13","Brazil","(not set)",153,83
+"2025-01-13","United States","(not set)",17,10
+"2025-01-13","Mexico","(not set)",3,3
+"2025-01-13","Angola","(not set)",1,1
+"2025-01-13","Guatemala","(not set)",1,1
+"2025-01-13","Indonesia","(not set)",1,1
+"2025-01-13","Israel","(not set)",1,1
+"2025-01-13","Mozambique","(not set)",1,1
+"2025-01-13","Nigeria","(not set)",1,1
+"2025-01-14","Brazil","(not set)",91,60
+"2025-01-14","United States","(not set)",10,7
+"2025-01-14","Mexico","(not set)",3,2
+"2025-01-14","Congo - Kinshasa","(not set)",2,1
+"2025-01-14","Argentina","(not set)",1,1
+"2025-01-14","Egypt","(not set)",1,1
+"2025-01-14","Pakistan","(not set)",1,1
+"2025-01-15","Brazil","(not set)",100,62
+"2025-01-15","United States","(not set)",11,9
+"2025-01-15","Algeria","(not set)",1,1
+"2025-01-15","Mexico","(not set)",1,1
+"2025-01-16","Brazil","(not set)",105,71
+"2025-01-16","United States","(not set)",17,9
+"2025-01-16","Mexico","(not set)",2,2
+"2025-01-17","Brazil","(not set)",100,75
+"2025-01-17","Bangladesh","(not set)",9,1
+"2025-01-17","United States","(not set)",6,6
+"2025-01-17","Argentina","(not set)",2,1
+"2025-01-17","Jamaica","(not set)",2,1
+"2025-01-18","Brazil","(not set)",176,73
+"2025-01-18","United States","(not set)",14,10
+"2025-01-18","Philippines","(not set)",3,1
+"2025-01-18","Argentina","(not set)",2,2
+"2025-01-18","Guatemala","(not set)",1,1
+"2025-01-18","Honduras","(not set)",1,1
+"2025-01-18","India","(not set)",1,1
+"2025-01-18","Mexico","(not set)",1,1
+"2025-01-18","Portugal","(not set)",1,1
+"2025-01-19","Brazil","(not set)",144,77
+"2025-01-19","Cameroon","(not set)",7,1
+"2025-01-19","United States","(not set)",7,5
+"2025-01-19","Iran","(not set)",2,2
+"2025-01-19","Mexico","(not set)",1,1
+"2025-01-19","Morocco","(not set)",1,1
+"2025-01-19","United Kingdom","(not set)",1,1
+"2025-01-19","Uruguay","(not set)",1,1
+"2025-01-20","Brazil","(not set)",82,60
+"2025-01-20","United States","(not set)",11,8
+"2025-01-20","India","(not set)",1,1
+"2025-01-21","Brazil","(not set)",167,72
+"2025-01-21","United States","(not set)",9,6
+"2025-01-21","Iraq","(not set)",2,1
+"2025-01-22","Brazil","(not set)",163,69
+"2025-01-22","United States","(not set)",11,10
+"2025-01-22","Liberia","(not set)",1,1
+"2025-01-22","Mexico","(not set)",1,1
+"2025-01-23","Brazil","(not set)",212,74
+"2025-01-23","United States","(not set)",7,6
+"2025-01-23","Indonesia","(not set)",1,1
+"2025-01-23","Iran","(not set)",1,1
+"2025-01-23","Mozambique","(not set)",1,1
+"2025-01-24","Brazil","(not set)",155,73
+"2025-01-24","United States","(not set)",12,9
+"2025-01-24","Nigeria","(not set)",1,1
+"2025-01-25","Brazil","(not set)",129,82
+"2025-01-25","United States","(not set)",20,18
+"2025-01-25","Equatorial Guinea","(not set)",1,1
+"2025-01-25","South Africa","(not set)",1,1
+"2025-01-26","Brazil","(not set)",645,94
+"2025-01-26","United States","(not set)",14,11
+"2025-01-26","Syria","(not set)",2,1
+"2025-01-26","Argentina","(not set)",1,1
+"2025-01-26","Germany","(not set)",1,1
+"2025-01-26","Iran","(not set)",1,1
+"2025-01-26","Mexico","(not set)",1,1
+"2025-01-26","South Africa","(not set)",1,1
+"2025-01-26","United Kingdom","(not set)",1,1
+"2025-01-27","Brazil","(not set)",122,101
+"2025-01-27","United States","(not set)",14,11
+"2025-01-27","Bolivia","(not set)",1,1
+"2025-01-27","Ghana","(not set)",1,1
+"2025-01-27","Indonesia","(not set)",1,1
+"2025-01-27","South Africa","(not set)",1,1
+"2025-01-28","Brazil","(not set)",129,74
+"2025-01-28","United States","(not set)",16,10
+"2025-01-28","Iran","(not set)",3,3
+"2025-01-28","Mexico","(not set)",2,2
+"2025-01-28","Finland","(not set)",1,1
+"2025-01-28","Hungary","(not set)",1,1
+"2025-01-28","Mozambique","(not set)",1,1
+"2025-01-28","Pakistan","(not set)",1,1
+"2025-01-28","Philippines","(not set)",1,1
+"2025-01-29","Brazil","(not set)",111,91
+"2025-01-29","United States","(not set)",22,11
+"2025-01-29","Colombia","(not set)",1,1
+"2025-01-29","Mexico","(not set)",1,1
+"2025-01-29","Paraguay","(not set)",1,1
+"2025-01-30","Brazil","(not set)",88,62
+"2025-01-30","United States","(not set)",21,11
+"2025-01-30","Pakistan","(not set)",1,1
+"2025-01-31","Brazil","(not set)",101,63
+"2025-01-31","United States","(not set)",13,12
+"2025-01-31","India","(not set)",6,1
+"2025-01-31","Mexico","(not set)",2,2
+"2025-01-31","Netherlands","(not set)",2,1
+"2025-01-31","Cape Verde","(not set)",1,1
+"2025-01-31","Egypt","(not set)",1,1
+"2025-01-31","Philippines","(not set)",1,1
+"2025-02-01","Brazil","(not set)",127,70
+"2025-02-01","United States","(not set)",10,8
+"2025-02-01","Mexico","(not set)",2,2
+"2025-02-01","Ecuador","(not set)",1,1
+"2025-02-02","Brazil","(not set)",120,84
+"2025-02-02","United States","(not set)",10,10
+"2025-02-02","Cameroon","(not set)",8,1
+"2025-02-02","Guatemala","(not set)",1,1
+"2025-02-03","Brazil","(not set)",162,72
+"2025-02-03","United States","(not set)",14,10
+"2025-02-03","Philippines","(not set)",1,1
+"2025-02-03","United Kingdom","(not set)",1,1
+"2025-02-04","Brazil","(not set)",192,92
+"2025-02-04","United States","(not set)",8,3
+"2025-02-04","Afghanistan","(not set)",1,1
+"2025-02-04","Egypt","(not set)",1,1
+"2025-02-04","Saudi Arabia","(not set)",1,1
+"2025-02-04","Tunisia","(not set)",1,1
+"2025-02-05","Brazil","(not set)",184,83
+"2025-02-05","United States","(not set)",28,12
+"2025-02-05","Mexico","(not set)",1,1
+"2025-02-05","Paraguay","(not set)",1,1
+"2025-02-06","Brazil","(not set)",135,73
+"2025-02-06","Iran","(not set)",4,1
+"2025-02-06","United States","(not set)",4,3
+"2025-02-06","Mexico","(not set)",1,1
+"2025-02-07","Brazil","(not set)",99,62
+"2025-02-07","United States","(not set)",7,7
+"2025-02-07","Algeria","(not set)",1,1
+"2025-02-07","India","(not set)",1,1
+"2025-02-07","South Africa","(not set)",1,1
+"2025-02-08","Brazil","(not set)",138,65
+"2025-02-08","United States","(not set)",40,13
+"2025-02-08","Mexico","(not set)",3,1
+"2025-02-09","Brazil","(not set)",106,70
+"2025-02-09","United States","(not set)",7,6
+"2025-02-09","Indonesia","(not set)",2,2
+"2025-02-09","Iran","(not set)",2,1
+"2025-02-09","Guatemala","(not set)",1,1
+"2025-02-09","Mexico","(not set)",1,1
+"2025-02-10","Brazil","(not set)",95,56
+"2025-02-10","United States","(not set)",27,13
+"2025-02-10","Ethiopia","(not set)",2,1
+"2025-02-10","Iran","(not set)",1,1
+"2025-02-10","Mexico","(not set)",1,1
+"2025-02-10","Papua New Guinea","(not set)",1,1
+"2025-02-11","Brazil","(not set)",150,48
+"2025-02-11","United States","(not set)",13,11
+"2025-02-11","Hungary","(not set)",1,1
+"2025-02-11","Netherlands","(not set)",1,1
+"2025-02-12","Brazil","(not set)",150,84
+"2025-02-12","United States","(not set)",8,7
+"2025-02-12","Iran","(not set)",5,1
+"2025-02-13","Brazil","(not set)",107,61
+"2025-02-13","United States","(not set)",12,8
+"2025-02-13","Mexico","(not set)",1,1
+"2025-02-13","Papua New Guinea","(not set)",1,1
+"2025-02-14","Brazil","(not set)",124,65
+"2025-02-14","United States","(not set)",34,17
+"2025-02-14","Canada","(not set)",1,1
+"2025-02-14","Costa Rica","(not set)",1,1
+"2025-02-14","India","(not set)",1,1
+"2025-02-14","Iran","(not set)",1,1
+"2025-02-14","Mexico","(not set)",1,1
+"2025-02-14","Nigeria","(not set)",1,1
+"2025-02-15","Brazil","(not set)",103,74
+"2025-02-15","United States","(not set)",14,14
+"2025-02-15","Philippines","(not set)",2,2
+"2025-02-16","Brazil","(not set)",134,64
+"2025-02-16","United States","(not set)",6,6
+"2025-02-16","Algeria","(not set)",1,1
+"2025-02-16","Bangladesh","(not set)",1,1
+"2025-02-16","Iran","(not set)",1,1
+"2025-02-17","Brazil","(not set)",121,68
+"2025-02-17","United States","(not set)",18,16
+"2025-02-17","India","(not set)",6,1
+"2025-02-17","Indonesia","(not set)",2,1
+"2025-02-17","Mexico","(not set)",2,2
+"2025-02-17","Cuba","(not set)",1,1
+"2025-02-17","Philippines","(not set)",1,1
+"2025-02-17","Turkmenistan","(not set)",1,1
+"2025-02-18","Brazil","(not set)",116,70
+"2025-02-18","United States","(not set)",17,12
+"2025-02-18","Mexico","(not set)",2,2
+"2025-02-18","Guatemala","(not set)",1,1
+"2025-02-19","Brazil","(not set)",93,61
+"2025-02-19","United States","(not set)",5,5
+"2025-02-20","Brazil","(not set)",69,55
+"2025-02-20","United States","(not set)",32,15
+"2025-02-20","Algeria","(not set)",3,1
+"2025-02-21","Brazil","(not set)",74,35
+"2025-02-21","United States","(not set)",14,9
+"2025-02-21","Guatemala","(not set)",1,1
+"2025-02-21","Mexico","(not set)",1,1
+"2025-02-22","Brazil","(not set)",82,58
+"2025-02-22","United States","(not set)",15,10
+"2025-02-22","Nigeria","(not set)",1,1
+"2025-02-22","Yemen","(not set)",1,1
+"2025-02-23","Brazil","(not set)",129,60
+"2025-02-23","United States","(not set)",11,10
+"2025-02-23","Iran","(not set)",2,2
+"2025-02-23","Bangladesh","(not set)",1,1
+"2025-02-23","Japan","(not set)",1,1
+"2025-02-23","Zimbabwe","(not set)",1,1
+"2025-02-24","Brazil","(not set)",97,48
+"2025-02-24","United States","(not set)",21,8
+"2025-02-24","Mexico","(not set)",3,2
+"2025-02-24","Iran","(not set)",1,1
+"2025-02-24","Pakistan","(not set)",1,1
+"2025-02-25","Brazil","(not set)",121,47
+"2025-02-25","United States","(not set)",43,14
+"2025-02-25","Tanzania","(not set)",1,1
+"2025-02-26","Brazil","(not set)",134,54
+"2025-02-26","United States","(not set)",9,7
+"2025-02-26","Canada","(not set)",1,1
+"2025-02-26","Iran","(not set)",1,1
+"2025-02-26","United Kingdom","(not set)",1,1
+"2025-02-27","Brazil","(not set)",109,41
+"2025-02-27","United States","(not set)",12,11
+"2025-02-27","India","(not set)",1,1
+"2025-02-27","Mexico","(not set)",1,1
+"2025-02-28","Brazil","(not set)",64,42
+"2025-02-28","United States","(not set)",16,10
+"2025-02-28","Malaysia","(not set)",1,1
+"2025-02-28","Nigeria","(not set)",1,1
+"2025-02-28","Togo","(not set)",1,1
+"2025-03-01","Brazil","(not set)",107,75
+"2025-03-01","United States","(not set)",21,14
+"2025-03-01","Bangladesh","(not set)",1,1
+"2025-03-02","Brazil","(not set)",149,59
+"2025-03-02","United States","(not set)",11,11
+"2025-03-02","Ghana","(not set)",1,1
+"2025-03-02","Pakistan","(not set)",1,1
+"2025-03-02","Portugal","(not set)",1,1
+"2025-03-03","Brazil","(not set)",152,89
+"2025-03-03","United States","(not set)",16,9
+"2025-03-03","Qatar","(not set)",2,2
+"2025-03-03","Papua New Guinea","(not set)",1,1
+"2025-03-04","Brazil","(not set)",174,64
+"2025-03-04","United States","(not set)",14,12
+"2025-03-04","Mexico","(not set)",1,1
+"2025-03-04","Pakistan","(not set)",1,1
+"2025-03-05","Brazil","(not set)",101,61
+"2025-03-05","United States","(not set)",16,9
+"2025-03-06","Brazil","(not set)",173,66
+"2025-03-06","United States","(not set)",8,7
+"2025-03-06","Pakistan","(not set)",2,1
+"2025-03-06","Burkina Faso","(not set)",1,1
+"2025-03-06","Guatemala","(not set)",1,1
+"2025-03-06","Indonesia","(not set)",1,1
+"2025-03-06","Iran","(not set)",1,1
+"2025-03-07","Brazil","(not set)",120,43
+"2025-03-07","United States","(not set)",13,13
+"2025-03-07","Saudi Arabia","(not set)",2,2
+"2025-03-07","Indonesia","(not set)",1,1
+"2025-03-07","Iran","(not set)",1,1
+"2025-03-07","Nigeria","(not set)",1,1
+"2025-03-07","Syria","(not set)",1,1
+"2025-03-08","Brazil","(not set)",74,52
+"2025-03-08","United States","(not set)",8,8
+"2025-03-08","Mexico","(not set)",3,1
+"2025-03-08","Iran","(not set)",1,1
+"2025-03-08","Pakistan","(not set)",1,1
+"2025-03-08","Paraguay","(not set)",1,1
+"2025-03-09","Brazil","(not set)",94,54
+"2025-03-09","United States","(not set)",8,8
+"2025-03-09","India","(not set)",1,1
+"2025-03-09","Jamaica","(not set)",1,1
+"2025-03-09","Portugal","(not set)",1,1
+"2025-03-10","Brazil","(not set)",80,47
+"2025-03-10","United States","(not set)",17,12
+"2025-03-10","Argentina","(not set)",1,1
+"2025-03-11","Brazil","(not set)",89,57
+"2025-03-11","United States","(not set)",15,12
+"2025-03-11","Mexico","(not set)",3,2
+"2025-03-11","Iran","(not set)",2,1
+"2025-03-11","Pakistan","(not set)",1,1
+"2025-03-12","Brazil","(not set)",80,66
+"2025-03-12","United States","(not set)",13,13
+"2025-03-12","Iran","(not set)",2,2
+"2025-03-12","Indonesia","(not set)",1,1
+"2025-03-12","Pakistan","(not set)",1,1
+"2025-03-12","Papua New Guinea","(not set)",1,1
+"2025-03-13","Brazil","(not set)",88,46
+"2025-03-13","United States","(not set)",7,5
+"2025-03-13","Saudi Arabia","(not set)",1,1
+"2025-03-14","Brazil","(not set)",152,59
+"2025-03-14","United States","(not set)",9,9
+"2025-03-14","Kenya","(not set)",2,1
+"2025-03-14","Portugal","(not set)",2,2
+"2025-03-14","Mexico","(not set)",1,1
+"2025-03-14","Norway","(not set)",1,1
+"2025-03-15","Brazil","(not set)",128,75
+"2025-03-15","United States","(not set)",13,10
+"2025-03-15","Germany","(not set)",1,1
+"2025-03-15","United Kingdom","(not set)",1,1
+"2025-03-16","Brazil","(not set)",249,80
+"2025-03-16","United States","(not set)",19,14
+"2025-03-16","Mexico","(not set)",2,1
+"2025-03-16","Canada","(not set)",1,1
+"2025-03-17","Brazil","(not set)",344,77
+"2025-03-17","United States","(not set)",6,6
+"2025-03-17","Cuba","(not set)",2,1
+"2025-03-17","Iran","(not set)",1,1
+"2025-03-17","Mexico","(not set)",1,1
+"2025-03-17","Portugal","(not set)",1,1
+"2025-03-17","Thailand","(not set)",1,1
+"2025-03-18","Brazil","(not set)",119,65
+"2025-03-18","United States","(not set)",7,6
+"2025-03-18","Angola","(not set)",1,1
+"2025-03-19","Brazil","(not set)",237,72
+"2025-03-19","United States","(not set)",10,10
+"2025-03-19","Indonesia","(not set)",2,1
+"2025-03-19","Mexico","(not set)",2,2
+"2025-03-19","Iran","(not set)",1,1
+"2025-03-20","Brazil","(not set)",85,44
+"2025-03-20","United States","(not set)",13,7
+"2025-03-20","Pakistan","(not set)",2,1
+"2025-03-20","Canada","(not set)",1,1
+"2025-03-20","Haiti","(not set)",1,1
+"2025-03-20","India","(not set)",1,1
+"2025-03-20","Nigeria","(not set)",1,1
+"2025-03-21","Brazil","(not set)",84,46
+"2025-03-21","United States","(not set)",7,6
+"2025-03-21","Iran","(not set)",1,1
+"2025-03-22","Brazil","(not set)",91,54
+"2025-03-22","United States","(not set)",8,7
+"2025-03-22","El Salvador","(not set)",1,1
+"2025-03-22","Haiti","(not set)",1,1
+"2025-03-22","Mexico","(not set)",1,1
+"2025-03-22","Nigeria","(not set)",1,1
+"2025-03-23","Brazil","(not set)",86,59
+"2025-03-23","United States","(not set)",7,7
+"2025-03-23","Mexico","(not set)",1,1
+"2025-03-23","Pakistan","(not set)",1,1
+"2025-03-24","Brazil","(not set)",148,51
+"2025-03-24","United States","(not set)",13,9
+"2025-03-24","Nigeria","(not set)",2,1
+"2025-03-24","Türkiye","(not set)",1,1
+"2025-03-25","Brazil","(not set)",65,48
+"2025-03-25","United States","(not set)",16,8
+"2025-03-25","Nigeria","(not set)",2,1
+"2025-03-25","Mexico","(not set)",1,1
+"2025-03-25","Philippines","(not set)",1,1
+"2025-03-25","Portugal","(not set)",1,1
+"2025-03-26","Brazil","(not set)",128,61
+"2025-03-26","United States","(not set)",13,12
+"2025-03-26","Morocco","(not set)",1,1
+"2025-03-27","Brazil","(not set)",76,40
+"2025-03-27","United States","(not set)",7,6
+"2025-03-27","Côte d’Ivoire","(not set)",1,1
+"2025-03-28","Brazil","(not set)",148,58
+"2025-03-28","United States","(not set)",13,9
+"2025-03-28","Suriname","(not set)",7,1
+"2025-03-28","Mexico","(not set)",2,2
+"2025-03-28","Angola","(not set)",1,1
+"2025-03-28","Indonesia","(not set)",1,1
+"2025-03-29","Brazil","(not set)",171,48
+"2025-03-29","United States","(not set)",7,7
+"2025-03-29","Mexico","(not set)",2,2
+"2025-03-29","Zimbabwe","(not set)",1,1
+"2025-03-30","Brazil","(not set)",87,47
+"2025-03-30","United States","(not set)",13,7
+"2025-03-30","Pakistan","(not set)",3,1
+"2025-03-30","Egypt","(not set)",2,1
+"2025-03-30","Mexico","(not set)",2,2
+"2025-03-31","Brazil","(not set)",134,57
+"2025-03-31","United States","(not set)",23,17
+"2025-03-31","Yemen","(not set)",2,1
+"2025-03-31","Cuba","(not set)",1,1
+"2025-03-31","Mexico","(not set)",1,1
+"2025-04-01","Brazil","(not set)",106,56
+"2025-04-01","United States","(not set)",7,7
+"2025-04-01","Cuba","(not set)",2,2
+"2025-04-01","Germany","(not set)",1,1
+"2025-04-02","Brazil","(not set)",164,57
+"2025-04-02","United States","(not set)",7,6
+"2025-04-02","Yemen","(not set)",1,1
+"2025-04-03","Brazil","(not set)",58,39
+"2025-04-03","United States","(not set)",8,8
+"2025-04-03","Mexico","(not set)",2,2
+"2025-04-04","Brazil","(not set)",95,46
+"2025-04-04","United States","(not set)",13,10
+"2025-04-04","El Salvador","(not set)",5,1
+"2025-04-04","Argentina","(not set)",1,1
+"2025-04-04","Colombia","(not set)",1,1
+"2025-04-04","Germany","(not set)",1,1
+"2025-04-04","India","(not set)",1,1
+"2025-04-04","Mexico","(not set)",1,1
+"2025-04-05","Brazil","(not set)",110,57
+"2025-04-05","United States","(not set)",28,11
+"2025-04-05","Iran","(not set)",1,1
+"2025-04-05","Mexico","(not set)",1,1
+"2025-04-05","Paraguay","(not set)",1,1
+"2025-04-06","Brazil","(not set)",92,57
+"2025-04-06","United States","(not set)",14,12
+"2025-04-06","Mexico","(not set)",1,1
+"2025-04-07","Brazil","(not set)",107,70
+"2025-04-07","United States","(not set)",12,8
+"2025-04-07","Mexico","(not set)",2,2
+"2025-04-07","Nigeria","(not set)",1,1
+"2025-04-07","Norway","(not set)",1,1
+"2025-04-08","Brazil","(not set)",102,50
+"2025-04-08","United States","(not set)",16,13
+"2025-04-08","Guatemala","(not set)",1,1
+"2025-04-08","Mexico","(not set)",1,1
+"2025-04-08","Türkiye","(not set)",1,1
+"2025-04-08","Zambia","(not set)",1,1
+"2025-04-09","Brazil","(not set)",140,61
+"2025-04-09","United States","(not set)",18,13
+"2025-04-09","Guam","(not set)",2,1
+"2025-04-09","Mexico","(not set)",2,1
+"2025-04-09","Nigeria","(not set)",2,1
+"2025-04-09","Iran","(not set)",1,1
+"2025-04-09","Türkiye","(not set)",1,1
+"2025-04-10","Brazil","(not set)",94,41
+"2025-04-10","United States","(not set)",18,9
+"2025-04-10","Congo - Kinshasa","(not set)",1,1
+"2025-04-10","Nigeria","(not set)",1,1
+"2025-04-11","Brazil","(not set)",174,57
+"2025-04-11","United States","(not set)",5,5
+"2025-04-11","Mexico","(not set)",3,2
+"2025-04-11","Iran","(not set)",2,1
+"2025-04-11","Philippines","(not set)",2,1
+"2025-04-11","Angola","(not set)",1,1
+"2025-04-11","Australia","(not set)",1,1
+"2025-04-11","Colombia","(not set)",1,1
+"2025-04-11","Ecuador","(not set)",1,1
+"2025-04-11","India","(not set)",1,1
+"2025-04-12","Brazil","(not set)",66,52
+"2025-04-12","United States","(not set)",13,10
+"2025-04-12","Mexico","(not set)",4,4
+"2025-04-12","Argentina","(not set)",1,1
+"2025-04-12","Canada","(not set)",1,1
+"2025-04-13","Brazil","(not set)",117,52
+"2025-04-13","United States","(not set)",11,10
+"2025-04-13","Philippines","(not set)",3,3
+"2025-04-13","India","(not set)",1,1
+"2025-04-13","Mexico","(not set)",1,1
+"2025-04-14","Brazil","(not set)",127,59
+"2025-04-14","United States","(not set)",7,7
+"2025-04-14","Nigeria","(not set)",2,1
+"2025-04-14","Equatorial Guinea","(not set)",1,1
+"2025-04-14","Guatemala","(not set)",1,1
+"2025-04-15","Brazil","(not set)",153,49
+"2025-04-15","United States","(not set)",19,13
+"2025-04-15","Mexico","(not set)",5,5
+"2025-04-15","Angola","(not set)",2,1
+"2025-04-15","Indonesia","(not set)",2,2
+"2025-04-16","Brazil","(not set)",137,60
+"2025-04-16","United States","(not set)",20,12
+"2025-04-16","Madagascar","(not set)",2,1
+"2025-04-16","Egypt","(not set)",1,1
+"2025-04-16","Iran","(not set)",1,1
+"2025-04-16","Mexico","(not set)",1,1
+"2025-04-17","Brazil","(not set)",75,50
+"2025-04-17","United States","(not set)",13,13
+"2025-04-17","Cuba","(not set)",2,1
+"2025-04-17","Costa Rica","(not set)",1,1
+"2025-04-17","Iran","(not set)",1,1
+"2025-04-17","Mexico","(not set)",1,1
+"2025-04-17","Pakistan","(not set)",1,1
+"2025-04-18","Brazil","(not set)",156,55
+"2025-04-18","United States","(not set)",9,5
+"2025-04-18","Angola","(not set)",1,1
+"2025-04-18","Portugal","(not set)",1,1
+"2025-04-18","South Africa","(not set)",1,1
+"2025-04-19","Brazil","(not set)",100,52
+"2025-04-19","United States","(not set)",15,12
+"2025-04-19","Philippines","(not set)",2,1
+"2025-04-19","United Kingdom","(not set)",2,1
+"2025-04-19","Algeria","(not set)",1,1
+"2025-04-19","Iran","(not set)",1,1
+"2025-04-19","Mexico","(not set)",1,1
+"2025-04-20","Brazil","(not set)",150,77
+"2025-04-20","United States","(not set)",14,10
+"2025-04-20","Haiti","(not set)",2,1
+"2025-04-20","Mexico","(not set)",1,1
+"2025-04-20","Venezuela","(not set)",1,1
+"2025-04-21","Brazil","(not set)",89,53
+"2025-04-21","United States","(not set)",8,8
+"2025-04-21","Philippines","(not set)",2,1
+"2025-04-21","Bangladesh","(not set)",1,1
+"2025-04-21","Tanzania","(not set)",1,1
+"2025-04-21","United Kingdom","(not set)",1,1
+"2025-04-22","Brazil","(not set)",63,32
+"2025-04-22","United States","(not set)",12,10
+"2025-04-22","Germany","(not set)",1,1
+"2025-04-23","Brazil","(not set)",87,50
+"2025-04-23","United States","(not set)",15,10
+"2025-04-23","Mexico","(not set)",5,2
+"2025-04-23","Bangladesh","(not set)",1,1
+"2025-04-24","Brazil","(not set)",108,55
+"2025-04-24","United States","(not set)",26,11
+"2025-04-24","Mexico","(not set)",2,2
+"2025-04-24","Cuba","(not set)",1,1
+"2025-04-24","Iran","(not set)",1,1
+"2025-04-25","Brazil","(not set)",149,55
+"2025-04-25","United States","(not set)",7,6
+"2025-04-26","Brazil","(not set)",104,59
+"2025-04-26","United States","(not set)",8,6
+"2025-04-26","Iran","(not set)",1,1
+"2025-04-26","Madagascar","(not set)",1,1
+"2025-04-27","Brazil","(not set)",158,55
+"2025-04-27","United States","(not set)",27,9
+"2025-04-27","Argentina","(not set)",1,1
+"2025-04-27","Mexico","(not set)",1,1
+"2025-04-27","Portugal","(not set)",1,1
+"2025-04-27","Qatar","(not set)",1,1
+"2025-04-28","Brazil","(not set)",117,66
+"2025-04-28","United States","(not set)",18,10
+"2025-04-28","Mexico","(not set)",1,1
+"2025-04-28","Sudan","(not set)",1,1
+"2025-04-29","Brazil","(not set)",76,51
+"2025-04-29","United States","(not set)",11,9
+"2025-04-29","Philippines","(not set)",3,1
+"2025-04-29","Mexico","(not set)",1,1
+"2025-04-29","Puerto Rico","(not set)",1,1
+"2025-04-30","Brazil","(not set)",70,55
+"2025-04-30","United States","(not set)",7,7
+"2025-05-01","Brazil","(not set)",90,44
+"2025-05-01","United States","(not set)",6,6
+"2025-05-01","Mexico","(not set)",4,3
+"2025-05-01","British Virgin Islands","(not set)",1,1
+"2025-05-01","Egypt","(not set)",1,1
+"2025-05-01","Venezuela","(not set)",1,1
+"2025-05-02","Brazil","(not set)",228,53
+"2025-05-02","United States","(not set)",7,6
+"2025-05-02","Colombia","(not set)",1,1
+"2025-05-02","Mexico","(not set)",1,1
+"2025-05-03","Brazil","(not set)",92,52
+"2025-05-03","United States","(not set)",28,10
+"2025-05-03","Guatemala","(not set)",1,1
+"2025-05-03","Yemen","(not set)",1,1
+"2025-05-04","Brazil","(not set)",97,58
+"2025-05-04","United States","(not set)",14,9
+"2025-05-04","Bolivia","(not set)",1,1
+"2025-05-04","Cuba","(not set)",1,1
+"2025-05-05","Brazil","(not set)",94,54
+"2025-05-05","United States","(not set)",21,19
+"2025-05-05","Mexico","(not set)",6,1
+"2025-05-05","Puerto Rico","(not set)",1,1
+"2025-05-05","United Kingdom","(not set)",1,1
+"2025-05-06","Brazil","(not set)",122,72
+"2025-05-06","United States","(not set)",11,10
+"2025-05-06","Bangladesh","(not set)",1,1
+"2025-05-06","Iran","(not set)",1,1
+"2025-05-07","Brazil","(not set)",68,54
+"2025-05-07","United States","(not set)",9,7
+"2025-05-07","Guatemala","(not set)",1,1
+"2025-05-07","India","(not set)",1,1
+"2025-05-07","Mexico","(not set)",1,1
+"2025-05-07","Yemen","(not set)",1,1
+"2025-05-08","Brazil","(not set)",138,55
+"2025-05-08","United States","(not set)",22,9
+"2025-05-08","Mexico","(not set)",2,1
+"2025-05-09","Brazil","(not set)",88,50
+"2025-05-09","United States","(not set)",15,9
+"2025-05-09","Mexico","(not set)",2,2
+"2025-05-10","Brazil","(not set)",79,50
+"2025-05-10","United States","(not set)",9,8
+"2025-05-10","Mexico","(not set)",2,2
+"2025-05-10","Colombia","(not set)",1,1
+"2025-05-10","Honduras","(not set)",1,1
+"2025-05-10","Nigeria","(not set)",1,1
+"2025-05-10","Pakistan","(not set)",1,1
+"2025-05-10","Sudan","(not set)",1,1
+"2025-05-10","Venezuela","(not set)",1,1
+"2025-05-11","Brazil","(not set)",149,52
+"2025-05-11","United States","(not set)",18,14
+"2025-05-11","Congo - Kinshasa","(not set)",2,1
+"2025-05-11","Cuba","(not set)",1,1
+"2025-05-12","Brazil","(not set)",149,53
+"2025-05-12","United States","(not set)",10,10
+"2025-05-12","Mexico","(not set)",3,1
+"2025-05-12","Afghanistan","(not set)",1,1
+"2025-05-12","Zimbabwe","(not set)",1,1
+"2025-05-13","Brazil","(not set)",132,83
+"2025-05-13","United States","(not set)",12,4
+"2025-05-13","Iran","(not set)",1,1
+"2025-05-14","Brazil","(not set)",94,51
+"2025-05-14","United States","(not set)",10,9
+"2025-05-14","Algeria","(not set)",1,1
+"2025-05-14","Germany","(not set)",1,1
+"2025-05-14","Indonesia","(not set)",1,1
+"2025-05-14","Kenya","(not set)",1,1
+"2025-05-14","Mexico","(not set)",1,1
+"2025-05-14","Nigeria","(not set)",1,1
+"2025-05-14","Papua New Guinea","(not set)",1,1
+"2025-05-14","Spain","(not set)",1,1
+"2025-05-15","Brazil","(not set)",151,52
+"2025-05-15","United States","(not set)",12,11
+"2025-05-15","Mexico","(not set)",2,1
+"2025-05-16","Brazil","(not set)",86,52
+"2025-05-16","United States","(not set)",9,8
+"2025-05-16","Bangladesh","(not set)",1,1
+"2025-05-16","Indonesia","(not set)",1,1
+"2025-05-16","Yemen","(not set)",1,1
+"2025-05-17","Brazil","(not set)",84,60
+"2025-05-17","United States","(not set)",9,9
+"2025-05-17","Finland","(not set)",6,1
+"2025-05-17","Mexico","(not set)",2,1
+"2025-05-17","Singapore","(not set)",2,1
+"2025-05-17","Bangladesh","(not set)",1,1
+"2025-05-17","Grenada","(not set)",1,1
+"2025-05-17","Morocco","(not set)",1,1
+"2025-05-18","Brazil","(not set)",101,49
+"2025-05-18","Iran","(not set)",12,1
+"2025-05-18","United States","(not set)",9,7
+"2025-05-18","Mexico","(not set)",2,1
+"2025-05-18","Angola","(not set)",1,1
+"2025-05-18","Singapore","(not set)",1,1
+"2025-05-18","Tunisia","(not set)",1,1
+"2025-05-19","Brazil","(not set)",69,46
+"2025-05-19","United States","(not set)",9,7
+"2025-05-19","Congo - Kinshasa","(not set)",1,1
+"2025-05-19","Mexico","(not set)",1,1
+"2025-05-20","Brazil","(not set)",179,58
+"2025-05-20","Congo - Kinshasa","(not set)",18,1
+"2025-05-20","United States","(not set)",7,7
+"2025-05-20","Mexico","(not set)",3,2
+"2025-05-20","Angola","(not set)",2,1
+"2025-05-20","Barbados","(not set)",1,1
+"2025-05-20","Paraguay","(not set)",1,1
+"2025-05-21","Brazil","(not set)",81,60
+"2025-05-21","United States","(not set)",22,10
+"2025-05-21","Mexico","(not set)",1,1
+"2025-05-21","Philippines","(not set)",1,1
+"2025-05-21","Uganda","(not set)",1,1
+"2025-05-22","Brazil","(not set)",82,51
+"2025-05-22","United States","(not set)",10,9
+"2025-05-22","Canada","(not set)",1,1
+"2025-05-22","Mexico","(not set)",1,1
+"2025-05-22","Sweden","(not set)",1,1
+"2025-05-23","Brazil","(not set)",54,36
+"2025-05-23","Indonesia","(not set)",6,1
+"2025-05-23","United States","(not set)",4,4
+"2025-05-23","Jordan","(not set)",2,1
+"2025-05-23","Sudan","(not set)",1,1
+"2025-05-24","Brazil","(not set)",53,41
+"2025-05-24","United States","(not set)",29,14
+"2025-05-24","Colombia","(not set)",1,1
+"2025-05-24","South Africa","(not set)",1,1
+"2025-05-25","Brazil","(not set)",81,51
+"2025-05-25","United States","(not set)",17,11
+"2025-05-25","Mexico","(not set)",2,2
+"2025-05-26","Brazil","(not set)",69,49
+"2025-05-26","United States","(not set)",30,12
+"2025-05-26","Nigeria","(not set)",14,1
+"2025-05-26","Cuba","(not set)",1,1
+"2025-05-26","Mexico","(not set)",1,1
+"2025-05-27","Brazil","(not set)",67,42
+"2025-05-27","United States","(not set)",29,9
+"2025-05-27","Germany","(not set)",1,1
+"2025-05-27","Iran","(not set)",1,1
+"2025-05-27","Jamaica","(not set)",1,1
+"2025-05-27","Mexico","(not set)",1,1
+"2025-05-27","Puerto Rico","(not set)",1,1
+"2025-05-28","Brazil","(not set)",116,56
+"2025-05-28","United States","(not set)",6,6
+"2025-05-28","Nepal","(not set)",2,1
+"2025-05-28","Bangladesh","(not set)",1,1
+"2025-05-28","Egypt","(not set)",1,1
+"2025-05-28","Iran","(not set)",1,1
+"2025-05-28","United Kingdom","(not set)",1,1
+"2025-05-29","Brazil","(not set)",50,40
+"2025-05-29","United States","(not set)",6,3
+"2025-05-29","Bangladesh","(not set)",1,1
+"2025-05-29","Uganda","(not set)",1,1
+"2025-05-30","Brazil","(not set)",84,47
+"2025-05-30","United States","(not set)",6,6
+"2025-05-30","Egypt","(not set)",3,2
+"2025-05-30","Colombia","(not set)",1,1
+"2025-05-30","Cuba","(not set)",1,1
+"2025-05-30","Indonesia","(not set)",1,1
+"2025-05-30","U.S. Virgin Islands","(not set)",1,1
+"2025-05-31","Brazil","(not set)",75,50
+"2025-05-31","United States","(not set)",10,10
+"2025-05-31","Puerto Rico","(not set)",5,1
+"2025-05-31","Mexico","(not set)",2,2
+"2025-05-31","Netherlands","(not set)",2,1
+"2025-05-31","Yemen","(not set)",1,1
+"2025-06-01","Brazil","(not set)",128,61
+"2025-06-01","United States","(not set)",24,12
+"2025-06-01","Ghana","(not set)",1,1
+"2025-06-01","Mexico","(not set)",1,1
+"2025-06-01","Nigeria","(not set)",1,1
+"2025-06-01","Peru","(not set)",1,1
+"2025-06-02","Brazil","(not set)",133,60
+"2025-06-02","United States","(not set)",8,8
+"2025-06-02","Mexico","(not set)",2,1
+"2025-06-02","India","(not set)",1,1
+"2025-06-03","Brazil","(not set)",114,62
+"2025-06-03","United States","(not set)",14,8
+"2025-06-03","Afghanistan","(not set)",1,1
+"2025-06-03","Mexico","(not set)",1,1
+"2025-06-04","Brazil","(not set)",98,54
+"2025-06-04","United States","(not set)",10,6
+"2025-06-04","Nigeria","(not set)",1,1
+"2025-06-05","Brazil","(not set)",104,40
+"2025-06-05","United States","(not set)",10,8
+"2025-06-05","Mexico","(not set)",1,1
+"2025-06-05","Morocco","(not set)",1,1
+"2025-06-06","Brazil","(not set)",62,44
+"2025-06-06","United States","(not set)",5,5
+"2025-06-07","Brazil","(not set)",82,52
+"2025-06-07","United States","(not set)",8,6
+"2025-06-07","Egypt","(not set)",2,2
+"2025-06-07","Iran","(not set)",2,1
+"2025-06-07","Indonesia","(not set)",1,1
+"2025-06-07","Nigeria","(not set)",1,1
+"2025-06-08","Brazil","(not set)",145,62
+"2025-06-08","United States","(not set)",12,8
+"2025-06-08","Iran","(not set)",1,1
+"2025-06-08","Malawi","(not set)",1,1
+"2025-06-08","Philippines","(not set)",1,1
+"2025-06-09","Brazil","(not set)",87,43
+"2025-06-09","United States","(not set)",16,7
+"2025-06-09","Indonesia","(not set)",2,2
+"2025-06-09","Mexico","(not set)",2,2
+"2025-06-09","Philippines","(not set)",2,1
+"2025-06-09","Iran","(not set)",1,1
+"2025-06-10","Brazil","(not set)",84,58
+"2025-06-10","United States","(not set)",10,10
+"2025-06-10","Nigeria","(not set)",1,1
+"2025-06-10","Philippines","(not set)",1,1
+"2025-06-11","Brazil","(not set)",53,40
+"2025-06-11","United States","(not set)",8,8
+"2025-06-11","Mexico","(not set)",1,1
+"2025-06-11","Nigeria","(not set)",1,1
+"2025-06-12","Brazil","(not set)",91,55
+"2025-06-12","United States","(not set)",12,5
+"2025-06-12","Mexico","(not set)",3,2
+"2025-06-12","Nigeria","(not set)",1,1
+"2025-06-13","Brazil","(not set)",57,37
+"2025-06-13","United States","(not set)",7,7
+"2025-06-13","Zambia","(not set)",2,1
+"2025-06-13","Mexico","(not set)",1,1
+"2025-06-13","Nigeria","(not set)",1,1
+"2025-06-13","Philippines","(not set)",1,1
+"2025-06-14","Brazil","(not set)",119,51
+"2025-06-14","United States","(not set)",15,13
+"2025-06-14","Chile","(not set)",1,1
+"2025-06-14","Philippines","(not set)",1,1
+"2025-06-14","Syria","(not set)",1,1
+"2025-06-15","Brazil","(not set)",675,55
+"2025-06-15","United States","(not set)",14,9
+"2025-06-15","Türkiye","(not set)",7,2
+"2025-06-15","Canada","(not set)",1,1
+"2025-06-15","Indonesia","(not set)",1,1
+"2025-06-16","Brazil","(not set)",88,47
+"2025-06-16","United States","(not set)",24,12
+"2025-06-16","Mexico","(not set)",8,1
+"2025-06-16","South Africa","(not set)",2,1
+"2025-06-16","Egypt","(not set)",1,1
+"2025-06-16","Serbia","(not set)",1,1
+"2025-06-17","Brazil","(not set)",75,40
+"2025-06-17","United States","(not set)",12,8
+"2025-06-18","Brazil","(not set)",122,56
+"2025-06-18","United States","(not set)",4,3
+"2025-06-18","Mexico","(not set)",1,1
+"2025-06-18","Pakistan","(not set)",1,1
+"2025-06-18","Venezuela","(not set)",1,1
+"2025-06-19","Brazil","(not set)",85,57
+"2025-06-19","United States","(not set)",15,11
+"2025-06-19","Iran","(not set)",5,5
+"2025-06-19","Mexico","(not set)",1,1
+"2025-06-19","Nigeria","(not set)",1,1
+"2025-06-20","Brazil","(not set)",72,43
+"2025-06-20","Iran","(not set)",11,3
+"2025-06-20","United States","(not set)",8,6
+"2025-06-20","Pakistan","(not set)",7,1
+"2025-06-20","Mexico","(not set)",3,2
+"2025-06-20","Indonesia","(not set)",2,2
+"2025-06-20","Ecuador","(not set)",1,1
+"2025-06-21","Brazil","(not set)",86,46
+"2025-06-21","United States","(not set)",9,6
+"2025-06-21","Mexico","(not set)",2,2
+"2025-06-21","Indonesia","(not set)",1,1
+"2025-06-21","Iran","(not set)",1,1
+"2025-06-21","Nigeria","(not set)",1,1
+"2025-06-21","Spain","(not set)",1,1
+"2025-06-21","Zambia","(not set)",1,1
+"2025-06-22","Brazil","(not set)",72,50
+"2025-06-22","United States","(not set)",13,7
+"2025-06-22","Iran","(not set)",2,2
+"2025-06-22","Mexico","(not set)",2,1
+"2025-06-22","Honduras","(not set)",1,1
+"2025-06-22","Indonesia","(not set)",1,1
+"2025-06-22","Venezuela","(not set)",1,1
+"2025-06-23","Brazil","(not set)",52,30
+"2025-06-23","United States","(not set)",38,10
+"2025-06-23","Iran","(not set)",17,17
+"2025-06-23","Bangladesh","(not set)",2,1
+"2025-06-23","Philippines","(not set)",2,1
+"2025-06-23","United Kingdom","(not set)",2,1
+"2025-06-23","Netherlands","(not set)",1,1
+"2025-06-23","Venezuela","(not set)",1,1
+"2025-06-24","Brazil","(not set)",62,45
+"2025-06-24","United States","(not set)",15,13
+"2025-06-24","Iran","(not set)",3,3
+"2025-06-24","Mexico","(not set)",3,2
+"2025-06-24","Japan","(not set)",2,1
+"2025-06-24","Norway","(not set)",1,1
+"2025-06-25","Brazil","(not set)",93,39
+"2025-06-25","United States","(not set)",8,8
+"2025-06-25","Indonesia","(not set)",2,1
+"2025-06-25","Iran","(not set)",1,1
+"2025-06-25","Mexico","(not set)",1,1
+"2025-06-26","Brazil","(not set)",49,35
+"2025-06-26","United States","(not set)",9,9
+"2025-06-26","Afghanistan","(not set)",1,1
+"2025-06-26","Canada","(not set)",1,1
+"2025-06-26","Chile","(not set)",1,1
+"2025-06-27","Brazil","(not set)",46,30
+"2025-06-27","United States","(not set)",20,7
+"2025-06-27","Mexico","(not set)",2,1
+"2025-06-27","Bolivia","(not set)",1,1
+"2025-06-27","Guatemala","(not set)",1,1
+"2025-06-27","India","(not set)",1,1
+"2025-06-27","Zambia","(not set)",1,1
+"2025-06-28","Brazil","(not set)",67,50
+"2025-06-28","United States","(not set)",12,10
+"2025-06-28","Egypt","(not set)",1,1
+"2025-06-28","Portugal","(not set)",1,1
+"2025-06-29","Brazil","(not set)",95,41
+"2025-06-29","United States","(not set)",13,8
+"2025-06-29","Angola","(not set)",1,1
+"2025-06-29","Mexico","(not set)",1,1
+"2025-06-29","Portugal","(not set)",1,1
+"2025-06-29","Uganda","(not set)",1,1
+"2025-06-30","Brazil","(not set)",59,45
+"2025-06-30","United States","(not set)",12,11
+"2025-06-30","Albania","(not set)",3,1
+"2025-06-30","Saudi Arabia","(not set)",1,1
+"2025-06-30","South Africa","(not set)",1,1
+"2025-07-01","Brazil","(not set)",53,45
+"2025-07-01","United States","(not set)",6,5
+"2025-07-01","Dominican Republic","(not set)",2,1
+"2025-07-01","India","(not set)",1,1
+"2025-07-01","Saudi Arabia","(not set)",1,1
+"2025-07-02","Brazil","(not set)",132,53
+"2025-07-02","United States","(not set)",8,8
+"2025-07-02","Mexico","(not set)",2,2
+"2025-07-02","Cuba","(not set)",1,1
+"2025-07-02","Iran","(not set)",1,1
+"2025-07-02","Venezuela","(not set)",1,1
+"2025-07-03","Brazil","(not set)",175,39
+"2025-07-03","United States","(not set)",11,6
+"2025-07-04","Brazil","(not set)",143,45
+"2025-07-04","United States","(not set)",10,9
+"2025-07-04","Egypt","(not set)",2,1
+"2025-07-04","Bangladesh","(not set)",1,1
+"2025-07-04","Iran","(not set)",1,1
+"2025-07-04","Philippines","(not set)",1,1
+"2025-07-05","Brazil","(not set)",90,47
+"2025-07-05","United States","(not set)",11,11
+"2025-07-05","Mexico","(not set)",1,1
+"2025-07-06","Brazil","(not set)",118,46
+"2025-07-06","United States","(not set)",5,5
+"2025-07-06","Mexico","(not set)",2,2
+"2025-07-06","Iran","(not set)",1,1
+"2025-07-07","Brazil","(not set)",110,48
+"2025-07-07","United States","(not set)",6,6
+"2025-07-07","Cuba","(not set)",1,1
+"2025-07-07","Tanzania","(not set)",1,1
+"2025-07-08","Brazil","(not set)",67,41
+"2025-07-08","United States","(not set)",16,9
+"2025-07-08","Denmark","(not set)",2,1
+"2025-07-08","Mexico","(not set)",2,1
+"2025-07-08","India","(not set)",1,1
+"2025-07-08","Norway","(not set)",1,1
+"2025-07-09","Brazil","(not set)",118,56
+"2025-07-09","United States","(not set)",25,10
+"2025-07-09","Mexico","(not set)",2,1
+"2025-07-09","Afghanistan","(not set)",1,1
+"2025-07-09","Egypt","(not set)",1,1
+"2025-07-09","Ghana","(not set)",1,1
+"2025-07-10","Brazil","(not set)",75,52
+"2025-07-10","United States","(not set)",7,5
+"2025-07-10","Mexico","(not set)",3,2
+"2025-07-10","Austria","(not set)",1,1
+"2025-07-10","Iran","(not set)",1,1
+"2025-07-11","Brazil","(not set)",64,38
+"2025-07-11","United States","(not set)",10,9
+"2025-07-11","Spain","(not set)",1,1
+"2025-07-12","Brazil","(not set)",75,48
+"2025-07-12","United States","(not set)",10,8
+"2025-07-12","Iran","(not set)",3,2
+"2025-07-12","Indonesia","(not set)",1,1
+"2025-07-12","Jamaica","(not set)",1,1
+"2025-07-12","Mexico","(not set)",1,1
+"2025-07-13","Brazil","(not set)",178,62
+"2025-07-13","United States","(not set)",9,8
+"2025-07-13","Mexico","(not set)",5,3
+"2025-07-13","India","(not set)",1,1
+"2025-07-13","Pakistan","(not set)",1,1
+"2025-07-13","Venezuela","(not set)",1,1
+"2025-07-14","Brazil","(not set)",67,48
+"2025-07-14","United States","(not set)",7,6
+"2025-07-14","Iran","(not set)",2,1
+"2025-07-14","Argentina","(not set)",1,1
+"2025-07-14","Guatemala","(not set)",1,1
+"2025-07-14","Mexico","(not set)",1,1
+"2025-07-14","Tanzania","(not set)",1,1
+"2025-07-15","Brazil","(not set)",74,41
+"2025-07-15","United States","(not set)",12,9
+"2025-07-15","Mexico","(not set)",1,1
+"2025-07-15","Zambia","(not set)",1,1
+"2025-07-16","Brazil","(not set)",37,27
+"2025-07-16","United States","(not set)",5,5
+"2025-07-16","South Africa","(not set)",2,1
+"2025-07-16","Indonesia","(not set)",1,1
+"2025-07-16","Mexico","(not set)",1,1
+"2025-07-16","Netherlands","(not set)",1,1
+"2025-07-16","Nigeria","(not set)",1,1
+"2025-07-17","Brazil","(not set)",128,38
+"2025-07-17","United States","(not set)",21,11
+"2025-07-17","Egypt","(not set)",1,1
+"2025-07-17","Mexico","(not set)",1,1
+"2025-07-17","Nigeria","(not set)",1,1
+"2025-07-18","Brazil","(not set)",80,45
+"2025-07-18","United States","(not set)",21,19
+"2025-07-18","Mexico","(not set)",2,2
+"2025-07-18","Argentina","(not set)",1,1
+"2025-07-18","Germany","(not set)",1,1
+"2025-07-18","Indonesia","(not set)",1,1
+"2025-07-19","Brazil","(not set)",72,42
+"2025-07-19","United States","(not set)",16,15
+"2025-07-19","Iran","(not set)",1,1
+"2025-07-20","Brazil","(not set)",79,52
+"2025-07-20","United States","(not set)",4,4
+"2025-07-20","Angola","(not set)",1,1
+"2025-07-20","Egypt","(not set)",1,1
+"2025-07-20","Mexico","(not set)",1,1
+"2025-07-21","Brazil","(not set)",147,45
+"2025-07-21","United States","(not set)",9,7
+"2025-07-21","Ghana","(not set)",1,1
+"2025-07-21","Mexico","(not set)",1,1
+"2025-07-21","United Kingdom","(not set)",1,1
+"2025-07-22","Brazil","(not set)",63,42
+"2025-07-22","United States","(not set)",13,6
+"2025-07-22","Angola","(not set)",1,1
+"2025-07-22","Bangladesh","(not set)",1,1
+"2025-07-22","Cuba","(not set)",1,1
+"2025-07-22","Turkmenistan","(not set)",1,1
+"2025-07-23","Brazil","(not set)",37,32
+"2025-07-23","United States","(not set)",20,8
+"2025-07-23","Canada","(not set)",1,1
+"2025-07-23","India","(not set)",1,1
+"2025-07-23","Indonesia","(not set)",1,1
+"2025-07-23","Iran","(not set)",1,1
+"2025-07-24","Brazil","(not set)",54,45
+"2025-07-24","United States","(not set)",9,7
+"2025-07-24","Italy","(not set)",1,1
+"2025-07-24","Mexico","(not set)",1,1
+"2025-07-25","Brazil","(not set)",62,45
+"2025-07-25","United States","(not set)",8,8
+"2025-07-26","Brazil","(not set)",58,47
+"2025-07-26","United States","(not set)",13,11
+"2025-07-26","Mexico","(not set)",2,1
+"2025-07-27","Brazil","(not set)",97,41
+"2025-07-27","United States","(not set)",19,13
+"2025-07-27","India","(not set)",1,1
+"2025-07-28","Brazil","(not set)",89,48
+"2025-07-28","United States","(not set)",13,13
+"2025-07-28","China","(not set)",1,1
+"2025-07-28","Ethiopia","(not set)",1,1
+"2025-07-28","India","(not set)",1,1
+"2025-07-28","Iran","(not set)",1,1
+"2025-07-28","Mexico","(not set)",1,1
+"2025-07-29","Brazil","(not set)",105,58
+"2025-07-29","United States","(not set)",4,4
+"2025-07-29","Mexico","(not set)",2,2
+"2025-07-30","Brazil","(not set)",69,42
+"2025-07-30","United States","(not set)",65,13
+"2025-07-30","Guatemala","(not set)",2,1
+"2025-07-30","Egypt","(not set)",1,1
+"2025-07-30","Honduras","(not set)",1,1
+"2025-07-30","India","(not set)",1,1
+"2025-07-30","Papua New Guinea","(not set)",1,1
+"2025-07-31","Brazil","(not set)",82,58
+"2025-07-31","United States","(not set)",25,17
+"2025-07-31","Guatemala","(not set)",2,1
+"2025-07-31","Puerto Rico","(not set)",1,1
+"2025-08-01","Brazil","(not set)",34,22
+"2025-08-01","United States","(not set)",5,4
+"2025-08-01","Cuba","(not set)",1,1
+"2025-08-01","Ethiopia","(not set)",1,1
+"2025-08-01","Iran","(not set)",1,1
+"2025-08-01","Malaysia","(not set)",1,1
+"2025-08-01","Mexico","(not set)",1,1
+"2025-08-01","Nigeria","(not set)",1,1
+"2025-08-01","Philippines","(not set)",1,1
+"2025-08-02","Brazil","(not set)",52,38
+"2025-08-02","United States","(not set)",6,6
+"2025-08-02","Cuba","(not set)",2,1
+"2025-08-02","Belgium","(not set)",1,1
+"2025-08-02","Iran","(not set)",1,1
+"2025-08-02","Mexico","(not set)",1,1
+"2025-08-02","Portugal","(not set)",1,1
+"2025-08-02","Yemen","(not set)",1,1
+"2025-08-03","Brazil","(not set)",95,57
+"2025-08-03","United States","(not set)",8,5
+"2025-08-03","Philippines","(not set)",2,1
+"2025-08-03","Bangladesh","(not set)",1,1
+"2025-08-03","Canada","(not set)",1,1
+"2025-08-03","Mexico","(not set)",1,1
+"2025-08-03","Sierra Leone","(not set)",1,1
+"2025-08-03","United Kingdom","(not set)",1,1
+"2025-08-04","Brazil","(not set)",93,50
+"2025-08-04","United States","(not set)",19,10
+"2025-08-04","Italy","(not set)",1,1
+"2025-08-04","Nigeria","(not set)",1,1
+"2025-08-05","Brazil","(not set)",30,26
+"2025-08-05","United States","(not set)",6,6
+"2025-08-05","Mexico","(not set)",2,2
+"2025-08-05","Iran","(not set)",1,1
+"2025-08-05","Italy","(not set)",1,1
+"2025-08-05","Malaysia","(not set)",1,1
+"2025-08-06","Brazil","(not set)",69,31
+"2025-08-06","United States","(not set)",14,11
+"2025-08-07","Brazil","(not set)",74,34
+"2025-08-07","United States","(not set)",20,7
+"2025-08-07","Mexico","(not set)",2,1
+"2025-08-07","Indonesia","(not set)",1,1
+"2025-08-08","Brazil","(not set)",107,40
+"2025-08-08","United States","(not set)",2,2
+"2025-08-08","Mexico","(not set)",1,1
+"2025-08-08","United Kingdom","(not set)",1,1
+"2025-08-08","Venezuela","(not set)",1,1
+"2025-08-09","Brazil","(not set)",61,45
+"2025-08-09","United States","(not set)",21,11
+"2025-08-09","Mexico","(not set)",2,2
+"2025-08-10","Brazil","(not set)",50,32
+"2025-08-10","United States","(not set)",8,7
+"2025-08-10","Mexico","(not set)",2,2
+"2025-08-10","India","(not set)",1,1
+"2025-08-11","Brazil","(not set)",58,31
+"2025-08-11","United States","(not set)",16,7
+"2025-08-11","Iran","(not set)",2,2
+"2025-08-11","Bangladesh","(not set)",1,1
+"2025-08-11","Mexico","(not set)",1,1
+"2025-08-11","Yemen","(not set)",1,1
+"2025-08-12","Brazil","(not set)",111,52
+"2025-08-12","United States","(not set)",11,6
+"2025-08-12","Mexico","(not set)",3,2
+"2025-08-12","Ecuador","(not set)",1,1
+"2025-08-12","Iran","(not set)",1,1
+"2025-08-12","Nigeria","(not set)",1,1
+"2025-08-12","Puerto Rico","(not set)",1,1
+"2025-08-13","Brazil","(not set)",48,39
+"2025-08-13","United States","(not set)",12,8
+"2025-08-13","Mexico","(not set)",1,1
+"2025-08-14","Brazil","(not set)",76,54
+"2025-08-14","United States","(not set)",12,6
+"2025-08-14","Iran","(not set)",2,1
+"2025-08-15","Brazil","(not set)",71,31
+"2025-08-15","United States","(not set)",6,5
+"2025-08-15","Guatemala","(not set)",2,1
+"2025-08-15","Italy","(not set)",1,1
+"2025-08-15","Mexico","(not set)",1,1
+"2025-08-16","Brazil","(not set)",65,52
+"2025-08-16","United States","(not set)",4,4
+"2025-08-16","Iran","(not set)",2,2
+"2025-08-16","Mexico","(not set)",2,1
+"2025-08-16","Ecuador","(not set)",1,1
+"2025-08-16","Kenya","(not set)",1,1
+"2025-08-16","Yemen","(not set)",1,1
+"2025-08-17","Brazil","(not set)",92,48
+"2025-08-17","United States","(not set)",22,7
+"2025-08-17","Iran","(not set)",2,1
+"2025-08-17","Mexico","(not set)",1,1
+"2025-08-17","Puerto Rico","(not set)",1,1
+"2025-08-17","Sudan","(not set)",1,1
+"2025-08-18","Brazil","(not set)",115,46
+"2025-08-18","United States","(not set)",5,5
+"2025-08-19","Brazil","(not set)",94,51
+"2025-08-19","United States","(not set)",9,7
+"2025-08-19","Iran","(not set)",2,1
+"2025-08-19","Mexico","(not set)",2,2
+"2025-08-19","Cuba","(not set)",1,1
+"2025-08-20","Brazil","(not set)",72,51
+"2025-08-20","United States","(not set)",38,10
+"2025-08-21","Brazil","(not set)",93,50
+"2025-08-21","United States","(not set)",9,7
+"2025-08-21","Mexico","(not set)",2,2
+"2025-08-21","Puerto Rico","(not set)",1,1
+"2025-08-21","United Kingdom","(not set)",1,1
+"2025-08-22","Brazil","(not set)",80,45
+"2025-08-22","United States","(not set)",11,9
+"2025-08-22","Egypt","(not set)",2,1
+"2025-08-22","Mexico","(not set)",2,2
+"2025-08-22","Cuba","(not set)",1,1
+"2025-08-22","Iran","(not set)",1,1
+"2025-08-22","Nigeria","(not set)",1,1
+"2025-08-22","Serbia","(not set)",1,1
+"2025-08-23","Brazil","(not set)",138,70
+"2025-08-23","United States","(not set)",8,7
+"2025-08-23","India","(not set)",5,1
+"2025-08-23","Guatemala","(not set)",2,1
+"2025-08-23","Angola","(not set)",1,1
+"2025-08-23","Egypt","(not set)",1,1
+"2025-08-23","Haiti","(not set)",1,1
+"2025-08-23","Mexico","(not set)",1,1
+"2025-08-23","United Kingdom","(not set)",1,1
+"2025-08-24","Brazil","(not set)",215,53
+"2025-08-24","United States","(not set)",25,15
+"2025-08-24","Canada","(not set)",5,1
+"2025-08-24","Mexico","(not set)",1,1
+"2025-08-24","Morocco","(not set)",1,1
+"2025-08-25","Brazil","(not set)",78,54
+"2025-08-25","United States","(not set)",20,4
+"2025-08-25","Israel","(not set)",8,1
+"2025-08-25","Mexico","(not set)",2,1
+"2025-08-25","Indonesia","(not set)",1,1
+"2025-08-25","Italy","(not set)",1,1
+"2025-08-25","Oman","(not set)",1,1
+"2025-08-25","Uganda","(not set)",1,1
+"2025-08-26","Brazil","(not set)",100,52
+"2025-08-26","United States","(not set)",8,3
+"2025-08-27","Brazil","(not set)",129,58
+"2025-08-27","United States","(not set)",16,10
+"2025-08-27","Mexico","(not set)",3,3
+"2025-08-28","Brazil","(not set)",116,44
+"2025-08-28","United States","(not set)",7,7
+"2025-08-28","El Salvador","(not set)",2,1
+"2025-08-28","Mexico","(not set)",2,1
+"2025-08-28","Ghana","(not set)",1,1
+"2025-08-29","Brazil","(not set)",72,45
+"2025-08-29","United States","(not set)",17,8
+"2025-08-30","Brazil","(not set)",78,47
+"2025-08-30","United States","(not set)",10,9
+"2025-08-31","Brazil","(not set)",89,42
+"2025-08-31","United States","(not set)",12,8
+"2025-08-31","India","(not set)",1,1
+"2025-09-01","Brazil","(not set)",107,52
+"2025-09-01","United States","(not set)",19,12
+"2025-09-02","Brazil","(not set)",100,61
+"2025-09-02","United States","(not set)",7,6
+"2025-09-02","Mexico","(not set)",1,1
+"2025-09-02","South Africa","(not set)",1,1
+"2025-09-03","Brazil","(not set)",147,47
+"2025-09-03","United States","(not set)",11,10
+"2025-09-03","Nigeria","(not set)",1,1
+"2025-09-04","Brazil","(not set)",71,49
+"2025-09-04","United States","(not set)",7,6
+"2025-09-04","Angola","(not set)",1,1
+"2025-09-04","France","(not set)",1,1
+"2025-09-04","Ghana","(not set)",1,1
+"2025-09-05","Brazil","(not set)",51,38
+"2025-09-05","United States","(not set)",5,5
+"2025-09-06","Brazil","(not set)",73,45
+"2025-09-06","United States","(not set)",12,8
+"2025-09-06","Nigeria","(not set)",1,1
+"2025-09-06","Philippines","(not set)",1,1
+"2025-09-07","Brazil","(not set)",70,40
+"2025-09-07","United States","(not set)",6,5
+"2025-09-07","Mexico","(not set)",2,2
+"2025-09-08","Brazil","(not set)",54,40
+"2025-09-08","United States","(not set)",7,7
+"2025-09-08","Mexico","(not set)",3,1
+"2025-09-08","Zambia","(not set)",1,1
+"2025-09-09","Brazil","(not set)",65,41
+"2025-09-09","United States","(not set)",8,8
+"2025-09-09","Egypt","(not set)",2,1
+"2025-09-09","Mexico","(not set)",2,2
+"2025-09-09","Pakistan","(not set)",1,1
+"2025-09-09","Saudi Arabia","(not set)",1,1
+"2025-09-09","United Kingdom","(not set)",1,1
+"2025-09-10","Brazil","(not set)",77,38
+"2025-09-10","United States","(not set)",4,4
+"2025-09-10","Haiti","(not set)",1,1
+"2025-09-10","Philippines","(not set)",1,1
+"2025-09-10","Portugal","(not set)",1,1
+"2025-09-10","Puerto Rico","(not set)",1,1
+"2025-09-11","Brazil","(not set)",70,26
+"2025-09-11","United States","(not set)",21,11
+"2025-09-11","Algeria","(not set)",3,1
+"2025-09-11","Colombia","(not set)",1,1
+"2025-09-11","Iran","(not set)",1,1
+"2025-09-12","Brazil","(not set)",150,53
+"2025-09-12","United States","(not set)",10,5
+"2025-09-12","Mexico","(not set)",3,3
+"2025-09-12","Nigeria","(not set)",1,1
+"2025-09-13","Brazil","(not set)",119,54
+"2025-09-13","United States","(not set)",10,9
+"2025-09-13","Argentina","(not set)",1,1
+"2025-09-13","Mexico","(not set)",1,1
+"2025-09-14","Brazil","(not set)",71,39
+"2025-09-14","United States","(not set)",10,5
+"2025-09-15","Brazil","(not set)",105,55
+"2025-09-15","United States","(not set)",12,5
+"2025-09-15","Kenya","(not set)",1,1
+"2025-09-16","Brazil","(not set)",128,43
+"2025-09-16","United States","(not set)",14,7
+"2025-09-16","Netherlands","(not set)",1,1
+"2025-09-17","Brazil","(not set)",67,40
+"2025-09-17","United States","(not set)",12,7
+"2025-09-17","Indonesia","(not set)",1,1
+"2025-09-17","Iran","(not set)",1,1
+"2025-09-18","Brazil","(not set)",88,39
+"2025-09-18","United States","(not set)",5,5
+"2025-09-19","Brazil","(not set)",170,46
+"2025-09-19","United States","(not set)",13,8
+"2025-09-19","Nigeria","(not set)",2,1
+"2025-09-19","Togo","(not set)",2,1
+"2025-09-19","Mexico","(not set)",1,1
+"2025-09-20","Brazil","(not set)",78,38
+"2025-09-20","United States","(not set)",6,5
+"2025-09-20","Cuba","(not set)",1,1
+"2025-09-20","Netherlands","(not set)",1,1
+"2025-09-21","Brazil","(not set)",86,53
+"2025-09-21","United States","(not set)",17,7
+"2025-09-21","France","(not set)",1,1
+"2025-09-21","Guyana","(not set)",1,1
+"2025-09-21","Philippines","(not set)",1,1
+"2025-09-22","Brazil","(not set)",77,49
+"2025-09-22","United States","(not set)",11,9
+"2025-09-22","Egypt","(not set)",1,1
+"2025-09-22","Guatemala","(not set)",1,1
+"2025-09-22","Indonesia","(not set)",1,1
+"2025-09-22","Mexico","(not set)",1,1
+"2025-09-23","Brazil","(not set)",78,55
+"2025-09-23","United States","(not set)",21,9
+"2025-09-23","Haiti","(not set)",1,1
+"2025-09-23","Mexico","(not set)",1,1
+"2025-09-23","Yemen","(not set)",1,1
+"2025-09-24","Brazil","(not set)",104,52
+"2025-09-24","United States","(not set)",7,7
+"2025-09-24","Indonesia","(not set)",1,1
+"2025-09-24","Peru","(not set)",1,1
+"2025-09-25","Brazil","(not set)",82,42
+"2025-09-25","United States","(not set)",4,4
+"2025-09-25","Guyana","(not set)",1,1
+"2025-09-25","Mexico","(not set)",1,1
+"2025-09-26","Brazil","(not set)",67,43
+"2025-09-26","United States","(not set)",16,8
+"2025-09-26","Angola","(not set)",2,1
+"2025-09-26","Mexico","(not set)",1,1
+"2025-09-27","Brazil","(not set)",68,42
+"2025-09-27","United States","(not set)",17,9
+"2025-09-27","Iran","(not set)",4,1
+"2025-09-27","Mexico","(not set)",4,1
+"2025-09-28","Brazil","(not set)",132,58
+"2025-09-28","United States","(not set)",16,8
+"2025-09-28","Iran","(not set)",1,1
+"2025-09-28","Mexico","(not set)",1,1
+"2025-09-29","Brazil","(not set)",87,56
+"2025-09-29","United States","(not set)",20,13
+"2025-09-29","Mexico","(not set)",2,2
+"2025-09-29","Angola","(not set)",1,1
+"2025-09-29","Haiti","(not set)",1,1
+"2025-09-29","Kenya","(not set)",1,1
+"2025-09-30","Brazil","(not set)",83,45
+"2025-09-30","United States","(not set)",14,9
+"2025-09-30","India","(not set)",5,2
+"2025-09-30","South Africa","(not set)",2,1
+"2025-09-30","Afghanistan","(not set)",1,1
+"2025-10-01","Brazil","(not set)",97,37
+"2025-10-01","United States","(not set)",15,11
+"2025-10-01","Canada","(not set)",1,1
+"2025-10-01","Indonesia","(not set)",1,1
+"2025-10-02","Brazil","(not set)",106,66
+"2025-10-02","United States","(not set)",19,10
+"2025-10-02","Mexico","(not set)",4,4
+"2025-10-03","Brazil","(not set)",52,30
+"2025-10-03","United States","(not set)",3,2
+"2025-10-03","Algeria","(not set)",1,1
+"2025-10-03","Angola","(not set)",1,1
+"2025-10-03","Bangladesh","(not set)",1,1
+"2025-10-04","Brazil","(not set)",47,40
+"2025-10-04","Canada","(not set)",8,3
+"2025-10-04","United States","(not set)",4,4
+"2025-10-04","Cape Verde","(not set)",2,1
+"2025-10-04","Germany","(not set)",2,1
+"2025-10-04","Ethiopia","(not set)",1,1
+"2025-10-04","Mexico","(not set)",1,1
+"2025-10-04","Pakistan","(not set)",1,1
+"2025-10-04","Zambia","(not set)",1,1
+"2025-10-05","Brazil","(not set)",103,49
+"2025-10-05","United States","(not set)",18,11
+"2025-10-05","Mexico","(not set)",4,2
+"2025-10-05","Argentina","(not set)",1,1
+"2025-10-05","Iran","(not set)",1,1
+"2025-10-05","Yemen","(not set)",1,1
+"2025-10-06","Brazil","(not set)",55,37
+"2025-10-06","United States","(not set)",7,7
+"2025-10-06","Mexico","(not set)",1,1
+"2025-10-07","Brazil","(not set)",53,42
+"2025-10-07","United States","(not set)",11,7
+"2025-10-07","Libya","(not set)",1,1
+"2025-10-07","Poland","(not set)",1,1
+"2025-10-07","Romania","(not set)",1,1
+"2025-10-08","Brazil","(not set)",50,45
+"2025-10-08","United States","(not set)",21,15
+"2025-10-08","Mexico","(not set)",1,1
+"2025-10-08","Uganda","(not set)",1,1
+"2025-10-09","Brazil","(not set)",68,46
+"2025-10-09","United States","(not set)",6,5
+"2025-10-09","Mexico","(not set)",1,1
+"2025-10-09","Philippines","(not set)",1,1
+"2025-10-10","Brazil","(not set)",77,47
+"2025-10-10","Mexico","(not set)",7,3
+"2025-10-10","United States","(not set)",6,6
+"2025-10-10","Iran","(not set)",1,1
+"2025-10-11","Brazil","(not set)",91,55
+"2025-10-11","United States","(not set)",9,4
+"2025-10-11","Zambia","(not set)",2,1
+"2025-10-12","Brazil","(not set)",115,59
+"2025-10-12","United States","(not set)",11,7
+"2025-10-12","Mexico","(not set)",2,1
+"2025-10-13","Brazil","(not set)",125,59
+"2025-10-13","United States","(not set)",17,14
+"2025-10-13","Zimbabwe","(not set)",1,1
+"2025-10-14","Brazil","(not set)",91,57
+"2025-10-14","United States","(not set)",20,9
+"2025-10-14","Mexico","(not set)",2,2
+"2025-10-14","Colombia","(not set)",1,1
+"2025-10-14","Morocco","(not set)",1,1
+"2025-10-15","Brazil","(not set)",79,47
+"2025-10-15","United States","(not set)",8,6
+"2025-10-16","Brazil","(not set)",59,48
+"2025-10-16","United States","(not set)",11,5
+"2025-10-16","Iran","(not set)",1,1
+"2025-10-16","Netherlands","(not set)",1,1
+"2025-10-16","Pakistan","(not set)",1,1
+"2025-10-17","Brazil","(not set)",76,49
+"2025-10-17","United States","(not set)",15,12
+"2025-10-17","Mexico","(not set)",5,5
+"2025-10-17","Pakistan","(not set)",1,1
+"2025-10-17","Portugal","(not set)",1,1
+"2025-10-17","Zambia","(not set)",1,1
+"2025-10-18","Brazil","(not set)",86,56
+"2025-10-18","United States","(not set)",3,3
+"2025-10-18","India","(not set)",1,1
+"2025-10-18","Indonesia","(not set)",1,1
+"2025-10-18","Italy","(not set)",1,1
+"2025-10-18","Sri Lanka","(not set)",1,1
+"2025-10-18","United Kingdom","(not set)",1,1
+"2025-10-19","Brazil","(not set)",101,50
+"2025-10-19","United States","(not set)",11,9
+"2025-10-20","Brazil","(not set)",109,60
+"2025-10-20","United States","(not set)",21,8
+"2025-10-20","Mexico","(not set)",2,2
+"2025-10-20","Argentina","(not set)",1,1
+"2025-10-20","Bangladesh","(not set)",1,1
+"2025-10-20","Burkina Faso","(not set)",1,1
+"2025-10-20","Cuba","(not set)",1,1
+"2025-10-20","Laos","(not set)",1,1
+"2025-10-21","Brazil","(not set)",58,41
+"2025-10-21","United States","(not set)",24,12
+"2025-10-21","Bangladesh","(not set)",1,1
+"2025-10-21","Mexico","(not set)",1,1
+"2025-10-21","Philippines","(not set)",1,1
+"2025-10-22","Brazil","(not set)",71,51
+"2025-10-22","United States","(not set)",20,11
+"2025-10-22","Israel","(not set)",5,1
+"2025-10-23","Brazil","(not set)",92,56
+"2025-10-23","United States","(not set)",4,4
+"2025-10-23","Nigeria","(not set)",2,2
+"2025-10-23","Egypt","(not set)",1,1
+"2025-10-23","Peru","(not set)",1,1
+"2025-10-24","Brazil","(not set)",89,43
+"2025-10-24","United States","(not set)",5,5
+"2025-10-24","South Africa","(not set)",3,1
+"2025-10-24","India","(not set)",1,1
+"2025-10-24","Iran","(not set)",1,1
+"2025-10-24","United Kingdom","(not set)",1,1
+"2025-10-24","Zambia","(not set)",1,1
+"2025-10-25","Brazil","(not set)",83,47
+"2025-10-25","United States","(not set)",15,10
+"2025-10-25","Cuba","(not set)",6,1
+"2025-10-26","Brazil","(not set)",103,65
+"2025-10-26","United States","(not set)",8,8
+"2025-10-26","El Salvador","(not set)",6,1
+"2025-10-26","Iran","(not set)",1,1
+"2025-10-26","Mexico","(not set)",1,1
+"2025-10-27","Brazil","(not set)",75,52
+"2025-10-27","United States","(not set)",20,9
+"2025-10-27","Egypt","(not set)",1,1
+"2025-10-27","Puerto Rico","(not set)",1,1
+"2025-10-28","Brazil","(not set)",98,76
+"2025-10-28","United States","(not set)",19,11
+"2025-10-28","Mexico","(not set)",1,1
+"2025-10-29","Brazil","(not set)",76,58
+"2025-10-29","United States","(not set)",9,7
+"2025-10-29","Mexico","(not set)",4,3
+"2025-10-30","Brazil","(not set)",78,49
+"2025-10-30","United States","(not set)",6,6
+"2025-10-30","El Salvador","(not set)",1,1
+"2025-10-30","Zambia","(not set)",1,1
+"2025-10-31","Brazil","(not set)",139,53
+"2025-10-31","United States","(not set)",6,5
+"2025-11-01","Brazil","(not set)",152,60
+"2025-11-01","United States","(not set)",15,11
+"2025-11-01","Botswana","(not set)",3,1
+"2025-11-02","Brazil","(not set)",93,69
+"2025-11-02","United States","(not set)",8,7
+"2025-11-02","Argentina","(not set)",1,1
+"2025-11-02","Cuba","(not set)",1,1
+"2025-11-03","Brazil","(not set)",93,56
+"2025-11-03","United States","(not set)",10,9
+"2025-11-03","Guatemala","(not set)",1,1
+"2025-11-03","Iran","(not set)",1,1
+"2025-11-04","Brazil","(not set)",75,55
+"2025-11-04","United States","(not set)",15,8
+"2025-11-04","Indonesia","(not set)",3,2
+"2025-11-04","Nigeria","(not set)",1,1
+"2025-11-04","Philippines","(not set)",1,1
+"2025-11-05","Brazil","(not set)",79,55
+"2025-11-05","United States","(not set)",20,6
+"2025-11-05","Cuba","(not set)",1,1
+"2025-11-05","Ethiopia","(not set)",1,1
+"2025-11-05","Jamaica","(not set)",1,1
+"2025-11-05","Mexico","(not set)",1,1
+"2025-11-06","Brazil","(not set)",137,43
+"2025-11-06","United States","(not set)",10,10
+"2025-11-06","Egypt","(not set)",1,1
+"2025-11-06","Nigeria","(not set)",1,1
+"2025-11-07","Brazil","(not set)",68,37
+"2025-11-07","United States","(not set)",9,7
+"2025-11-07","Mexico","(not set)",1,1
+"2025-11-07","Paraguay","(not set)",1,1
+"2025-11-08","Brazil","(not set)",63,54
+"2025-11-08","United States","(not set)",9,9
+"2025-11-08","Germany","(not set)",1,1
+"2025-11-08","Iran","(not set)",1,1
+"2025-11-08","Nigeria","(not set)",1,1
+"2025-11-08","Peru","(not set)",1,1
+"2025-11-09","Brazil","(not set)",74,51
+"2025-11-09","United States","(not set)",9,5
+"2025-11-09","Iran","(not set)",1,1
+"2025-11-10","Brazil","(not set)",68,48
+"2025-11-10","United States","(not set)",12,9
+"2025-11-11","Brazil","(not set)",65,32
+"2025-11-11","United States","(not set)",22,8
+"2025-11-11","Cuba","(not set)",1,1
+"2025-11-12","Brazil","(not set)",60,37
+"2025-11-12","United States","(not set)",15,12
+"2025-11-12","Mexico","(not set)",1,1
+"2025-11-12","Singapore","(not set)",1,1
+"2025-11-13","Brazil","(not set)",115,43
+"2025-11-13","United States","(not set)",11,11
+"2025-11-13","Philippines","(not set)",1,1
+"2025-11-13","Portugal","(not set)",1,1
+"2025-11-14","Brazil","(not set)",101,49
+"2025-11-14","United States","(not set)",4,4
+"2025-11-14","Philippines","(not set)",2,1
+"2025-11-14","Uganda","(not set)",2,1
+"2025-11-14","Pakistan","(not set)",1,1
+"2025-11-15","Brazil","(not set)",86,53
+"2025-11-15","Iran","(not set)",34,2
+"2025-11-15","United States","(not set)",13,10
+"2025-11-15","Guatemala","(not set)",2,1
+"2025-11-15","Morocco","(not set)",1,1
+"2025-11-16","Brazil","(not set)",109,78
+"2025-11-16","United States","(not set)",8,5
+"2025-11-16","Morocco","(not set)",2,1
+"2025-11-16","Bangladesh","(not set)",1,1
+"2025-11-16","Guatemala","(not set)",1,1
+"2025-11-16","Mexico","(not set)",1,1
+"2025-11-16","Senegal","(not set)",1,1
+"2025-11-17","Brazil","(not set)",104,68
+"2025-11-17","Bangladesh","(not set)",51,1
+"2025-11-17","United States","(not set)",13,13
+"2025-11-17","Iran","(not set)",2,1
+"2025-11-17","Mexico","(not set)",1,1
+"2025-11-18","Brazil","(not set)",69,53
+"2025-11-18","United States","(not set)",12,11
+"2025-11-18","Algeria","(not set)",5,1
+"2025-11-18","Mexico","(not set)",1,1
+"2025-11-19","Brazil","(not set)",112,53
+"2025-11-19","United States","(not set)",8,5
+"2025-11-19","Iran","(not set)",6,1
+"2025-11-19","Haiti","(not set)",2,1
+"2025-11-19","United Kingdom","(not set)",1,1
+"2025-11-20","Brazil","(not set)",81,41
+"2025-11-20","United States","(not set)",7,6
+"2025-11-20","Mexico","(not set)",1,1
+"2025-11-21","Brazil","(not set)",114,52
+"2025-11-21","United States","(not set)",6,5
+"2025-11-21","Mexico","(not set)",3,2
+"2025-11-21","Cuba","(not set)",1,1
+"2025-11-21","Philippines","(not set)",1,1
+"2025-11-22","Brazil","(not set)",98,52
+"2025-11-22","United States","(not set)",16,11
+"2025-11-22","India","(not set)",5,1
+"2025-11-22","Iran","(not set)",1,1
+"2025-11-23","Brazil","(not set)",74,42
+"2025-11-23","United States","(not set)",21,15
+"2025-11-23","India","(not set)",1,1
+"2025-11-23","Japan","(not set)",1,1
+"2025-11-24","Brazil","(not set)",59,56
+"2025-11-24","United States","(not set)",11,7
+"2025-11-24","Chile","(not set)",8,1
+"2025-11-24","Côte d’Ivoire","(not set)",1,1
+"2025-11-24","Mexico","(not set)",1,1
+"2025-11-24","Türkiye","(not set)",1,1
+"2025-11-25","Brazil","(not set)",116,60
+"2025-11-25","United States","(not set)",17,9
+"2025-11-25","Afghanistan","(not set)",1,1
+"2025-11-25","Canada","(not set)",1,1
+"2025-11-26","Brazil","(not set)",111,52
+"2025-11-26","United States","(not set)",14,9
+"2025-11-27","Brazil","(not set)",102,61
+"2025-11-27","United States","(not set)",5,5
+"2025-11-28","Brazil","(not set)",67,47
+"2025-11-28","United States","(not set)",13,12
+"2025-11-28","Ghana","(not set)",1,1
+"2025-11-28","Mexico","(not set)",1,1
+"2025-11-29","Brazil","(not set)",131,67
+"2025-11-29","United States","(not set)",17,16
+"2025-11-29","Colombia","(not set)",1,1
+"2025-11-29","Iran","(not set)",1,1
+"2025-11-30","Brazil","(not set)",73,60
+"2025-11-30","United States","(not set)",15,11
+"2025-11-30","Egypt","(not set)",1,1
+"2025-11-30","India","(not set)",1,1
+"2025-11-30","Mexico","(not set)",1,1
+"2025-11-30","Netherlands","(not set)",1,1
+"2025-11-30","United Kingdom","(not set)",1,1
+"2025-12-01","Brazil","(not set)",131,73
+"2025-12-01","United States","(not set)",11,8
+"2025-12-01","Mozambique","(not set)",1,1
+"2025-12-01","Nigeria","(not set)",1,1
+"2025-12-01","Sri Lanka","(not set)",1,1
+"2025-12-01","United Kingdom","(not set)",1,1
+"2025-12-02","Brazil","(not set)",120,71
+"2025-12-02","United States","(not set)",17,10
+"2025-12-02","El Salvador","(not set)",2,1
+"2025-12-02","Cape Verde","(not set)",1,1
+"2025-12-02","Eswatini","(not set)",1,1
+"2025-12-02","Jamaica","(not set)",1,1
+"2025-12-02","Mexico","(not set)",1,1
+"2025-12-03","Brazil","(not set)",213,45
+"2025-12-03","United States","(not set)",13,11
+"2025-12-03","Mexico","(not set)",1,1
+"2025-12-03","United Kingdom","(not set)",1,1
+"2025-12-04","Brazil","(not set)",86,61
+"2025-12-04","United States","(not set)",8,6
+"2025-12-04","United Kingdom","(not set)",4,1
+"2025-12-04","Guatemala","(not set)",2,2
+"2025-12-04","Egypt","(not set)",1,1
+"2025-12-04","France","(not set)",1,1
+"2025-12-04","Jamaica","(not set)",1,1
+"2025-12-05","Brazil","(not set)",110,61
+"2025-12-05","United States","(not set)",6,6
+"2025-12-05","Cuba","(not set)",1,1
+"2025-12-05","Mexico","(not set)",1,1
+"2025-12-05","Puerto Rico","(not set)",1,1
+"2025-12-06","Brazil","(not set)",116,64
+"2025-12-06","United States","(not set)",20,9
+"2025-12-06","Philippines","(not set)",2,1
+"2025-12-06","Algeria","(not set)",1,1
+"2025-12-07","Brazil","(not set)",77,59
+"2025-12-07","United States","(not set)",17,11
+"2025-12-07","Tunisia","(not set)",4,1
+"2025-12-07","Mexico","(not set)",1,1
+"2025-12-07","Nigeria","(not set)",1,1
+"2025-12-08","Brazil","(not set)",132,62
+"2025-12-08","United States","(not set)",12,8
+"2025-12-08","Mexico","(not set)",2,2
+"2025-12-08","France","(not set)",1,1
+"2025-12-08","India","(not set)",1,1
+"2025-12-08","Japan","(not set)",1,1
+"2025-12-09","Brazil","(not set)",119,61
+"2025-12-09","United States","(not set)",18,10
+"2025-12-09","Cuba","(not set)",2,1
+"2025-12-09","Iran","(not set)",2,2
+"2025-12-09","Canada","(not set)",1,1
+"2025-12-09","France","(not set)",1,1
+"2025-12-09","Syria","(not set)",1,1
+"2025-12-10","Brazil","(not set)",122,60
+"2025-12-10","United States","(not set)",10,8
+"2025-12-10","France","(not set)",2,2
+"2025-12-10","Bangladesh","(not set)",1,1
+"2025-12-10","Germany","(not set)",1,1
+"2025-12-10","Iran","(not set)",1,1
+"2025-12-11","Brazil","(not set)",104,53
+"2025-12-11","United States","(not set)",13,10
+"2025-12-11","Afghanistan","(not set)",1,1
+"2025-12-11","Mexico","(not set)",1,1
+"2025-12-11","Rwanda","(not set)",1,1
+"2025-12-11","Sudan","(not set)",1,1
+"2025-12-12","Brazil","(not set)",57,40
+"2025-12-12","United States","(not set)",15,9
+"2025-12-12","Nigeria","(not set)",2,1
+"2025-12-12","Barbados","(not set)",1,1
+"2025-12-12","Iran","(not set)",1,1
+"2025-12-12","Philippines","(not set)",1,1
+"2025-12-12","Rwanda","(not set)",1,1
+"2025-12-13","Brazil","(not set)",121,70
+"2025-12-13","United States","(not set)",7,6
+"2025-12-13","Nigeria","(not set)",2,1
+"2025-12-13","Pakistan","(not set)",2,1
+"2025-12-13","Saudi Arabia","(not set)",2,1
+"2025-12-14","Brazil","(not set)",90,69
+"2025-12-14","United States","(not set)",9,9
+"2025-12-14","Iran","(not set)",1,1
+"2025-12-14","Philippines","(not set)",1,1
+"2025-12-15","Brazil","(not set)",69,52
+"2025-12-15","United States","(not set)",11,10
+"2025-12-15","Bangladesh","(not set)",5,1
+"2025-12-15","Guatemala","(not set)",1,1
+"2025-12-15","Philippines","(not set)",1,1
+"2025-12-16","Brazil","(not set)",95,52
+"2025-12-16","United States","(not set)",19,10
+"2025-12-16","Tanzania","(not set)",1,1
+"2025-12-17","Brazil","(not set)",144,68
+"2025-12-17","United States","(not set)",15,8
+"2025-12-17","India","(not set)",2,1
+"2025-12-17","Canada","(not set)",1,1
+"2025-12-18","Brazil","(not set)",57,39
+"2025-12-18","United States","(not set)",17,7
+"2025-12-18","Egypt","(not set)",2,1
+"2025-12-18","Mexico","(not set)",1,1
+"2025-12-18","Nigeria","(not set)",1,1
+"2025-12-18","Panama","(not set)",1,1
+"2025-12-19","Brazil","(not set)",63,37
+"2025-12-19","United States","(not set)",24,8
+"2025-12-19","Nigeria","(not set)",1,1
+"2025-12-19","Pakistan","(not set)",1,1
+"2025-12-19","Saudi Arabia","(not set)",1,1
+"2025-12-20","Brazil","(not set)",82,47
+"2025-12-20","United States","(not set)",28,3
+"2025-12-20","Puerto Rico","(not set)",1,1
+"2025-12-21","Brazil","(not set)",122,57
+"2025-12-21","United States","(not set)",18,11
+"2025-12-21","India","(not set)",1,1
+"2025-12-21","Mexico","(not set)",1,1
+"2025-12-21","Yemen","(not set)",1,1
+"2025-12-22","Brazil","(not set)",64,36
+"2025-12-22","United States","(not set)",19,10
+"2025-12-22","Ghana","(not set)",1,1
+"2025-12-22","Iran","(not set)",1,1
+"2025-12-22","Pakistan","(not set)",1,1
+"2025-12-23","Brazil","(not set)",10097,8648
+"2025-12-23","United States","(not set)",2239,1975
+"2025-12-23","Nigeria","(not set)",88,44
+"2025-12-23","Mexico","(not set)",44,44
+"2025-12-23","United Kingdom","(not set)",44,44
+"2025-12-24","Brazil","(not set)",8585,6755
+"2025-12-24","United States","(not set)",1830,1569
+"2025-12-24","Cameroon","(not set)",44,44
+"2025-12-24","India","(not set)",44,44
+"2025-12-24","Nigeria","(not set)",44,44
+"2025-12-24","Russia","(not set)",44,44
+"2025-12-25","Brazil","(not set)",7690,6723
+"2025-12-25","United States","(not set)",1261,1093
+"2025-12-25","Argentina","(not set)",42,42
+"2025-12-25","Ghana","(not set)",42,42
+"2025-12-25","Nigeria","(not set)",42,42
+"2025-12-25","Spain","(not set)",42,42
+"2025-12-25","United Kingdom","(not set)",42,42
+"2025-12-26","Brazil","(not set)",9459,8212
+"2025-12-26","United States","(not set)",2451,2064
+"2025-12-26","Mexico","(not set)",86,86
+"2025-12-26","Argentina","(not set)",43,43
+"2025-12-26","India","(not set)",43,43
+"2025-12-26","United Kingdom","(not set)",43,43
+"2025-12-27","Brazil","(not set)",9780,8926
+"2025-12-27","United States","(not set)",2135,1708
+"2025-12-27","Iran","(not set)",85,43
+"2025-12-27","Nigeria","(not set)",43,43
+"2025-12-28","Brazil","(not set)",9902,8518
+"2025-12-28","United States","(not set)",1552,1343
+"2025-12-28","Germany","(not set)",42,42
+"2025-12-28","Iran","(not set)",42,42
+"2025-12-28","Pakistan","(not set)",42,42
+"2025-12-28","Paraguay","(not set)",42,42
+"2025-12-28","Portugal","(not set)",42,42
+"2025-12-28","United Kingdom","(not set)",42,42
+"2025-12-29","Brazil","(not set)",10278,8723
+"2025-12-29","United States","(not set)",1987,1598
+"2025-12-29","Mozambique","(not set)",86,43
+"2025-12-29","Argentina","(not set)",43,43
+"2025-12-29","Bhutan","(not set)",43,43
+"2025-12-29","Cameroon","(not set)",43,43
+"2025-12-29","Colombia","(not set)",43,43
+"2025-12-29","Iran","(not set)",43,43
+"2025-12-29","United Kingdom","(not set)",43,43
+"2025-12-30","Brazil","(not set)",9952,8784
+"2025-12-30","United States","(not set)",1817,1515
+"2025-12-30","Yemen","(not set)",87,43
+"2025-12-30","Angola","(not set)",43,43
+"2025-12-30","Argentina","(not set)",43,43
+"2025-12-30","India","(not set)",43,43
+"2025-12-30","Mexico","(not set)",43,43
+"2025-12-31","Brazil","(not set)",9288,8036
+"2025-12-31","United States","(not set)",1901,1469
+"2025-12-31","Cameroon","(not set)",86,43
+"2025-12-31","Colombia","(not set)",43,43
+"2026-01-01","Brazil","(not set)",9112,7852
+"2026-01-01","United States","(not set)",1848,1554
+"2026-01-01","United Kingdom","(not set)",84,84
+"2026-01-01","India","(not set)",42,42
+"2026-01-01","Portugal","(not set)",42,42
+"2026-01-01","Spain","(not set)",42,42
+"2026-01-02","Brazil","(not set)",9981,8622
+"2026-01-02","United States","(not set)",1614,1317
+"2026-01-02","Angola","(not set)",85,42
+"2026-01-02","Cameroon","(not set)",85,42
+"2026-01-02","Mexico","(not set)",85,85
+"2026-01-02","Argentina","(not set)",42,42
+"2026-01-02","Canada","(not set)",42,42
+"2026-01-02","Colombia","(not set)",42,42
+"2026-01-02","Portugal","(not set)",42,42
+"2026-01-03","Brazil","(not set)",9460,8569
+"2026-01-03","United States","(not set)",1909,1739
+"2026-01-03","Mexico","(not set)",42,42
+"2026-01-03","United Kingdom","(not set)",42,42
+"2026-01-04","Brazil","(not set)",10073,8646
+"2026-01-04","United States","(not set)",1763,1511
+"2026-01-04","Argentina","(not set)",84,84
+"2026-01-04","Colombia","(not set)",42,42
+"2026-01-04","El Salvador","(not set)",42,42
+"2026-01-04","Mexico","(not set)",42,42
+"2026-01-05","Brazil","(not set)",11965,8832
+"2026-01-05","United States","(not set)",1914,1610
+"2026-01-05","Argentina","(not set)",44,44
+"2026-01-05","Iran","(not set)",44,44
+"2026-01-05","Japan","(not set)",44,44
+"2026-01-05","Mexico","(not set)",44,44
+"2026-01-06","Brazil","(not set)",9038,7967
+"2026-01-06","United States","(not set)",1756,1585
+"2026-01-06","Mexico","(not set)",43,43
+"2026-01-06","Spain","(not set)",43,43
+"2026-01-07","Brazil","(not set)",10186,8628
+"2026-01-07","United States","(not set)",1978,1684
+"2026-01-07","Mexico","(not set)",126,84
+"2026-01-07","Argentina","(not set)",42,42
+"2026-01-08","Brazil","(not set)",11770,9885
+"2026-01-08","United States","(not set)",1843,1550
+"2026-01-08","Bahamas","(not set)",42,42
+"2026-01-08","Costa Rica","(not set)",42,42
+"2026-01-08","France","(not set)",42,42
+"2026-01-08","Morocco","(not set)",42,42
+"2026-01-08","Puerto Rico","(not set)",42,42
+"2026-01-09","Brazil","(not set)",12119,10870
+"2026-01-09","United States","(not set)",1341,1295
+"2026-01-09","American Samoa","(not set)",93,46
+"2026-01-09","Argentina","(not set)",93,46
+"2026-01-09","Nigeria","(not set)",93,93
+"2026-01-09","Mexico","(not set)",46,46
+"2026-01-09","Portugal","(not set)",46,46
+"2026-01-09","Qatar","(not set)",46,46
+"2026-01-10","Brazil","(not set)",11744,10454
+"2026-01-10","United States","(not set)",1157,979
+"2026-01-10","Angola","(not set)",44,44
+"2026-01-10","Argentina","(not set)",44,44
+"2026-01-10","Bhutan","(not set)",44,44
+"2026-01-10","Costa Rica","(not set)",44,44
+"2026-01-11","Brazil","(not set)",10923,9595
+"2026-01-11","United States","(not set)",1842,1671
+"2026-01-11","Kuwait","(not set)",43,43
+"2026-01-11","Mexico","(not set)",43,43
+"2026-01-11","Puerto Rico","(not set)",43,43
+"2026-01-12","Brazil","(not set)",11313,9553
+"2026-01-12","United States","(not set)",1937,1585
+"2026-01-12","Argentina","(not set)",44,44
+"2026-01-12","Canada","(not set)",44,44
+"2026-01-12","Nigeria","(not set)",44,44
+"2026-01-12","Puerto Rico","(not set)",44,44
+"2026-01-12","Spain","(not set)",44,44
+"2026-01-13","Brazil","(not set)",10180,8788
+"2026-01-13","United States","(not set)",2045,1610
+"2026-01-13","Nigeria","(not set)",44,44
+"2026-01-14","Brazil","(not set)",10180,9157
+"2026-01-14","United States","(not set)",1618,1363
+"2026-01-14","Argentina","(not set)",43,43
+"2026-01-14","Canada","(not set)",43,43
+"2026-01-14","Kuwait","(not set)",43,43
+"2026-01-14","Pakistan","(not set)",43,43
+"2026-01-14","Philippines","(not set)",43,43
+"2026-01-14","United Kingdom","(not set)",43,43
+"2026-01-15","Brazil","(not set)",10130,8822
+"2026-01-15","United States","(not set)",1520,1224
+"2026-01-15","Mexico","(not set)",42,42
+"2026-01-15","Nigeria","(not set)",42,42
+"2026-01-15","Philippines","(not set)",42,42
+"2026-01-16","Brazil","(not set)",9718,8035
+"2026-01-16","United States","(not set)",1599,1388
+"2026-01-16","Mexico","(not set)",168,126
+"2026-01-16","Argentina","(not set)",42,42
+"2026-01-16","Egypt","(not set)",42,42
+"2026-01-16","Nigeria","(not set)",42,42
+"2026-01-16","Spain","(not set)",42,42
+"2026-01-17","Brazil","(not set)",10161,8674
+"2026-01-17","United States","(not set)",1239,950
+"2026-01-17","Canada","(not set)",41,41
+"2026-01-17","Costa Rica","(not set)",41,41
+"2026-01-17","United Kingdom","(not set)",41,41
+"2026-01-18","Brazil","(not set)",9065,7922
+"2026-01-18","United States","(not set)",1838,1470
+"2026-01-18","Mexico","(not set)",82,82
+"2026-01-18","Argentina","(not set)",41,41
+"2026-01-19","Brazil","(not set)",9984,8412
+"2026-01-19","United States","(not set)",1572,1275
+"2026-01-19","Argentina","(not set)",85,42
+"2026-01-19","Peru","(not set)",42,42
+"2026-01-20","Brazil","(not set)",10812,9311
+"2026-01-20","United States","(not set)",1931,1330
+"2026-01-20","Syria","(not set)",129,43
+"2026-01-20","United Kingdom","(not set)",86,43
+"2026-01-20","Canada","(not set)",43,43
+"2026-01-20","Colombia","(not set)",43,43
+"2026-01-20","Mexico","(not set)",43,43
+"2026-01-21","Brazil","(not set)",10015,8388
+"2026-01-21","United States","(not set)",1669,1455
+"2026-01-21","Syria","(not set)",86,43
+"2026-01-21","Argentina","(not set)",43,43
+"2026-01-21","India","(not set)",43,43
+"2026-01-21","Philippines","(not set)",43,43
+"2026-01-22","Brazil","(not set)",8878,7990
+"2026-01-22","United States","(not set)",1733,1480
+"2026-01-22","Mexico","(not set)",127,85
+"2026-01-22","Nigeria","(not set)",85,85
+"2026-01-22","Puerto Rico","(not set)",42,42
+"2026-01-23","Brazil","(not set)",10152,8846
+"2026-01-23","United States","(not set)",1811,1601
+"2026-01-23","Nigeria","(not set)",126,84
+"2026-01-23","Colombia","(not set)",42,42
+"2026-01-23","Japan","(not set)",42,42
+"2026-01-23","Poland","(not set)",42,42
+"2026-01-23","Spain","(not set)",42,42
+"2026-01-23","Syria","(not set)",42,42
+"2026-01-24","Brazil","(not set)",9806,8061
+"2026-01-24","United States","(not set)",1704,1537
+"2026-01-24","Mexico","(not set)",83,83
+"2026-01-24","Nigeria","(not set)",83,42
+"2026-01-24","Argentina","(not set)",42,42
+"2026-01-24","Bhutan","(not set)",42,42
+"2026-01-24","Indonesia","(not set)",42,42
+"2026-01-24","Italy","(not set)",42,42
+"2026-01-24","Japan","(not set)",42,42
+"2026-01-24","Netherlands","(not set)",42,42
+"2026-01-24","Puerto Rico","(not set)",42,42
+"2026-01-24","Syria","(not set)",42,42
+"2026-01-24","Togo","(not set)",42,42
+"2026-01-24","United Kingdom","(not set)",42,42
+"2026-01-25","Brazil","(not set)",8654,7259
+"2026-01-25","United States","(not set)",1312,1066
+"2026-01-25","Iran","(not set)",123,41
+"2026-01-25","Mexico","(not set)",82,82
+"2026-01-25","Nigeria","(not set)",82,82
+"2026-01-25","Argentina","(not set)",41,41
+"2026-01-25","Indonesia","(not set)",41,41
+"2026-01-25","Syria","(not set)",41,41
+"2026-01-25","United Kingdom","(not set)",41,41
+"2026-01-26","Brazil","(not set)",10196,8782
+"2026-01-26","United States","(not set)",1499,1371
+"2026-01-26","Nigeria","(not set)",129,43
+"2026-01-26","Argentina","(not set)",43,43
+"2026-01-26","Poland","(not set)",43,43
+"2026-01-26","Syria","(not set)",43,43
+"2026-01-26","United Arab Emirates","(not set)",43,43
+"2026-01-26","United Kingdom","(not set)",43,43
+"2026-01-27","Brazil","(not set)",9914,8283
+"2026-01-27","United States","(not set)",1803,1545
+"2026-01-27","Guatemala","(not set)",43,43
+"2026-01-27","Nigeria","(not set)",43,43
+"2026-01-27","Pakistan","(not set)",43,43
+"2026-01-27","Philippines","(not set)",43,43
+"2026-01-27","Puerto Rico","(not set)",43,43
+"2026-01-27","United Kingdom","(not set)",43,43
+"2026-01-28","Brazil","(not set)",10461,8675
+"2026-01-28","United States","(not set)",1701,1403
+"2026-01-28","Nigeria","(not set)",85,43
+"2026-01-28","Bhutan","(not set)",43,43
+"2026-01-28","Canada","(not set)",43,43
+"2026-01-28","Indonesia","(not set)",43,43
+"2026-01-28","Martinique","(not set)",43,43
+"2026-01-28","Poland","(not set)",43,43
+"2026-01-28","Puerto Rico","(not set)",43,43
+"2026-01-28","United Kingdom","(not set)",43,43
+"2026-01-29","Brazil","(not set)",10225,8788
+"2026-01-29","United States","(not set)",1606,1394
+"2026-01-29","Nigeria","(not set)",127,85
+"2026-01-29","Mexico","(not set)",85,85
+"2026-01-29","Argentina","(not set)",42,42
+"2026-01-29","Indonesia","(not set)",42,42
+"2026-01-29","Syria","(not set)",42,42
+"2026-01-29","United Kingdom","(not set)",42,42
+"2026-01-30","Brazil","(not set)",9846,8662
+"2026-01-30","United States","(not set)",1859,1521
+"2026-01-30","Nigeria","(not set)",85,42
+"2026-01-30","Costa Rica","(not set)",42,42
+"2026-01-30","Indonesia","(not set)",42,42
+"2026-01-30","Spain","(not set)",42,42
+"2026-01-31","Brazil","(not set)",10019,8487
+"2026-01-31","United States","(not set)",1490,1242
+"2026-01-31","Argentina","(not set)",41,41
+"2026-01-31","Nigeria","(not set)",41,41
+"2026-01-31","Portugal","(not set)",41,41
+"2026-01-31","Puerto Rico","(not set)",41,41
+"2026-02-01","Brazil","(not set)",10936,9826
+"2026-02-01","United States","(not set)",1316,1151
+"2026-02-01","Nigeria","(not set)",82,41
+"2026-02-01","Canada","(not set)",41,41
+"2026-02-01","Colombia","(not set)",41,41
+"2026-02-01","Indonesia","(not set)",41,41
+"2026-02-01","Puerto Rico","(not set)",41,41
+"2026-02-02","Brazil","(not set)",10385,9231
+"2026-02-02","United States","(not set)",1453,1111
+"2026-02-02","Argentina","(not set)",43,43
+"2026-02-02","Iran","(not set)",43,43
+"2026-02-02","Mexico","(not set)",43,43
+"2026-02-02","Trinidad & Tobago","(not set)",43,43
+"2026-02-03","Brazil","(not set)",9978,9071
+"2026-02-03","United States","(not set)",2116,1771
+"2026-02-03","Canada","(not set)",86,86
+"2026-02-03","Mexico","(not set)",86,86
+"2026-02-03","Argentina","(not set)",43,43
+"2026-02-03","Bolivia","(not set)",43,43
+"2026-02-03","Egypt","(not set)",43,43
+"2026-02-04","Brazil","(not set)",10209,9167
+"2026-02-04","United States","(not set)",1912,1390
+"2026-02-04","Mexico","(not set)",87,43
+"2026-02-04","Nigeria","(not set)",87,87
+"2026-02-04","Costa Rica","(not set)",43,43
+"2026-02-04","India","(not set)",43,43
+"2026-02-04","Indonesia","(not set)",43,43
+"2026-02-05","Brazil","(not set)",9401,8008
+"2026-02-05","United States","(not set)",1393,1393
+"2026-02-05","Nigeria","(not set)",87,44
+"2026-02-05","United Kingdom","(not set)",87,44
+"2026-02-05","Argentina","(not set)",44,44
+"2026-02-05","Iran","(not set)",44,44
+"2026-02-05","Japan","(not set)",44,44
+"2026-02-05","Mexico","(not set)",44,44
+"2026-02-06","Brazil","(not set)",10264,9238
+"2026-02-06","United States","(not set)",2473,2146
+"2026-02-06","Spain","(not set)",93,47
+"2026-02-06","Nigeria","(not set)",47,47
+"2026-02-06","United Kingdom","(not set)",47,47
+"2026-02-07","Brazil","(not set)",11252,9346
+"2026-02-07","United States","(not set)",1720,1302
+"2026-02-07","Nigeria","(not set)",139,93
+"2026-02-07","Argentina","(not set)",46,46
+"2026-02-07","Indonesia","(not set)",46,46
+"2026-02-07","Iran","(not set)",46,46
+"2026-02-08","Brazil","(not set)",11329,9590
+"2026-02-08","United States","(not set)",1338,1160
+"2026-02-08","Bhutan","(not set)",45,45
+"2026-02-08","Iran","(not set)",45,45
+"2026-02-08","Mexico","(not set)",45,45
+"2026-02-08","Singapore","(not set)",45,45
+"2026-02-08","United Kingdom","(not set)",45,45
+"2026-02-09","Brazil","(not set)",11129,9572
+"2026-02-09","United States","(not set)",1969,1649
+"2026-02-09","Mexico","(not set)",183,183
+"2026-02-09","Argentina","(not set)",92,46
+"2026-02-09","India","(not set)",46,46
+"2026-02-09","Pakistan","(not set)",46,46
+"2026-02-10","Brazil","(not set)",10994,9437
+"2026-02-10","United States","(not set)",1787,1466
+"2026-02-10","Canada","(not set)",92,46
+"2026-02-10","Nigeria","(not set)",92,46
+"2026-02-10","Argentina","(not set)",46,46
+"2026-02-10","Indonesia","(not set)",46,46
+"2026-02-10","Iran","(not set)",46,46
+"2026-02-11","Brazil","(not set)",11061,9832
+"2026-02-11","United States","(not set)",1957,1684
+"2026-02-11","Argentina","(not set)",46,46
+"2026-02-11","Nigeria","(not set)",46,46
+"2026-02-11","United Kingdom","(not set)",46,46
+"2026-02-12","Brazil","(not set)",9527,8257
+"2026-02-12","United States","(not set)",1815,1542
+"2026-02-12","Indonesia","(not set)",91,45
+"2026-02-12","Argentina","(not set)",45,45
+"2026-02-12","Bhutan","(not set)",45,45
+"2026-02-12","Egypt","(not set)",45,45
+"2026-02-12","Iran","(not set)",45,45

@@ -1,3 +1,2015 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:05d09c8a8ec03299b611eabe991800c3b13a3b540e917e66aafbbaac280eb67c
-size 130473
+Data,Pais,SKU,ContagemDeEventos,TotalDeUsuarios
+"2024-10-01","United States","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2024-10-01","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2024-10-01","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-02","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2024-10-02","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-10-02","Brazil","com.psafe.msuite.adsfree_lto_12mo",2,2
+"2024-10-02","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-10-03","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2024-10-03","Brazil","com.psafe.msuite.pro_lto_12mo",1,1
+"2024-10-03","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-04","Brazil","com.psafe.msuite.ultra_12mo_59.90",17,11
+"2024-10-04","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2024-10-04","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-05","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2024-10-05","United Arab Emirates","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-05","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-06","Brazil","com.psafe.msuite.ultra_12mo_59.90",11,6
+"2024-10-06","United Kingdom","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-06","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-10-06","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-07","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-08","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-10-08","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-10-08","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-10-08","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-09","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2024-10-09","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2024-10-09","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-10-09","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2024-10-10","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2024-10-10","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2024-10-10","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2024-10-10","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-10-10","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-10","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2024-10-10","United States","com.psafe.msuite.pro_12mo_49.90",1,1
+"2024-10-11","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2024-10-11","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-10-12","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,6
+"2024-10-12","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2024-10-12","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-12","United States","(not set)",1,1
+"2024-10-12","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2024-10-13","Brazil","com.psafe.msuite.ultra_12mo_59.90",12,8
+"2024-10-13","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-10-13","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2024-10-13","Thailand","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-13","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2024-10-13","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-14","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2024-10-14","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-10-14","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-10-14","Portugal","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-14","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-15","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-10-15","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-10-16","Brazil","com.psafe.msuite.ads_free_12mo_13.90",3,3
+"2024-10-16","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-10-16","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-10-16","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2024-10-16","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-17","Brazil","com.psafe.msuite.ultra_12mo_59.90",9,9
+"2024-10-17","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2024-10-17","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-10-17","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-10-18","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2024-10-18","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-10-18","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-10-18","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-19","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2024-10-19","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-10-19","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-10-19","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2024-10-19","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-20","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2024-10-20","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2024-10-20","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-10-20","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-10-20","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2024-10-20","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2024-10-21","Brazil","com.psafe.msuite.ultra_12mo_59.90",10,10
+"2024-10-21","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2024-10-21","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-22","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-10-22","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-10-22","United States","(not set)",1,1
+"2024-10-22","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-23","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-10-23","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-24","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2024-10-24","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-10-24","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2024-10-24","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-24","United States","com.psafe.msuite.pro_1mo_3.90",1,1
+"2024-10-24","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2024-10-25","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-10-25","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-10-25","Türkiye","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-25","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-26","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2024-10-27","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2024-10-27","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-10-27","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-28","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2024-10-28","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-29","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2024-10-29","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2024-10-29","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-10-29","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-10-30","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2024-10-30","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-10-30","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-10-31","United States","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2024-10-31","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-10-31","Malaysia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-01","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2024-11-01","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-11-01","Canada","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2024-11-01","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2024-11-01","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2024-11-02","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2024-11-02","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-11-02","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-11-02","Mexico","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-02","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-02","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2024-11-03","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2024-11-03","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2024-11-03","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2024-11-03","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-11-04","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2024-11-04","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-05","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2024-11-05","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-11-05","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-11-05","United States","(not set)",1,1
+"2024-11-05","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-11-05","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2024-11-06","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2024-11-06","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2024-11-06","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-11-06","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2024-11-06","Saudi Arabia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-07","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2024-11-07","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-11-07","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2024-11-08","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2024-11-08","United States","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2024-11-08","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-11-09","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2024-11-09","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2024-11-09","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-11-09","Thailand","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-10","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2024-11-10","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-11-10","Guam","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-10","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-11-10","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-11","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-11-11","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-11-12","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-11-12","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2024-11-12","United States","(not set)",1,1
+"2024-11-12","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-11-12","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-13","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2024-11-13","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-11-13","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-11-13","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2024-11-13","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-11-13","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-14","Brazil","com.psafe.msuite.ultra_12mo_59.90",11,11
+"2024-11-14","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-11-14","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-11-14","Mexico","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-14","United States","com.psafe.msuite.pro_1mo_3.90",1,1
+"2024-11-14","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-15","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2024-11-15","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",3,3
+"2024-11-15","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2024-11-15","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-15","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-11-15","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-16","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-11-16","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-11-16","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-11-16","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2024-11-16","Egypt","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-11-16","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-17","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2024-11-17","Brazil","com.psafe.msuite.pro_12mo_29.88",1,1
+"2024-11-17","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-11-17","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-18","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2024-11-18","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-11-18","Iraq","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-18","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-19","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-11-19","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2024-11-19","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-20","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2024-11-20","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",2,2
+"2024-11-20","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2024-11-20","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-11-20","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2024-11-20","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-20","United States","com.psafe.msuite.pro_1mo_3.90",1,1
+"2024-11-21","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2024-11-21","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-11-21","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-21","Saudi Arabia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-21","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-11-21","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-22","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2024-11-22","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-11-22","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-11-22","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-11-23","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-11-23","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-11-23","Saudi Arabia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-24","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2024-11-24","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2024-11-24","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-24","France","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-24","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-25","United States","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2024-11-25","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-11-25","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",2,2
+"2024-11-26","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2024-11-26","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2024-11-26","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-27","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2024-11-27","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2024-11-27","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2024-11-28","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2024-11-28","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2024-11-28","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-29","Brazil","com.psafe.msuite.adsfree_lto_12mo",2,2
+"2024-11-29","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2024-11-29","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-11-29","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-11-29","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-30","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2024-11-30","India","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2024-11-30","Mexico","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-11-30","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-11-30","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-01","Brazil","com.psafe.msuite.ultra_12mo_59.90",12,12
+"2024-12-01","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2024-12-01","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-12-02","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2024-12-02","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",3,3
+"2024-12-02","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2024-12-02","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-12-02","Brazil","com.psafe.msuite.pro_12mo_49.90",1,1
+"2024-12-02","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2024-12-02","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-12-03","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2024-12-03","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-04","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2024-12-04","United States","com.psafe.msuite.adsfree_lto_12mo",2,2
+"2024-12-04","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2024-12-05","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2024-12-05","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-12-06","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2024-12-06","United States","com.psafe.msuite.adsfree_lto_12mo",2,2
+"2024-12-06","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2024-12-06","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-12-07","Brazil","com.psafe.msuite.ultra_12mo_59.90",12,12
+"2024-12-07","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-12-07","United States","com.psafe.msuite.pro_1mo_3.90",1,1
+"2024-12-07","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2024-12-08","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2024-12-08","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2024-12-08","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",2,2
+"2024-12-08","Saudi Arabia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-09","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-12-09","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-12-09","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-10","Brazil","com.psafe.msuite.ultra_12mo_59.90",11,11
+"2024-12-10","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2024-12-10","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2024-12-10","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-12-11","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2024-12-11","Brazil","com.psafe.msuite.ultra_1mo_16.90",3,3
+"2024-12-11","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-12-11","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2024-12-11","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-12-12","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2024-12-13","Brazil","com.psafe.msuite.ultra_12mo_59.90",9,9
+"2024-12-13","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-12-13","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-13","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-14","Brazil","com.psafe.msuite.ultra_12mo_59.90",11,11
+"2024-12-14","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-12-14","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2024-12-15","Brazil","com.psafe.msuite.ultra_12mo_59.90",10,10
+"2024-12-15","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-12-15","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2024-12-15","Mexico","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-16","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2024-12-16","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2024-12-16","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2024-12-16","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2024-12-17","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2024-12-17","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2024-12-17","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-12-17","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-12-18","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2024-12-18","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2024-12-18","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-12-18","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-12-18","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-19","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2024-12-19","Portugal","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-19","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-20","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2024-12-20","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",2,2
+"2024-12-20","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-12-20","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-21","Brazil","com.psafe.msuite.ultra_12mo_59.90",9,9
+"2024-12-21","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2024-12-21","Canada","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-21","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-21","Indonesia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-21","United States","com.psafe.msuite.pro_1mo_3.90",1,1
+"2024-12-21","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-12-22","Brazil","com.psafe.msuite.ultra_12mo_59.90",9,9
+"2024-12-22","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2024-12-22","Saudi Arabia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-22","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2024-12-23","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2024-12-23","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-12-23","Canada","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-23","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-24","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2024-12-24","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-25","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2024-12-25","Australia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-25","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-12-25","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2024-12-25","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2024-12-25","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-26","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2024-12-26","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-12-26","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-26","Indonesia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-26","United Kingdom","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-26","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-27","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2024-12-27","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2024-12-27","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2024-12-28","Brazil","com.psafe.msuite.ultra_12mo_59.90",15,15
+"2024-12-28","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2024-12-28","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-12-29","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2024-12-29","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2024-12-29","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2024-12-29","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-12-30","Brazil","com.psafe.msuite.ultra_12mo_59.90",9,9
+"2024-12-30","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2024-12-30","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2024-12-30","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2024-12-30","Indonesia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2024-12-31","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2024-12-31","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2024-12-31","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2024-12-31","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-01-01","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-01-01","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-01-01","United States","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-01-01","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-01-01","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-01-02","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-01-02","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-01-02","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-01-02","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-01-03","Brazil","com.psafe.msuite.ultra_12mo_59.90",15,15
+"2025-01-03","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-01-03","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-01-03","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-04","Brazil","com.psafe.msuite.ultra_12mo_59.90",9,9
+"2025-01-04","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-01-04","Mexico","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-01-04","Yemen","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-05","Brazil","com.psafe.msuite.ultra_12mo_59.90",11,11
+"2025-01-05","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-01-05","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-01-05","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-01-05","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-01-06","Brazil","com.psafe.msuite.ultra_12mo_59.90",12,12
+"2025-01-06","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-01-06","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-01-06","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-01-06","United States","(not set)",1,1
+"2025-01-07","Brazil","com.psafe.msuite.ultra_12mo_59.90",9,9
+"2025-01-07","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-01-07","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-01-08","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-01-08","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-01-08","Pakistan","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-08","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-09","Brazil","com.psafe.msuite.ultra_12mo_59.90",13,13
+"2025-01-09","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-01-09","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-01-09","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-09","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-09","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-01-10","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-01-10","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-01-10","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-01-10","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-01-10","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-01-10","Indonesia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-11","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-01-11","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-01-11","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-12","Brazil","com.psafe.msuite.ultra_12mo_59.90",9,9
+"2025-01-12","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-01-12","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-01-12","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-12","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-01-12","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-13","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-01-13","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-01-13","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-01-13","Mexico","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-13","Philippines","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-14","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-01-14","Türkiye","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-15","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-01-15","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-01-15","Spain","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-16","Brazil","com.psafe.msuite.ultra_12mo_59.90",9,8
+"2025-01-16","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",2,2
+"2025-01-16","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-01-16","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-17","Brazil","com.psafe.msuite.ultra_12mo_59.90",10,10
+"2025-01-17","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-01-17","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-17","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-18","Brazil","com.psafe.msuite.ultra_12mo_59.90",11,11
+"2025-01-18","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-01-18","Saudi Arabia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-18","Türkiye","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-19","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-01-19","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-01-19","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-01-19","United States","(not set)",1,1
+"2025-01-19","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-01-20","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-01-20","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-01-20","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-01-21","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-01-21","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",2,2
+"2025-01-21","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-01-21","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-01-21","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-01-21","Indonesia","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-01-21","Indonesia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-21","United States","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-01-22","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-01-22","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-01-22","Saudi Arabia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-22","United States","(not set)",1,1
+"2025-01-22","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-01-22","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-01-23","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-01-23","Mexico","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-01-23","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-01-23","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-23","United States","(not set)",1,1
+"2025-01-23","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-01-23","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-01-24","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-01-24","Brazil","com.psafe.msuite.adsfree_lto_12mo",2,2
+"2025-01-24","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-01-24","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-24","Saudi Arabia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-24","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-01-25","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-01-25","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-01-25","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-01-25","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-01-25","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-01-26","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-01-26","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-01-26","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-01-26","Oman","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-26","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-01-27","Brazil","com.psafe.msuite.ultra_12mo_59.90",14,14
+"2025-01-27","United States","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-01-27","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-01-27","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-01-27","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-01-27","Kuwait","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-27","Saudi Arabia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-28","Brazil","com.psafe.msuite.ultra_12mo_59.90",9,9
+"2025-01-28","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-01-28","Brazil","com.psafe.msuite.pro_lto_12mo",1,1
+"2025-01-28","Colombia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-28","Puerto Rico","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-01-29","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-01-29","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-01-29","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-01-29","Germany","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-29","Mexico","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-29","United Kingdom","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-01-29","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-01-30","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-01-30","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-01-30","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-01-31","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-01-31","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-02-01","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-02-01","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-02-01","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-02-02","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-02-02","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-02-02","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-02","Vietnam","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-03","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-02-03","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-02-03","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-02-03","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-02-03","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-02-03","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-02-04","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-02-04","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-02-04","Brazil","com.psafe.msuite.adsfree_lto_12mo",2,2
+"2025-02-04","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-02-04","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-04","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-02-05","Brazil","com.psafe.msuite.ultra_12mo_59.90",13,9
+"2025-02-05","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-02-05","United States","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-02-06","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-02-06","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-02-06","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-02-06","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-02-06","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-02-07","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-02-07","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-02-07","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-02-07","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-02-07","Saudi Arabia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-08","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-02-08","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-02-08","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-08","Türkiye","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-08","United States","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-02-08","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-02-09","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-02-09","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-02-09","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-02-09","United States","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-02-09","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-10","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,5
+"2025-02-10","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-02-10","Brazil","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-02-10","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-02-11","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-02-11","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-11","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-12","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-02-12","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-02-12","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-02-12","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-02-12","United States","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-02-12","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-02-13","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-02-13","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-02-13","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-02-13","Mexico","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-13","Saudi Arabia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-14","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-02-14","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-02-14","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-02-14","Saudi Arabia","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-02-14","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-02-14","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-02-15","Brazil","com.psafe.msuite.ultra_12mo_59.90",9,8
+"2025-02-15","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-02-16","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-02-16","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-16","United States","(not set)",1,1
+"2025-02-16","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-17","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-02-17","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",2,2
+"2025-02-17","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-02-18","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-02-18","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-02-18","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-02-18","Jordan","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-18","Kuwait","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-18","Mexico","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-02-18","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-02-19","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-02-19","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-02-19","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-02-19","Palestine","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-19","Saudi Arabia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-19","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-20","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-02-20","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-21","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-02-21","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-21","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-22","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-02-22","United Arab Emirates","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-23","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-02-23","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-23","Saudi Arabia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-24","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-02-24","Indonesia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-24","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-24","United States","pro_security_12mo_23.88",1,1
+"2025-02-25","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-02-25","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-02-25","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-25","Saudi Arabia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-02-26","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-02-27","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-02-27","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-02-28","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-02-28","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-02-28","Brazil","com.psafe.msuite.pro_12mo_29.88",1,1
+"2025-02-28","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-03-01","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-03-01","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-03-01","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-03-01","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-03-01","Mexico","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-03-02","Brazil","com.psafe.msuite.ultra_12mo_59.90",9,9
+"2025-03-02","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-03-02","United States","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-03-02","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-03-03","Brazil","com.psafe.msuite.ultra_12mo_59.90",9,9
+"2025-03-03","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-03-03","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-03-03","Nigeria","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-03-03","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-03-03","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-03-03","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-03-04","Brazil","com.psafe.msuite.ultra_12mo_59.90",12,12
+"2025-03-04","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-03-04","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-03-04","United States","(not set)",1,1
+"2025-03-04","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-03-04","United States","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-03-05","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-03-05","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-03-05","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-03-06","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-03-06","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-03-06","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-03-07","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-03-07","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-03-08","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-03-08","India","com.psafe.msuite.ultra_12mo_59.90",2,1
+"2025-03-08","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-03-08","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-03-09","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-03-09","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-03-09","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-03-10","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-03-10","Thailand","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-03-11","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-03-11","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-03-12","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-03-12","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-03-12","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-03-13","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-03-13","Brazil","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-03-13","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-03-13","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-03-13","Brazil","com.psafe.msuite.ultra_12mo_99.99",1,1
+"2025-03-13","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-03-13","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-03-14","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-03-15","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-03-15","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-03-15","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-03-16","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-03-16","Brazil","com.psafe.msuite.ads_free_12mo_13.90",3,3
+"2025-03-16","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-03-16","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-03-16","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-03-17","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-03-17","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-03-18","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-03-18","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-03-18","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-03-18","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-03-18","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-03-19","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-03-19","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-03-20","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-03-20","United States","com.psafe.msuite.pro_lto_12mo_39.90",3,3
+"2025-03-20","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-03-20","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-03-20","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-03-20","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-03-21","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-03-21","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-03-21","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-03-21","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-03-21","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-03-22","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-03-22","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-03-22","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-03-22","Australia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-03-22","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-03-23","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-03-23","United States","com.psafe.msuite.ultra_12mo_59.90",2,1
+"2025-03-23","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-03-23","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-03-23","Mexico","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-03-23","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-03-24","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-03-24","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-03-24","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-03-24","Canada","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-03-24","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-03-24","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-03-25","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-03-25","Brazil","com.psafe.msuite.adsfree_lto_12mo",2,2
+"2025-03-25","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-03-25","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-03-25","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-03-26","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-03-26","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-03-26","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-03-26","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-03-27","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-03-27","Brazil","(not set)",1,1
+"2025-03-27","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-03-27","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-03-28","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-03-28","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-03-28","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-03-29","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-03-29","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-03-29","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-03-29","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-03-29","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-03-30","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-03-30","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-03-31","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-03-31","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-03-31","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-03-31","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-01","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-04-01","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-04-01","Brazil","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-04-01","Mexico","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-04-02","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-04-02","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-04-02","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-04-02","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-03","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-04-03","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-04-04","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-04-04","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-04","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-04-04","Indonesia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-04","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-04-04","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-05","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-04-05","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-04-05","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-04-05","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-05","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-04-06","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-04-06","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-04-06","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-04-06","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-04-07","Brazil","com.psafe.msuite.ads_free_12mo_13.90",3,3
+"2025-04-07","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-04-08","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-04-08","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-04-08","Brazil","com.psafe.msuite.ads_free_1mo",1,1
+"2025-04-08","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-04-08","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-09","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-04-09","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-04-09","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-04-09","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-04-09","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-10","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-04-10","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-04-10","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-04-10","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-04-11","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-04-11","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-04-11","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-12","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-04-12","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-12","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-04-12","Philippines","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-12","United States","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-04-12","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-13","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-04-13","Indonesia","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-04-13","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-04-13","Brazil","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-04-14","Brazil","com.psafe.msuite.ads_free_12mo_13.90",3,3
+"2025-04-14","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-04-14","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-14","India","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-14","Indonesia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-14","Mexico","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-04-14","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-15","Brazil","com.psafe.msuite.ultra_1mo_16.90",3,3
+"2025-04-15","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-04-15","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-16","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,3
+"2025-04-16","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-04-16","Brazil","com.psafe.msuite.ultra_12mo",2,1
+"2025-04-16","Brazil","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-04-16","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-17","Brazil","com.psafe.msuite.ads_free_12mo_13.90",4,4
+"2025-04-17","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-04-17","Brazil","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-04-18","Brazil","com.psafe.msuite.ads_free_12mo_13.90",5,5
+"2025-04-18","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-18","Mexico","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-19","Brazil","com.psafe.msuite.ads_free_12mo_13.90",6,6
+"2025-04-19","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-20","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-04-20","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-04-20","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-20","Puerto Rico","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-04-21","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-04-21","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-04-21","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-21","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-04-22","Brazil","com.psafe.msuite.ads_free_12mo_13.90",3,3
+"2025-04-22","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-04-22","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-04-22","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-04-23","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-04-23","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-04-23","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-04-23","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-04-24","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-04-24","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-04-24","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-04-25","Brazil","com.psafe.msuite.ads_free_12mo_13.90",3,3
+"2025-04-25","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-04-25","Brazil","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-04-25","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-26","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-04-26","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-04-26","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-04-26","United States","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-04-26","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-04-27","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-04-27","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-04-27","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-04-27","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-04-27","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-28","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-04-28","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-04-28","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-28","Saudi Arabia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-28","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-29","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-04-29","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-04-29","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-30","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-04-30","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-04-30","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-05-01","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-05-01","Brazil","com.psafe.msuite.ads_free_12mo_13.90",3,3
+"2025-05-01","United States","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-05-01","Brazil","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-05-01","United States","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-05-02","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-05-02","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-05-02","United Kingdom","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-05-02","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-05-03","United States","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-05-03","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-05-03","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-05-03","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-05-03","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-05-03","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-05-04","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-05-04","Brazil","com.psafe.msuite.ads_free_12mo_13.90",3,3
+"2025-05-04","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-05-04","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-05-05","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-05-05","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-05-05","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-05-05","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-05-06","Brazil","com.psafe.msuite.ads_free_12mo_13.90",4,4
+"2025-05-06","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-05-06","United Kingdom","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-05-06","United States","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-05-07","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-05-07","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-05-07","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-05-08","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-05-08","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-05-08","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-05-08","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-05-09","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-05-09","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-05-09","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-05-09","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-05-09","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-05-09","India","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-05-09","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-05-10","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-05-10","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-05-10","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-05-10","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-05-10","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-05-11","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-05-11","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-05-11","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",2,2
+"2025-05-11","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-05-11","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-05-11","Egypt","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-05-11","United States","(not set)",1,1
+"2025-05-11","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-05-12","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-05-12","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-05-12","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-05-12","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-05-12","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-05-13","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-05-13","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-05-13","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-05-13","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-05-14","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-05-14","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-05-14","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-05-15","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-05-15","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-05-15","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-05-15","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-05-15","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-05-16","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",2,2
+"2025-05-16","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-05-16","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-05-16","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-05-17","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-05-17","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-05-17","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-05-18","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-05-18","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-05-18","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-05-18","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-05-19","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-05-19","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-05-19","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-05-20","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-05-20","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-05-20","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-05-20","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-05-21","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-05-21","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-05-21","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-05-22","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-05-22","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",2,2
+"2025-05-22","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-05-22","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-05-22","Chile","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-05-22","Indonesia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-05-22","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-05-22","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-05-23","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-05-23","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-05-23","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-05-23","Chile","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-05-24","Brazil","com.psafe.msuite.ads_free_12mo_13.90",4,4
+"2025-05-24","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-05-24","India","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-05-25","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-05-25","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-05-25","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-05-25","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-05-26","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-05-26","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-05-26","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-05-26","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-05-27","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-05-27","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-05-27","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-05-27","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-05-27","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-05-28","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-05-28","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-05-28","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-05-29","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",2,2
+"2025-05-29","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-05-29","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-05-29","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-05-29","Saudi Arabia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-05-30","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-05-30","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-05-30","United States","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-05-31","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-05-31","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-05-31","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-05-31","United States","com.psafe.msuite.pro_1mo",1,1
+"2025-05-31","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-06-01","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-06-01","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-06-01","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-06-01","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-06-02","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-06-02","Brazil","com.psafe.msuite.ultra_1mo_16.90",3,3
+"2025-06-02","Brazil","com.psafe.msuite.adsfree_lto_12mo",2,2
+"2025-06-02","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-06-02","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-06-03","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-06-03","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-06-03","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-03","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-06-04","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-06-04","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-05","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-06-05","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-06-05","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-06-05","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-05","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-06-05","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-06-06","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-06-06","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-06-06","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-06-06","Brazil","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-06-06","Malaysia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-06","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-06-06","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-07","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-06-07","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-06-07","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-06-07","Saudi Arabia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-08","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-06-08","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",2,2
+"2025-06-08","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-06-08","Mexico","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-06-08","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-06-08","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-09","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-06-09","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-06-09","Argentina","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-09","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-06-09","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-06-09","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-06-10","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-06-10","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-06-10","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-06-10","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-06-10","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-06-10","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-11","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-06-11","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-06-11","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-06-11","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-12","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-06-12","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-06-12","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-13","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-06-13","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-06-13","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-06-13","United States","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-06-14","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-06-14","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-06-14","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-06-14","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-06-14","Indonesia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-14","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-06-14","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-06-15","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-06-15","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-06-15","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-06-15","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-06-15","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-06-15","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-06-16","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-06-16","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-06-16","United Arab Emirates","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-16","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-06-16","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-16","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-06-17","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-06-17","Brazil","com.psafe.msuite.ads_free_12mo_13.90",3,3
+"2025-06-17","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-06-17","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-06-17","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-06-18","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-06-18","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-06-18","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-06-18","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-06-19","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",2,2
+"2025-06-19","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-19","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-06-19","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-06-20","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-20","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-06-20","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-21","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-06-21","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-06-21","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-06-21","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-06-21","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-06-21","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-06-21","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-22","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-06-22","Brazil","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-06-22","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-06-22","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-06-23","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-06-23","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-06-23","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-06-23","Brazil","com.psafe.msuite.pro_lto_12mo_5.99_brl5.99_lifetime_promo_2022",1,1
+"2025-06-23","Israel","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-23","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-24","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-06-25","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-06-25","Brazil","com.psafe.msuite.ads_free_12mo_13.90",3,3
+"2025-06-25","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-06-25","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-06-26","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-06-26","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-06-26","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-26","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-06-26","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-06-26","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-06-26","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-06-27","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-06-27","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-06-27","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-06-27","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-06-27","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-06-28","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-06-28","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-06-28","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-06-28","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-06-28","Pakistan","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-29","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-06-29","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-06-29","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-06-29","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-06-29","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-06-29","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-06-30","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-06-30","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-06-30","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-07-01","Brazil","com.psafe.msuite.pro_1mo_3.90",2,2
+"2025-07-01","United States","(not set)",1,1
+"2025-07-01","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-07-01","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-07-01","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-07-01","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-07-02","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-07-02","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-07-03","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-07-03","United States","(not set)",1,1
+"2025-07-03","United States","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-07-03","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-07-04","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-07-04","Bolivia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-07-04","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-07-04","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-07-05","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-07-05","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-07-05","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-07-06","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-07-06","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-07-06","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-07-06","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-07-06","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-07-07","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-07-07","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-07-07","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-07-07","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-07-07","Nigeria","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-07-08","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-07-08","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-07-09","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-07-09","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-07-09","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-07-09","Brazil","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-07-09","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-07-09","Mexico","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-07-10","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-07-10","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-07-10","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-07-10","United States","com.psafe.msuite.pro_1mo",1,1
+"2025-07-11","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-07-11","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-07-11","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-07-12","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-07-12","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-07-12","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-07-12","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-07-12","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-07-13","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-07-13","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-07-13","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-07-13","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-07-13","Italy","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-07-13","Malaysia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-07-14","Brazil","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-07-14","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-07-14","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-07-15","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-07-15","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-07-15","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-07-15","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-07-15","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-07-16","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-07-16","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-07-16","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-07-16","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-07-17","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-07-17","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-07-17","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-07-17","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-07-18","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-07-18","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-07-18","United States","com.psafe.msuite.adsfree_lto_12mo",2,2
+"2025-07-18","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-07-18","United States","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-07-19","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-07-19","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-07-19","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-07-19","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-07-19","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-07-19","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-07-20","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-07-20","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-07-20","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",2,2
+"2025-07-20","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-07-21","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-07-21","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-07-22","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-07-22","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-07-22","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-07-23","Brazil","com.psafe.msuite.ultra_12mo_59.90",14,13
+"2025-07-23","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-07-23","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",2,2
+"2025-07-23","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-07-23","Brazil","com.psafe.msuite.ads_free_12mo",1,1
+"2025-07-23","Brazil","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-07-23","United Kingdom","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-07-24","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-07-24","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-07-24","Netherlands","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-07-24","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-07-24","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-07-25","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-07-25","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-07-25","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-07-25","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-07-26","Brazil","com.psafe.msuite.ultra_12mo_59.90",10,10
+"2025-07-26","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-07-26","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-07-26","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-07-26","United States","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-07-26","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-07-27","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-07-27","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-07-27","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-07-27","United States","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-07-27","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-07-28","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-07-28","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-07-28","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-07-29","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-07-29","Brazil","com.psafe.msuite.ultra_1mo_16.90",3,1
+"2025-07-29","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-07-29","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-07-29","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-07-29","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-07-30","Brazil","com.psafe.msuite.ultra_12mo_59.90",10,10
+"2025-07-30","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-07-30","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-07-30","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-07-30","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-07-30","Philippines","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-07-30","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-07-31","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-07-31","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-07-31","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-07-31","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-08-01","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-08-01","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-08-01","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-08-01","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-08-01","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-08-01","United States","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-08-02","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-08-02","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-08-02","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-08-02","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-08-02","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-08-02","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-08-03","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-08-03","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-08-03","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-08-03","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-08-03","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-08-03","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-04","Brazil","com.psafe.msuite.ultra_12mo_59.90",9,9
+"2025-08-04","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-08-04","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,1
+"2025-08-04","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-08-04","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-08-04","Germany","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-08-04","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-05","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-08-05","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-08-05","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-08-05","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-08-06","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-08-06","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-08-06","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-08-06","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-08-06","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-08-06","Canada","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-07","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-08-07","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-08-07","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",2,2
+"2025-08-07","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-08","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-08-08","United States","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-08-08","Brazil","com.psafe.msuite.adsfree_lto_12mo",2,2
+"2025-08-08","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-08-09","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-08-09","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-08-09","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-08-09","United States","com.psafe.msuite.pro_3day_trial_12mo",1,1
+"2025-08-09","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-10","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-08-10","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-08-10","Saudi Arabia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-11","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-08-11","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-08-11","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-08-11","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-11","Thailand","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-08-11","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-08-11","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-08-12","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,5
+"2025-08-12","Brazil","com.psafe.msuite.ultra_1mo_16.90",5,1
+"2025-08-12","Brazil","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-08-12","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-13","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-08-13","United States","com.psafe.msuite.pro_lto_12mo_39.90",2,2
+"2025-08-13","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-08-13","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-08-13","United States","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-08-14","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-08-14","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-08-14","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-14","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-08-15","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-08-15","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-08-15","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-08-15","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-08-15","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-08-15","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-08-15","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-16","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-08-16","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-08-16","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-17","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-08-17","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-08-17","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-08-17","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-18","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-08-18","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-08-18","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-08-18","Indonesia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-19","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-08-19","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-08-19","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-08-19","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-08-19","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-08-20","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-08-20","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-08-20","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-08-20","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-20","United States","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-08-21","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-08-21","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-08-21","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-08-21","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-08-21","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-08-21","Canada","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-08-21","Indonesia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-22","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-08-22","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-08-22","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-08-22","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-08-23","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-08-23","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-08-23","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-08-23","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-08-23","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-23","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-08-24","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-08-24","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-08-24","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-08-24","Germany","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-08-24","Mexico","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-08-24","Mexico","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-25","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-08-25","United States","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-08-25","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-08-25","Türkiye","com.psafe.msuite.ultra_12mo_59.90",2,1
+"2025-08-25","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-08-25","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-25","Germany","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-25","United States","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-08-26","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-08-26","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-08-26","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",2,2
+"2025-08-26","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-08-26","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-08-26","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-26","Germany","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-26","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-08-27","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-08-27","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-08-27","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-08-27","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-08-27","Germany","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-27","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-08-28","Brazil","com.psafe.msuite.ultra_12mo_59.90",11,11
+"2025-08-28","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-08-28","Brazil","com.psafe.msuite.adsfree_lto_12mo",2,2
+"2025-08-28","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-08-28","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-08-29","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-08-29","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-08-29","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-08-29","Brazil","com.psafe.msuite.pro_1mo",1,1
+"2025-08-29","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-08-29","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-08-29","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-08-30","Brazil","com.psafe.msuite.ultra_12mo_59.90",9,9
+"2025-08-30","Brazil","com.psafe.msuite.ads_free_12mo_13.90",3,3
+"2025-08-30","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-08-30","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-08-30","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-08-31","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-08-31","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-08-31","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-08-31","Germany","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-01","Brazil","com.psafe.msuite.ultra_12mo_59.90",9,9
+"2025-09-01","United States","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-09-01","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-09-01","Germany","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-01","Israel","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-02","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-09-02","Brazil","com.psafe.msuite.ultra_1mo_16.90",3,3
+"2025-09-02","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-09-02","Australia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-02","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-09-02","United Kingdom","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-02","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-09-02","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-09-03","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-09-03","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-09-03","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-09-03","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-09-03","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-09-03","United Kingdom","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-04","Brazil","com.psafe.msuite.ultra_12mo_59.90",9,9
+"2025-09-04","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-09-04","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-09-04","Brazil","com.psafe.msuite.ultra_1mo",1,1
+"2025-09-04","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-09-04","Germany","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-04","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-05","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-09-05","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-09-05","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-09-05","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-09-06","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-09-06","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-09-06","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-09-06","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-09-06","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-09-06","United States","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-09-07","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-09-07","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",2,2
+"2025-09-07","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-09-07","Singapore","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-07","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-09-08","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-09-08","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-09-08","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-09-08","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-09-08","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-09","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-09-09","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-09-09","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-09-09","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-09-09","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-09-09","Germany","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-09","Mexico","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-09","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-09-10","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-09-10","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-09-10","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-09-10","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-09-10","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-09-10","Germany","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-10","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-09-11","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-09-11","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-09-11","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-09-11","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-09-11","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-11","Germany","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-11","Iraq","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-11","Oman","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-12","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-09-12","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-09-12","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-09-13","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-09-13","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-09-13","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-09-13","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-09-14","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-09-14","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-09-14","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-09-14","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-09-15","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-09-15","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-09-15","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-09-15","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-09-15","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-09-15","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-09-15","South Korea","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-15","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-09-16","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-09-16","Brazil","com.psafe.msuite.ultra_1mo_16.90",3,1
+"2025-09-16","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-09-16","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-09-16","Germany","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-16","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-09-17","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-09-17","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-09-17","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-18","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-09-18","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-09-18","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-09-19","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-09-19","Brazil","com.psafe.msuite.ultra_1mo_16.90",3,3
+"2025-09-19","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-20","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-09-20","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-09-20","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-09-21","Brazil","com.psafe.msuite.ultra_12mo_59.90",9,9
+"2025-09-21","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-09-21","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-09-21","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-09-22","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-09-22","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-09-22","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",2,2
+"2025-09-22","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-09-22","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-09-22","Germany","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-23","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-09-23","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-09-23","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-09-23","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-09-24","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-09-24","Brazil","com.psafe.msuite.ultra_1mo_16.90",3,3
+"2025-09-24","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-09-24","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-25","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-09-25","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-09-25","Argentina","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-25","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-09-25","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-09-25","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-09-26","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-09-26","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-09-26","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",2,2
+"2025-09-26","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-09-26","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-09-27","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-09-27","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-09-27","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-09-27","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-09-27","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-09-27","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-09-28","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-09-28","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-09-28","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-09-28","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-09-28","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-09-28","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-29","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-09-29","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-09-29","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-09-29","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-09-29","Germany","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-09-29","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-09-30","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-09-30","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-09-30","Brazil","com.psafe.msuite.ads_free_12mo_13.90",3,3
+"2025-09-30","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-09-30","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-10-01","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-10-01","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-10-01","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-10-01","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-10-02","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-10-02","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-10-02","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-10-02","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-10-02","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-10-03","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-10-03","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-10-03","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-10-03","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-10-04","Brazil","com.psafe.msuite.ultra_12mo_59.90",9,8
+"2025-10-04","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-10-05","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-10-05","United States","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-10-05","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-10-05","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-10-05","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-10-06","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-10-06","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-10-06","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-10-06","Brazil","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-10-07","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-10-07","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-10-07","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-10-07","Brazil","com.psafe.msuite.ads_free_12mo",1,1
+"2025-10-07","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-10-07","Nigeria","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-10-08","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-10-08","Brazil","com.psafe.msuite.ultra_1mo_16.90",3,3
+"2025-10-08","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-10-08","Brazil","com.psafe.msuite.ads_free_12mo",1,1
+"2025-10-08","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-10-09","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,3
+"2025-10-09","United States","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-10-09","Brazil","com.psafe.msuite.ads_free_12mo",1,1
+"2025-10-09","France","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-10-10","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-10-10","Brazil","com.psafe.msuite.ultra_1mo_16.90",5,1
+"2025-10-10","United States","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-10-11","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-10-11","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-10-11","Netherlands","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-10-12","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-10-12","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-10-13","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-10-13","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-10-13","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-10-13","Brazil","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-10-13","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-10-13","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-10-14","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-10-14","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,1
+"2025-10-14","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-10-14","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-10-15","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-10-15","Brazil","com.psafe.msuite.ultra_1mo_16.90",5,4
+"2025-10-15","Brazil","com.psafe.msuite.ads_free_12mo",4,2
+"2025-10-15","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-10-15","Brazil","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-10-15","Brazil","com.psafe.msuite.pro_1mo",1,1
+"2025-10-15","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-10-15","Thailand","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-10-16","United States","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-10-16","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-10-16","Brazil","com.psafe.msuite.ultra_1mo_16.90",3,3
+"2025-10-16","Brazil","com.psafe.msuite.ads_free_12mo",1,1
+"2025-10-17","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-10-17","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-10-17","Brazil","com.psafe.msuite.ads_free_12mo",1,1
+"2025-10-17","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-10-17","Germany","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-10-18","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-10-18","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-10-19","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-10-19","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-10-20","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-10-20","Brazil","com.psafe.msuite.ultra_1mo_16.90",3,3
+"2025-10-20","Brazil","com.psafe.msuite.pro_1mo",2,1
+"2025-10-20","Germany","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-10-20","Germany","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-10-20","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-10-21","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-10-21","Brazil","com.psafe.msuite.ultra_1mo_16.90",4,4
+"2025-10-21","United States","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-10-21","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-10-22","Brazil","com.psafe.msuite.ultra_1mo_16.90",3,3
+"2025-10-22","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-10-22","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-10-22","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-10-22","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-10-23","Brazil","com.psafe.msuite.ultra_12mo_59.90",10,10
+"2025-10-23","Brazil","com.psafe.msuite.ultra_1mo_16.90",3,1
+"2025-10-23","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-10-23","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-10-23","Saudi Arabia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-10-23","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-10-23","United States","pro_security_12mo_23.88",1,1
+"2025-10-24","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-10-24","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-10-25","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-10-25","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-10-25","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-10-25","Brazil","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-10-25","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-10-26","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-10-26","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-10-27","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-10-27","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-10-27","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-10-27","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-10-27","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-10-28","Brazil","com.psafe.msuite.ultra_1mo_16.90",7,4
+"2025-10-28","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-10-28","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-10-28","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-10-29","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-10-29","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-10-29","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-10-29","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-10-29","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-10-30","Brazil","com.psafe.msuite.ultra_1mo_16.90",8,1
+"2025-10-30","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-10-30","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-10-30","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-10-31","Brazil","com.psafe.msuite.ultra_12mo_59.90",10,8
+"2025-10-31","Brazil","com.psafe.msuite.ultra_1mo_16.90",6,3
+"2025-10-31","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-10-31","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-10-31","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-11-01","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-11-01","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-11-01","United States","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-11-02","Brazil","com.psafe.msuite.ultra_12mo_59.90",9,9
+"2025-11-02","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-11-02","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-11-02","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-11-03","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-11-03","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-11-03","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-11-03","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-11-03","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-11-04","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-11-04","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-11-04","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-11-04","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-11-05","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-11-05","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-11-05","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-11-05","Iran","com.psafe.msuite.ultra_12mo",1,1
+"2025-11-05","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-11-06","Brazil","com.psafe.msuite.ultra_12mo_59.90",11,11
+"2025-11-06","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-11-06","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-11-07","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-11-07","United States","com.psafe.msuite.pro_lto_12mo_39.90",2,2
+"2025-11-07","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-11-07","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-11-07","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-11-07","Germany","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-11-08","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-11-08","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-11-08","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-11-08","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-11-08","South Korea","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-11-08","United States","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-11-09","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-11-09","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",3,3
+"2025-11-09","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-11-09","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-11-10","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-11-10","Brazil","com.psafe.msuite.ultra_1mo_16.90",3,3
+"2025-11-10","Brazil","com.psafe.msuite.ads_free_12mo",1,1
+"2025-11-10","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-11-10","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-11-10","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-11-11","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-11-11","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-11-11","Brazil","com.psafe.msuite.ads_free_12mo",1,1
+"2025-11-11","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-11-11","Brazil","com.psafe.msuite.pro_1mo",1,1
+"2025-11-11","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-11-11","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-11-11","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-11-12","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-11-12","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-11-12","Brazil","com.psafe.msuite.ads_free_12mo",2,1
+"2025-11-12","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",2,2
+"2025-11-12","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",2,2
+"2025-11-12","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-11-13","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-11-13","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",3,3
+"2025-11-13","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-11-13","Brazil","com.psafe.msuite.ads_free_12mo",1,1
+"2025-11-13","Brazil","com.psafe.msuite.pro_1mo",1,1
+"2025-11-13","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-11-13","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-11-14","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-11-14","Brazil","com.psafe.msuite.ultra_1mo_16.90",4,1
+"2025-11-14","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-11-14","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-11-15","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-11-15","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",3,3
+"2025-11-15","United States","com.psafe.msuite.ultra_12mo",2,1
+"2025-11-15","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-11-16","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-11-16","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-11-16","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-11-16","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-11-16","Nigeria","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-11-16","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-11-16","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-11-16","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-11-17","Brazil","com.psafe.msuite.ultra_12mo_59.90",9,9
+"2025-11-17","Brazil","com.psafe.msuite.ads_free_12mo",1,1
+"2025-11-17","Brazil","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-11-17","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-11-17","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-11-17","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-11-17","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-11-17","Mexico","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-11-17","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-11-18","Brazil","com.psafe.msuite.ultra_12mo_59.90",10,10
+"2025-11-18","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",2,2
+"2025-11-18","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-11-18","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-11-18","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-11-18","Brazil","com.psafe.msuite.pro_lto_12mo",1,1
+"2025-11-18","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-11-19","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-11-19","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-11-19","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-11-19","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-11-19","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-11-20","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-11-20","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-11-20","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-11-20","Canada","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-11-20","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-11-21","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-11-21","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-11-21","Brazil","com.psafe.msuite.ultra_1mo_16.90",3,3
+"2025-11-21","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-11-22","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-11-22","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-11-22","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-11-22","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-11-22","United States","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-11-23","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-11-23","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",3,3
+"2025-11-23","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-11-24","Brazil","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-11-24","Brazil","com.psafe.msuite.ultra_1mo_16.90",3,1
+"2025-11-24","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-11-24","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-11-25","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-11-25","Brazil","com.psafe.msuite.ultra_1mo_16.90",5,2
+"2025-11-25","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-11-25","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-11-25","United States","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-11-26","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-11-26","Brazil","com.psafe.msuite.ultra_1mo_16.90",3,1
+"2025-11-26","Brazil","com.psafe.msuite.ads_free_12mo",1,1
+"2025-11-26","Brazil","com.psafe.msuite.pro_1mo",1,1
+"2025-11-26","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-11-27","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-11-27","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-11-27","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-11-27","Syria","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-11-27","United States","com.psafe.msuite.pro_12mo_49.90",1,1
+"2025-11-27","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-11-28","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-11-28","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-11-28","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",2,2
+"2025-11-29","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-11-29","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-11-29","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-11-30","Brazil","com.psafe.msuite.ultra_12mo_59.90",12,12
+"2025-11-30","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-11-30","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-11-30","Thailand","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-12-01","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-12-01","United States","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-12-01","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-12-01","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-12-01","Germany","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-12-01","Italy","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-12-02","Brazil","com.psafe.msuite.ultra_12mo_59.90",9,9
+"2025-12-02","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-12-02","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-12-03","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-12-03","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-12-03","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-12-03","Mexico","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-12-03","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-12-03","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-12-04","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-12-04","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-12-04","Brazil","com.psafe.msuite.ads_free_12mo_promo_11.88_r23.88",1,1
+"2025-12-04","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-12-04","Germany","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-12-04","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-12-05","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-12-05","Brazil","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-12-05","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-12-06","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-12-06","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-12-06","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-12-07","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-12-07","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-12-08","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-12-08","Brazil","com.psafe.msuite.ads_free_12mo_13.90",2,2
+"2025-12-08","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-12-08","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-12-08","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-12-09","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-12-09","United States","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-12-09","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-12-09","Brazil","com.psafe.msuite.pro_lto_12mo_39.90",1,1
+"2025-12-09","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-12-09","Finland","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-12-10","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-12-11","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-12-11","Brazil","com.psafe.msuite.ads_free_12mo",2,1
+"2025-12-11","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-12-11","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-12-11","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-12-12","Brazil","com.psafe.msuite.ultra_12mo_59.90",7,7
+"2025-12-12","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-12-12","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-12-12","Brazil","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-12-12","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-12-12","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-12-12","Egypt","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-12-13","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-12-13","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-12-13","Brazil","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-12-13","United States","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-12-14","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-12-14","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-12-14","Argentina","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-12-14","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-12-15","Brazil","com.psafe.msuite.ultra_12mo_59.90",13,12
+"2025-12-15","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-12-15","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-12-15","Brazil","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-12-15","Saudi Arabia","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-12-16","Brazil","com.psafe.msuite.ultra_12mo_59.90",4,4
+"2025-12-16","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-12-17","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-12-17","Brazil","com.psafe.msuite.ultra_1mo_16.90",3,2
+"2025-12-17","United States","com.psafe.msuite.adsfree_lto_12mo",1,1
+"2025-12-17","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-12-18","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-12-18","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-12-18","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-12-18","Brazil","com.psafe.msuite.pro_1mo",1,1
+"2025-12-18","United Arab Emirates","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-12-19","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-12-19","Brazil","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-12-20","Brazil","com.psafe.msuite.ultra_12mo_59.90",6,6
+"2025-12-20","Italy","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-12-20","Mexico","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-12-20","United States","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-12-21","Brazil","com.psafe.msuite.ultra_12mo_59.90",5,5
+"2025-12-21","Brazil","com.psafe.msuite.ultra_1mo_16.90",2,2
+"2025-12-21","United States","com.psafe.msuite.ultra_12mo_59.90",2,2
+"2025-12-21","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-12-21","Nigeria","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-12-21","South Korea","com.psafe.msuite.pro_3day_trial_12mo49.9",1,1
+"2025-12-21","United States","com.psafe.msuite.pro_1mo_3.90",1,1
+"2025-12-21","United States","com.psafe.msuite.ultra_1mo_16.90",1,1
+"2025-12-22","Brazil","com.psafe.msuite.ultra_12mo_59.90",8,8
+"2025-12-22","United States","com.psafe.msuite.ultra_12mo_59.90",3,3
+"2025-12-22","Brazil","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-12-22","Netherlands","com.psafe.msuite.ultra_12mo_59.90",1,1
+"2025-12-22","United States","com.psafe.msuite.ads_free_12mo_13.90",1,1
+"2025-12-24","United States","com.psafe.msuite.ultra_12mo_59.90",87,87
+"2026-01-04","United States","com.psafe.msuite.ultra_12mo_59.90",42,42
+"2026-01-05","United States","com.psafe.msuite.ultra_12mo_59.90",44,44
+"2026-01-08","Brazil","com.psafe.msuite.ultra_12mo_59.90",42,42
+"2026-01-08","Brazil","com.psafe.msuite.ultra_1mo_16.90",42,42
+"2026-01-09","United States","com.psafe.msuite.ultra_12mo_59.90",46,46
+"2026-01-10","United States","com.psafe.msuite.ultra_12mo_59.90",44,44
+"2026-01-12","Brazil","com.psafe.msuite.ultra_1mo_16.90",44,44
+"2026-01-14","Brazil","com.psafe.msuite.ads_free_12mo_13.90",43,43
+"2026-01-14","Brazil","com.psafe.msuite.ultra_12mo_59.90",43,43
+"2026-01-23","Brazil","com.psafe.msuite.ultra_12mo_59.90",126,126
+"2026-01-25","Brazil","com.psafe.msuite.ads_free_12mo_13.90",41,41
+"2026-01-25","Brazil","com.psafe.msuite.ultra_12mo_59.90",41,41
+"2026-01-25","United States","com.psafe.msuite.adsfree_lto_12mo",41,41
+"2026-01-27","Brazil","com.psafe.msuite.ultra_12mo_59.90",43,43
+"2026-01-30","Brazil","com.psafe.msuite.ultra_1mo_16.90",42,42
+"2026-01-31","United States","com.psafe.msuite.ultra_12mo_59.90",41,41
+"2026-02-03","Brazil","com.psafe.msuite.ultra_12mo_59.90",43,43
+"2026-02-03","Mexico","com.psafe.msuite.ultra_12mo_59.90",43,43
+"2026-02-04","Brazil","com.psafe.msuite.ultra_12mo_59.90",43,43
+"2026-02-08","Brazil","com.psafe.msuite.ads_free_12mo_13.90",45,45

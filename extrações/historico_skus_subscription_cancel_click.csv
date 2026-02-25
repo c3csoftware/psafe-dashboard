@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f0af323b9e16aedd2015f71deef6be9de20382eaa2542e3c96e7155506c6006d
-size 977
+Data,Pais,SKU,ContagemDeEventos,TotalDeUsuarios
+"2024-10-12","United States","(not set)",2,1
+"2024-11-29","United States","(not set)",2,1
+"2024-12-17","Brazil","(not set)",8,1
+"2025-02-12","Brazil","(not set)",6,1
+"2025-03-12","Brazil","(not set)",1,1
+"2025-03-31","Brazil","(not set)",7,1
+"2025-04-15","Brazil","(not set)",2,1
+"2025-05-03","United States","(not set)",2,1
+"2025-05-08","Brazil","(not set)",6,1
+"2025-06-25","Brazil","(not set)",1,1
+"2025-06-28","Brazil","(not set)",3,1
+"2025-07-06","United States","(not set)",6,1
+"2025-07-10","Brazil","(not set)",16,1
+"2025-08-20","Brazil","(not set)",5,1
+"2025-09-09","Brazil","(not set)",6,1
+"2025-09-10","Brazil","(not set)",1,1
+"2025-11-04","Brazil","(not set)",2,1
+"2025-12-06","United States","(not set)",4,1
+"2026-01-06","United States","(not set)",43,43
+"2026-01-12","Brazil","(not set)",88,44
+"2026-01-14","Brazil","(not set)",43,43
+"2026-01-23","Brazil","(not set)",463,84
+"2026-01-30","Brazil","(not set)",127,42

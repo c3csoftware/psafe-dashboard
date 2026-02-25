@@ -1,29 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // --- ESTADO DA APLICAÇÃO ---
     let eventos = [];
-
-    // --- ELEMENTOS DA DOM ---
     const eventosList = document.getElementById('eventos-list');
     const addEventBtn = document.getElementById('add-event-btn');
-    
-    // Modal Principal
     const modal = document.getElementById('modal');
     const modalContent = document.getElementById('modal-content');
     const modalTitle = document.getElementById('modal-title');
     const modalForm = document.getElementById('modal-form');
     const modalFields = document.getElementById('modal-fields');
     const modalCancelBtn = document.getElementById('modal-cancel-btn');
-    
-    // Modal de Exclusão
     const deleteModal = document.getElementById('delete-modal');
     const deleteModalMessage = document.getElementById('delete-modal-message');
     const deleteModalCancelBtn = document.getElementById('delete-modal-cancel-btn');
     const deleteModalConfirmBtn = document.getElementById('delete-modal-confirm-btn');
-
     const messageArea = document.getElementById('message-area');
-
-    // --- FUNÇÕES DE API ---
     async function fetchEventos() {
         try {
             const response = await fetch(`/api/eventos_selecionados`);
@@ -38,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
             messageArea.className = 'text-red-600';
         }
     }
-
     async function saveEvent(eventData) {
         try {
             const response = await fetch('/api/eventos_selecionados', {
@@ -46,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(eventData)
             });
-
             if (!response.ok) {
                 const error = await response.json();
                 throw new Error(error.message);
@@ -58,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
             messageArea.className = 'text-red-600';
         }
     }
-
     async function deleteEvent(valor) {
         try {
             const response = await fetch(`/api/eventos_selecionados/${valor}`, {
@@ -74,21 +60,16 @@ document.addEventListener('DOMContentLoaded', () => {
             messageArea.className = 'text-red-600';
         }
     }
-
-    // --- FUNÇÕES DE RENDERIZAÇÃO ---
     function renderEventos() {
         eventosList.innerHTML = '';
-        
         if (eventos.length === 0) {
             eventosList.innerHTML = `<div class="text-center text-gray-500 py-10">Nenhum evento encontrado.</div>`;
             return;
         }
-
         eventos.forEach((evento) => {
             const eventoCard = document.createElement('div');
             eventoCard.className = 'bg-white shadow-lg rounded-lg p-6 mb-6 transition-all hover:shadow-xl';
-            eventoCard.dataset.valor = evento.valor; // Usar 'valor' como identificador único
-
+            eventoCard.dataset.valor = evento.valor; 
             eventoCard.innerHTML = `
                 <div class="flex justify-between items-start">
                     <div>
@@ -105,45 +86,35 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
             `;
-            
             eventosList.appendChild(eventoCard);
         });
     }
-
-    // --- FUNÇÕES DE MODAL (ABRIR/FECHAR) ---
     function openModal(title, fieldsHtml, submitCallback) {
         modalTitle.textContent = title;
         modalFields.innerHTML = fieldsHtml;
         modal.classList.remove('hidden');
         modalContent.classList.add('modal-enter');
-
         modalForm.onsubmit = (e) => {
             e.preventDefault();
             submitCallback(e);
             closeModal();
         };
     }
-
     function closeModal() {
         modal.classList.add('hidden');
         modalContent.classList.remove('modal-enter');
     }
-
     function openDeleteModal(message, confirmCallback) {
         deleteModalMessage.textContent = message;
         deleteModal.classList.remove('hidden');
-
         deleteModalConfirmBtn.onclick = () => {
             confirmCallback();
             closeDeleteModal();
         };
     }
-
     function closeDeleteModal() {
         deleteModal.classList.add('hidden');
     }
-
-    // --- FUNÇÕES DE CRUD (EVENTO) ---
     function createField(id, label, value = '', readonly = false) {
         return `
             <div class="mb-4">
@@ -153,73 +124,55 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
     }
-
     function showEventModal(evento = null) {
         const isEdit = evento !== null;
         const title = isEdit ? 'Editar Evento' : 'Novo Evento';
-        
         const fieldsHtml = `
             ${createField('evento-rotulo', 'Rótulo (Label)', isEdit ? evento.rotulo : '')}
             ${createField('evento-valor', 'Valor (ID do Evento)', isEdit ? evento.valor : '')}
         `;
-
         const submitCallback = (e) => {
             const formData = new FormData(e.target);
             const rotulo = formData.get('evento-rotulo').trim();
             const valor = formData.get('evento-valor').trim();
-            
             if (!rotulo || !valor) return;
-
             const eventData = { rotulo, valor };
             if (isEdit) {
                 eventData.valorOriginal = evento.valor;
             }
-            
             saveEvent(eventData);
         };
-
         openModal(title, fieldsHtml, submitCallback);
     }
-
     function showDeleteEventModal(evento) {
         const message = `Tem certeza de que deseja excluir o evento "${evento.rotulo}"?`;
-        
         const confirmCallback = () => {
             deleteEvent(evento.valor);
         };
-
         openDeleteModal(message, confirmCallback);
     }
-
-    // --- EVENT LISTENERS GLOBAIS ---
     const filterBtn = document.getElementById('filter-btn');
     if(filterBtn) {
-        filterBtn.style.display = 'none'; // Esconder o botão de filtro
+        filterBtn.style.display = 'none'; 
     }
-
     addEventBtn.addEventListener('click', () => {
         showEventModal(null);
     });
-
     modalCancelBtn.addEventListener('click', closeModal);
     deleteModalCancelBtn.addEventListener('click', closeDeleteModal);
-    
     modal.addEventListener('click', (e) => {
         if (e.target === modal) closeModal();
     });
     deleteModal.addEventListener('click', (e) => {
         if (e.target === deleteModal) closeDeleteModal();
     });
-
     eventosList.addEventListener('click', (e) => {
         const target = e.target;
         const eventCard = target.closest('[data-valor]');
         if (!eventCard) return;
-        
         const valor = eventCard.dataset.valor;
         const evento = eventos.find(ev => ev.valor === valor);
         if (!evento) return;
-
         if (target.closest('.edit-event-btn')) {
             showEventModal(evento);
         } 
@@ -227,7 +180,5 @@ document.addEventListener('DOMContentLoaded', () => {
             showDeleteEventModal(evento);
         }
     });
-
-    // --- INICIALIZAÇÃO ---
     fetchEventos();
-});
+});

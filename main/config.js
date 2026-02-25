@@ -1,28 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // --- ESTADO DA APLICAÇÃO ---
     let jornadas = [];
-    const currentContext = localStorage.getItem('appContext') || 'main'; // 'main' or 'dupe'
-
-    // --- ELEMENTOS DA DOM ---
+    const currentContext = localStorage.getItem('appContext') || 'main'; 
     const jornadasList = document.getElementById('jornadas-list');
     const addJourneyBtn = document.getElementById('add-journey-btn');
-    
-    // Modal Principal
     const modal = document.getElementById('modal');
     const modalContent = document.getElementById('modal-content');
     const modalTitle = document.getElementById('modal-title');
     const modalForm = document.getElementById('modal-form');
     const modalFields = document.getElementById('modal-fields');
     const modalCancelBtn = document.getElementById('modal-cancel-btn');
-    
-    // Modal de Exclusão
     const deleteModal = document.getElementById('delete-modal');
     const deleteModalMessage = document.getElementById('delete-modal-message');
     const deleteModalCancelBtn = document.getElementById('delete-modal-cancel-btn');
     const deleteModalConfirmBtn = document.getElementById('delete-modal-confirm-btn');
-
-    // --- FUNÇÕES DE API ---
     function fetchJornadas() {
         fetch(`/api/jornadas?context=${currentContext}`)
             .then(response => response.json())
@@ -32,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .catch(error => console.error('Erro ao carregar jornadas:', error));
     }
-
     function saveJornadas() {
         fetch(`/api/jornadas?context=${currentContext}`, {
             method: 'POST',
@@ -45,16 +34,11 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => console.error('Erro ao salvar jornadas:', error));
     }
-
-
-    // --- FUNÇÕES DE RENDERIZAÇÃO ---
-
     /**
      * Renderiza a lista completa de jornadas e seus eventos.
      */
     function renderJornadas() {
-        jornadasList.innerHTML = ''; // Limpa a lista
-        
+        jornadasList.innerHTML = ''; 
         if (jornadas.length === 0) {
              jornadasList.innerHTML = `<div class="text-center text-gray-500 py-10">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mx-auto mb-4 text-gray-400">
@@ -64,13 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>`;
             return;
         }
-
         jornadas.forEach((jornada, journeyIndex) => {
             const journeyCard = document.createElement('div');
             journeyCard.className = 'bg-white shadow-lg rounded-lg p-6 mb-6 transition-all hover:shadow-xl';
             journeyCard.dataset.journeyId = jornada.id;
-
-            // Renderiza a lista de eventos para este card
             const eventosHtml = jornada.eventos.map((evento, eventIndex) => `
                 <li class="flex justify-between items-center p-3 bg-gray-50 rounded-md mb-2" data-event-nome="${evento.nome}">
                     <div>
@@ -93,8 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </li>
             `).join('');
-
-            // Monta o card completo da jornada
             journeyCard.innerHTML = `
                 <div class="flex justify-between items-start mb-4">
                     <div>
@@ -116,7 +95,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         </button>
                     </div>
                 </div>
-                
                 <!-- Lista de Eventos -->
                 <div class="mt-4 pt-4 border-t border-gray-200">
                     <div class="flex justify-between items-center mb-3">
@@ -131,13 +109,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     </ul>
                 </div>
             `;
-            
             jornadasList.appendChild(journeyCard);
         });
     }
-
-    // --- FUNÇÕES DE MODAL (ABRIR/FECHAR) ---
-    
     /**
      * Abre o modal principal e configura o formulário.
      * @param {string} title - Título do modal.
@@ -149,37 +123,27 @@ document.addEventListener('DOMContentLoaded', () => {
         modalFields.innerHTML = fieldsHtml;
         modal.classList.remove('hidden');
         modalContent.classList.add('modal-enter');
-
-        // Remove listener antigo para evitar duplicatas e adiciona o novo
         modalForm.onsubmit = (e) => {
             e.preventDefault();
             submitCallback(e);
             closeModal();
         };
     }
-
     function closeModal() {
         modal.classList.add('hidden');
         modalContent.classList.remove('modal-enter');
     }
-
     function openDeleteModal(message, confirmCallback) {
         deleteModalMessage.textContent = message;
         deleteModal.classList.remove('hidden');
-
-        // Remove listener antigo e adiciona o novo
         deleteModalConfirmBtn.onclick = () => {
             confirmCallback();
             closeDeleteModal();
         };
     }
-
     function closeDeleteModal() {
         deleteModal.classList.add('hidden');
     }
-
-    // --- FUNÇÕES DE CRUD (JORNADA) ---
-
     function moveJourney(index, direction) {
         if (direction === 'up' && index > 0) {
             [jornadas[index], jornadas[index - 1]] = [jornadas[index - 1], jornadas[index]];
@@ -189,7 +153,6 @@ document.addEventListener('DOMContentLoaded', () => {
         renderJornadas();
         saveJornadas();
     }
-
     function moveEvent(journeyIndex, eventIndex, direction) {
         const events = jornadas[journeyIndex].eventos;
         if (direction === 'up' && eventIndex > 0) {
@@ -200,7 +163,6 @@ document.addEventListener('DOMContentLoaded', () => {
         renderJornadas();
         saveJornadas();
     }
-
     /**
      * Gera o HTML do formulário para um campo de input.
      */
@@ -213,7 +175,6 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
     }
-
     /**
      * Gera o HTML do formulário para um campo de checkbox.
      */
@@ -225,7 +186,6 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
     }
-
     /**
      * Abre o modal para criar ou editar uma Jornada.
      * @param {object | null} jornada - A jornada a ser editada, ou null para criar.
@@ -233,9 +193,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function showJourneyModal(jornada = null) {
         const isEdit = jornada !== null;
         const title = isEdit ? 'Editar Jornada' : 'Nova Jornada';
-        
-        // O ID só pode ser editado se for uma *nova* jornada.
-        // Se for edição, o ID é fixo para manter a integridade.
         const fieldsHtml = `
             ${createField('jornada-id', 'ID da Jornada', isEdit ? jornada.id : '', isEdit)}
             ${createField('jornada-nome', 'Nome da Jornada', isEdit ? jornada.nome : '')}
@@ -249,23 +206,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 ${createCheckboxField('jornada-showCorrelacoes', 'Correlações', isEdit ? jornada.showCorrelacoes !== false : true)}
             </div>
         `;
-
         const submitCallback = (e) => {
             const formData = new FormData(e.target);
             const id = formData.get('jornada-id').trim();
             const nome = formData.get('jornada-nome').trim();
-            
-            if (!id || !nome) return; // Validação simples
-
+            if (!id || !nome) return; 
             const showFunil = document.getElementById('jornada-showFunil').checked;
             const showEventPeriodicFunnel = document.getElementById('jornada-showEventPeriodicFunnel').checked;
             const showUserPeriodicFunnel = document.getElementById('jornada-showUserPeriodicFunnel').checked;
             const showSkus = document.getElementById('jornada-showSkus').checked;
             const showTelas = document.getElementById('jornada-showTelas').checked;
             const showCorrelacoes = document.getElementById('jornada-showCorrelacoes').checked;
-
             if (isEdit) {
-                // Atualizar (Update)
                 const j = jornadas.find(j => j.id === jornada.id);
                 if (j) {
                     j.nome = nome;
@@ -277,10 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     j.showCorrelacoes = showCorrelacoes;
                 }
             } else {
-                // Criar (Create)
-                // Verifica se o ID já existe
                 if (jornadas.some(j => j.id === id)) {
-                    // (Em um app real, mostraríamos um erro ao usuário)
                     console.error("ID da jornada já existe!");
                     return; 
                 }
@@ -289,10 +238,8 @@ document.addEventListener('DOMContentLoaded', () => {
             renderJornadas();
             saveJornadas();
         };
-
         openModal(title, fieldsHtml, submitCallback);
     }
-
     /**
      * Abre o modal de confirmação para deletar uma Jornada.
      * @param {string} journeyId - ID da jornada a ser deletada.
@@ -300,21 +247,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function showDeleteJourneyModal(journeyId) {
         const jornada = jornadas.find(j => j.id === journeyId);
         if (!jornada) return;
-
         const message = `Tem certeza de que deseja excluir a jornada "${jornada.nome}"? Todos os seus eventos também serão removidos.`;
-        
         const confirmCallback = () => {
-            // Deletar (Delete)
             jornadas = jornadas.filter(j => j.id !== journeyId);
             renderJornadas();
             saveJornadas();
         };
-
         openDeleteModal(message, confirmCallback);
     }
-
-    // --- FUNÇÕES DE CRUD (EVENTO) ---
-
     /**
      * Abre o modal para criar ou editar um Evento.
      * @param {string} journeyId - ID da jornada pai.
@@ -323,33 +263,23 @@ document.addEventListener('DOMContentLoaded', () => {
     function showEventModal(journeyId, evento = null) {
         const isEdit = evento !== null;
         const title = isEdit ? 'Editar Evento' : 'Novo Evento';
-        
-        // O 'nome' do evento (seu ID) só pode ser editado se for novo.
         const fieldsHtml = `
             ${createField('evento-nome', 'Nome do Evento (ID)', isEdit ? evento.nome : '', isEdit)}
             ${createField('evento-rotulo', 'Rótulo (Label)', isEdit ? evento.rotulo : '')}
         `;
-        
         const submitCallback = (e) => {
             const formData = new FormData(e.target);
             const nome = formData.get('evento-nome').trim();
             const rotulo = formData.get('evento-rotulo').trim();
-
             if (!nome || !rotulo) return;
-
             const jornada = jornadas.find(j => j.id === journeyId);
             if (!jornada) return;
-
             if (isEdit) {
-                // Atualizar (Update)
                 const ev = jornada.eventos.find(ev => ev.nome === evento.nome);
                 if (ev) {
                     ev.rotulo = rotulo;
-                    // Não alteramos o 'nome' (ID)
                 }
             } else {
-                // Criar (Create)
-                // Verifica se o 'nome' (ID) do evento já existe *nesta* jornada
                 if (jornada.eventos.some(ev => ev.nome === nome)) {
                     console.error("Nome do evento já existe nesta jornada!");
                     return;
@@ -359,10 +289,8 @@ document.addEventListener('DOMContentLoaded', () => {
             renderJornadas();
             saveJornadas();
         };
-
         openModal(title, fieldsHtml, submitCallback);
     }
-
     /**
      * Abre o modal de confirmação para deletar um Evento.
      * @param {string} journeyId - ID da jornada pai.
@@ -372,53 +300,34 @@ document.addEventListener('DOMContentLoaded', () => {
         const jornada = jornadas.find(j => j.id === journeyId);
         const evento = jornada?.eventos.find(ev => ev.nome === eventNome);
         if (!evento) return;
-
         const message = `Tem certeza de que deseja excluir o evento "${evento.rotulo}" (${evento.nome})?`;
-        
         const confirmCallback = () => {
-            // Deletar (Delete)
             jornada.eventos = jornada.eventos.filter(ev => ev.nome !== eventNome);
             renderJornadas();
             saveJornadas();
         };
-
         openDeleteModal(message, confirmCallback);
     }
-
-
-    // --- EVENT LISTENERS GLOBAIS ---
-
-    // Botão principal para adicionar nova jornada
     addJourneyBtn.addEventListener('click', () => {
-        showJourneyModal(null); // Passa null para indicar "criação"
+        showJourneyModal(null); 
     });
-
-    // Listeners dos modais (para fechar)
     modalCancelBtn.addEventListener('click', closeModal);
     deleteModalCancelBtn.addEventListener('click', closeDeleteModal);
-    
-    // Fecha os modais ao clicar fora do conteúdo
     modal.addEventListener('click', (e) => {
         if (e.target === modal) closeModal();
     });
     deleteModal.addEventListener('click', (e) => {
         if (e.target === deleteModal) closeDeleteModal();
     });
-
-    // Delegação de eventos para botões dentro da lista de jornadas
     jornadasList.addEventListener('click', (e) => {
         const target = e.target;
-        
-        // Encontra o card da jornada pai
         const journeyCard = target.closest('[data-journey-id]');
         if (!journeyCard) return;
         const journeyId = journeyCard.dataset.journeyId;
         const journeyIndex = jornadas.findIndex(j => j.id === journeyId);
-
-        // --- Ações da Jornada ---
         if (target.closest('.edit-journey-btn')) {
             const jornada = jornadas.find(j => j.id === journeyId);
-            if (jornada) showJourneyModal(jornada); // Passa o objeto para "edição"
+            if (jornada) showJourneyModal(jornada); 
         } 
         else if (target.closest('.delete-journey-btn')) {
             showDeleteJourneyModal(journeyId);
@@ -429,21 +338,18 @@ document.addEventListener('DOMContentLoaded', () => {
         else if (target.closest('.move-journey-down-btn')) {
             moveJourney(journeyIndex, 'down');
         }
-        // --- Ações do Evento ---
         else if (target.closest('.add-event-btn')) {
-            showEventModal(journeyId, null); // Passa null para "criação"
+            showEventModal(journeyId, null); 
         } 
         else {
-            // Verifica se o clique foi em um item de evento
             const eventItem = target.closest('[data-event-nome]');
             if (!eventItem) return;
             const eventNome = eventItem.dataset.eventNome;
             const eventIndex = jornadas[journeyIndex].eventos.findIndex(ev => ev.nome === eventNome);
-
             if (target.closest('.edit-event-btn')) {
                 const jornada = jornadas.find(j => j.id === journeyId);
                 const evento = jornada?.eventos.find(ev => ev.nome === eventNome);
-                if (evento) showEventModal(journeyId, evento); // Passa o objeto para "edição"
+                if (evento) showEventModal(journeyId, evento); 
             }
             else if (target.closest('.delete-event-btn')) {
                 showDeleteEventModal(journeyId, eventNome);
@@ -456,7 +362,5 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
-
-    // --- INICIALIZAÇÃO ---
     fetchJornadas();
-});
+});
